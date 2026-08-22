@@ -48,6 +48,25 @@ monitoring, replay, perception experiments, observability, and deployment
 repeatability. They are not the hard real-time safety controller and do not
 receive direct actuator authority.
 
+## Instrumented Survey And Digital Twin
+
+The next useful asset is not a claim of autonomy. It is the instrumented survey:
+measured behavior from the boat, its electronics, and its operating context,
+captured in a form that can be replayed, inspected, and gradually turned into
+simulation inputs.
+
+That survey feeds a developing digital twin. Publicly, that means replayable
+telemetry, calibration context, synthetic scenarios, and evidence artifacts
+that let engineers and agents develop against observed vessel behavior without
+waiting for every test to happen on the boat. It does not mean a completed
+high-fidelity physics model, a certified simulator, or a substitute safety
+case.
+
+This approach has already shown the practical benefit expected from digital
+twin work: less schedule dependence on weather, dock time, and fragile field
+setups; earlier discovery of interface defects; and cheaper review cycles
+because more questions can be answered against recorded or synthetic evidence.
+
 ## Development And Field Pipeline
 
 ![Development, test, and field pipeline](../assets/diagrams/development-field-pipeline.png)
@@ -65,6 +84,11 @@ evidence, and a travel-laptop DevOps lane for Lima vz, macOS containers,
 Kubernetes, Flux, GitOps, SignalK, InfluxDB, Grafana, survey dashboards,
 remote debugging, and field-style development.
 
+The same lanes also feed the digital-twin loop: instrumented survey evidence
+is captured once, replayed many times, and used to develop telemetry,
+validation, and future estimation behavior before live vessel experiments are
+considered.
+
 Terraform, Ansible, and cloud-init matter because rebuildability is part of the
 platform, not an afterthought. Future sensor applications may include Go or
 Rust collectors and narrowly justified WASM validators, but only where they
@@ -77,6 +101,8 @@ show the shape of a mature platform:
 
 - It is replay-first. New behavior should be tested against recorded or
   synthetic sessions before it is trusted near live vessel behavior.
+- It is building a digital twin from an instrumented survey, not asserting one
+  is complete.
 - It is evidence-driven. Decisions, assumptions, reviews, and caveats are
   recorded as part of the engineering process.
 - It has separation of duties. Implementation, review, research, and owner

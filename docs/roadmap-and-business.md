@@ -20,7 +20,7 @@ Editable source:
 | --- | --- | --- |
 | 0 Governance and safety | In motion and evidenced | Agent roles, review gates, evidence records, and public/private boundaries exist. |
 | 1 Passive telemetry | In motion and evidenced | The private project has passive marine telemetry capture and no bus writes. |
-| 2 Replay and observability | In motion and evidenced | Replay/inspection paths exist for telemetry and dashboard evidence. |
+| 2 Replay, observability, and digital-twin inputs | In motion and evidenced | Replay/inspection paths exist, and instrumented survey evidence is being shaped into simulation inputs. |
 | 3 State estimation | Not started | No public claim of vessel-state estimation for live use. |
 | 4 Shadow mode | Not started | No assistive logic running beside live control. |
 | 5 Supervised assist | Not started | No assistive control in the loop. No unattended docking. |
@@ -43,7 +43,9 @@ controlling anything physical.
 ### Stage 2 - Replay And Observability
 
 Replay captured or synthetic telemetry into repeatable dashboards, queries,
-and tests. Use replay to debug before touching the real vessel.
+and tests. Use replay to debug before touching the real vessel. Build the
+digital-twin substrate from instrumented survey evidence, while keeping clear
+that a complete simulator and assistive behavior are later-stage work.
 
 ### Stage 3 - State Estimation
 
@@ -79,14 +81,15 @@ intimidating. From there, the possible market expands only if evidence earns
 it:
 
 - Assistance for recreational boaters in close-quarters maneuvering.
-- Replay, coaching, telemetry, and awareness tools for owners.
+- Instrumented survey, replay, coaching, telemetry, and awareness tools for
+  owners.
 - Transfer later to adjacent edge autonomy only if the evidence and safety
   case justify it.
 
 The desired feeling is not "the robot took over." It is closer to:
 
 - I understand what the boat is doing.
-- I can replay what happened and learn from it.
+- I can replay what happened, simulate likely behavior, and learn from it.
 - The system helps me see wind, current, heading, speed, depth, and control
   context more clearly.
 - Assistance appears only after the sensing, replay, safety, and operator
@@ -98,6 +101,8 @@ The desired feeling is not "the robot took over." It is closer to:
 - Recreational marine systems have real operational pain: docking stress,
   intermittent connectivity, noisy sensors, fragmented electronics, and
   limited observability.
+- Instrumented survey and replay can reduce schedule and cost risk by moving
+  more development, debugging, and review away from scarce live-vessel time.
 - Modern AI and edge infrastructure make new assistance patterns possible, but
   the safety case matters more than the demo.
 - A solo founder with governed agent support can cover more ground if scope,

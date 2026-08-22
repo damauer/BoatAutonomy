@@ -8,7 +8,10 @@ around a recreational boat. The working shorthand is "teaching my boat how to
 dock itself." The more precise public claim is narrower and more important:
 build the telemetry, replay, edge compute, safety policy, and multi-agent
 review harness needed before a real vessel can responsibly move from passive
-observation toward supervised docking-assist experiments.
+observation toward supervised docking-assist experiments. The near-term method
+is an instrumented survey of the boat and its electronics, feeding the
+developing digital twin needed to simulate and develop against observed vessel
+behavior before consuming live vessel time.
 
 This repository is intentionally curated. It is a discussion surface, not a
 contribution project: read, comment, and ask questions, but there is no implied
@@ -80,6 +83,13 @@ and cluster services normalize, replay, inspect, and test those observations.
 AI, dashboards, and agents may help interpret evidence or propose work, but
 human authority, physical override, and safe-state behavior remain explicit.
 
+The instrumented survey is the bridge between the real vessel and the
+development environment. Surveyed electronics, telemetry, and operating
+context become replayable sessions and simulation inputs for a developing
+digital twin. This is not a completed high-fidelity physics model or an
+assistive-control claim; it is the practical substrate for finding interface,
+timing, and behavior issues before field time is spent on them.
+
 Kubernetes and agentic tooling are useful around the system: recording,
 monitoring, replay, perception experiments, observability, and deployment
 repeatability. They are not the hard real-time safety controller and do not
@@ -141,6 +151,8 @@ It is an emerging platform pattern with several mature pieces being exercised:
 
 - Data and replay: raw marine signals become normalized, replayable sessions
   that can be inspected before new behavior is trusted.
+- Instrumented survey and digital twin: measured vessel and electronics
+  behavior becomes a replay and simulation substrate for offline development.
 - Edge operations: lab, staging, field-prep, and field-style environments
   support repeatable deployment and evidence collection.
 - AI-assisted engineering: multiple agents work in bounded roles for research,
@@ -150,6 +162,10 @@ It is an emerging platform pattern with several mature pieces being exercised:
 - Transferability: the same pattern may apply to other markets where physical
   systems need telemetry, replay, edge intelligence, and human-centered
   control boundaries.
+
+The cost and schedule benefit is direct: more defects can be found in replay,
+simulation, and review, and fewer debugging cycles have to wait for scarce
+boat time, weather windows, marina conditions, or one-off field setups.
 
 The AI story has two layers. One layer is how the project is built: Claude
 Code, Codex, Grok, tmux, GitLab records, review findings, and owner decisions

@@ -23,7 +23,7 @@ locations, or operational procedures.
 | Fact | Public-Safe Detail |
 | --- | --- |
 | Passive capture exists | The private project has captured real-vessel NMEA 2000 / NMEA 0183 class telemetry through a Wi-Fi gateway path, with no bus writes. |
-| Replay path exists | Telemetry can flow through a SignalK -> InfluxDB -> Grafana style replay/inspection path. |
+| Replay and digital-twin inputs exist | Telemetry can flow through a SignalK -> InfluxDB -> Grafana style replay/inspection path, and instrumented survey observations are being shaped into simulation inputs. This is not a completed high-fidelity twin or a live-control claim. |
 | Soak evidence exists | A 72-hour-class telemetry soak was documented with restarts, caveats, and excluded incident windows rather than treated as a perfect run. |
 | Independent review works | At least one pre-promotion agent review caught a real runtime-interface mismatch before it reached live use. |
 
@@ -32,10 +32,16 @@ locations, or operational procedures.
 | Area | Public-Safe Summary |
 | --- | --- |
 | Telemetry capture | Marine-network captures were decoded into normalized telemetry paths and replayed into dashboards for inspection. |
+| Instrumented survey | Survey-style observations turn vessel electronics and operating context into reusable evidence for replay, simulation, and review. |
 | Soak testing | Edge telemetry stacks were soak-tested with documented restarts, resource behavior, incident windows, and unresolved caveats. |
 | Cluster migration | Infrastructure changes were reviewed against live evidence before promotion, including discovery, network identity, and control-plane behavior. |
 | Agent review | Independent review caught real defects before live changes, including assumptions that did not match runtime interfaces. |
 | Data handling | Raw telemetry, packet captures, credentials, and large artifacts stay out of public Git; public demos use synthetic data. |
+
+The schedule and cost signal is deliberately qualitative: replayable survey
+evidence lets more defects be found before scarce boat time, weather windows,
+and field setups are involved. Public summaries do not publish raw tracks,
+private locations, detailed timings, or dollar claims.
 
 ## Dashboard Evidence Example
 

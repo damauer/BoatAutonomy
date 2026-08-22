@@ -20,7 +20,9 @@ The working shorthand is "teaching my boat how to dock itself." The responsible
 public claim is narrower: build the telemetry, replay, edge compute, evidence,
 safety policy, and AI-assisted engineering harness needed before any real
 vessel can move from passive observation toward supervised docking-assist
-experiments.
+experiments. The instrumented-survey path turns observed vessel and electronics
+behavior into replay and simulation inputs for the developing digital twin the
+project needs before assistive behavior is credible.
 
 That makes the project useful to several audiences:
 
@@ -58,8 +60,12 @@ technology that earns trust before it asks for authority.
 The first opportunity is recreational docking and close-quarters assistance.
 The broader opportunity may be a repeatable pattern for physical-system
 autonomy: telemetry, replay, edge operations, governed AI-assisted delivery,
-and safety gates that can be explained to technical, operational, and business
-stakeholders.
+developing digital twins from instrumented surveys, and safety gates that can
+be explained to technical, operational, and business stakeholders.
+
+The near-term business value is not a finished autonomy claim. It is the
+ability to move more discovery, simulation, and review into reusable evidence,
+reducing dependence on expensive field-only debugging cycles.
 
 ## Current Boundary
 
