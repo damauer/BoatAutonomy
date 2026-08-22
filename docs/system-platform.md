@@ -1,22 +1,54 @@
-# Technical Platform
+# System Platform
 
-BoatAutonomy is publicly framed around calmer docking, but the technical
-platform is broader. It combines marine telemetry, replay, edge operations,
-multi-agent engineering, governance, and safety boundaries into a pattern that
-could matter to other physical-system projects.
+BoatAutonomy is organized as a replay-first, evidence-gated platform around a
+real recreational vessel. Marine signals enter as captured observations. Edge
+and cluster services normalize, replay, inspect, and test those observations.
+AI, dashboards, and agents may help interpret evidence or propose work, but
+human authority, physical override, and safe-state behavior remain explicit.
 
 This page is intentionally public-safe. It describes the shape of the system
 without publishing private topology, live endpoints, raw telemetry, actuator
 details, or operational runbooks.
 
-## Platform Shape
+## Staged Architecture
+
+![Staged architecture and safety boundary](../assets/diagrams/architecture-boundary.png)
+
+Editable source:
+[architecture-boundary.svg](../assets/diagrams/architecture-boundary.svg).
+
+Each layer earns promotion with recorded evidence before the next layer is
+allowed to depend on it.
+
+Design rules:
+
+- Observe before estimating.
+- Replay before shadow mode.
+- Shadow mode before assist.
+- Assist only with operator enable, physical override, bounded outputs, and
+  fault handling.
+- Keep raw vessel data, packet captures, and large artifacts outside public Git.
+- Treat model output as a request to a bounded controller, not as a command.
+- Keep Kubernetes, dashboards, and agents outside the hard real-time safety
+  path.
+
+## Platform Pattern
 
 ![BoatAutonomy platform pattern](../assets/diagrams/boat-autonomy-platform.png)
 
 Editable source:
 [boat-autonomy-platform.svg](../assets/diagrams/boat-autonomy-platform.svg).
 
-## Delivery Pipeline
+The platform combines marine telemetry, replay, edge operations, multi-agent
+engineering, governance, and safety boundaries into a pattern that could
+matter to other physical-system projects.
+
+Kubernetes and agentic tooling are useful around the system: recording,
+monitoring, replay, perception experiments, observability, and deployment
+repeatability. They are not the hard real-time safety controller and do not
+receive direct actuator authority.
+
+## Development And Field Pipeline
 
 ![Development, test, and field pipeline](../assets/diagrams/development-field-pipeline.png)
 
@@ -55,8 +87,8 @@ show the shape of a mature platform:
 
 ## Technical Breadcrumbs
 
-The diagrams above intentionally expose technical vocabulary without exposing
-private topology:
+The diagrams intentionally expose technical vocabulary without exposing private
+topology:
 
 - Infrastructure as code: Terraform, Ansible, and cloud-init.
 - Local and edge compute: Lima vz, macOS containers, Kubernetes, Flux, and
@@ -67,11 +99,6 @@ private topology:
 - Model and runtime experiments: Tower as a private local model lane, plus
   possible future Go / Rust collectors and narrowly scoped WASM validators
   where measured benefit justifies the machinery.
-
-## Related Page
-
-- [ai-and-agentic-collaboration.md](ai-and-agentic-collaboration.md) shows the
-  governed Claude Code, Codex, Grok, tmux, GitLab, and mirror workflow.
 
 ## Why Technologists Should Care
 
@@ -91,10 +118,3 @@ That makes the project relevant beyond recreational docking. The same pattern
 could apply to field robotics, small-vessel systems, industrial telemetry,
 remote infrastructure, training systems, survey workflows, or other domains
 where autonomy has to earn trust through evidence.
-
-## Current Boundary
-
-This is not a commercial product claim. It is not a safety certification. It
-does not publish live control paths. The public claim is that the project is
-building a serious, reviewable substrate for staged autonomy research and
-future marine assistance.

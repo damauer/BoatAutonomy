@@ -29,6 +29,9 @@ physical-system challenge, not a demo script. It asks how a small team, aided
 by governed AI agents, can build a serious autonomy substrate while preserving
 safety, evidence, review, and owner control.
 
+Read [problem-and-opportunity.md](docs/problem-and-opportunity.md) for the
+problem statement and opportunity framing.
+
 ## What This Is
 
 BoatAutonomy is a public-facing project surface for a private applied-autonomy
@@ -57,6 +60,9 @@ This repository does not claim unattended autonomous docking. It does not
 publish live vessel-control code, actuator wiring, raw capture files, endpoint
 details, secrets, or enough operational detail to reproduce the private system.
 
+Read [scope-and-safety.md](docs/scope-and-safety.md) for the public/private
+boundary and [evidence.md](docs/evidence.md) for the evidence posture.
+
 ## How It Works
 
 ![BoatAutonomy platform pattern](assets/diagrams/boat-autonomy-platform.png)
@@ -81,40 +87,37 @@ The public story follows this order:
 - Show evidence discipline before asking for trust.
 - Add technical and agentic breadcrumbs only after the boundary is clear.
 
-The best starting sequence is:
-[architecture.md](docs/architecture.md),
-[safety-boundary.md](docs/safety-boundary.md),
-[evidence.md](docs/evidence.md), then
-[technical-platform.md](docs/technical-platform.md).
+Read [system-platform.md](docs/system-platform.md) for the system shape,
+staged architecture, delivery pipeline, and technical breadcrumbs.
 
 <table>
   <tr>
     <td width="33%">
-      <a href="docs/architecture.md">
-        <img src="assets/diagrams/architecture-boundary.png" alt="System shape thumbnail" width="240">
+      <a href="docs/scope-and-safety.md">
+        <img src="assets/diagrams/safety-boundary.png" alt="Scope and safety thumbnail" width="240">
       </a>
       <br>
-      <a href="docs/architecture.md"><strong>System shape</strong></a>
+      <a href="docs/scope-and-safety.md"><strong>Scope and safety</strong></a>
       <br>
-      Staged architecture, hard boundary, and human authority.
+      Public scope, non-claims, and the physical authority boundary.
     </td>
     <td width="33%">
-      <a href="docs/technical-platform.md">
+      <a href="docs/system-platform.md">
         <img src="assets/diagrams/development-field-pipeline.png" alt="Technical platform thumbnail" width="240">
       </a>
       <br>
-      <a href="docs/technical-platform.md"><strong>Technical platform</strong></a>
+      <a href="docs/system-platform.md"><strong>System platform</strong></a>
       <br>
       Edge operations, replay, GitOps, telemetry, and field workflow.
     </td>
     <td width="33%">
-      <a href="docs/ai-and-agentic-collaboration.md">
-        <img src="assets/diagrams/agentic-collaboration-harness.png" alt="AI and agentic collaboration thumbnail" width="240">
+      <a href="docs/evidence.md">
+        <img src="assets/evidence/grafana-marina-telemetry-public-safe.png" alt="Evidence thumbnail" width="240">
       </a>
       <br>
-      <a href="docs/ai-and-agentic-collaboration.md"><strong>AI and agentic collaboration</strong></a>
+      <a href="docs/evidence.md"><strong>Evidence</strong></a>
       <br>
-      Claude Code, Codex, Grok, tmux, GitLab records, review, and reconciliation.
+      Sanitized examples, replay evidence, and public-safe dashboard artifacts.
     </td>
   </tr>
 </table>
@@ -149,17 +152,16 @@ are coordinated so speed does not erase accountability. The other layer is
 future model-assisted behavior, which remains bounded by replay, shadow mode,
 operator enablement, and safety review.
 
-Read [ai-and-agentic-collaboration.md](docs/ai-and-agentic-collaboration.md)
-for the conceptual overview and
-[agentic-engineering.md](docs/agentic-engineering.md) for the GitLab-centered
-workflow with YAML and Markdown examples.
+Read [agentic-engineering.md](docs/agentic-engineering.md) for the agentic
+collaboration harness, GitLab-centered workflow, YAML policy example, and
+review Markdown example.
 
 ## Where It Is Going
 
 The capability order still comes first:
-[roadmap.md](docs/roadmap.md) describes progression from governance and
-passive telemetry toward replay, estimation, shadow mode, and supervised
-assist before any higher autonomy research.
+[roadmap-and-business.md](docs/roadmap-and-business.md) describes progression
+from governance and passive telemetry toward replay, estimation, shadow mode,
+and supervised assist before any higher autonomy research.
 
 The market lens is intentionally ambitious but bounded:
 
@@ -172,10 +174,9 @@ The market lens is intentionally ambitious but bounded:
 - Preserve a path beyond recreational docking if the same telemetry, replay,
   and safety-gated assistance patterns prove useful elsewhere.
 
-Read [market-vision.md](docs/market-vision.md) for the product intuition and
-[future-business-direction.md](docs/future-business-direction.md) for the
-cautious future business framing. The latter is explicitly not a current
-fundraising solicitation or product-readiness claim.
+That same page also captures the product intuition and cautious future business
+framing. It is explicitly not a current fundraising solicitation or
+product-readiness claim.
 
 ## How We Can Help
 
@@ -194,40 +195,23 @@ partner conversations. It makes visible a combination of systems engineering,
 cloud-to-edge operations, AI-assisted delivery, governance, and business
 judgment that can help adjacent physical-system and autonomy efforts.
 
-See [RESUME.md](RESUME.md) for the public resume,
-[docs/relevant-work.md](docs/relevant-work.md) for the kinds of work this
-project is meant to make legible, and
-[docs/portfolio-narrative.md](docs/portfolio-narrative.md) for the through-line
-connecting the project to prior systems work.
+See [builder-profile.md](docs/builder-profile.md) for the project/career
+through-line and [RESUME.md](RESUME.md) for the public resume.
 
-## Repository Map
+## Story Guide
 
-- [docs/architecture.md](docs/architecture.md) - staged system architecture
-  and safety/control-plane split.
-- [docs/safety-boundary.md](docs/safety-boundary.md) - what the project does
-  and does not authorize.
-- [docs/evidence.md](docs/evidence.md) - sanitized examples of evidence the
-  private project records before promoting work.
-- [docs/technical-platform.md](docs/technical-platform.md) - deeper technical
-  platform view for technologists.
-- [docs/ai-and-agentic-collaboration.md](docs/ai-and-agentic-collaboration.md) -
-  AI, agent collaboration, replay, model boundaries, and governance.
-- [docs/agentic-engineering.md](docs/agentic-engineering.md) - how the
-  multi-agent build/review/research loop is governed, with YAML and Markdown
-  examples.
-- [docs/roadmap.md](docs/roadmap.md) - capability progression from passive
-  telemetry to supervised assistance.
-- [docs/market-vision.md](docs/market-vision.md) - market-facing product
-  intuition without product-readiness claims.
-- [docs/future-business-direction.md](docs/future-business-direction.md) -
-  cautious future business direction, explicitly not a current solicitation.
-- [docs/relevant-work.md](docs/relevant-work.md) - professional positioning
-  and opportunity fit.
-- [docs/portfolio-narrative.md](docs/portfolio-narrative.md) - why this
-  project is a credible continuation of the builder's career arc.
-- [RESUME.md](RESUME.md) - public resume context.
-- [demos/synthetic-nmea/](demos/synthetic-nmea/) - small synthetic telemetry
-  example for public demos and screenshots.
+The supporting files are grouped by the same questions the README answers.
+Read straight down for the narrative, or jump to the part that matches the
+conversation you want to have.
+
+| Story Beat | Reader Question | Supporting Pages |
+| --- | --- | --- |
+| Why read this | What problem makes this worth attention? | [problem-and-opportunity.md](docs/problem-and-opportunity.md) |
+| What this is | What is public, what is private, and what is not being claimed? | [scope-and-safety.md](docs/scope-and-safety.md), [evidence.md](docs/evidence.md), [synthetic demo data](demos/synthetic-nmea/) |
+| How it works | What is the system shape and technical approach? | [system-platform.md](docs/system-platform.md) |
+| Why it matters | What makes the platform unusually mature or transferable? | [agentic-engineering.md](docs/agentic-engineering.md), [evidence.md](docs/evidence.md) |
+| Where it is going | What is the capability path and future business hypothesis? | [roadmap-and-business.md](docs/roadmap-and-business.md) |
+| How we can help | What skills, experience, and judgment does this make visible? | [builder-profile.md](docs/builder-profile.md), [RESUME.md](RESUME.md) |
 
 ## Public Review Status
 

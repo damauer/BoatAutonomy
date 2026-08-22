@@ -14,5 +14,5 @@ marine technologists, edge-system builders, and future partners who care about
 making physical autonomy useful without making it reckless.
 
 For professional context, see the public resume in `RESUME.md` and the
-opportunity framing in `docs/relevant-work.md`. The private system remains
-separate until specific artifacts are approved for release.
+project/career framing in `docs/builder-profile.md`. The private system
+remains separate until specific artifacts are approved for release.

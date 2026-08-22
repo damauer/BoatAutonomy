@@ -1,25 +1,51 @@
-# Relevant Work And Opportunity Fit
+# Builder Profile
 
-BoatAutonomy is a public-safe portfolio and market-exploration surface for
-work at the intersection of recreational boating, embedded systems, secure
-cloud, edge infrastructure, observability, AI-assisted software engineering,
-and safety-bounded autonomy.
+BoatAutonomy is not a claim that the boat already docks itself. It is a
+public-safe way to show the kind of system I am building, the market problem I
+care about, and the judgment I bring to it.
 
 ![BoatAutonomy professional signal](../assets/diagrams/professional-signal.png)
 
 Editable source:
 [professional-signal.svg](../assets/diagrams/professional-signal.svg).
 
-## Intended Reader
+## The Through-Line
 
-This repo is written for people who recognize the shape of hard systems work:
-fielded infrastructure, constrained environments, telemetry, replay, audit,
-recovery, operational evidence, and the need to keep experimental intelligence
-away from direct physical authority until the boundary is proven.
+The project ties together five long-running threads:
 
-The wording is intentionally public-safe. It leaves out customer, network,
-program, endpoint, and vessel details, while preserving enough context for the
-right technical audience to understand the relevance.
+1. Embedded and communications systems. Earlier work included Unix / VxWorks,
+   network stacks, protocol-heavy monitoring, telecom systems, and early
+   neural-network protocol recognition.
+2. Mission cloud and operations. Later work moved into isolated AWS
+   environments, multi-account operations, data resiliency, automation,
+   auditing, and mission-system transition into operations.
+3. Edge and Kubernetes. Current work uses Kubernetes where it fits: repeatable
+   lab, staging, production, and edge services for capture, replay,
+   observability, and deployment discipline.
+4. Commercial and founder-side judgment. Commercial consulting and CFO / CIO
+   support for a long-running 35-person business add the business-development,
+   customer, systems, finance, and cash-flow context that matters for startup
+   opportunities.
+5. Governed AI-assisted engineering. BoatAutonomy uses multiple agents in
+   bounded roles, with explicit policy, review, evidence, and owner approval
+   before promotion.
+
+## Why A Boat
+
+A recreational boat is a compact but serious systems target. It has noisy
+sensors, real networks, physical safety constraints, intermittent connectivity,
+power and environmental limits, human override requirements, and enough
+complexity that hand-waving shows quickly.
+
+That makes it useful as a personal proving ground. It is small enough for one
+owner-builder to move fast, but concrete enough that the work has to confront
+real operational constraints.
+
+It also has a human-centered market story. Recreational boating is
+aspirational and global, but docking remains stressful for many owners. A
+credible path toward calmer close-quarters handling could create value for
+boaters, marinas, service providers, trainers, insurers, and adjacent
+small-vessel markets. That possibility is worth exploring carefully.
 
 ## Roles And Conversations
 
@@ -30,18 +56,14 @@ right technical audience to understand the relevance.
   resiliency.
 - AI-assisted software delivery where agent roles, audit trails, and promotion
   gates matter.
-- Safety-bounded autonomy, robotics-adjacent infrastructure, and shadow-before
-  assist validation.
+- Safety-bounded autonomy, robotics-adjacent infrastructure, and
+  shadow-before-assist validation.
 - Startup, founder-adjacent, or early-product work where technical execution,
   business judgment, and customer delivery have to move together.
-- Future partner, advisor, or funding conversations if the project matures
-  beyond its current private lab and portfolio posture.
 - Marine product conversations where customer trust, safety, retrofit
   practicality, and serviceability matter as much as the technical demo.
 - Technical due diligence for teams trying to separate impressive demos from
   systems that can actually be operated.
-- Architecture conversations where the reusable value is the platform pattern,
-  not only the first boating use case.
 
 ## What BoatAutonomy Makes Visible
 
@@ -79,12 +101,19 @@ right technical audience to understand the relevance.
 - Commercial consulting, business development, and 20 years of CFO / CIO
   support for a 35-person closely held business run operationally by my wife.
 
+## Professional Signal
+
+The intended audience does not need sensitive nouns to understand the pattern:
+secure environments, constrained deployment, mission data, telemetry, replay,
+audit, edge operations, and a hard boundary between experimental intelligence
+and operational authority.
+
+BoatAutonomy is a way to show that pattern in public without turning private
+work into an exposure risk. For resume context, see [RESUME.md](../RESUME.md).
+
 ## Boundary
 
 This public repo is intentionally incomplete. It should support professional
-conversation without revealing sensitive client history, private vessel
-details, operational endpoints, raw telemetry, or implementation material that
-belongs in the private project.
-
-For future business context, see
-[future-business-direction.md](future-business-direction.md).
+and partner conversation without revealing sensitive client history, private
+vessel details, operational endpoints, raw telemetry, or implementation
+material that belongs in the private project.
