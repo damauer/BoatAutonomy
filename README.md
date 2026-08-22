@@ -2,16 +2,30 @@
 
 Teaching a real boat to dock itself, one governed subsystem at a time.
 
-BoatAutonomy is a private, owner-built autonomy lab around a recreational
-boat. The public-facing version of the project is intentionally narrower than
-the working system: it describes the architecture, safety posture, evidence
-discipline, and multi-agent engineering process without publishing live
-infrastructure details, raw vessel data, credentials, or repair procedures.
+BoatAutonomy is a public-safe view into a private, owner-built autonomy lab
+around a recreational boat. It is part engineering project, part portfolio,
+and part evidence that disciplined AI-assisted development can be applied to
+real physical systems without skipping governance, safety, or operational
+rigor.
 
-The practical goal is staged docking assistance. The current public claim is
-more conservative: build the telemetry, replay, edge compute, safety policy,
-and review harness needed before any vessel can responsibly move from passive
-observation toward supervised control experiments.
+The working shorthand is "teaching my boat how to dock itself." The more
+precise public claim is narrower: build the telemetry, replay, edge compute,
+safety policy, and multi-agent review harness needed before a real vessel can
+responsibly move from passive observation toward supervised docking-assist
+experiments.
+
+For teams working on secure cloud, edge telemetry, mission-critical systems,
+or safety-bounded autonomy, this repo is meant to show how the builder thinks:
+instrument first, replay before live use, separate authority from advice, and
+make promotion depend on recorded evidence.
+
+## Read This First
+
+This is not the private implementation repo. It is a curated public surface.
+It describes architecture, safety posture, evidence discipline, professional
+context, and synthetic demo data without publishing live infrastructure
+details, raw vessel data, credentials, repair procedures, or operational
+runbooks.
 
 ## Current Public Scope
 
@@ -26,6 +40,19 @@ observation toward supervised control experiments.
 This repository does not claim unattended autonomous docking. It does not
 publish live vessel-control code, actuator wiring, raw capture files, endpoint
 details, secrets, or enough operational detail to reproduce the private system.
+
+## What This Demonstrates
+
+- Cloud-to-edge architecture for constrained, mission-style environments.
+- Marine telemetry capture, normalization, replay, and dashboard inspection.
+- Kubernetes used for orchestration, observability, and repeatability, not as
+  a hard real-time safety controller.
+- Multi-agent delivery with explicit roles for implementation, review,
+  research, evidence, and owner approval.
+- A safety boundary that treats model output as advice to a bounded system,
+  not direct authority over physical control.
+- Public communication that is useful to the intended technical community
+  without exposing sensitive operational detail.
 
 ## System Shape
 
@@ -48,11 +75,13 @@ receive direct actuator authority.
 
 ## Why This Exists
 
-The project started as curiosity and skill-building. It has become a compact
-example of the builder's background in embedded systems, communications
-traffic analysis, cloud operations, isolated environments, and AI-assisted
-engineering. It also acts as a proving ground for using multiple agents as an
-engineering team with explicit roles, review boundaries, and evidence gates.
+The project started as curiosity and skill-building. It now defines a useful
+intersection of the builder's career: embedded and real-time systems,
+communications-traffic analysis, secure cloud architecture, isolated
+environments, data resiliency, Kubernetes, edge operations, and AI-assisted
+software delivery. It also reflects commercial and founder-side business
+experience: consulting, business development, customer delivery, CFO / CIO
+support, and long-running small-business operations.
 
 The public repo is meant to make that work legible without turning a private
 boat, home lab, or startup exploration into an open operational manual.
@@ -60,9 +89,11 @@ boat, home lab, or startup exploration into an open operational manual.
 ## Professional Context
 
 This project is also a portfolio surface for relevant work opportunities. See
-[RESUME.md](RESUME.md) for the owner-approved resume slot and
+[RESUME.md](RESUME.md) for the public resume,
 [docs/relevant-work.md](docs/relevant-work.md) for the kinds of work this
-project is meant to make legible.
+project is meant to make legible, and
+[docs/portfolio-narrative.md](docs/portfolio-narrative.md) for the through-line
+connecting the project to prior systems work.
 
 ## Repository Map
 
@@ -76,6 +107,8 @@ project is meant to make legible.
   private project records before promoting work.
 - [docs/relevant-work.md](docs/relevant-work.md) - professional positioning
   and opportunity fit.
+- [docs/portfolio-narrative.md](docs/portfolio-narrative.md) - why this
+  project is a credible continuation of the builder's career arc.
 - [docs/roadmap.md](docs/roadmap.md) - capability progression from passive
   telemetry to supervised assistance.
 - [docs/publication-guidelines.md](docs/publication-guidelines.md) - rules for

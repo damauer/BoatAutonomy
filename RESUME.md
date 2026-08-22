@@ -1,16 +1,86 @@
-# Dan Mauer
+# Dan Mauer - Public Resume
 
 Chesapeake Beach, Maryland
 
 Email: DAMauer@gmail.com
+
 Formal cleared resume available through appropriate channels.
 
-## Professional Focus
+## Positioning
 
-Cloud architect, DevOps engineer, embedded-systems builder, and technical
-leader focused on mission-critical systems from cloud to edge. Experience
-spans Kubernetes, AWS, isolated cloud partitions, data resiliency, automation,
-telemetry, communications systems, and AI-assisted engineering.
+Cloud-to-edge architect, DevOps engineer, embedded-systems builder, and
+technical leader focused on mission-critical systems in constrained
+environments.
+
+My strongest work is at the boundary between infrastructure and mission
+behavior: making complex systems observable, repeatable, recoverable, and
+safe enough to promote. That has included embedded communications systems,
+isolated cloud partitions, multi-account AWS operations, data resiliency,
+Kubernetes prototypes, ML-enabling platforms, and now a governed
+multi-agent autonomy lab around a real recreational boat. It also includes
+commercial consulting and founder-side business support, including CFO / CIO
+support for a 35-person closely held business co-founded with my wife and run
+for roughly 20 years alongside my technical career.
+
+## Relevant Opportunities
+
+I am most useful where the work needs senior technical judgment across several
+layers at once:
+
+- Cloud-to-edge architecture for secure, mission-critical, or disconnected
+  environments.
+- Kubernetes, AWS, infrastructure as code, CI/CD, and account-governance
+  systems that need to survive real operations.
+- Telemetry, protocol capture, replay, observability, and evidence-driven
+  promotion.
+- AI-assisted engineering practices where agents need roles, constraints,
+  review loops, and explicit approval gates.
+- Advisory, fractional, or principal-level work where a compact builder can
+  move quickly without losing the audit trail.
+- Startup or founder-adjacent opportunities that need both technical depth
+  and practical business execution.
+
+## Selected Evidence
+
+- Mission cloud operations: built and maintained landing-zone capabilities in
+  an isolated AWS partition supporting hundreds of mission accounts.
+- Data resiliency: implemented a one-hour RPO/RTO solution and migrated 50+ TB
+  of sensitive data while reducing cloud spend by more than $20k per month.
+- Infrastructure automation: transitioned a complex system upgrade involving
+  18+ repositories, Ansible, Terraform, 50+ compute instances, and multiple
+  PostgreSQL databases.
+- Kubernetes and cloud platforms: built Kubernetes prototypes on AWS EKS and
+  GCP GKE; built current BoatAutonomy clusters spanning lab, staging,
+  production, and edge use.
+- AI / ML enablement: built GPU-backed ML workstations and helped decompose
+  managed ML patterns for constrained environments.
+- Embedded and protocol systems: designed and built large-scale Unix / VxWorks
+  communications-monitoring software and prototyped neural-network protocol
+  recognition.
+- Delivery leadership: sold, staffed, led, and recovered major modernization
+  efforts; scaled teams and increased release throughput under operational
+  pressure.
+- Business operations: co-founded a 35-person closely held business run
+  operationally by my wife; provided CFO / CIO support for roughly 20 years
+  while also selling and delivering commercial consulting work.
+- Current independent lab: built BoatAutonomy as a governed multi-agent
+  harness for staged marine autonomy research, telemetry, replay, and
+  safety-bounded experimentation.
+
+## Founder And Business Support Experience
+
+- Co-founded a 35-person closely held business with my wife, who ran daily
+  operations.
+- Provided CFO / CIO support for roughly 20 years alongside my technical
+  career.
+- Built practical experience across finance, systems, operations support,
+  customer delivery, business development, cash-flow discipline, and
+  long-running service execution.
+- Sold and delivered commercial consulting work across strategy, architecture,
+  business cases, enterprise application integration, web platforms, and
+  marketplace systems.
+- Brings founder-side business context to current startup exploration around
+  BoatAutonomy and adjacent work opportunities.
 
 ## Current Independent Project
 
@@ -18,16 +88,22 @@ telemetry, communications systems, and AI-assisted engineering.
 
 May 2026 to present
 
-- Owner and builder of a governed multi-agent harness for a recreational-boat
-  self-docking research platform.
-- Coordinates Claude Code, Codex, and Grok across implementation, review, and
-  research loops with documented roles, responsibilities, evidence, and
-  approval gates.
-- Built Kubernetes environments spanning development, staging, production, and
-  edge nodes to survey, monitor, replay, and prepare safety-gated experiments
-  around marine systems through SeaTalk NG / NMEA 2000 concepts.
+BoatAutonomy is a private applied-autonomy lab with a curated public surface.
+The working ambition is docking assistance for a recreational boat. The
+engineering discipline is broader: combine marine telemetry, replay, edge
+compute, Kubernetes, safety policy, and multi-agent software delivery into a
+system that can be reviewed before it is trusted.
+
+- Built a governed multi-agent harness coordinating Claude Code, Codex, and
+  Grok across implementation, review, and research loops.
 - Uses YAML and Markdown policy, decision records, handoffs, checklists,
   reviews, and evidence logs to keep AI-assisted work auditable.
+- Built Kubernetes environments across development, staging, production, and
+  edge contexts to survey, monitor, replay, and prepare safety-gated
+  experiments around marine systems using SeaTalk NG / NMEA 2000 concepts.
+- Keeps a hard safety boundary: Kubernetes, dashboards, and model outputs may
+  support observation and supervised workflows, but do not receive direct
+  actuator authority.
 
 ## Professional Experience
 
@@ -51,16 +127,16 @@ November 2016 to March 2026
 - Migrated 50+ TB of sensitive mission data from block storage to object
   storage, meeting resilience requirements while reducing AWS spend by more
   than $20k per month.
-- Built an NFS-style legacy application bridge using object storage so existing
-  Jenkins / GitHub deployment workflows could continue operating.
+- Built an NFS-style bridge over object storage so legacy applications and
+  existing Jenkins / GitHub workflows could continue operating.
 - Reverse-engineered and transitioned a complex mission-system upgrade into
   operations, including Ansible and Terraform automation, 18+ source
   repositories, 50+ compute instances, and multiple PostgreSQL databases.
 - Enhanced deployment and operational support with Go, Python, Ansible, and
   Terraform scripts to correct defects and add capabilities.
-- Architected and built ML workstations and applications for sensitive
-  analytical workloads, including GPU acceleration, Python data extraction,
-  grooming, migration, and operational transition.
+- Architected and built GPU-backed ML workstations and applications for
+  sensitive analytical workloads, including Python data extraction, grooming,
+  migration, and operational transition.
 - Helped decompose managed ML service patterns into components suitable for
   isolated and security-constrained environments.
 - Migrated and implemented a 50+ instance Node.js and headless-browser

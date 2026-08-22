@@ -1,34 +1,48 @@
-# Relevant Work
+# Relevant Work And Opportunity Fit
 
 BoatAutonomy is a public-safe portfolio surface for work at the intersection
-of embedded systems, edge infrastructure, observability, AI-assisted software
-engineering, and safety-bounded autonomy.
+of embedded systems, secure cloud, edge infrastructure, observability,
+AI-assisted software engineering, and safety-bounded autonomy.
 
-## Opportunity Fit
+## Intended Reader
 
-The project is intended to make these capabilities visible:
+This repo is written for people who recognize the shape of hard systems work:
+fielded infrastructure, constrained environments, telemetry, replay, audit,
+recovery, operational evidence, and the need to keep experimental intelligence
+away from direct physical authority until the boundary is proven.
 
-- Real-time and embedded-system judgment applied to physical systems.
-- Communications-traffic capture, decoding, normalization, and replay.
-- Edge and cloud operations across lab, staging, production, and field
-  environments.
-- Evidence-driven engineering with checklists, reviews, incident notes, and
-  promotion gates.
-- Multi-agent software delivery where agents are assigned bounded roles and
-  the owner keeps approval authority.
-- Safety-conscious architecture that keeps experimental AI, dashboards, and
-  cluster services away from hard real-time control authority.
+The wording is intentionally public-safe. It leaves out customer, network,
+program, endpoint, and vessel details, while preserving enough context for the
+right technical audience to understand the relevance.
 
-## Preferred Conversations
+## Roles And Conversations
 
-- Fractional or advisory engineering for edge, telemetry, observability, and
-  AI-assisted delivery systems.
-- Architecture review for safety-bounded autonomy, replay-first validation, or
-  field-deployed systems.
-- Prototyping environments where disciplined solo-builder execution and
-  multiple-agent coordination are useful.
-- Applied research that needs working systems, operational evidence, and
-  pragmatic safety boundaries rather than demos alone.
+- Principal, fractional, or advisory architecture for cloud-to-edge systems.
+- Secure AWS / Kubernetes platform work in isolated, disconnected, or
+  high-assurance environments.
+- Edge telemetry, observability, replay, incident evidence, and data
+  resiliency.
+- AI-assisted software delivery where agent roles, audit trails, and promotion
+  gates matter.
+- Safety-bounded autonomy, robotics-adjacent infrastructure, and shadow-before
+  assist validation.
+- Startup, founder-adjacent, or early-product work where technical execution,
+  business judgment, and customer delivery have to move together.
+- Technical due diligence for teams trying to separate impressive demos from
+  systems that can actually be operated.
+
+## What BoatAutonomy Makes Visible
+
+- A real physical-system target, not a toy-only benchmark.
+- A private control plane of policy, checklists, reviews, evidence, and
+  owner-approved gates.
+- Kubernetes used where it belongs: orchestration, replay, observability,
+  deployment repeatability, and supervisory services.
+- A hard boundary that keeps model output, dashboards, and cluster services
+  away from direct real-time actuator authority.
+- Multiple AI agents used as a governed engineering team, with implementation,
+  review, and research roles kept separate.
+- The discipline to say "not yet" when a demo is ahead of the safety case.
 
 ## Career Threads Reflected Here
 
@@ -44,6 +58,8 @@ The project is intended to make these capabilities visible:
   adapted to constrained environments.
 - Technical leadership across engineering teams, delivery rescue, cloud
   modernization, and program-scale architecture.
+- Commercial consulting, business development, and 20 years of CFO / CIO
+  support for a 35-person closely held business run operationally by my wife.
 
 ## Boundary
 
