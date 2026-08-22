@@ -35,6 +35,8 @@ right technical audience to understand the relevance.
   practicality, and serviceability matter as much as the technical demo.
 - Technical due diligence for teams trying to separate impressive demos from
   systems that can actually be operated.
+- Architecture conversations where the reusable value is the platform pattern,
+  not only the first boating use case.
 
 ## What BoatAutonomy Makes Visible
 
@@ -52,6 +54,8 @@ right technical audience to understand the relevance.
 - The discipline to say "not yet" when a demo is ahead of the safety case.
 - The restraint to frame market possibility without pretending customer,
   regulatory, liability, or product-readiness questions are already resolved.
+- A technical substrate that can be discussed with serious engineers without
+  exposing private topology or live vessel details.
 
 ## Career Threads Reflected Here
 

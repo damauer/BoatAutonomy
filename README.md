@@ -90,19 +90,33 @@ details, secrets, or enough operational detail to reproduce the private system.
 - Public communication that can speak to boaters, technologists, partners, and
   future business stakeholders without exposing sensitive operational detail.
 
+## Technical Breadcrumbs
+
+For government, commercial, and startup technologists, the deeper signal is
+that BoatAutonomy is not a single demo script. It is an emerging platform
+pattern with several mature-looking pieces already being exercised:
+
+- Data and replay: raw marine signals become normalized, replayable sessions
+  that can be inspected before new behavior is trusted.
+- Edge operations: lab, staging, production, and field-style environments
+  support repeatable deployment and evidence collection.
+- AI-assisted engineering: multiple agents work in bounded roles for research,
+  implementation, review, and evidence, with the owner retaining approval.
+- Safety and governance: model output is treated as advice to a bounded
+  system, not direct physical authority.
+- Transferability: the same pattern may apply to other markets where physical
+  systems need telemetry, replay, edge intelligence, and human-centered
+  control boundaries.
+
+Start with [technical-platform.md](docs/technical-platform.md) for the system
+view and [ai-and-agentic-complexity.md](docs/ai-and-agentic-complexity.md) for
+the AI/teamwork complexity behind the public surface.
+
 ## System Shape
 
-```mermaid
-flowchart LR
-  BoatBus["Marine networks\nSeaTalk NG / NMEA 2000"] --> Capture["Read-only capture\nand timestamping"]
-  Capture --> Decode["Decode and normalize\ntelemetry events"]
-  Decode --> Replay["Deterministic replay\nand synthetic demos"]
-  Replay --> Observe["Dashboards,\nqueries, and evidence"]
-  Observe --> Gates["Safety gates,\nreviews, and approvals"]
-  Gates --> Assist["Future supervised\ndocking-assist experiments"]
+![BoatAutonomy platform pattern](assets/diagrams/boat-autonomy-platform.png)
 
-  Safety["Physical override and\nhard real-time safety"] -. bounds .-> Assist
-```
+Editable source: [boat-autonomy-platform.svg](assets/diagrams/boat-autonomy-platform.svg).
 
 Kubernetes and agentic tooling are useful around the system: recording,
 monitoring, replay, perception experiments, observability, and deployment
@@ -141,6 +155,10 @@ connecting the project to prior systems work.
   multi-agent build/review/research loop works.
 - [docs/evidence.md](docs/evidence.md) - sanitized examples of evidence the
   private project records before promoting work.
+- [docs/technical-platform.md](docs/technical-platform.md) - deeper technical
+  platform view for technologists.
+- [docs/ai-and-agentic-complexity.md](docs/ai-and-agentic-complexity.md) -
+  AI, agent, replay, and governance complexity.
 - [docs/relevant-work.md](docs/relevant-work.md) - professional positioning
   and opportunity fit.
 - [docs/portfolio-narrative.md](docs/portfolio-narrative.md) - why this

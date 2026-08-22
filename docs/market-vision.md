@@ -52,3 +52,7 @@ The market vision is ambitious. The current public claim remains bounded:
 BoatAutonomy is an exploration-stage, safety-gated autonomy lab with a public
 surface designed to show the thesis, the builder, and the engineering method
 without publishing the private system.
+
+For the technical substrate behind this market vision, see
+[technical-platform.md](technical-platform.md) and
+[ai-and-agentic-complexity.md](ai-and-agentic-complexity.md).
