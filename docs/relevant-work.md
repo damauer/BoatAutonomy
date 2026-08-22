@@ -30,6 +30,21 @@ The project is intended to make these capabilities visible:
 - Applied research that needs working systems, operational evidence, and
   pragmatic safety boundaries rather than demos alone.
 
+## Career Threads Reflected Here
+
+- Embedded systems and communications-protocol work, including Unix / VxWorks
+  systems and neural-network protocol recognition prototypes.
+- Cloud and DevOps architecture for mission-critical systems in isolated and
+  security-constrained environments.
+- Data resiliency, migration, and operational recovery for large sensitive data
+  holdings.
+- Kubernetes, AWS, infrastructure as code, CI/CD, and account-governance work
+  from prototype through operations.
+- AI and ML platform decomposition where managed-service patterns must be
+  adapted to constrained environments.
+- Technical leadership across engineering teams, delivery rescue, cloud
+  modernization, and program-scale architecture.
+
 ## Boundary
 
 This public repo is intentionally incomplete. It should support professional

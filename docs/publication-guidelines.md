@@ -25,6 +25,9 @@ approval is required before publication.
 - Unreviewed claims that the boat docks itself unattended.
 - Implementation details that materially reduce the safety or privacy of the
   private system.
+- Verbatim resume details that add unnecessary inference risk, including street
+  address, personal phone number, clearance specifics, protected customer
+  details, or sensitive program identifiers.
 
 ## Review Before Publish
 
