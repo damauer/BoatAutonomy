@@ -16,6 +16,24 @@ details, or operational runbooks.
 Editable source:
 [boat-autonomy-platform.svg](../assets/diagrams/boat-autonomy-platform.svg).
 
+## Delivery Pipeline
+
+![Development, test, and field pipeline](../assets/diagrams/development-field-pipeline.png)
+
+Editable source:
+[development-field-pipeline.svg](../assets/diagrams/development-field-pipeline.svg).
+
+The platform is also a delivery system. BCH bench work feeds two linked paths:
+a physical validation lane from STG toward QST and real SeaTalk NG / NMEA 2000
+sensor evidence, and a TVL DevOps lane for Lima vz, macOS containers,
+Kubernetes, Flux, GitOps, SignalK, InfluxDB, Grafana, survey dashboards, remote
+debugging, and field-style development.
+
+Terraform, Ansible, and cloud-init matter because rebuildability is part of the
+platform, not an afterthought. Future sensor applications may include Go or
+Rust collectors and narrowly justified WASM validators, but only where they
+show measured benefit.
+
 ## Maturity Signals
 
 The public repository does not expose the private implementation, but it can
@@ -37,23 +55,21 @@ show the shape of a mature platform:
 
 ## Technical Breadcrumbs
 
-The public surface can safely show some of the technical vocabulary behind the
-platform without exposing the private topology:
+The diagrams above intentionally expose technical vocabulary without exposing
+private topology:
 
-- Rebuildable environments with Terraform, Ansible, and cloud-init.
-- Lima vz and macOS containers where they fit local and travel development.
-- Kubernetes, Flux, and GitOps for repeatable edge and lab operations.
-- SignalK, InfluxDB, and Grafana for survey telemetry and inspection.
-- Local and edge GitLab for operational records, with hosted backup and an
+- Infrastructure as code: Terraform, Ansible, and cloud-init.
+- Local and edge compute: Lima vz, macOS containers, Kubernetes, Flux, and
+  GitOps.
+- Telemetry inspection: SignalK, InfluxDB, and Grafana.
+- Project control: local and edge GitLab records, hosted backup, and an
   approved GitHub mirror path.
-- Tower as a private local model and training platform.
-- Possible future Go / Rust sensor apps and narrowly scoped WASM validators,
-  only where measured benefit justifies the added runtime machinery.
+- Model and runtime experiments: Tower as a private local model lane, plus
+  possible future Go / Rust collectors and narrowly scoped WASM validators
+  where measured benefit justifies the machinery.
 
-## Related Diagrams
+## Related Page
 
-- [development-field-pipeline.md](development-field-pipeline.md) shows the
-  BCH -> STG -> QST physical validation lane and the parallel TVL DevOps lane.
 - [ai-and-agentic-collaboration.md](ai-and-agentic-collaboration.md) shows the
   governed Claude Code, Codex, Grok, tmux, GitLab, and mirror workflow.
 

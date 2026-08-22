@@ -136,9 +136,6 @@ the AI and agentic collaboration story behind the public surface.
   </tr>
 </table>
 
-Also see [development-field-pipeline.md](docs/development-field-pipeline.md) for
-the dev/test/field production line.
-
 ## System Shape
 
 ![BoatAutonomy platform pattern](assets/diagrams/boat-autonomy-platform.png)
@@ -187,8 +184,6 @@ connecting the project to prior systems work.
   platform view for technologists.
 - [docs/ai-and-agentic-collaboration.md](docs/ai-and-agentic-collaboration.md) -
   AI, agent collaboration, replay, model boundaries, and governance.
-- [docs/development-field-pipeline.md](docs/development-field-pipeline.md) -
-  dev/test/field production line and DevOps survey lane.
 - [docs/relevant-work.md](docs/relevant-work.md) - professional positioning
   and opportunity fit.
 - [docs/portfolio-narrative.md](docs/portfolio-narrative.md) - why this

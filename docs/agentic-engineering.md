@@ -10,6 +10,20 @@ For the public narrative and workflow image, start with
 is the implementation-detail companion: roles, workflow, governance YAML, and
 review Markdown examples.
 
+## GitLab-Centered Workflow
+
+![GitLab-centered agentic engineering workflow](../assets/diagrams/agentic-engineering-gitlab-flow.png)
+
+Editable source:
+[agentic-engineering-gitlab-flow.svg](../assets/diagrams/agentic-engineering-gitlab-flow.svg).
+
+The core pattern is that GitLab holds the work record while agents operate in
+bounded roles. YAML policy defines gates, Markdown captures decisions and
+reviews, docs preserve the approved public shape, and tmux sessions make
+long-running collaboration observable. Work advances from research to
+implementation, review, reconciliation, and closure only when evidence supports
+the next state.
+
 ## Roles
 
 | Role | Responsibility |
