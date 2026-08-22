@@ -4,44 +4,38 @@ Toward calmer docking and smarter marine assistance, one evidence-gated
 subsystem at a time.
 
 BoatAutonomy is a public-safe view into a private, owner-built autonomy lab
-around a recreational boat. It starts with a simple, market-readable problem:
-docking is one of the most stressful and least forgiving moments in boating.
-Wind, current, visibility, crew coordination, close quarters, and expensive
-hardware all converge at low speed.
+around a recreational boat. The working shorthand is "teaching my boat how to
+dock itself." The more precise public claim is narrower and more important:
+build the telemetry, replay, edge compute, safety policy, and multi-agent
+review harness needed before a real vessel can responsibly move from passive
+observation toward supervised docking-assist experiments.
 
-The working shorthand is "teaching my boat how to dock itself." The more
-precise public claim is narrower: build the telemetry, replay, edge compute,
-safety policy, and multi-agent review harness needed before a real vessel can
-responsibly move from passive observation toward supervised docking-assist
-experiments.
+This repository is intentionally curated. It does not publish the private
+implementation, live topology, raw vessel data, credentials, repair procedures,
+or operational runbooks.
 
-The long-term market intuition is broader than one boat: recreational boating
-is a worldwide market where confidence, training, situational awareness,
-maintenance insight, and safer close-quarters maneuvering all have value.
-BoatAutonomy explores that opportunity without pretending the hard parts are
-already solved.
+## Why Read This
 
-This project is also evidence that disciplined AI-assisted development can be
-applied to real physical systems without skipping governance, safety, or
-operational rigor. For marine partners, technical collaborators, and future
-startup conversations, it is meant to show how the builder thinks: instrument
-first, replay before live use, separate authority from advice, and make
-promotion depend on recorded evidence.
+Docking is one of the most stressful and least forgiving moments in
+recreational boating. Wind, current, visibility, crew coordination, close
+quarters, spectators, and expensive hardware all converge at low speed.
 
-## Read This First
+That human problem is simple to understand, but technically hard to address
+responsibly. A useful system has to observe before it estimates, replay before
+it recommends, and earn trust before it gets anywhere near authority.
 
-This is not the private implementation repo. It is a curated public surface.
-It describes architecture, safety posture, evidence discipline, professional
-context, and synthetic demo data without publishing live infrastructure
-details, raw vessel data, credentials, repair procedures, or operational
-runbooks.
+BoatAutonomy is worth reading because it treats that problem as a real
+physical-system challenge, not a demo script. It asks how a small team, aided
+by governed AI agents, can build a serious autonomy substrate while preserving
+safety, evidence, review, and owner control.
 
-## Public Purpose
+## What This Is
 
-This repository is the public-facing view of BoatAutonomy. For now, it is a
-portfolio and credibility surface for relevant technical work. If the project
-matures, this same public surface may eventually support conversations with
-potential business partners, advisors, or funding sources.
+BoatAutonomy is a public-facing project surface for a private applied-autonomy
+lab. For now, it is a portfolio and credibility surface for relevant technical
+work. If the project matures, this same surface may eventually support
+conversations with marine partners, advisors, technical collaborators, or
+funding sources.
 
 That is not the current posture. This repo is not a product certification,
 pitch deck, securities offering, live-system runbook, or claim that autonomous
@@ -49,7 +43,21 @@ docking is complete. It is a controlled way to show the technical thesis,
 builder context, safety posture, and evidence discipline behind the private
 project.
 
-## System Shape
+Current public scope:
+
+- Marine telemetry capture and replay using SeaTalk NG / NMEA 2000 concepts.
+- SignalK-style normalized data paths and dashboard-driven inspection.
+- Edge and cluster operations for repeatable lab, staging, and field workflows.
+- Evidence records that separate observed facts, assumptions, risks, and
+  approvals.
+- A governed multi-agent development loop where implementation, review,
+  research, and owner approval are deliberately separate.
+
+This repository does not claim unattended autonomous docking. It does not
+publish live vessel-control code, actuator wiring, raw capture files, endpoint
+details, secrets, or enough operational detail to reproduce the private system.
+
+## How It Works
 
 ![BoatAutonomy platform pattern](assets/diagrams/boat-autonomy-platform.png)
 
@@ -66,60 +74,14 @@ monitoring, replay, perception experiments, observability, and deployment
 repeatability. They are not the hard real-time safety controller and do not
 receive direct actuator authority.
 
-The public story follows that order on purpose:
+The public story follows this order:
 
 - Shape the system before naming tools.
 - State the safety boundary before implying capability.
 - Show evidence discipline before asking for trust.
 - Add technical and agentic breadcrumbs only after the boundary is clear.
 
-## Current Public Scope
-
-- Marine telemetry capture and replay using SeaTalk NG / NMEA 2000 concepts.
-- SignalK-style normalized data paths and dashboard-driven inspection.
-- Edge and cluster operations for repeatable lab, staging, and field workflows.
-- Evidence records that separate observed facts, assumptions, risks, and
-  approvals.
-- A governed multi-agent development loop where implementation, review,
-  research, and owner approval are deliberately separate.
-
-This repository does not claim unattended autonomous docking. It does not
-publish live vessel-control code, actuator wiring, raw capture files, endpoint
-details, secrets, or enough operational detail to reproduce the private system.
-
-## What This Demonstrates
-
-- Cloud-to-edge architecture for constrained, real-world environments.
-- Marine telemetry capture, normalization, replay, and dashboard inspection.
-- Kubernetes used for orchestration, observability, and repeatability, not as
-  a hard real-time safety controller.
-- Multi-agent delivery with explicit roles for implementation, review,
-  research, evidence, and owner approval.
-- A safety boundary that treats model output as advice to a bounded system,
-  not direct authority over physical control.
-- Public communication that can speak to boaters, technologists, partners, and
-  future business stakeholders without exposing sensitive operational detail.
-
-## Technical Breadcrumbs
-
-Once the system shape and boundary are clear, the deeper signal for
-government, commercial, and startup technologists is that BoatAutonomy is not
-a single demo script. It is an emerging platform pattern with several
-mature-looking pieces already being exercised:
-
-- Data and replay: raw marine signals become normalized, replayable sessions
-  that can be inspected before new behavior is trusted.
-- Edge operations: lab, staging, production, and field-style environments
-  support repeatable deployment and evidence collection.
-- AI-assisted engineering: multiple agents work in bounded roles for research,
-  implementation, review, and evidence, with the owner retaining approval.
-- Safety and governance: model output is treated as advice to a bounded
-  system, not direct physical authority.
-- Transferability: the same pattern may apply to other markets where physical
-  systems need telemetry, replay, edge intelligence, and human-centered
-  control boundaries.
-
-The technical pages are meant to be read in the same sequence as the message:
+The best starting sequence is:
 [architecture.md](docs/architecture.md),
 [safety-boundary.md](docs/safety-boundary.md),
 [evidence.md](docs/evidence.md), then
@@ -157,7 +119,29 @@ The technical pages are meant to be read in the same sequence as the message:
   </tr>
 </table>
 
-## Agentic Method
+## Why It Matters
+
+BoatAutonomy has value because it combines an intuitive market problem with a
+serious engineering method.
+
+For boaters and marine operators, the possible value is calmer close-quarters
+handling, better situational awareness, better training feedback, and more
+useful evidence from existing marine electronics.
+
+For technologists, the deeper signal is that this is not a single demo script.
+It is an emerging platform pattern with several mature pieces being exercised:
+
+- Data and replay: raw marine signals become normalized, replayable sessions
+  that can be inspected before new behavior is trusted.
+- Edge operations: lab, staging, production, and field-style environments
+  support repeatable deployment and evidence collection.
+- AI-assisted engineering: multiple agents work in bounded roles for research,
+  implementation, review, and evidence, with the owner retaining approval.
+- Safety and governance: model output is treated as advice to a bounded
+  system, not direct physical authority.
+- Transferability: the same pattern may apply to other markets where physical
+  systems need telemetry, replay, edge intelligence, and human-centered
+  control boundaries.
 
 The AI story has two layers. One layer is how the project is built: Claude
 Code, Codex, Grok, tmux, GitLab records, review findings, and owner decisions
@@ -170,10 +154,9 @@ for the conceptual overview and
 [agentic-engineering.md](docs/agentic-engineering.md) for the GitLab-centered
 workflow with YAML and Markdown examples.
 
-## Roadmap And Market Lens
+## Where It Is Going
 
-BoatAutonomy is not only a resume artifact. It is an exploration of a possible
-marine assistance product path. The capability order still comes first:
+The capability order still comes first:
 [roadmap.md](docs/roadmap.md) describes progression from governance and
 passive telemetry toward replay, estimation, shadow mode, and supervised
 assist before any higher autonomy research.
@@ -189,23 +172,29 @@ The market lens is intentionally ambitious but bounded:
 - Preserve a path beyond recreational docking if the same telemetry, replay,
   and safety-gated assistance patterns prove useful elsewhere.
 
-## Why This Exists
+Read [market-vision.md](docs/market-vision.md) for the product intuition and
+[future-business-direction.md](docs/future-business-direction.md) for the
+cautious future business framing. The latter is explicitly not a current
+fundraising solicitation or product-readiness claim.
+
+## How We Can Help
 
 The project started as curiosity and skill-building. It now defines a useful
 intersection of the builder's career: embedded and real-time systems,
 communications-traffic analysis, secure cloud architecture, isolated
 environments, data resiliency, Kubernetes, edge operations, and AI-assisted
-software delivery. It also reflects commercial and founder-side business
-experience: consulting, business development, customer delivery, CFO / CIO
-support, and long-running small-business operations.
+software delivery.
 
-The public repo is meant to make that work legible without turning a private
-boat, home lab, or startup exploration into an open operational manual.
+It also reflects commercial and founder-side business experience: consulting,
+business development, customer delivery, CFO / CIO support, and long-running
+small-business operations.
 
-## Professional Context
+This project is a portfolio surface for relevant work opportunities and future
+partner conversations. It makes visible a combination of systems engineering,
+cloud-to-edge operations, AI-assisted delivery, governance, and business
+judgment that can help adjacent physical-system and autonomy efforts.
 
-This project is also a portfolio surface for relevant work opportunities. See
-[RESUME.md](RESUME.md) for the public resume,
+See [RESUME.md](RESUME.md) for the public resume,
 [docs/relevant-work.md](docs/relevant-work.md) for the kinds of work this
 project is meant to make legible, and
 [docs/portfolio-narrative.md](docs/portfolio-narrative.md) for the through-line
