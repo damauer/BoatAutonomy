@@ -111,11 +111,32 @@ pattern with several mature-looking pieces already being exercised:
 Start with [technical-platform.md](docs/technical-platform.md) for the system
 view and [ai-and-agentic-complexity.md](docs/ai-and-agentic-complexity.md) for
 the AI/teamwork complexity behind the public surface.
-Then follow the deeper visual trail:
-[development-field-pipeline.md](docs/development-field-pipeline.md) for the
-dev/test/field production line and
-[agentic-collaboration-harness.md](docs/agentic-collaboration-harness.md) for
-the governed multi-agent delivery loop.
+
+<table>
+  <tr>
+    <td width="50%">
+      <a href="docs/technical-platform.md">
+        <img src="assets/diagrams/boat-autonomy-platform.png" alt="Technical approach thumbnail" width="260">
+      </a>
+      <br>
+      <a href="docs/technical-platform.md"><strong>Technical approach</strong></a>
+      <br>
+      System shape, staged autonomy boundary, edge operations, replay, and evidence.
+    </td>
+    <td width="50%">
+      <a href="docs/agentic-collaboration-harness.md">
+        <img src="assets/diagrams/agentic-collaboration-harness.png" alt="Agentic collaboration harness thumbnail" width="260">
+      </a>
+      <br>
+      <a href="docs/agentic-collaboration-harness.md"><strong>Agentic harness</strong></a>
+      <br>
+      Claude Code, Codex, Grok, tmux, GitLab records, review, and reconciliation.
+    </td>
+  </tr>
+</table>
+
+Also see [development-field-pipeline.md](docs/development-field-pipeline.md) for
+the dev/test/field production line.
 
 ## System Shape
 
