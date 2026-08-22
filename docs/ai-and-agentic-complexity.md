@@ -17,6 +17,9 @@ The project treats AI agents as a governed engineering team:
 - Documentation agents preserve decisions, assumptions, caveats, and handoffs.
 - The owner sets scope, approves risk, and retains physical authority.
 
+The collaboration pattern is summarized here:
+[agentic-collaboration-harness.md](agentic-collaboration-harness.md).
+
 The complexity is not simply "an AI wrote code." The complexity is making
 multi-agent work auditable:
 
@@ -32,6 +35,10 @@ multi-agent work auditable:
 Future autonomy-related work has a different boundary. Model output may help
 estimate, classify, summarize, or propose, but it must remain subordinate to a
 bounded system.
+
+Tower is the private local lane for local LLM and model-training experiments.
+That does not change the control boundary: model work remains research,
+analysis, or bounded assistance until separately reviewed and approved.
 
 Publicly, that means:
 

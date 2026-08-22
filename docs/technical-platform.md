@@ -35,6 +35,28 @@ show the shape of a mature platform:
 - It treats autonomy as staged capability: capture, replay, observe, estimate,
   shadow, assist.
 
+## Technical Breadcrumbs
+
+The public surface can safely show some of the technical vocabulary behind the
+platform without exposing the private topology:
+
+- Rebuildable environments with Terraform, Ansible, and cloud-init.
+- Lima vz and macOS containers where they fit local and travel development.
+- Kubernetes, Flux, and GitOps for repeatable edge and lab operations.
+- SignalK, InfluxDB, and Grafana for survey telemetry and inspection.
+- Local and edge GitLab for operational records, with hosted backup and an
+  approved GitHub mirror path.
+- Tower as a private local model and training platform.
+- Possible future Go / Rust sensor apps and narrowly scoped WASM validators,
+  only where measured benefit justifies the added runtime machinery.
+
+## Related Diagrams
+
+- [development-field-pipeline.md](development-field-pipeline.md) shows the
+  BCH -> STG -> QST physical validation lane and the parallel TVL DevOps lane.
+- [agentic-collaboration-harness.md](agentic-collaboration-harness.md) shows
+  the governed Claude Code, Codex, Grok, tmux, GitLab, and mirror workflow.
+
 ## Why Technologists Should Care
 
 Many physical-system projects fail to separate a compelling demo from an

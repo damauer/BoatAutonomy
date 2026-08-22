@@ -111,6 +111,11 @@ pattern with several mature-looking pieces already being exercised:
 Start with [technical-platform.md](docs/technical-platform.md) for the system
 view and [ai-and-agentic-complexity.md](docs/ai-and-agentic-complexity.md) for
 the AI/teamwork complexity behind the public surface.
+Then follow the deeper visual trail:
+[development-field-pipeline.md](docs/development-field-pipeline.md) for the
+dev/test/field production line and
+[agentic-collaboration-harness.md](docs/agentic-collaboration-harness.md) for
+the governed multi-agent delivery loop.
 
 ## System Shape
 
@@ -159,6 +164,10 @@ connecting the project to prior systems work.
   platform view for technologists.
 - [docs/ai-and-agentic-complexity.md](docs/ai-and-agentic-complexity.md) -
   AI, agent, replay, and governance complexity.
+- [docs/development-field-pipeline.md](docs/development-field-pipeline.md) -
+  dev/test/field production line and DevOps survey lane.
+- [docs/agentic-collaboration-harness.md](docs/agentic-collaboration-harness.md) -
+  Claude/Codex/Grok collaboration, review, reconciliation, and persistence.
 - [docs/relevant-work.md](docs/relevant-work.md) - professional positioning
   and opportunity fit.
 - [docs/portfolio-narrative.md](docs/portfolio-narrative.md) - why this
