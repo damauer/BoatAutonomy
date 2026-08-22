@@ -10,6 +10,8 @@ approval is required before publication.
 - Synthetic telemetry.
 - Redacted dashboards.
 - Public resume or portfolio wording approved by the owner.
+- Public-safe future business-direction language approved by the owner, as
+  long as it is explicit that no current solicitation is being made.
 - Sanitized evidence summaries that preserve caveats and residual risk.
 - General references to SeaTalk NG, NMEA 2000, SignalK-style data models,
   Kubernetes, edge compute, and multi-agent workflows.
@@ -23,6 +25,8 @@ approval is required before publication.
 - Marina, yard, vendor, quote, repair, serial, or equipment-specific packets.
 - Live dashboards, operational endpoints, admin paths, or runbooks.
 - Unreviewed claims that the boat docks itself unattended.
+- Fundraising terms, valuation claims, investment-offer language, customer
+  commitments, revenue claims, or safety-certification claims.
 - Implementation details that materially reduce the safety or privacy of the
   private system.
 - Verbatim resume details that add unnecessary inference risk, including street

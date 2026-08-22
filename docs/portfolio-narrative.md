@@ -60,3 +60,16 @@ and operational authority.
 
 BoatAutonomy is a way to show that pattern in public without turning private
 work into an exposure risk.
+
+## Possible Future Business Purpose
+
+The public view may eventually support partner, advisor, or funding
+conversations if the project matures. That is not the current posture. For
+now, the repo should remain a truthful public view of the project and the
+builder's relevant experience.
+
+If that future business path opens, it should strengthen the evidence
+discipline, not weaken it. Any business conversation should be grounded in
+what has been built, what remains private, what has not been proven yet, and
+what safety gates must exist before the work can move closer to real vessel
+assistance.

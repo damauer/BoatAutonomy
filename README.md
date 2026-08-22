@@ -27,6 +27,19 @@ context, and synthetic demo data without publishing live infrastructure
 details, raw vessel data, credentials, repair procedures, or operational
 runbooks.
 
+## Public Purpose
+
+This repository is the public-facing view of BoatAutonomy. For now, it is a
+portfolio and credibility surface for relevant technical work. If the project
+matures, this same public surface may eventually support conversations with
+potential business partners, advisors, or funding sources.
+
+That is not the current posture. This repo is not a product certification,
+pitch deck, securities offering, live-system runbook, or claim that autonomous
+docking is complete. It is a controlled way to show the technical thesis,
+builder context, safety posture, and evidence discipline behind the private
+project.
+
 ## Current Public Scope
 
 - Marine telemetry capture and replay using SeaTalk NG / NMEA 2000 concepts.
@@ -109,6 +122,8 @@ connecting the project to prior systems work.
   and opportunity fit.
 - [docs/portfolio-narrative.md](docs/portfolio-narrative.md) - why this
   project is a credible continuation of the builder's career arc.
+- [docs/future-business-direction.md](docs/future-business-direction.md) -
+  cautious future business direction, explicitly not a current solicitation.
 - [docs/roadmap.md](docs/roadmap.md) - capability progression from passive
   telemetry to supervised assistance.
 - [docs/publication-guidelines.md](docs/publication-guidelines.md) - rules for

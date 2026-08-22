@@ -28,6 +28,8 @@ right technical audience to understand the relevance.
   assist validation.
 - Startup, founder-adjacent, or early-product work where technical execution,
   business judgment, and customer delivery have to move together.
+- Future partner, advisor, or funding conversations if the project matures
+  beyond its current private lab and portfolio posture.
 - Technical due diligence for teams trying to separate impressive demos from
   systems that can actually be operated.
 
@@ -67,3 +69,6 @@ This public repo is intentionally incomplete. It should support professional
 conversation without revealing sensitive client history, private vessel
 details, operational endpoints, raw telemetry, or implementation material that
 belongs in the private project.
+
+For future business context, see
+[future-business-direction.md](future-business-direction.md).
