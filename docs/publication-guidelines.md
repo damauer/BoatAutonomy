@@ -3,6 +3,30 @@
 This repo is designed to be public-facing, not automatically public. Owner
 approval is required before publication.
 
+## Visual Direction
+
+![Public visual direction](../assets/diagrams/public-visual-guidelines.png)
+
+Editable source:
+[public-visual-guidelines.svg](../assets/diagrams/public-visual-guidelines.svg).
+
+- Less is more. Each page should have one clear job and one visual takeaway.
+- Every narrative page should include a graphic near the top: diagram,
+  dashboard, map, timeline, system shape, or other compact visual summary.
+- Graphics should work at two speeds: easy to scan for the takeaway, with
+  enough credible, well-organized detail to invite deeper inspection. Avoid
+  visuals that read as decorative or superficial.
+- Prefer color-forward visuals on dark backgrounds. Avoid black text on white
+  except for formal documents or unavoidable source artifacts.
+- Keep diagrams public-safe: no credentials, endpoints, private topology,
+  raw telemetry, exact locations, or operational runbooks.
+- Rationalize overlapping pages instead of adding a new page for every diagram.
+- Acceptable exceptions: `LICENSE.md`, `NOTICE.md`, resume text, and other
+  formal/plain-text records where a graphic would be distracting.
+
+Current note: some existing diagrams are light-background drafts. New or revised
+visuals should move toward the darker public style.
+
 ## Allowed
 
 - Architecture summaries.
