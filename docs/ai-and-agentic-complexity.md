@@ -7,6 +7,17 @@ Second, future model-assisted behavior may help interpret vessel state or
 suggest bounded assistance. Neither role gives AI unchecked authority over a
 real boat.
 
+## Agentic Workflow
+
+[![Agentic collaboration harness](../assets/diagrams/agentic-collaboration-harness.png)](agentic-collaboration-harness.md)
+
+This page is the conceptual overview. The standalone
+[agentic-collaboration-harness.md](agentic-collaboration-harness.md) page is
+the diagram reference, while [agentic-engineering.md](agentic-engineering.md)
+holds the role table, governance YAML, and review Markdown examples. That split
+keeps the public story readable without repeating the same policy in three
+places.
+
 ## Agentic Engineering Layer
 
 The project treats AI agents as a governed engineering team:
@@ -16,9 +27,6 @@ The project treats AI agents as a governed engineering team:
 - Review agents independently inspect diffs, evidence, and operational claims.
 - Documentation agents preserve decisions, assumptions, caveats, and handoffs.
 - The owner sets scope, approves risk, and retains physical authority.
-
-The collaboration pattern is summarized here:
-[agentic-collaboration-harness.md](agentic-collaboration-harness.md).
 
 The complexity is not simply "an AI wrote code." The complexity is making
 multi-agent work auditable:

@@ -24,6 +24,19 @@ discipline, not to publish live operational details.
 | Agent review | Independent review caught real defects before live changes, including assumptions that did not match runtime interfaces. |
 | Data handling | Raw telemetry, packet captures, credentials, and large artifacts stay out of public Git; public demos use synthetic data. |
 
+## Dashboard Evidence Example
+
+The image below is a public-safe Grafana-style evidence screenshot generated
+from synthetic/redacted values. It shows the kind of GPS location, vessel-state
+panels, replay trend, and SignalK -> InfluxDB -> Grafana evidence that the
+private project preserves before treating telemetry work as complete.
+
+![Public-safe Grafana telemetry evidence screenshot](../assets/evidence/grafana-marina-telemetry-public-safe.png)
+
+The marker represents the home marina area, but exact coordinates, exact
+position, raw telemetry, live dashboard endpoints, and actuator/control paths
+are intentionally omitted.
+
 ## Public Demo Data
 
 The sample under [demos/synthetic-nmea](../demos/synthetic-nmea/) is synthetic.

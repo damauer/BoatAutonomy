@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Public-safe Grafana telemetry evidence view</title>
+  <desc id="desc">A sanitized Grafana-style dashboard showing a home marina area GPS marker, vessel telemetry panels, replay status, and evidence boundary labels without exposing live endpoints, raw telemetry, or exact marina coordinates.</desc>
+  <defs>
+    <linearGradient id="page" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#111827"/>
+      <stop offset="1" stop-color="#12251f"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="bay" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#164e63"/>
+      <stop offset="1" stop-color="#0f766e"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <style>
+      .title { font: 800 32px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #f8fafc; letter-spacing: 0; }
+      .subtitle { font: 500 17px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #cbd5e1; letter-spacing: 0; }
+      .panel-title { font: 800 22px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #f8fafc; letter-spacing: 0; }
+      .label { font: 700 15px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #94a3b8; letter-spacing: 0; }
+      .value { font: 800 36px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #ffffff; letter-spacing: 0; }
+      .small { font: 500 15px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #cbd5e1; letter-spacing: 0; }
+      .tiny { font: 600 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #94a3b8; letter-spacing: 0; }
+      .chip { fill: #1e293b; stroke: #334155; stroke-width: 1.4; rx: 12; }
+      .panel { fill: url(#panel); stroke: #263244; stroke-width: 1.5; rx: 16; filter: url(#shadow); }
+      .grid { stroke: #263244; stroke-width: 1; }
+      .line-a { fill: none; stroke: #38bdf8; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+      .line-b { fill: none; stroke: #fbbf24; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+      .line-c { fill: none; stroke: #34d399; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#page)"/>
+  <rect x="0" y="0" width="1600" height="68" fill="#070b13"/>
+  <circle cx="36" cy="34" r="12" fill="#f97316"/>
+  <text x="62" y="43" class="title">Grafana Evidence View</text>
+  <text x="465" y="41" class="subtitle">BoatAutonomy survey replay - public-safe redacted example</text>
+  <rect x="1195" y="18" width="330" height="34" class="chip"/>
+  <text x="1212" y="40" class="tiny">Time range: sanitized replay window</text>
+
+  <rect x="56" y="94" width="1488" height="66" rx="14" fill="#0f172a" stroke="#263244" stroke-width="1.5"/>
+  <text x="82" y="122" class="panel-title">Evidence Snapshot</text>
+  <text x="82" y="146" class="small">Synthetic/redacted dashboard image showing the kind of GPS, vessel-state, and replay evidence preserved before promotion.</text>
+  <rect x="1180" y="112" width="150" height="30" class="chip"/>
+  <text x="1200" y="132" class="tiny">No live endpoint</text>
+  <rect x="1348" y="112" width="150" height="30" class="chip"/>
+  <text x="1372" y="132" class="tiny">No raw capture</text>
+
+  <rect x="56" y="190" width="610" height="500" class="panel"/>
+  <text x="88" y="230" class="panel-title">GPS Location</text>
+  <text x="88" y="256" class="small">Home marina area, exact position redacted for publication</text>
+  <rect x="86" y="280" width="550" height="360" rx="14" fill="#0b2635" stroke="#1e3a4a" stroke-width="1.5"/>
+  <path d="M95 520 C175 470 220 425 210 350 C206 305 245 282 300 290 C365 300 405 260 468 300 C540 346 575 420 632 440 L632 640 L95 640 Z" fill="#153f49"/>
+  <path d="M116 310 C190 276 250 246 314 252 C390 258 470 246 610 305 L610 640 L116 640 Z" fill="url(#bay)" opacity="0.92"/>
+  <path d="M156 322 C220 305 276 300 332 314 C390 331 450 322 565 352" stroke="#67e8f9" stroke-width="4" fill="none" opacity="0.7"/>
+  <path d="M146 548 C230 496 310 466 408 478 C486 488 540 510 600 555" stroke="#99f6e4" stroke-width="4" fill="none" opacity="0.55"/>
+  <circle cx="348" cy="438" r="16" fill="#f97316" stroke="#ffedd5" stroke-width="5"/>
+  <circle cx="348" cy="438" r="42" fill="#f97316" opacity="0.16"/>
+  <text x="376" y="432" class="label" fill="#e2e8f0">Home marina area</text>
+  <text x="376" y="455" class="tiny">rounded region, exact GPS omitted</text>
+  <rect x="106" y="594" width="250" height="28" class="chip"/>
+  <text x="124" y="613" class="tiny">GPS source: replayed SignalK path</text>
+  <rect x="370" y="594" width="246" height="28" class="chip"/>
+  <text x="388" y="613" class="tiny">Lat/lon withheld from public repo</text>
+  <text x="88" y="668" class="tiny">Map layer is illustrative; this is not a live Grafana export.</text>
+
+  <rect x="696" y="190" width="848" height="238" class="panel"/>
+  <text x="728" y="230" class="panel-title">Vessel State At Replay Cursor</text>
+  <g>
+    <rect x="728" y="262" width="182" height="126" rx="12" fill="#0b1f31" stroke="#1e3a8a" stroke-width="1.5"/>
+    <text x="748" y="292" class="label">Speed Over Ground</text>
+    <text x="748" y="342" class="value">0.0</text>
+    <text x="835" y="342" class="small">kt</text>
+    <text x="748" y="370" class="tiny">marina idle / replay</text>
+  </g>
+  <g>
+    <rect x="930" y="262" width="182" height="126" rx="12" fill="#171f12" stroke="#3f6212" stroke-width="1.5"/>
+    <text x="950" y="292" class="label">Heading</text>
+    <text x="950" y="342" class="value">182</text>
+    <text x="1034" y="342" class="small">deg</text>
+    <text x="950" y="370" class="tiny">sensor path normalized</text>
+  </g>
+  <g>
+    <rect x="1132" y="262" width="182" height="126" rx="12" fill="#2a1b0b" stroke="#92400e" stroke-width="1.5"/>
+    <text x="1152" y="292" class="label">Depth</text>
+    <text x="1152" y="342" class="value">10.8</text>
+    <text x="1245" y="342" class="small">ft</text>
+    <text x="1152" y="370" class="tiny">public sample value</text>
+  </g>
+  <g>
+    <rect x="1334" y="262" width="176" height="126" rx="12" fill="#28162a" stroke="#7e22ce" stroke-width="1.5"/>
+    <text x="1354" y="292" class="label">Battery</text>
+    <text x="1354" y="342" class="value">12.7</text>
+    <text x="1453" y="342" class="small">V</text>
+    <text x="1354" y="370" class="tiny">redacted source path</text>
+  </g>
+
+  <rect x="696" y="456" width="520" height="234" class="panel"/>
+  <text x="728" y="496" class="panel-title">Replay Telemetry Trend</text>
+  <text x="728" y="520" class="small">Representative SignalK paths rendered through InfluxDB</text>
+  <g>
+    <line x1="735" y1="620" x2="1185" y2="620" class="grid"/>
+    <line x1="735" y1="575" x2="1185" y2="575" class="grid"/>
+    <line x1="735" y1="530" x2="1185" y2="530" class="grid"/>
+    <line x1="735" y1="665" x2="1185" y2="665" class="grid"/>
+    <polyline class="line-a" points="742,628 790,622 838,632 886,610 934,616 982,598 1030,604 1078,590 1126,596 1174,582"/>
+    <polyline class="line-b" points="742,590 790,588 838,584 886,586 934,578 982,580 1030,574 1078,570 1126,572 1174,566"/>
+    <polyline class="line-c" points="742,654 790,650 838,652 886,644 934,646 982,640 1030,638 1078,634 1126,635 1174,630"/>
+  </g>
+  <rect x="738" y="540" width="112" height="24" class="chip"/>
+  <text x="752" y="557" class="tiny">SOG</text>
+  <rect x="860" y="540" width="112" height="24" class="chip"/>
+  <text x="874" y="557" class="tiny">Depth</text>
+  <rect x="982" y="540" width="112" height="24" class="chip"/>
+  <text x="996" y="557" class="tiny">Battery</text>
+
+  <rect x="1246" y="456" width="298" height="254" class="panel"/>
+  <text x="1278" y="496" class="panel-title">Evidence Boundary</text>
+  <text x="1278" y="532" class="small">Included</text>
+  <text x="1300" y="560" class="tiny">- GPS/map shape</text>
+  <text x="1300" y="584" class="tiny">- Vessel-state panels</text>
+  <text x="1300" y="608" class="tiny">- Replay/soak context</text>
+  <text x="1278" y="628" class="small">Excluded</text>
+  <text x="1300" y="656" class="tiny">- live endpoints</text>
+  <text x="1300" y="680" class="tiny">- raw telemetry</text>
+  <text x="1300" y="704" class="tiny">- actuator control paths</text>
+
+  <rect x="56" y="720" width="1488" height="210" class="panel"/>
+  <text x="88" y="762" class="panel-title">Signal Path And Review Notes</text>
+  <rect x="88" y="796" width="245" height="54" rx="13" fill="#0b1f31" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="124" y="830" class="small">SignalK replay</text>
+  <path d="M333 823 L410 823" stroke="#38bdf8" stroke-width="5"/>
+  <polygon points="410,823 392,811 392,835" fill="#38bdf8"/>
+  <rect x="430" y="796" width="245" height="54" rx="13" fill="#171f12" stroke="#34d399" stroke-width="1.5"/>
+  <text x="484" y="830" class="small">InfluxDB time series</text>
+  <path d="M675 823 L752 823" stroke="#34d399" stroke-width="5"/>
+  <polygon points="752,823 734,811 734,835" fill="#34d399"/>
+  <rect x="772" y="796" width="245" height="54" rx="13" fill="#2a1b0b" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="844" y="830" class="small">Grafana panels</text>
+  <path d="M1017 823 L1094 823" stroke="#fbbf24" stroke-width="5"/>
+  <polygon points="1094,823 1076,811 1076,835" fill="#fbbf24"/>
+  <rect x="1114" y="796" width="245" height="54" rx="13" fill="#28162a" stroke="#c084fc" stroke-width="1.5"/>
+  <text x="1172" y="830" class="small">Review evidence</text>
+  <rect x="88" y="876" width="440" height="32" class="chip"/>
+  <text x="108" y="897" class="tiny">Public claim: dashboard shape and evidence discipline</text>
+  <rect x="548" y="876" width="330" height="32" class="chip"/>
+  <text x="568" y="897" class="tiny">Data class: synthetic/redacted</text>
+  <rect x="898" y="876" width="390" height="32" class="chip"/>
+  <text x="918" y="897" class="tiny">Authority boundary: no direct actuator control</text>
+  <rect x="1308" y="876" width="176" height="32" class="chip"/>
+  <text x="1348" y="897" class="tiny">Owner gate</text>
+</svg>

@@ -4,6 +4,10 @@ This diagram shows the management system around the technical work: agents,
 reviews, research, observable sessions, GitLab records, and publication
 boundaries.
 
+This page is the standalone diagram reference. The overview narrative lives in
+[ai-and-agentic-complexity.md](ai-and-agentic-complexity.md), and the policy
+examples live in [agentic-engineering.md](agentic-engineering.md).
+
 ![Agentic collaboration harness](../assets/diagrams/agentic-collaboration-harness.png)
 
 Editable source:
