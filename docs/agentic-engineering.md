@@ -38,6 +38,102 @@ sequenceDiagram
   O->>G: Accept, defer, or block promotion
 ```
 
+## Sample Governance YAML
+
+The private project uses YAML and Markdown policy to keep agent work bounded.
+This public-safe fragment shows the pattern, not the private schema:
+
+```yaml
+governance:
+  version: public-example
+  owner_authority:
+    physical_systems: owner_only
+    publication: owner_approval_required
+    risk_acceptance: owner_only
+
+  roles:
+    researcher:
+      may:
+        - summarize_sources
+        - identify_options
+        - record_assumptions
+      must_not:
+        - approve_repairs
+        - touch_live_systems
+
+    implementer:
+      may:
+        - change_scoped_files
+        - run_local_checks
+        - preserve_evidence
+      requires_review_for:
+        - infrastructure_changes
+        - data_boundary_changes
+        - actuator_related_paths
+        - public_artifacts
+
+    reviewer:
+      may:
+        - inspect_diffs
+        - verify_evidence
+        - classify_findings
+      must_not:
+        - approve_own_work
+        - accept_risk_for_owner
+
+  promotion_gate:
+    requires:
+      - documented_scope
+      - commit_or_artifact_reference
+      - verification_commands
+      - independent_review
+      - owner_decision
+    block_if:
+      - live_actuator_authority_without_owner
+      - secret_or_endpoint_in_public_artifact
+      - unverified_claim_about_field_behavior
+```
+
+The important point is separation of authority. Agents can recommend, build,
+review, and summarize. They do not approve risk for each other, and they do not
+turn model output into physical authority.
+
+## Sample Review Markdown
+
+Markdown records make the review loop legible across time, machines, and
+agents. A typical public-safe shape looks like this:
+
+```markdown
+# Review Note: <change title>
+
+Status: request-changes
+Scope: <what was reviewed>
+Reviewed Ref: <commit or artifact id>
+
+Evidence Checked:
+- `git diff <base>...<ref>`
+- `make check`
+- replay or dashboard evidence: <sanitized pointer>
+
+Findings:
+- Blocker: <behavioral risk, missing evidence, or approval gap>
+- Non-blocking: <cleanup or follow-up>
+
+Decision:
+- Fix before promotion.
+- Carry only with explicit owner approval.
+
+Public Boundary:
+- No credentials, live endpoints, raw telemetry, or operational runbooks.
+
+Residual Risk:
+- <what remains true even after the fix>
+```
+
+This is deliberately plain. The value is not ceremony; it is that the next
+agent, reviewer, or owner can see what was claimed, what was checked, what was
+left unresolved, and who accepted the risk.
+
 ## Why It Matters
 
 This project exercises the same discipline needed in higher-stakes software:
