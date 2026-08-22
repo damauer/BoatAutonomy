@@ -2,6 +2,8 @@
 
 ![BoatAutonomy platform pattern](assets/diagrams/boat-autonomy-platform.png)
 
+Teaching a boat to dock itself, with evidence before authority.
+
 BoatAutonomy is a public-safe view of replay-first marine telemetry,
 instrumented survey evidence, and supervised docking-assist research. The work
 combines replayable edge systems, a developing digital-twin substrate, safety

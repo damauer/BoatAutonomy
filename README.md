@@ -1,7 +1,6 @@
 # BoatAutonomy
 
-Toward calmer docking and smarter marine assistance, one evidence-gated
-subsystem at a time.
+Teaching a boat to dock itself, with evidence before authority.
 
 BoatAutonomy is a public-safe view into a private, owner-built autonomy lab
 around a recreational boat. The working shorthand is "teaching my boat how to
