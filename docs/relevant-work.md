@@ -1,8 +1,9 @@
 # Relevant Work And Opportunity Fit
 
-BoatAutonomy is a public-safe portfolio surface for work at the intersection
-of embedded systems, secure cloud, edge infrastructure, observability,
-AI-assisted software engineering, and safety-bounded autonomy.
+BoatAutonomy is a public-safe portfolio and market-exploration surface for
+work at the intersection of recreational boating, embedded systems, secure
+cloud, edge infrastructure, observability, AI-assisted software engineering,
+and safety-bounded autonomy.
 
 ## Intended Reader
 
@@ -30,12 +31,16 @@ right technical audience to understand the relevance.
   business judgment, and customer delivery have to move together.
 - Future partner, advisor, or funding conversations if the project matures
   beyond its current private lab and portfolio posture.
+- Marine product conversations where customer trust, safety, retrofit
+  practicality, and serviceability matter as much as the technical demo.
 - Technical due diligence for teams trying to separate impressive demos from
   systems that can actually be operated.
 
 ## What BoatAutonomy Makes Visible
 
 - A real physical-system target, not a toy-only benchmark.
+- A market-readable problem: docking and close-quarters handling are stressful
+  even before any autonomy claims are made.
 - A private control plane of policy, checklists, reviews, evidence, and
   owner-approved gates.
 - Kubernetes used where it belongs: orchestration, replay, observability,
@@ -45,6 +50,8 @@ right technical audience to understand the relevance.
 - Multiple AI agents used as a governed engineering team, with implementation,
   review, and research roles kept separate.
 - The discipline to say "not yet" when a demo is ahead of the safety case.
+- The restraint to frame market possibility without pretending customer,
+  regulatory, liability, or product-readiness questions are already resolved.
 
 ## Career Threads Reflected Here
 

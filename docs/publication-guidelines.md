@@ -12,6 +12,9 @@ approval is required before publication.
 - Public resume or portfolio wording approved by the owner.
 - Public-safe future business-direction language approved by the owner, as
   long as it is explicit that no current solicitation is being made.
+- Market-facing language approved by the owner, as long as it preserves the
+  current research/exploration status and avoids unsupported market-size
+  claims.
 - Sanitized evidence summaries that preserve caveats and residual risk.
 - General references to SeaTalk NG, NMEA 2000, SignalK-style data models,
   Kubernetes, edge compute, and multi-agent workflows.
@@ -27,6 +30,9 @@ approval is required before publication.
 - Unreviewed claims that the boat docks itself unattended.
 - Fundraising terms, valuation claims, investment-offer language, customer
   commitments, revenue claims, or safety-certification claims.
+- Unsupported global market-size claims or statements that imply product
+  readiness, regulatory approval, insurance acceptance, or commercial
+  deployment.
 - Implementation details that materially reduce the safety or privacy of the
   private system.
 - Verbatim resume details that add unnecessary inference risk, including street

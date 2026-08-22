@@ -2,11 +2,13 @@
 
 BoatAutonomy is not currently presented as a product launch, fundraising
 campaign, customer commitment, or investment offering. It remains a private
-applied-autonomy lab with a curated public surface.
+applied-autonomy lab with a curated public surface and an intentionally
+broader market imagination.
 
-The hope is that the project may eventually become relevant to business
-partners, advisors, or funding sources. This page records that direction
-without claiming the project is ready for those conversations today.
+The hope is that the project may eventually become relevant to recreational
+boating, marine-service, autonomy, edge-AI, or adjacent physical-system
+markets. This page records that direction without claiming the project is
+ready for those conversations today.
 
 ## Possible Future Thesis
 
@@ -20,6 +22,19 @@ deeper opportunity could be a disciplined pattern for physical-system
 autonomy: marine telemetry, edge compute, replay, observability,
 AI-assisted engineering, and safety gates that can be explained to technical,
 operational, and business stakeholders.
+
+## Market Imagination
+
+The first emotional product promise is simple: make docking feel less
+intimidating. From there, the possible market expands carefully:
+
+- Assistance for recreational boaters in close-quarters maneuvering.
+- Replay and coaching tools that help owners learn from real outings.
+- Better instrumentation for service yards, marinas, surveyors, and fleet
+  operators.
+- Retrofit-friendly telemetry and awareness systems for existing boats.
+- Transferable patterns for other small vessels or edge autonomy use cases
+  where safety, intermittent connectivity, and human authority matter.
 
 ## Why It Could Matter Later
 
@@ -42,6 +57,7 @@ operational, and business stakeholders.
 - The governance model for AI-assisted engineering.
 - The safety boundary and why direct control remains private and gated.
 - Synthetic demos and sanitized evidence summaries.
+- The market vision as a hypothesis, not a product-readiness claim.
 
 ## What Is Not Ready For Public Claims
 
@@ -50,6 +66,7 @@ operational, and business stakeholders.
 - Revenue claims.
 - Funding terms, valuation, or equity structure.
 - Safety certification or real vessel-control readiness.
+- Market-size claims not backed by separately reviewed evidence.
 - Live topology, implementation repos, raw telemetry, vessel-specific details,
   private dashboards, or operational procedures.
 

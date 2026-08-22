@@ -1,8 +1,8 @@
 # Portfolio Narrative
 
 BoatAutonomy is not a claim that the boat already docks itself. It is a
-public-safe way to show the kind of system I am building and the judgment I
-bring to it.
+public-safe way to show the kind of system I am building, the market problem
+I care about, and the judgment I bring to it.
 
 ## The Through-Line
 
@@ -36,10 +36,18 @@ That makes it useful as a personal proving ground. It is small enough for one
 owner-builder to move fast, but concrete enough that the work has to confront
 real operational constraints.
 
+It also has a human-centered market story. Recreational boating is aspirational
+and global, but docking remains stressful for many owners. A credible path
+toward calmer close-quarters handling could create value for boaters, marinas,
+service providers, trainers, insurers, and adjacent small-vessel markets. That
+possibility is worth exploring carefully.
+
 ## What The Public Repo Should Communicate
 
 - I can build across the stack, from physical instrumentation to cloud and
   operational evidence.
+- I can translate technical depth into a market story that normal boat owners,
+  marine partners, and technical investors can understand.
 - I understand why autonomy must be staged: capture, replay, estimate, shadow,
   assist.
 - I can use AI agents aggressively without surrendering ownership, review, or
@@ -48,6 +56,8 @@ real operational constraints.
 - I understand the business side of execution: customers, delivery, systems,
   scope, finance, cash-flow discipline, and the difference between a demo and
   a durable offering.
+- I can hold ambition and restraint at the same time: make the vision legible
+  without claiming the product or safety case is finished.
 - I am deliberately not publishing the private implementation, live topology,
   raw telemetry, or control details.
 

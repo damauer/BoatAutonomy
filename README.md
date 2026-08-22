@@ -1,12 +1,13 @@
 # BoatAutonomy
 
-Teaching a real boat to dock itself, one governed subsystem at a time.
+Toward calmer docking and smarter marine assistance, one evidence-gated
+subsystem at a time.
 
 BoatAutonomy is a public-safe view into a private, owner-built autonomy lab
-around a recreational boat. It is part engineering project, part portfolio,
-and part evidence that disciplined AI-assisted development can be applied to
-real physical systems without skipping governance, safety, or operational
-rigor.
+around a recreational boat. It starts with a simple, market-readable problem:
+docking is one of the most stressful and least forgiving moments in boating.
+Wind, current, visibility, crew coordination, close quarters, and expensive
+hardware all converge at low speed.
 
 The working shorthand is "teaching my boat how to dock itself." The more
 precise public claim is narrower: build the telemetry, replay, edge compute,
@@ -14,10 +15,18 @@ safety policy, and multi-agent review harness needed before a real vessel can
 responsibly move from passive observation toward supervised docking-assist
 experiments.
 
-For teams working on secure cloud, edge telemetry, mission-critical systems,
-or safety-bounded autonomy, this repo is meant to show how the builder thinks:
-instrument first, replay before live use, separate authority from advice, and
-make promotion depend on recorded evidence.
+The long-term market intuition is broader than one boat: recreational boating
+is a worldwide market where confidence, training, situational awareness,
+maintenance insight, and safer close-quarters maneuvering all have value.
+BoatAutonomy explores that opportunity without pretending the hard parts are
+already solved.
+
+This project is also evidence that disciplined AI-assisted development can be
+applied to real physical systems without skipping governance, safety, or
+operational rigor. For marine partners, technical collaborators, and future
+startup conversations, it is meant to show how the builder thinks: instrument
+first, replay before live use, separate authority from advice, and make
+promotion depend on recorded evidence.
 
 ## Read This First
 
@@ -40,6 +49,20 @@ docking is complete. It is a controlled way to show the technical thesis,
 builder context, safety posture, and evidence discipline behind the private
 project.
 
+## Market Lens
+
+BoatAutonomy is not only a resume artifact. It is an exploration of a possible
+marine assistance product path:
+
+- Make docking and close-quarters handling calmer for recreational boaters.
+- Turn raw marine electronics into useful, replayable operating evidence.
+- Build retrofit-friendly capabilities that respect existing vessels,
+  owners, marinas, service yards, and safety expectations.
+- Use AI and agents to accelerate engineering, analysis, and support while
+  keeping physical authority bounded.
+- Preserve a path beyond recreational docking if the same telemetry, replay,
+  and safety-gated assistance patterns prove useful elsewhere.
+
 ## Current Public Scope
 
 - Marine telemetry capture and replay using SeaTalk NG / NMEA 2000 concepts.
@@ -56,7 +79,7 @@ details, secrets, or enough operational detail to reproduce the private system.
 
 ## What This Demonstrates
 
-- Cloud-to-edge architecture for constrained, mission-style environments.
+- Cloud-to-edge architecture for constrained, real-world environments.
 - Marine telemetry capture, normalization, replay, and dashboard inspection.
 - Kubernetes used for orchestration, observability, and repeatability, not as
   a hard real-time safety controller.
@@ -64,8 +87,8 @@ details, secrets, or enough operational detail to reproduce the private system.
   research, evidence, and owner approval.
 - A safety boundary that treats model output as advice to a bounded system,
   not direct authority over physical control.
-- Public communication that is useful to the intended technical community
-  without exposing sensitive operational detail.
+- Public communication that can speak to boaters, technologists, partners, and
+  future business stakeholders without exposing sensitive operational detail.
 
 ## System Shape
 
@@ -124,6 +147,8 @@ connecting the project to prior systems work.
   project is a credible continuation of the builder's career arc.
 - [docs/future-business-direction.md](docs/future-business-direction.md) -
   cautious future business direction, explicitly not a current solicitation.
+- [docs/market-vision.md](docs/market-vision.md) - market-facing product
+  intuition without product-readiness claims.
 - [docs/roadmap.md](docs/roadmap.md) - capability progression from passive
   telemetry to supervised assistance.
 - [docs/publication-guidelines.md](docs/publication-guidelines.md) - rules for
