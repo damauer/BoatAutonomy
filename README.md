@@ -49,19 +49,29 @@ docking is complete. It is a controlled way to show the technical thesis,
 builder context, safety posture, and evidence discipline behind the private
 project.
 
-## Market Lens
+## System Shape
 
-BoatAutonomy is not only a resume artifact. It is an exploration of a possible
-marine assistance product path:
+![BoatAutonomy platform pattern](assets/diagrams/boat-autonomy-platform.png)
 
-- Make docking and close-quarters handling calmer for recreational boaters.
-- Turn raw marine electronics into useful, replayable operating evidence.
-- Build retrofit-friendly capabilities that respect existing vessels,
-  owners, marinas, service yards, and safety expectations.
-- Use AI and agents to accelerate engineering, analysis, and support while
-  keeping physical authority bounded.
-- Preserve a path beyond recreational docking if the same telemetry, replay,
-  and safety-gated assistance patterns prove useful elsewhere.
+Editable source: [boat-autonomy-platform.svg](assets/diagrams/boat-autonomy-platform.svg).
+
+BoatAutonomy is organized as a replay-first, evidence-gated platform around a
+real recreational vessel. Marine signals enter as captured observations. Edge
+and cluster services normalize, replay, inspect, and test those observations.
+AI, dashboards, and agents may help interpret evidence or propose work, but
+human authority, physical override, and safe-state behavior remain explicit.
+
+Kubernetes and agentic tooling are useful around the system: recording,
+monitoring, replay, perception experiments, observability, and deployment
+repeatability. They are not the hard real-time safety controller and do not
+receive direct actuator authority.
+
+The public story follows that order on purpose:
+
+- Shape the system before naming tools.
+- State the safety boundary before implying capability.
+- Show evidence discipline before asking for trust.
+- Add technical and agentic breadcrumbs only after the boundary is clear.
 
 ## Current Public Scope
 
@@ -92,9 +102,10 @@ details, secrets, or enough operational detail to reproduce the private system.
 
 ## Technical Breadcrumbs
 
-For government, commercial, and startup technologists, the deeper signal is
-that BoatAutonomy is not a single demo script. It is an emerging platform
-pattern with several mature-looking pieces already being exercised:
+Once the system shape and boundary are clear, the deeper signal for
+government, commercial, and startup technologists is that BoatAutonomy is not
+a single demo script. It is an emerging platform pattern with several
+mature-looking pieces already being exercised:
 
 - Data and replay: raw marine signals become normalized, replayable sessions
   that can be inspected before new behavior is trusted.
@@ -108,25 +119,35 @@ pattern with several mature-looking pieces already being exercised:
   systems need telemetry, replay, edge intelligence, and human-centered
   control boundaries.
 
-Start with [technical-platform.md](docs/technical-platform.md) for the system
-view and
-[ai-and-agentic-collaboration.md](docs/ai-and-agentic-collaboration.md) for
-the AI and agentic collaboration story behind the public surface.
+The technical pages are meant to be read in the same sequence as the message:
+[architecture.md](docs/architecture.md),
+[safety-boundary.md](docs/safety-boundary.md),
+[evidence.md](docs/evidence.md), then
+[technical-platform.md](docs/technical-platform.md).
 
 <table>
   <tr>
-    <td width="50%">
-      <a href="docs/technical-platform.md">
-        <img src="assets/diagrams/boat-autonomy-platform.png" alt="Technical approach thumbnail" width="260">
+    <td width="33%">
+      <a href="docs/architecture.md">
+        <img src="assets/diagrams/architecture-boundary.png" alt="System shape thumbnail" width="240">
       </a>
       <br>
-      <a href="docs/technical-platform.md"><strong>Technical approach</strong></a>
+      <a href="docs/architecture.md"><strong>System shape</strong></a>
       <br>
-      System shape, staged autonomy boundary, edge operations, replay, and evidence.
+      Staged architecture, hard boundary, and human authority.
     </td>
-    <td width="50%">
+    <td width="33%">
+      <a href="docs/technical-platform.md">
+        <img src="assets/diagrams/development-field-pipeline.png" alt="Technical platform thumbnail" width="240">
+      </a>
+      <br>
+      <a href="docs/technical-platform.md"><strong>Technical platform</strong></a>
+      <br>
+      Edge operations, replay, GitOps, telemetry, and field workflow.
+    </td>
+    <td width="33%">
       <a href="docs/ai-and-agentic-collaboration.md">
-        <img src="assets/diagrams/agentic-collaboration-harness.png" alt="AI and agentic collaboration thumbnail" width="260">
+        <img src="assets/diagrams/agentic-collaboration-harness.png" alt="AI and agentic collaboration thumbnail" width="240">
       </a>
       <br>
       <a href="docs/ai-and-agentic-collaboration.md"><strong>AI and agentic collaboration</strong></a>
@@ -136,16 +157,37 @@ the AI and agentic collaboration story behind the public surface.
   </tr>
 </table>
 
-## System Shape
+## Agentic Method
 
-![BoatAutonomy platform pattern](assets/diagrams/boat-autonomy-platform.png)
+The AI story has two layers. One layer is how the project is built: Claude
+Code, Codex, Grok, tmux, GitLab records, review findings, and owner decisions
+are coordinated so speed does not erase accountability. The other layer is
+future model-assisted behavior, which remains bounded by replay, shadow mode,
+operator enablement, and safety review.
 
-Editable source: [boat-autonomy-platform.svg](assets/diagrams/boat-autonomy-platform.svg).
+Read [ai-and-agentic-collaboration.md](docs/ai-and-agentic-collaboration.md)
+for the conceptual overview and
+[agentic-engineering.md](docs/agentic-engineering.md) for the GitLab-centered
+workflow with YAML and Markdown examples.
 
-Kubernetes and agentic tooling are useful around the system: recording,
-monitoring, replay, perception experiments, observability, and deployment
-repeatability. They are not the hard real-time safety controller and do not
-receive direct actuator authority.
+## Roadmap And Market Lens
+
+BoatAutonomy is not only a resume artifact. It is an exploration of a possible
+marine assistance product path. The capability order still comes first:
+[roadmap.md](docs/roadmap.md) describes progression from governance and
+passive telemetry toward replay, estimation, shadow mode, and supervised
+assist before any higher autonomy research.
+
+The market lens is intentionally ambitious but bounded:
+
+- Make docking and close-quarters handling calmer for recreational boaters.
+- Turn raw marine electronics into useful, replayable operating evidence.
+- Build retrofit-friendly capabilities that respect existing vessels,
+  owners, marinas, service yards, and safety expectations.
+- Use AI and agents to accelerate engineering, analysis, and support while
+  keeping physical authority bounded.
+- Preserve a path beyond recreational docking if the same telemetry, replay,
+  and safety-gated assistance patterns prove useful elsewhere.
 
 ## Why This Exists
 
@@ -175,25 +217,26 @@ connecting the project to prior systems work.
   and safety/control-plane split.
 - [docs/safety-boundary.md](docs/safety-boundary.md) - what the project does
   and does not authorize.
-- [docs/agentic-engineering.md](docs/agentic-engineering.md) - how the
-  multi-agent build/review/research loop is governed, with YAML and Markdown
-  examples.
 - [docs/evidence.md](docs/evidence.md) - sanitized examples of evidence the
   private project records before promoting work.
 - [docs/technical-platform.md](docs/technical-platform.md) - deeper technical
   platform view for technologists.
 - [docs/ai-and-agentic-collaboration.md](docs/ai-and-agentic-collaboration.md) -
   AI, agent collaboration, replay, model boundaries, and governance.
+- [docs/agentic-engineering.md](docs/agentic-engineering.md) - how the
+  multi-agent build/review/research loop is governed, with YAML and Markdown
+  examples.
+- [docs/roadmap.md](docs/roadmap.md) - capability progression from passive
+  telemetry to supervised assistance.
+- [docs/market-vision.md](docs/market-vision.md) - market-facing product
+  intuition without product-readiness claims.
+- [docs/future-business-direction.md](docs/future-business-direction.md) -
+  cautious future business direction, explicitly not a current solicitation.
 - [docs/relevant-work.md](docs/relevant-work.md) - professional positioning
   and opportunity fit.
 - [docs/portfolio-narrative.md](docs/portfolio-narrative.md) - why this
   project is a credible continuation of the builder's career arc.
-- [docs/future-business-direction.md](docs/future-business-direction.md) -
-  cautious future business direction, explicitly not a current solicitation.
-- [docs/market-vision.md](docs/market-vision.md) - market-facing product
-  intuition without product-readiness claims.
-- [docs/roadmap.md](docs/roadmap.md) - capability progression from passive
-  telemetry to supervised assistance.
+- [RESUME.md](RESUME.md) - public resume context.
 - [demos/synthetic-nmea/](demos/synthetic-nmea/) - small synthetic telemetry
   example for public demos and screenshots.
 
