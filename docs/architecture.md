@@ -5,37 +5,10 @@ recorded evidence before the next layer is allowed to depend on it.
 
 ## Planes
 
-```mermaid
-flowchart TB
-  subgraph Vessel["Vessel Interface"]
-    Sensors["Read-only marine bus tap"]
-    FutureIO["Future isolated actuator interface"]
-  end
+![Staged architecture and safety boundary](../assets/diagrams/architecture-boundary.png)
 
-  subgraph Edge["Edge Runtime"]
-    Recorder["Capture and timestamp"]
-    Decoder["Decode and normalize"]
-    Store["Local storage and replay artifacts"]
-  end
-
-  subgraph Platform["Lab and Cluster Platform"]
-    Replay["Replay services"]
-    Dashboards["Dashboards and queries"]
-    CI["Checks, review packets, and release gates"]
-  end
-
-  subgraph Control["Future Safety-Control Boundary"]
-    Operator["Human enable and override"]
-    Limits["Deterministic limits and watchdogs"]
-    SafeState["Safe state on fault"]
-  end
-
-  Sensors --> Recorder --> Decoder --> Store --> Replay --> Dashboards
-  CI --> Replay
-  Dashboards --> CI
-  FutureIO --> Limits
-  Operator --> Limits --> SafeState
-```
+Editable source:
+[architecture-boundary.svg](../assets/diagrams/architecture-boundary.svg).
 
 ## Design Rules
 

@@ -2,6 +2,11 @@
 
 This roadmap describes capability order, not delivery promises.
 
+![BoatAutonomy staged roadmap](../assets/diagrams/roadmap-stages.png)
+
+Editable source:
+[roadmap-stages.svg](../assets/diagrams/roadmap-stages.svg).
+
 ## Stage 0 - Governance And Safety
 
 Define what agents may do, what requires owner approval, how evidence is

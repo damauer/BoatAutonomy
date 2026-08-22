@@ -1,5 +1,7 @@
 # BoatAutonomy Profile Draft
 
+![BoatAutonomy platform pattern](assets/diagrams/boat-autonomy-platform.png)
+
 BoatAutonomy explores calmer docking and smarter marine assistance for real
 boaters through staged, safety-bounded autonomy research. The work combines
 marine telemetry, replayable edge systems, safety boundaries, Kubernetes

@@ -5,6 +5,11 @@ work at the intersection of recreational boating, embedded systems, secure
 cloud, edge infrastructure, observability, AI-assisted software engineering,
 and safety-bounded autonomy.
 
+![BoatAutonomy professional signal](../assets/diagrams/professional-signal.png)
+
+Editable source:
+[professional-signal.svg](../assets/diagrams/professional-signal.svg).
+
 ## Intended Reader
 
 This repo is written for people who recognize the shape of hard systems work:

@@ -10,6 +10,11 @@ boating, marine-service, autonomy, edge-AI, or adjacent physical-system
 markets. This page records that direction without claiming the project is
 ready for those conversations today.
 
+![BoatAutonomy market and business fit](../assets/diagrams/market-business-fit.png)
+
+Editable source:
+[market-business-fit.svg](../assets/diagrams/market-business-fit.svg).
+
 ## Possible Future Thesis
 
 Autonomy work becomes credible when it is staged, observable, replayable, and

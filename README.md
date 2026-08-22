@@ -194,8 +194,6 @@ connecting the project to prior systems work.
   intuition without product-readiness claims.
 - [docs/roadmap.md](docs/roadmap.md) - capability progression from passive
   telemetry to supervised assistance.
-- [docs/publication-guidelines.md](docs/publication-guidelines.md) -
-  publication rules and public visual direction.
 - [demos/synthetic-nmea/](demos/synthetic-nmea/) - small synthetic telemetry
   example for public demos and screenshots.
 

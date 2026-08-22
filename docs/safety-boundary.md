@@ -4,6 +4,11 @@ BoatAutonomy is intentionally safety-gated. The project is allowed to explore
 instrumentation, replay, state estimation, and supervised assistance. It is not
 allowed to skip from demos to live vessel authority.
 
+![BoatAutonomy safety boundary](../assets/diagrams/safety-boundary.png)
+
+Editable source:
+[safety-boundary.svg](../assets/diagrams/safety-boundary.svg).
+
 ## Current Claims
 
 - The project can capture, decode, replay, and inspect marine telemetry.

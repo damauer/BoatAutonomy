@@ -1,149 +1,44 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
-  <title id="title">BoatAutonomy development, test, and field pipeline</title>
-  <desc id="desc">A public-safe diagram showing BCH bench work flowing into STG and QST physical validation, and in parallel into TVL DevOps survey operations with Kubernetes, Flux, GitOps, SignalK, InfluxDB, and Grafana.</desc>
+  <title id="title">Development, test, and field pipeline</title>
+  <desc id="desc">A dark public-safe diagram showing BCH bench work feeding STG, QST, sensor evidence, and a parallel TVL DevOps survey lane.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#f8fbff"/>
-      <stop offset="0.52" stop-color="#eefdf7"/>
-      <stop offset="1" stop-color="#fff7ed"/>
-    </linearGradient>
-    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#2563eb"/>
-      <stop offset="1" stop-color="#0f766e"/>
-    </linearGradient>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="9" stdDeviation="13" flood-color="#0f172a" flood-opacity="0.13"/>
-    </filter>
-    <marker id="arrow-blue" markerWidth="14" markerHeight="14" refX="10" refY="5" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/>
-    </marker>
-    <marker id="arrow-teal" markerWidth="14" markerHeight="14" refX="10" refY="5" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/>
-    </marker>
-    <marker id="arrow-orange" markerWidth="14" markerHeight="14" refX="10" refY="5" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L10,5 L0,10 z" fill="#f97316"/>
-    </marker>
-    <style>
-      .title { font: 800 50px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #0f172a; letter-spacing: 0; }
-      .subtitle { font: 500 23px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #334155; letter-spacing: 0; }
-      .section { font: 800 25px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #0f172a; letter-spacing: 0; }
-      .section-light { font: 800 25px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #ffffff; letter-spacing: 0; }
-      .label { font: 800 20px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #0f172a; letter-spacing: 0; }
-      .label-light { font: 800 20px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #ffffff; letter-spacing: 0; }
-      .small { font: 500 16px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #475569; letter-spacing: 0; }
-      .small-light { font: 500 16px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #e0f2fe; letter-spacing: 0; }
-      .tiny { font: 700 13px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #64748b; letter-spacing: .04em; }
-      .card { fill: #ffffff; stroke: #dbe7ef; stroke-width: 2; rx: 22; filter: url(#shadow); }
-      .lane { fill: #ffffff; stroke: #cbd5e1; stroke-width: 2; rx: 28; filter: url(#shadow); }
-      .chip-blue { fill: #dbeafe; stroke: #93c5fd; stroke-width: 1.6; rx: 14; }
-      .chip-teal { fill: #ccfbf1; stroke: #5eead4; stroke-width: 1.6; rx: 14; }
-      .chip-orange { fill: #ffedd5; stroke: #fdba74; stroke-width: 1.6; rx: 14; }
-      .chip-violet { fill: #ede9fe; stroke: #a78bfa; stroke-width: 1.6; rx: 14; }
-      .line-blue { stroke: #2563eb; stroke-width: 4; fill: none; marker-end: url(#arrow-blue); }
-      .line-teal { stroke: #0f766e; stroke-width: 4; fill: none; marker-end: url(#arrow-teal); }
-      .line-orange { stroke: #f97316; stroke-width: 4; fill: none; marker-end: url(#arrow-orange); }
-      .dash { stroke: #94a3b8; stroke-width: 3; stroke-dasharray: 8 8; fill: none; }
-    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07111f"/><stop offset="0.55" stop-color="#111827"/><stop offset="1" stop-color="#241307"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#000" flood-opacity="0.35"/></filter>
+    <marker id="arrowb" markerWidth="14" markerHeight="14" refX="10" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L10,5 L0,10 z" fill="#38bdf8"/></marker>
+    <marker id="arrowt" markerWidth="14" markerHeight="14" refX="10" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L10,5 L0,10 z" fill="#34d399"/></marker>
+    <style>.title{font:800 50px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f8fafc}.sub{font:500 22px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#cbd5e1}.h{font:800 25px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f8fafc}.label{font:800 21px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f8fafc}.s{font:500 16px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#cbd5e1}.tiny{font:700 13px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#94a3b8}.panel{fill:#111827;stroke:#263244;stroke-width:1.6;filter:url(#shadow)}.box{stroke-width:1.6}.blue{fill:#0b2a55;stroke:#38bdf8}.teal{fill:#073b37;stroke:#34d399}.orange{fill:#45220a;stroke:#f97316}.purple{fill:#2b174c;stroke:#a78bfa}.lineb{stroke:#38bdf8;stroke-width:4;fill:none;marker-end:url(#arrowb)}.linet{stroke:#34d399;stroke-width:4;fill:none;marker-end:url(#arrowt)}.dash{stroke:#94a3b8;stroke-width:3;stroke-dasharray:8 8;fill:none}</style>
   </defs>
-
   <rect width="1600" height="1000" fill="url(#bg)"/>
-  <circle cx="1325" cy="150" r="155" fill="#dbeafe" opacity="0.55"/>
-  <circle cx="210" cy="840" r="170" fill="#ccfbf1" opacity="0.45"/>
-  <circle cx="1415" cy="845" r="120" fill="#fed7aa" opacity="0.35"/>
-
   <text x="80" y="82" class="title">Development, Test, And Field Pipeline</text>
-  <text x="82" y="122" class="subtitle">BCH bench work feeds physical validation and DevOps survey operations without exposing live topology</text>
+  <text x="82" y="122" class="sub">One bench feeds two evidence paths: physical validation and field-style DevOps survey operations</text>
 
-  <rect x="80" y="175" width="250" height="560" class="card"/>
-  <text x="112" y="222" class="section">BCH Bench</text>
-  <text x="112" y="258" class="small">Design, code, schemas,</text>
-  <text x="112" y="282" class="small">synthetic data, bench</text>
-  <text x="112" y="306" class="small">captures, and checks.</text>
-  <rect x="112" y="345" width="150" height="40" class="chip-blue"/>
-  <text x="142" y="371" class="small">Build</text>
-  <rect x="112" y="398" width="150" height="40" class="chip-teal"/>
-  <text x="140" y="424" class="small">Replay</text>
-  <rect x="112" y="451" width="150" height="40" class="chip-orange"/>
-  <text x="139" y="477" class="small">Review</text>
-  <rect x="112" y="504" width="150" height="40" class="chip-violet"/>
-  <text x="130" y="530" class="small">Promote</text>
-  <rect x="112" y="590" width="150" height="40" class="chip-blue"/>
-  <text x="130" y="616" class="small">Terraform</text>
-  <rect x="112" y="643" width="150" height="40" class="chip-teal"/>
-  <text x="136" y="669" class="small">Ansible</text>
+  <rect x="80" y="175" width="270" height="560" rx="24" class="panel"/>
+  <text x="115" y="222" class="h">BCH Bench</text>
+  <text x="115" y="260" class="s">Design, schemas, synthetic</text><text x="115" y="284" class="s">data, captures, replay,</text><text x="115" y="308" class="s">review, and promotion.</text>
+  <rect x="115" y="355" width="180" height="40" rx="13" class="box blue"/><text x="158" y="381" class="s">Terraform</text>
+  <rect x="115" y="410" width="180" height="40" rx="13" class="box teal"/><text x="166" y="436" class="s">Ansible</text>
+  <rect x="115" y="465" width="180" height="40" rx="13" class="box orange"/><text x="155" y="491" class="s">cloud-init</text>
+  <rect x="115" y="590" width="200" height="64" rx="16" class="box purple"/><text x="139" y="623" class="s">promote only</text><text x="139" y="647" class="tiny">with evidence</text>
 
-  <rect x="400" y="160" width="1120" height="300" class="lane"/>
-  <text x="430" y="205" class="section">Physical Validation Line</text>
-  <text x="430" y="236" class="small">From bench assumptions to staged validation and the field case that sees real marine electronics.</text>
+  <rect x="420" y="165" width="1100" height="315" rx="28" class="panel"/>
+  <text x="455" y="212" class="h">Physical Validation Lane</text>
+  <text x="455" y="244" class="s">Bench assumptions move toward hardware evidence without turning dashboards into control authority.</text>
+  <rect x="455" y="300" width="170" height="92" rx="16" class="box blue"/><text x="507" y="334" class="label">STG</text><text x="492" y="362" class="s">integration</text>
+  <rect x="705" y="300" width="190" height="92" rx="16" class="box teal"/><text x="745" y="334" class="label">QST Case</text><text x="742" y="362" class="s">portable/fixed</text>
+  <rect x="975" y="300" width="210" height="92" rx="16" class="box orange"/><text x="1014" y="334" class="label">SeaTalk NG</text><text x="1015" y="362" class="s">NMEA 2000 sensors</text>
+  <rect x="1270" y="300" width="190" height="92" rx="16" class="box purple"/><text x="1322" y="334" class="label">Gates</text><text x="1302" y="362" class="s">survey evidence</text>
+  <path d="M350 330 C382 330 392 330 420 330" class="linet"/><path d="M625 346 L705 346" class="linet"/><path d="M895 346 L975 346" class="linet"/><path d="M1185 346 L1270 346" class="linet"/>
 
-  <rect x="430" y="280" width="190" height="118" class="chip-blue"/>
-  <text x="470" y="318" class="label">STG</text>
-  <text x="462" y="348" class="small">cloud-init</text>
-  <text x="462" y="371" class="small">validation</text>
+  <rect x="420" y="535" width="1100" height="300" rx="28" class="panel"/>
+  <text x="455" y="582" class="h">TVL DevOps And Survey Lane</text>
+  <text x="455" y="614" class="s">The travel stack proves field development, observability, replay, and remote troubleshooting mechanics.</text>
+  <rect x="455" y="665" width="170" height="92" rx="16" class="box blue"/><text x="510" y="699" class="label">TVL</text><text x="488" y="727" class="s">Lima vz</text>
+  <rect x="705" y="665" width="190" height="92" rx="16" class="box teal"/><text x="755" y="699" class="label">K8s</text><text x="742" y="727" class="s">Flux / GitOps</text>
+  <rect x="975" y="665" width="210" height="92" rx="16" class="box orange"/><text x="1018" y="699" class="label">Telemetry</text><text x="1004" y="725" class="s">SignalK / InfluxDB</text><text x="1004" y="747" class="tiny">Grafana survey views</text>
+  <rect x="1270" y="665" width="190" height="92" rx="16" class="box purple"/><text x="1312" y="699" class="label">Remote</text><text x="1306" y="727" class="s">debug + survey</text>
+  <path d="M350 706 C382 706 392 706 420 706" class="lineb"/><path d="M625 711 L705 711" class="lineb"/><path d="M895 711 L975 711" class="lineb"/><path d="M1185 711 L1270 711" class="lineb"/>
 
-  <rect x="690" y="280" width="210" height="118" class="chip-teal"/>
-  <text x="720" y="318" class="label">QST Case</text>
-  <text x="724" y="348" class="small">transportable</text>
-  <text x="724" y="371" class="small">or fixed</text>
-
-  <rect x="970" y="280" width="220" height="118" class="chip-orange"/>
-  <text x="1000" y="318" class="label">SeaTalk NG</text>
-  <text x="1002" y="348" class="small">NMEA 2000</text>
-  <text x="1002" y="371" class="small">sensors</text>
-
-  <rect x="1260" y="280" width="210" height="118" class="chip-violet"/>
-  <text x="1300" y="318" class="label">Survey</text>
-  <text x="1294" y="348" class="small">field evidence</text>
-  <text x="1294" y="371" class="small">and gates</text>
-
-  <path d="M330 320 C360 320 372 320 400 320" class="line-teal"/>
-  <path d="M620 339 L690 339" class="line-teal"/>
-  <path d="M900 339 L970 339" class="line-teal"/>
-  <path d="M1190 339 L1260 339" class="line-teal"/>
-
-  <rect x="400" y="515" width="1120" height="300" class="lane"/>
-  <text x="430" y="560" class="section">TVL DevOps And Survey Line</text>
-  <text x="430" y="591" class="small">A parallel operations path proves observability, replay, remote debugging, and field-style development.</text>
-
-  <rect x="430" y="635" width="190" height="118" class="chip-blue"/>
-  <text x="476" y="673" class="label">TVL</text>
-  <text x="462" y="703" class="small">Lima vz</text>
-  <text x="462" y="726" class="small">macOS containers</text>
-
-  <rect x="690" y="635" width="210" height="118" class="chip-teal"/>
-  <text x="735" y="673" class="label">K8s</text>
-  <text x="722" y="703" class="small">Flux</text>
-  <text x="722" y="726" class="small">GitOps</text>
-
-  <rect x="970" y="635" width="220" height="118" class="chip-orange"/>
-  <text x="1001" y="673" class="label">Telemetry</text>
-  <text x="998" y="703" class="small">SignalK</text>
-  <text x="998" y="726" class="small">InfluxDB + Grafana</text>
-
-  <rect x="1260" y="635" width="210" height="118" class="chip-violet"/>
-  <text x="1293" y="673" class="label">Remote Work</text>
-  <text x="1295" y="703" class="small">debug</text>
-  <text x="1295" y="726" class="small">development</text>
-
-  <path d="M330 675 C360 675 372 675 400 675" class="line-blue"/>
-  <path d="M620 694 L690 694" class="line-blue"/>
-  <path d="M900 694 L970 694" class="line-blue"/>
-  <path d="M1190 694 L1260 694" class="line-blue"/>
-
-  <rect x="445" y="842" width="710" height="96" rx="22" fill="url(#blue)" filter="url(#shadow)"/>
-  <text x="480" y="882" class="section-light">Shared release gates</text>
-  <text x="480" y="914" class="small-light">Evidence, reviews, reproducibility, and owner approval</text>
-  <path d="M1365 398 C1365 455 1130 810 945 860" class="dash"/>
-  <path d="M1365 753 C1365 810 1160 835 1000 860" class="dash"/>
-
-  <rect x="80" y="820" width="300" height="120" rx="20" fill="#ecfeff" stroke="#5eead4" stroke-width="2"/>
-  <text x="112" y="856" class="label">Future Sensor Apps</text>
-  <text x="112" y="884" class="small">Go / Rust collectors</text>
-  <text x="112" y="908" class="small">WASM validators where</text>
-  <text x="112" y="932" class="small">measured benefit exists</text>
-
-  <rect x="1215" y="856" width="305" height="86" rx="20" fill="#fff7ed" stroke="#fdba74" stroke-width="2"/>
-  <text x="1244" y="891" class="label">Public Boundary</text>
-  <text x="1244" y="919" class="small">No IPs, secrets, runbooks,</text>
-  <text x="1244" y="940" class="small">or live actuator detail.</text>
+  <path d="M1370 392 C1380 505 1350 590 1285 630 C1235 674 1148 674 1060 665" class="dash"/>
+  <rect x="80" y="800" width="270" height="110" rx="20" fill="#073b37" stroke="#34d399" stroke-width="1.6"/><text x="115" y="842" class="label">Future Apps</text><text x="115" y="872" class="s">Go / Rust collectors</text><text x="115" y="896" class="s">WASM only if measured</text>
+  <rect x="420" y="875" width="1100" height="70" rx="22" fill="#0f172a" stroke="#334155" stroke-width="1.6"/><text x="455" y="917" class="h">Takeaway: bench, validation, survey, and release gates are separate.</text>
 </svg>

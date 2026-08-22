@@ -4,6 +4,11 @@ BoatAutonomy is not a claim that the boat already docks itself. It is a
 public-safe way to show the kind of system I am building, the market problem
 I care about, and the judgment I bring to it.
 
+![BoatAutonomy professional signal](../assets/diagrams/professional-signal.png)
+
+Editable source:
+[professional-signal.svg](../assets/diagrams/professional-signal.svg).
+
 ## The Through-Line
 
 The project ties together five long-running threads:

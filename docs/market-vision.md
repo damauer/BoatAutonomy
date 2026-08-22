@@ -10,6 +10,11 @@ The long-term product intuition is that boaters do not need a magic black box.
 They need calmer maneuvers, better awareness, better training feedback, and
 technology that earns trust before it asks for authority.
 
+![BoatAutonomy market and business fit](../assets/diagrams/market-business-fit.png)
+
+Editable source:
+[market-business-fit.svg](../assets/diagrams/market-business-fit.svg).
+
 ## Product Feeling
 
 The desired feeling is not "the robot took over." It is closer to:
