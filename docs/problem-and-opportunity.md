@@ -63,9 +63,8 @@ stakeholders.
 
 ## Current Boundary
 
-This public repo is not the private implementation. It is not a product
-certification, pitch deck, securities offering, live-system runbook, or claim
-that autonomous docking is complete.
+This public repo is not the private implementation, a live-system runbook, or
+a claim that autonomous docking is complete.
 
 It is a controlled public surface for the problem, the system shape, the safety
 boundary, the evidence discipline, and the builder's relevant experience.

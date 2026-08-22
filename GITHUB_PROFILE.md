@@ -2,10 +2,10 @@
 
 ![BoatAutonomy platform pattern](assets/diagrams/boat-autonomy-platform.png)
 
-BoatAutonomy explores calmer docking and smarter marine assistance for real
-boaters through staged, safety-bounded autonomy research. The work combines
-marine telemetry, replayable edge systems, safety boundaries, Kubernetes
-operations, and multi-agent software engineering.
+BoatAutonomy is a public-safe view of replay-first marine telemetry,
+evidence, and supervised docking-assist research. The work combines replayable
+edge systems, safety boundaries, Kubernetes lab/staging operations, and
+multi-agent software engineering.
 
 The public surface emphasizes what can be shown responsibly: passive telemetry,
 synthetic demos, architecture, evidence discipline, and the engineering method

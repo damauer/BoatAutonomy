@@ -20,7 +20,7 @@ The project ties together five long-running threads:
    environments, multi-account operations, data resiliency, automation,
    auditing, and mission-system transition into operations.
 3. Edge and Kubernetes. Current work uses Kubernetes where it fits: repeatable
-   lab, staging, production, and edge services for capture, replay,
+   lab, staging, field-prep, and edge services for capture, replay,
    observability, and deployment discipline.
 4. Commercial and founder-side judgment. Commercial consulting and CFO / CIO
    support for a long-running 35-person business add the business-development,
@@ -44,8 +44,8 @@ real operational constraints.
 It also has a human-centered market story. Recreational boating is
 aspirational and global, but docking remains stressful for many owners. A
 credible path toward calmer close-quarters handling could create value for
-boaters, marinas, service providers, trainers, insurers, and adjacent
-small-vessel markets. That possibility is worth exploring carefully.
+boaters, marinas, service providers, trainers, and adjacent small-vessel
+markets. That possibility is worth exploring carefully.
 
 ## Roles And Conversations
 

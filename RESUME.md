@@ -51,7 +51,7 @@ layers at once:
   PostgreSQL databases.
 - Kubernetes and cloud platforms: built Kubernetes prototypes on AWS EKS and
   GCP GKE; built current BoatAutonomy clusters spanning lab, staging,
-  production, and edge use.
+  field-prep, and edge use.
 - AI / ML enablement: built GPU-backed ML workstations and helped decompose
   managed ML patterns for constrained environments.
 - Embedded and protocol systems: designed and built large-scale Unix / VxWorks
@@ -98,7 +98,7 @@ system that can be reviewed before it is trusted.
   Grok across implementation, review, and research loops.
 - Uses YAML and Markdown policy, decision records, handoffs, checklists,
   reviews, and evidence logs to keep AI-assisted work auditable.
-- Built Kubernetes environments across development, staging, production, and
+- Built Kubernetes environments across development, staging, field-prep, and
   edge contexts to survey, monitor, replay, and prepare safety-gated
   experiments around marine systems using SeaTalk NG / NMEA 2000 concepts.
 - Keeps a hard safety boundary: Kubernetes, dashboards, and model outputs may

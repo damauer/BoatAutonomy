@@ -14,13 +14,17 @@ real boat.
 Editable source:
 [agentic-collaboration-harness.svg](../assets/diagrams/agentic-collaboration-harness.svg).
 
-The project treats AI agents as a governed engineering team:
+The project treats AI agents as a governed engineering team. In the private
+workflow, Claude Code commonly implements, Codex commonly reviews, and Grok
+commonly supports research. Those names are useful public context, but the
+governance model is role-based: tools can change, authority boundaries cannot.
 
 - Research agents gather domain material, manuals, options, and tradeoffs.
 - Implementation agents make bounded changes in private implementation repos.
 - Review agents independently inspect diffs, evidence, and operational claims.
 - Documentation agents preserve decisions, assumptions, caveats, and handoffs.
-- The owner sets scope, approves risk, and retains physical authority.
+- The owner sets scope, approves risk, and retains physical authority. Owner
+  silence is not approval.
 
 The complexity is not simply "an AI wrote code." The complexity is making
 multi-agent work auditable:
@@ -36,7 +40,8 @@ multi-agent work auditable:
 
 Future autonomy-related work has a different boundary. Model output may help
 estimate, classify, summarize, or propose, but it must remain subordinate to a
-bounded system.
+bounded system. Model output is a request to a bounded controller, never a helm
+command.
 
 Tower is the private local lane for local LLM and model-training experiments.
 That does not change the control boundary: model work remains research,
@@ -58,11 +63,12 @@ Editable source:
 [agentic-engineering-gitlab-flow.svg](../assets/diagrams/agentic-engineering-gitlab-flow.svg).
 
 The core pattern is that GitLab holds the work record while agents operate in
-bounded roles. YAML policy defines gates, Markdown captures decisions and
-reviews, docs preserve the approved public shape, and tmux sessions make
-long-running collaboration observable. Work advances from research to
-implementation, review, reconciliation, and closure only when evidence supports
-the next state.
+bounded roles. YAML policy is canonical for permissions and gates. Markdown
+captures rationale, decisions, and review records. If YAML and Markdown drift,
+that drift is a defect to reconcile, not a reason to guess intent. Docs
+preserve the approved public shape, and tmux sessions make long-running
+collaboration observable. Work advances from research to implementation,
+review, reconciliation, and closure only when evidence supports the next state.
 
 ## Roles
 
@@ -74,8 +80,8 @@ the next state.
 | Researcher | Gathers domain context, manuals, options, and tradeoffs for owner review. |
 | Policy | Defines allowed work, prohibited shortcuts, data-handling rules, and approval boundaries. |
 
-Different tools can occupy different roles. The private project has used
-multiple AI systems in this style, with the owner retaining authority over
+Different tools can occupy different roles, but reviewers do not approve their
+own work, and owner silence is not approval. The owner retains authority over
 scope, physical systems, publication, and risk acceptance.
 
 ## Workflow
@@ -156,6 +162,11 @@ governance:
 The important point is separation of authority. Agents can recommend, build,
 review, and summarize. They do not approve risk for each other, and they do not
 turn model output into physical authority.
+
+One known harness failure mode is evidence latency: an implementer may finish
+code before the review packet, runtime proof, or decision record catches up.
+The countermeasure is to treat missing evidence as a blocker, not as implicit
+approval.
 
 ## Sample Review Markdown
 

@@ -26,6 +26,10 @@ The public repo does not publish the private implementation, live topology,
 raw vessel data, credentials, repair procedures, endpoint details, or
 operational runbooks.
 
+It is not a product certification, pitch deck, securities offering, or
+contribution project. Read and discuss; do not treat the repo as an invitation
+for pull requests until a later license and contribution policy say so.
+
 ## Current Claims
 
 - The project can capture, decode, replay, and inspect marine telemetry.

@@ -10,9 +10,11 @@ build the telemetry, replay, edge compute, safety policy, and multi-agent
 review harness needed before a real vessel can responsibly move from passive
 observation toward supervised docking-assist experiments.
 
-This repository is intentionally curated. It does not publish the private
-implementation, live topology, raw vessel data, credentials, repair procedures,
-or operational runbooks.
+This repository is intentionally curated. It is a discussion surface, not a
+contribution project: read, comment, and ask questions, but there is no implied
+pull-request workflow until a later license and contribution policy exist. It
+does not publish the private implementation, live topology, raw vessel data,
+credentials, repair procedures, or operational runbooks.
 
 ## Why Read This
 
@@ -39,6 +41,9 @@ lab. For now, it is a portfolio and credibility surface for relevant technical
 work. If the project matures, this same surface may eventually support
 conversations with marine partners, advisors, technical collaborators, or
 funding sources.
+
+The lab is young, started in May 2026. Its evidence and governance plane is
+ahead of any assistive behavior.
 
 That is not the current posture. This repo is not a product certification,
 pitch deck, securities offering, live-system runbook, or claim that autonomous
@@ -136,7 +141,7 @@ It is an emerging platform pattern with several mature pieces being exercised:
 
 - Data and replay: raw marine signals become normalized, replayable sessions
   that can be inspected before new behavior is trusted.
-- Edge operations: lab, staging, production, and field-style environments
+- Edge operations: lab, staging, field-prep, and field-style environments
   support repeatable deployment and evidence collection.
 - AI-assisted engineering: multiple agents work in bounded roles for research,
   implementation, review, and evidence, with the owner retaining approval.
@@ -209,7 +214,7 @@ conversation you want to have.
 | Why read this | What problem makes this worth attention? | [problem-and-opportunity.md](docs/problem-and-opportunity.md) |
 | What this is | What is public, what is private, and what is not being claimed? | [scope-and-safety.md](docs/scope-and-safety.md), [evidence.md](docs/evidence.md), [synthetic demo data](demos/synthetic-nmea/) |
 | How it works | What is the system shape and technical approach? | [system-platform.md](docs/system-platform.md) |
-| Why it matters | What makes the platform unusually mature or transferable? | [agentic-engineering.md](docs/agentic-engineering.md), [evidence.md](docs/evidence.md) |
+| Why it matters | Why is the evidence/control plane ahead of assistive behavior? | [agentic-engineering.md](docs/agentic-engineering.md), [evidence.md](docs/evidence.md) |
 | Where it is going | What is the capability path and future business hypothesis? | [roadmap-and-business.md](docs/roadmap-and-business.md) |
 | How we can help | What skills, experience, and judgment does this make visible? | [builder-profile.md](docs/builder-profile.md), [RESUME.md](RESUME.md) |
 

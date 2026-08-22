@@ -14,6 +14,19 @@ discipline, not to publish live operational details.
 - Screenshots or dashboards generated from synthetic or redacted data.
 - Decision records that distinguish accepted design from advisory research.
 
+## Public-Safe Facts
+
+These facts are rounded and topology-free. They are included to make the
+evidence posture concrete without publishing private endpoints, tracks,
+locations, or operational procedures.
+
+| Fact | Public-Safe Detail |
+| --- | --- |
+| Passive capture exists | The private project has captured real-vessel NMEA 2000 / NMEA 0183 class telemetry through a Wi-Fi gateway path, with no bus writes. |
+| Replay path exists | Telemetry can flow through a SignalK -> InfluxDB -> Grafana style replay/inspection path. |
+| Soak evidence exists | A 72-hour-class telemetry soak was documented with restarts, caveats, and excluded incident windows rather than treated as a perfect run. |
+| Independent review works | At least one pre-promotion agent review caught a real runtime-interface mismatch before it reached live use. |
+
 ## Sanitized Examples
 
 | Area | Public-Safe Summary |

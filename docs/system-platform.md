@@ -55,11 +55,15 @@ receive direct actuator authority.
 Editable source:
 [development-field-pipeline.svg](../assets/diagrams/development-field-pipeline.svg).
 
-The platform is also a delivery system. BCH bench work feeds two linked paths:
-a physical validation lane from STG toward QST and real SeaTalk NG / NMEA 2000
-sensor evidence, and a TVL DevOps lane for Lima vz, macOS containers,
-Kubernetes, Flux, GitOps, SignalK, InfluxDB, Grafana, survey dashboards, remote
-debugging, and field-style development.
+The platform is also a delivery system. The diagram uses internal shorthand:
+home bench (BCH), Pi staging (STG), boat-side node/case (QST), and travel
+laptop (TVL).
+
+Home bench work feeds two linked paths: a physical validation lane from Pi
+staging toward a boat-side node/case and real SeaTalk NG / NMEA 2000 sensor
+evidence, and a travel-laptop DevOps lane for Lima vz, macOS containers,
+Kubernetes, Flux, GitOps, SignalK, InfluxDB, Grafana, survey dashboards,
+remote debugging, and field-style development.
 
 Terraform, Ansible, and cloud-init matter because rebuildability is part of the
 platform, not an afterthought. Future sensor applications may include Go or
