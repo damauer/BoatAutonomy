@@ -5,6 +5,11 @@ generator. The point is not that an agent can produce a patch. The point is
 that roles, evidence, review boundaries, and approval gates can make agentic
 work auditable.
 
+For the public narrative and workflow image, start with
+[ai-and-agentic-collaboration.md](ai-and-agentic-collaboration.md). This page
+is the implementation-detail companion: roles, workflow, governance YAML, and
+review Markdown examples.
+
 ## Roles
 
 | Role | Responsibility |

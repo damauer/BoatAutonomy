@@ -1,4 +1,4 @@
-# AI And Agentic Complexity
+# AI And Agentic Collaboration
 
 BoatAutonomy uses AI in two different ways, and the distinction matters.
 
@@ -9,14 +9,15 @@ real boat.
 
 ## Agentic Workflow
 
-[![Agentic collaboration harness](../assets/diagrams/agentic-collaboration-harness.png)](agentic-collaboration-harness.md)
+![Agentic collaboration harness](../assets/diagrams/agentic-collaboration-harness.png)
 
-This page is the conceptual overview. The standalone
-[agentic-collaboration-harness.md](agentic-collaboration-harness.md) page is
-the diagram reference, while [agentic-engineering.md](agentic-engineering.md)
-holds the role table, governance YAML, and review Markdown examples. That split
-keeps the public story readable without repeating the same policy in three
-places.
+Editable source:
+[agentic-collaboration-harness.svg](../assets/diagrams/agentic-collaboration-harness.svg).
+
+This page is the conceptual overview. The detailed role table, governance YAML,
+and review Markdown examples live in
+[agentic-engineering.md](agentic-engineering.md). That split keeps the public
+story readable without repeating the same policy in multiple places.
 
 ## Agentic Engineering Layer
 

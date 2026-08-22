@@ -54,8 +54,8 @@ platform without exposing the private topology:
 
 - [development-field-pipeline.md](development-field-pipeline.md) shows the
   BCH -> STG -> QST physical validation lane and the parallel TVL DevOps lane.
-- [agentic-collaboration-harness.md](agentic-collaboration-harness.md) shows
-  the governed Claude Code, Codex, Grok, tmux, GitLab, and mirror workflow.
+- [ai-and-agentic-collaboration.md](ai-and-agentic-collaboration.md) shows the
+  governed Claude Code, Codex, Grok, tmux, GitLab, and mirror workflow.
 
 ## Why Technologists Should Care
 

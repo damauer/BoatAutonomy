@@ -109,8 +109,9 @@ pattern with several mature-looking pieces already being exercised:
   control boundaries.
 
 Start with [technical-platform.md](docs/technical-platform.md) for the system
-view and [ai-and-agentic-complexity.md](docs/ai-and-agentic-complexity.md) for
-the AI/teamwork complexity behind the public surface.
+view and
+[ai-and-agentic-collaboration.md](docs/ai-and-agentic-collaboration.md) for
+the AI and agentic collaboration story behind the public surface.
 
 <table>
   <tr>
@@ -124,11 +125,11 @@ the AI/teamwork complexity behind the public surface.
       System shape, staged autonomy boundary, edge operations, replay, and evidence.
     </td>
     <td width="50%">
-      <a href="docs/agentic-collaboration-harness.md">
-        <img src="assets/diagrams/agentic-collaboration-harness.png" alt="Agentic collaboration harness thumbnail" width="260">
+      <a href="docs/ai-and-agentic-collaboration.md">
+        <img src="assets/diagrams/agentic-collaboration-harness.png" alt="AI and agentic collaboration thumbnail" width="260">
       </a>
       <br>
-      <a href="docs/agentic-collaboration-harness.md"><strong>Agentic harness</strong></a>
+      <a href="docs/ai-and-agentic-collaboration.md"><strong>AI and agentic collaboration</strong></a>
       <br>
       Claude Code, Codex, Grok, tmux, GitLab records, review, and reconciliation.
     </td>
@@ -178,17 +179,16 @@ connecting the project to prior systems work.
 - [docs/safety-boundary.md](docs/safety-boundary.md) - what the project does
   and does not authorize.
 - [docs/agentic-engineering.md](docs/agentic-engineering.md) - how the
-  multi-agent build/review/research loop works.
+  multi-agent build/review/research loop is governed, with YAML and Markdown
+  examples.
 - [docs/evidence.md](docs/evidence.md) - sanitized examples of evidence the
   private project records before promoting work.
 - [docs/technical-platform.md](docs/technical-platform.md) - deeper technical
   platform view for technologists.
-- [docs/ai-and-agentic-complexity.md](docs/ai-and-agentic-complexity.md) -
-  AI, agent, replay, and governance complexity.
+- [docs/ai-and-agentic-collaboration.md](docs/ai-and-agentic-collaboration.md) -
+  AI, agent collaboration, replay, model boundaries, and governance.
 - [docs/development-field-pipeline.md](docs/development-field-pipeline.md) -
   dev/test/field production line and DevOps survey lane.
-- [docs/agentic-collaboration-harness.md](docs/agentic-collaboration-harness.md) -
-  Claude/Codex/Grok collaboration, review, reconciliation, and persistence.
 - [docs/relevant-work.md](docs/relevant-work.md) - professional positioning
   and opportunity fit.
 - [docs/portfolio-narrative.md](docs/portfolio-narrative.md) - why this

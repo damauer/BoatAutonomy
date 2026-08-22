@@ -55,4 +55,4 @@ without publishing the private system.
 
 For the technical substrate behind this market vision, see
 [technical-platform.md](technical-platform.md) and
-[ai-and-agentic-complexity.md](ai-and-agentic-complexity.md).
+[ai-and-agentic-collaboration.md](ai-and-agentic-collaboration.md).
