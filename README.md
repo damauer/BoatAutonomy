@@ -139,12 +139,12 @@ staged architecture, delivery pipeline, and technical breadcrumbs.
     </td>
     <td width="33%">
       <a href="docs/evidence.md">
-        <img src="assets/evidence/grafana-marina-telemetry-public-safe.png" alt="Evidence thumbnail" width="240">
+        <img src="assets/evidence/signalk-survey-intake.png" alt="Evidence thumbnail" width="240">
       </a>
       <br>
       <a href="docs/evidence.md"><strong>Evidence</strong></a>
       <br>
-      Sanitized examples, replay evidence, and public-safe dashboard artifacts.
+      Survey intake, replay evidence, and public-safe dashboard artifacts.
     </td>
   </tr>
 </table>

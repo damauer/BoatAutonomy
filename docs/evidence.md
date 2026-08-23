@@ -43,7 +43,23 @@ evidence lets more defects be found before scarce boat time, weather windows,
 and field setups are involved. Public summaries do not publish raw tracks,
 private locations, detailed timings, or dollar claims.
 
-## Dashboard Evidence Example
+## SignalK Survey Intake Example
+
+The image below is a public-safe SignalK-style intake visual. It is based on
+the project shape: a running TVL SignalK service, normalized marine telemetry
+paths, and the owner-supplied Maretron DSM410 device-selection photos from an
+on-boat survey. It is redrawn with synthetic/redacted values, so raw captures,
+live endpoints, exact positions, and unique device identifiers are not
+published.
+
+![Public-safe SignalK survey intake visual](../assets/evidence/signalk-survey-intake.png)
+
+This is the evidence pattern the project is building toward: survey the vessel,
+preserve the device inventory, normalize telemetry through SignalK-style paths,
+replay it through storage and dashboards, and use the result as input to a
+developing electronics/network twin.
+
+## Grafana Dashboard Evidence Example
 
 The image below is a public-safe Grafana-style evidence screenshot generated
 from synthetic/redacted values. It shows the kind of GPS location, vessel-state
@@ -59,5 +75,6 @@ are intentionally omitted.
 ## Public Demo Data
 
 The sample under [demos/synthetic-nmea](../demos/synthetic-nmea/) is synthetic.
-It is shaped like normalized marine telemetry but is not from a real vessel,
-marina, route, customer, or field session.
+It is shaped like normalized marine telemetry and supports the public-safe
+SignalK-style visual above, but is not from a real vessel, marina, route,
+customer, or field session.
