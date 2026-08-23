@@ -17,7 +17,8 @@
 
   <rect x="500" y="170" width="760" height="300" rx="30" fill="url(#git)" filter="url(#shadow)"/>
   <text x="545" y="222" class="h">GitLab Work System</text>
-  <text x="545" y="258" class="s" style="fill:#eef2ff">Issues, MRs, milestones, commits, reviews, evidence records, and owner decisions hold shared state.</text>
+  <text x="545" y="258" class="s" style="fill:#eef2ff">Issues, MRs, commits, reviews, and evidence records</text>
+  <text x="545" y="284" class="s" style="fill:#eef2ff">hold shared state with owner decisions.</text>
   <rect x="555" y="310" width="170" height="60" rx="16" fill="#111827" opacity="0.92" stroke="#f97316"/><text x="605" y="347" class="label">YAML</text>
   <rect x="795" y="310" width="190" height="60" rx="16" fill="#111827" opacity="0.92" stroke="#34d399"/><text x="840" y="347" class="label">Markdown</text>
   <rect x="1055" y="310" width="150" height="60" rx="16" fill="#111827" opacity="0.92" stroke="#38bdf8"/><text x="1104" y="347" class="label">Docs</text>

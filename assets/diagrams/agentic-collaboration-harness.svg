@@ -18,7 +18,8 @@
 
   <rect x="475" y="160" width="650" height="235" rx="30" fill="url(#core)" filter="url(#shadow)"/>
   <text x="520" y="212" class="h">Implementation And Review Loop</text>
-  <text x="520" y="248" class="s" style="fill:#eef2ff">Claude builds. Codex reviews. Findings become fixes, deferrals, blockers, or owner decisions.</text>
+  <text x="520" y="248" class="s" style="fill:#eef2ff">Claude builds. Codex reviews.</text>
+  <text x="520" y="274" class="s" style="fill:#eef2ff">Findings become fixes, blockers, deferrals, or owner decisions.</text>
   <rect x="535" y="300" width="145" height="50" rx="15" fill="#0b2a55" stroke="#38bdf8" stroke-width="1.6"/><text x="561" y="331" class="s">Claude Code</text>
   <rect x="720" y="300" width="115" height="50" rx="15" fill="#2b174c" stroke="#a78bfa" stroke-width="1.6"/><text x="758" y="331" class="s">tmux</text>
   <rect x="875" y="300" width="125" height="50" rx="15" fill="#45220a" stroke="#f97316" stroke-width="1.6"/><text x="912" y="331" class="s">GitLab</text>
