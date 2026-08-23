@@ -72,7 +72,7 @@ This repository does not claim unattended autonomous docking. It does not
 publish live vessel-control code, actuator wiring, raw capture files, endpoint
 details, secrets, or enough operational detail to reproduce the private system.
 
-Read [scope-and-safety.md](docs/scope-and-safety.md) for the public/private
+Read [safety boundary](docs/scope-and-safety.md) for the public/private
 boundary and [evidence.md](docs/evidence.md) for the evidence posture.
 
 ## How It Works
@@ -121,12 +121,12 @@ staged architecture, delivery pipeline, and technical breadcrumbs.
   <tr>
     <td width="33%">
       <a href="docs/scope-and-safety.md">
-        <img src="assets/diagrams/safety-boundary.png" alt="Scope and safety thumbnail" width="240">
+        <img src="assets/diagrams/safety-boundary.png" alt="Safety boundary thumbnail" width="240">
       </a>
       <br>
-      <a href="docs/scope-and-safety.md"><strong>Scope and safety</strong></a>
+      <a href="docs/scope-and-safety.md"><strong>Safety boundary</strong></a>
       <br>
-      Public scope, non-claims, and the physical authority boundary.
+      What is safe, private, and not claimed.
     </td>
     <td width="33%">
       <a href="docs/system-platform.md">
@@ -148,6 +148,21 @@ staged architecture, delivery pipeline, and technical breadcrumbs.
     </td>
   </tr>
 </table>
+
+## Sample Telemetry
+
+Public demos use synthetic telemetry shaped like normalized SignalK paths. The
+values below are not from a real vessel, marina, route, customer, or field
+session; they exist so screenshots, parsers, and dashboard examples can be
+shown without publishing private telemetry.
+
+```csv
+timestamp,source,path,value,unit
+2026-01-01T12:00:00Z,synthetic,electrical.batteries.house.voltage,12.74,V
+2026-01-01T12:00:01Z,synthetic,environment.depth.belowTransducer,4.8,m
+```
+
+Full sample: [sample-telemetry.csv](demos/synthetic-nmea/sample-telemetry.csv).
 
 ## Why It Matters
 
@@ -246,7 +261,7 @@ conversation you want to have.
 | Story Beat | Reader Question | Supporting Pages |
 | --- | --- | --- |
 | Why read this | What problem makes this worth attention? | [problem-and-opportunity.md](docs/problem-and-opportunity.md) |
-| What this is | What is public, what is private, and what is not being claimed? | [scope-and-safety.md](docs/scope-and-safety.md), [evidence.md](docs/evidence.md), [synthetic demo data](demos/synthetic-nmea/) |
+| What this is | What is public, what is private, and what is not being claimed? | [safety boundary](docs/scope-and-safety.md), [evidence.md](docs/evidence.md), [sample telemetry](#sample-telemetry) |
 | How it works | What is the system shape and technical approach? | [system-platform.md](docs/system-platform.md) |
 | Why it matters | Why is the evidence/control plane ahead of assistive behavior? | [agentic-engineering.md](docs/agentic-engineering.md), [evidence.md](docs/evidence.md) |
 | Where it is going | What is the capability path and future business hypothesis? | [roadmap-and-business.md](docs/roadmap-and-business.md) |

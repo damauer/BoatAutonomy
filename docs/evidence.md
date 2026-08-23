@@ -74,7 +74,7 @@ are intentionally omitted.
 
 ## Public Demo Data
 
-The sample under [demos/synthetic-nmea](../demos/synthetic-nmea/) is synthetic.
-It is shaped like normalized marine telemetry and supports the public-safe
-SignalK-style visual above, but is not from a real vessel, marina, route,
-customer, or field session.
+The [sample telemetry](../README.md#sample-telemetry) in the README is
+synthetic. It is shaped like normalized marine telemetry and supports the
+public-safe SignalK-style visual above, but is not from a real vessel, marina,
+route, customer, or field session.
