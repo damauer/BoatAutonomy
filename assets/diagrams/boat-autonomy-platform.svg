@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
   <title id="title">BoatAutonomy platform pattern</title>
-  <desc id="desc">A dark public-safe diagram showing BoatAutonomy as a replay-first edge platform with marine telemetry, evidence, agentic review, and a human authority boundary.</desc>
+  <desc id="desc">A dark public-safe diagram showing BoatAutonomy as an instrumented-survey platform where observed marine electronics feed an evolving twin, replay validation, agentic review, and a human authority boundary.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#08111f"/><stop offset="0.55" stop-color="#111827"/><stop offset="1" stop-color="#06251f"/></linearGradient>
     <linearGradient id="core" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2563eb"/><stop offset="0.48" stop-color="#0f766e"/><stop offset="1" stop-color="#f97316"/></linearGradient>
@@ -16,22 +16,22 @@
   <rect width="1600" height="1000" fill="url(#bg)"/>
   <circle cx="1320" cy="140" r="170" fill="#1d4ed8" opacity="0.18"/><circle cx="205" cy="815" r="200" fill="#0f766e" opacity="0.22"/>
   <text x="80" y="86" class="title">BoatAutonomy Platform Pattern</text>
-  <text x="82" y="126" class="sub">A replay-first substrate for marine telemetry, evidence, agentic review, and staged assistance</text>
+  <text x="82" y="126" class="sub">Instrumented survey builds an evolving twin; replay validates before authority</text>
 
   <rect x="90" y="190" width="300" height="235" rx="24" class="panel"/>
-  <text x="126" y="238" class="h">Marine Signals</text>
+  <text x="126" y="238" class="h">Instrumented Survey</text>
   <text x="126" y="276" class="s">SeaTalk NG / NMEA 2000</text>
-  <text x="126" y="304" class="s">read-only telemetry</text>
+  <text x="126" y="304" class="s">electronics + edge state</text>
   <rect x="126" y="340" width="215" height="42" rx="14" fill="#0b2a55" stroke="#38bdf8" class="chip"/>
-  <text x="150" y="367" class="s">capture, not command</text>
+  <text x="150" y="367" class="s">observe, not command</text>
 
   <rect x="500" y="170" width="600" height="285" rx="32" fill="url(#core)" filter="url(#shadow)"/>
-  <text x="545" y="224" class="h">Replay-First Edge Platform</text>
-  <text x="545" y="262" class="s" style="fill:#eef2ff">Normalize signals, replay sessions, inspect evidence,</text>
-  <text x="545" y="290" class="s" style="fill:#eef2ff">then promote only through explicit gates.</text>
-  <rect x="545" y="330" width="145" height="48" rx="15" fill="#0f172a" opacity="0.92"/><text x="581" y="361" class="s">Capture</text>
-  <rect x="715" y="330" width="145" height="48" rx="15" fill="#0f172a" opacity="0.92"/><text x="756" y="361" class="s">Replay</text>
-  <rect x="885" y="330" width="170" height="48" rx="15" fill="#0f172a" opacity="0.92"/><text x="922" y="361" class="s">Evidence</text>
+  <text x="545" y="224" class="h">Evolving Twin + Replay Platform</text>
+  <text x="545" y="262" class="s" style="fill:#eef2ff">Observed behavior becomes a baseline, twin inputs,</text>
+  <text x="545" y="290" class="s" style="fill:#eef2ff">and pre-change validation evidence.</text>
+  <rect x="545" y="330" width="145" height="48" rx="15" fill="#0f172a" opacity="0.92"/><text x="581" y="361" class="s">Survey</text>
+  <rect x="715" y="330" width="145" height="48" rx="15" fill="#0f172a" opacity="0.92"/><text x="760" y="361" class="s">Twin</text>
+  <rect x="885" y="330" width="170" height="48" rx="15" fill="#0f172a" opacity="0.92"/><text x="922" y="361" class="s">Validate</text>
 
   <rect x="1210" y="190" width="300" height="235" rx="24" class="panel"/>
   <text x="1246" y="238" class="h">Human Authority</text>
@@ -43,10 +43,10 @@
   <path d="M390 305 C430 305 460 300 500 300" class="line"/><path d="M1100 300 C1145 300 1170 305 1210 305" class="line"/>
 
   <rect x="130" y="535" width="330" height="210" rx="24" class="panel"/>
-  <text x="166" y="582" class="h2">Infrastructure Around It</text>
-  <text x="166" y="622" class="s">Kubernetes, Flux, GitOps,</text>
-  <text x="166" y="650" class="s">dashboards, and edge services</text>
-  <text x="166" y="678" class="s">support observability and replay.</text>
+  <text x="166" y="582" class="h2">Electronics / Network Twin</text>
+  <text x="166" y="622" class="s">N2K, PoE/Ethernet, cluster</text>
+  <text x="166" y="650" class="s">state, dashboards, and replay</text>
+  <text x="166" y="678" class="s">evolve as understanding grows.</text>
 
   <rect x="505" y="535" width="330" height="210" rx="24" class="panel"/>
   <text x="541" y="582" class="h2">Agentic Review</text>
@@ -55,10 +55,10 @@
   <text x="541" y="678" class="s">review, and reconciliation loops.</text>
 
   <rect x="880" y="535" width="330" height="210" rx="24" class="panel"/>
-  <text x="916" y="582" class="h2">Model Boundary</text>
-  <text x="916" y="622" class="s">Local model experiments may help</text>
-  <text x="916" y="650" class="s">classify, estimate, or propose;</text>
-  <text x="916" y="678" class="s">they do not command the boat.</text>
+  <text x="916" y="582" class="h2">Vessel-Motion Twin Later</text>
+  <text x="916" y="622" class="s">State estimation and shadow mode</text>
+  <text x="916" y="650" class="s">come after replay evidence;</text>
+  <text x="916" y="678" class="s">models do not command the boat.</text>
 
   <rect x="1255" y="535" width="255" height="210" rx="24" class="panel"/>
   <text x="1290" y="582" class="h2">Public Surface</text>
@@ -67,5 +67,5 @@
   <text x="1290" y="678" class="s">clear non-claims.</text>
 
   <rect x="130" y="825" width="1380" height="70" rx="22" fill="#0f172a" stroke="#334155" stroke-width="1.6"/>
-  <text x="165" y="866" class="h2">Takeaway: the project is not a docking claim; it is a staged, reviewable platform for earning trust before authority.</text>
+  <text x="165" y="866" class="h2">Takeaway: observed behavior becomes an evolving twin; every move toward authority is replayed, reviewed, and gated.</text>
 </svg>
