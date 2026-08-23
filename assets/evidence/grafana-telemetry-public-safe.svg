@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
   <title id="title">Public-safe Grafana telemetry evidence view</title>
-  <desc id="desc">A sanitized Grafana-style dashboard showing a home marina area GPS marker, vessel telemetry panels, replay status, and evidence boundary labels without exposing live endpoints, raw telemetry, or exact marina coordinates.</desc>
+  <desc id="desc">A sanitized Grafana-style dashboard showing a synthetic offshore GPS marker, vessel telemetry panels, replay status, and evidence boundary labels without exposing live endpoints, raw telemetry, or exact coordinates.</desc>
   <defs>
     <linearGradient id="page" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0b1220"/>
@@ -53,20 +53,20 @@
 
   <rect x="56" y="190" width="610" height="500" class="panel"/>
   <text x="88" y="230" class="panel-title">GPS Location</text>
-  <text x="88" y="256" class="small">Home marina area, exact position redacted for publication</text>
+  <text x="88" y="256" class="small">Synthetic offshore sample, not a real slip, marina, or track</text>
   <rect x="86" y="280" width="550" height="360" rx="14" fill="#0b2635" stroke="#1e3a4a" stroke-width="1.5"/>
   <path d="M95 520 C175 470 220 425 210 350 C206 305 245 282 300 290 C365 300 405 260 468 300 C540 346 575 420 632 440 L632 640 L95 640 Z" fill="#153f49"/>
-  <path d="M116 310 C190 276 250 246 314 252 C390 258 470 246 610 305 L610 640 L116 640 Z" fill="url(#bay)" opacity="0.92"/>
+  <path d="M116 330 C190 306 250 296 314 300 C390 305 470 296 610 322 L610 640 L116 640 Z" fill="url(#bay)" opacity="0.92"/>
   <path d="M156 322 C220 305 276 300 332 314 C390 331 450 322 565 352" stroke="#67e8f9" stroke-width="4" fill="none" opacity="0.7"/>
   <path d="M146 548 C230 496 310 466 408 478 C486 488 540 510 600 555" stroke="#99f6e4" stroke-width="4" fill="none" opacity="0.55"/>
   <circle cx="348" cy="438" r="16" fill="#f97316" stroke="#ffedd5" stroke-width="5"/>
   <circle cx="348" cy="438" r="42" fill="#f97316" opacity="0.16"/>
-  <text x="376" y="432" class="label" fill="#e2e8f0">Home marina area</text>
-  <text x="376" y="455" class="tiny">rounded region, exact GPS omitted</text>
+  <text x="376" y="432" class="label" fill="#e2e8f0">Synthetic offshore area</text>
+  <text x="376" y="455" class="tiny">sample region, no real GPS</text>
   <rect x="106" y="594" width="250" height="28" class="chip"/>
   <text x="124" y="613" class="tiny">GPS source: replayed SignalK path</text>
   <rect x="370" y="594" width="246" height="28" class="chip"/>
-  <text x="388" y="613" class="tiny">Lat/lon withheld from public repo</text>
+  <text x="388" y="613" class="tiny">Synthetic coordinates only</text>
   <text x="88" y="668" class="tiny">Map layer is illustrative; this is not a live Grafana export.</text>
 
   <rect x="696" y="190" width="848" height="238" class="panel"/>
@@ -74,9 +74,9 @@
   <g>
     <rect x="728" y="262" width="182" height="126" rx="12" fill="#0b1f31" stroke="#1e3a8a" stroke-width="1.5"/>
     <text x="748" y="292" class="label">Speed Over Ground</text>
-    <text x="748" y="342" class="value">0.0</text>
+    <text x="748" y="342" class="value">0.8</text>
     <text x="835" y="342" class="small">kt</text>
-    <text x="748" y="370" class="tiny">marina idle / replay</text>
+    <text x="748" y="370" class="tiny">synthetic replay sample</text>
   </g>
   <g>
     <rect x="930" y="262" width="182" height="126" rx="12" fill="#171f12" stroke="#3f6212" stroke-width="1.5"/>

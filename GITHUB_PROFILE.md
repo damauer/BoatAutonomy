@@ -5,8 +5,9 @@
 Teaching a boat to dock itself, with evidence before authority.
 
 BoatAutonomy is a public-safe view of replay-first marine telemetry,
-instrumented survey evidence, and supervised docking-assist research. The work
-combines replayable edge systems, a developing digital-twin substrate, safety
+instrumented survey evidence, and research toward supervised docking assist.
+The work combines replayable edge systems, a developing digital-twin
+substrate, safety
 boundaries, Kubernetes lab/staging operations, and multi-agent software
 engineering.
 

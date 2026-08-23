@@ -43,9 +43,9 @@ estimate, classify, summarize, or propose, but it must remain subordinate to a
 bounded system. Model output is a request to a bounded controller, never a helm
 command.
 
-Tower is the private local lane for local LLM and model-training experiments.
-That does not change the control boundary: model work remains research,
-analysis, or bounded assistance until separately reviewed and approved.
+A private local lane supports local LLM and model-training experiments. That
+does not change the control boundary: model work remains research, analysis,
+or bounded assistance until separately reviewed and approved.
 
 Publicly, that means:
 

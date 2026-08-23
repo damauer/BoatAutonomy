@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
   <title id="title">AI and agentic collaboration harness</title>
-  <desc id="desc">A dark public-safe diagram showing Claude Code, Codex, Grok, tmux, GitLab records, Tower model experiments, and publication boundaries.</desc>
+  <desc id="desc">A dark public-safe diagram showing Claude Code, Codex, Grok, tmux, GitLab records, local model experiments, and publication boundaries.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#08111f"/><stop offset="0.55" stop-color="#111827"/><stop offset="1" stop-color="#170b2c"/></linearGradient>
     <linearGradient id="core" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2563eb"/><stop offset="0.52" stop-color="#7c3aed"/><stop offset="1" stop-color="#f97316"/></linearGradient>
@@ -26,7 +26,7 @@
 
   <rect x="1215" y="175" width="300" height="205" rx="24" class="panel"/>
   <text x="1250" y="222" class="h">Research And Models</text>
-  <text x="1250" y="260" class="s">Grok explores domain fit.</text><text x="1250" y="286" class="s">Tower stays a private local</text><text x="1250" y="312" class="s">LLM/model-training lane.</text>
+  <text x="1250" y="260" class="s">Grok explores domain fit.</text><text x="1250" y="286" class="s">Local model work stays</text><text x="1250" y="312" class="s">in a private lane.</text>
 
   <path d="M385 278 C420 278 440 278 475 278" class="line"/><path d="M1125 278 C1160 278 1180 278 1215 278" class="line"/>
 

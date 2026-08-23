@@ -46,7 +46,7 @@ private locations, detailed timings, or dollar claims.
 ## SignalK Survey Intake Example
 
 The image below is a public-safe SignalK-style intake visual. It is based on
-the project shape: a running TVL SignalK service, normalized marine telemetry
+the project shape: a field/travel SignalK service, normalized marine telemetry
 paths, and the owner-supplied Maretron DSM410 device-selection photos from an
 on-boat survey. It is redrawn with synthetic/redacted values, so raw captures,
 live endpoints, exact positions, and unique device identifiers are not
@@ -66,11 +66,11 @@ from synthetic/redacted values. It shows the kind of GPS location, vessel-state
 panels, replay trend, and SignalK -> InfluxDB -> Grafana evidence that the
 private project preserves before treating telemetry work as complete.
 
-![Public-safe Grafana telemetry evidence screenshot](../assets/evidence/grafana-marina-telemetry-public-safe.png)
+![Public-safe Grafana telemetry evidence screenshot](../assets/evidence/grafana-telemetry-public-safe.png)
 
-The marker represents the home marina area, but exact coordinates, exact
-position, raw telemetry, live dashboard endpoints, and actuator/control paths
-are intentionally omitted.
+The marker represents a synthetic offshore sample, not a real slip, marina, or
+track. Exact coordinates, raw telemetry, live dashboard endpoints, and
+actuator/control paths are intentionally omitted.
 
 ## Public Demo Data
 

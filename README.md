@@ -30,7 +30,7 @@ credentials, repair procedures, or operational runbooks.
 
 ## Why Read This
 
-That human problem is simple to understand, but technically hard to address
+The problem is simple to understand, but technically hard to address
 responsibly. A useful system has to observe before it estimates, replay before
 it recommends, and earn trust before it gets anywhere near authority.
 

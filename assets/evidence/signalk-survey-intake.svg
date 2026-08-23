@@ -65,7 +65,7 @@
   <text x="1260" y="42" class="tiny">Public-safe visual: no raw captures, IDs, or endpoints</text>
 
   <rect x="58" y="104" width="1484" height="70" rx="16" fill="#0b1728" stroke="#274156" stroke-width="1.5"/>
-  <text x="86" y="134" class="h">What The Survey Proved</text>
+  <text x="86" y="134" class="h">What The Survey Captured</text>
   <text x="86" y="158" class="s">A physical boat survey can be reduced to inspectable devices, normalized SignalK paths, replay data, and evidence for a developing twin.</text>
   <rect x="1148" y="124" width="160" height="30" class="chip"/>
   <text x="1166" y="144" class="tiny">passive capture</text>
@@ -74,7 +74,7 @@
 
   <rect x="58" y="206" width="842" height="542" class="panel"/>
   <text x="92" y="246" class="h">SignalK-Style Data Browser</text>
-  <text x="92" y="272" class="s">TVL runs SignalK; public view uses synthetic/redacted values shaped like normalized intake paths.</text>
+  <text x="92" y="272" class="s">A field/travel SignalK service shapes synthetic/redacted values like normalized intake paths.</text>
 
   <rect x="92" y="304" width="774" height="392" rx="18" fill="#07111f" stroke="#38bdf8" stroke-width="1.4"/>
   <rect x="92" y="304" width="774" height="44" rx="18" fill="#061629"/>
@@ -144,8 +144,8 @@
     <text x="34" y="112" style="font:800 13px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#111827;letter-spacing:0">-- Digital Yacht tool</text>
     <text x="34" y="144" class="lcd-small">-- Maretron recorder</text>
     <text x="34" y="174" class="lcd-small">-- Actisense interface</text>
-    <text x="34" y="204" class="lcd-small">00 Mercury gateway</text>
-    <text x="34" y="234" class="lcd-small">33 Raymarine display</text>
+    <text x="34" y="204" class="lcd-small">-- Mercury gateway</text>
+    <text x="34" y="234" class="lcd-small">-- Raymarine display</text>
     <text x="28" y="274" class="lcd-small">page 1 / ids redacted</text>
   </g>
 
@@ -156,11 +156,11 @@
     <text x="26" y="48" class="lcd">Device Selection</text>
     <text x="26" y="78" class="lcd-small">NA  Manufacturer  Model</text>
     <rect x="24" y="92" width="208" height="30" rx="3" fill="#e5e7eb" opacity="0.95"/>
-    <text x="34" y="112" style="font:800 13px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#111827;letter-spacing:0">0A Fusion audio</text>
-    <text x="34" y="144" class="lcd-small">05 Mercury display</text>
-    <text x="34" y="174" class="lcd-small">01 Mercury display</text>
-    <text x="34" y="204" class="lcd-small">35 Raymarine source</text>
-    <text x="34" y="234" class="lcd-small">08 Raymarine source</text>
+    <text x="34" y="112" style="font:800 13px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#111827;letter-spacing:0">-- Fusion audio</text>
+    <text x="34" y="144" class="lcd-small">-- Mercury display</text>
+    <text x="34" y="174" class="lcd-small">-- Mercury display</text>
+    <text x="34" y="204" class="lcd-small">-- Raymarine source</text>
+    <text x="34" y="234" class="lcd-small">-- Raymarine source</text>
     <text x="28" y="274" class="lcd-small">page 2 / ids redacted</text>
   </g>
 

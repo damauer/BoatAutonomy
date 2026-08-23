@@ -81,9 +81,9 @@ answered against recorded or synthetic evidence.
 Editable source:
 [development-field-pipeline.svg](../assets/diagrams/development-field-pipeline.svg).
 
-The platform is also a delivery system. The diagram uses internal shorthand:
-home bench (BCH), Pi staging (STG), boat-side node/case (QST), and travel
-laptop (TVL).
+The platform is also a delivery system. The diagram uses public-safe
+environment classes: home bench, Pi staging, boat-side node/case, and travel
+laptop.
 
 Home bench work feeds two linked paths: a physical validation lane from Pi
 staging toward a boat-side node/case and real SeaTalk NG / NMEA 2000 sensor
@@ -133,7 +133,7 @@ topology:
 - Telemetry inspection: SignalK, InfluxDB, and Grafana.
 - Project control: local and edge GitLab records, hosted backup, and an
   approved GitHub mirror path.
-- Model and runtime experiments: Tower as a private local model lane, plus
+- Model and runtime experiments: a private local model lane, plus
   possible future Go / Rust collectors and narrowly scoped WASM validators
   where measured benefit justifies the machinery.
 
