@@ -158,8 +158,14 @@ shown without publishing private telemetry.
 
 ```csv
 timestamp,source,path,value,unit
+2026-01-01T12:00:00Z,synthetic,navigation.position.latitude,34.0000,deg
+2026-01-01T12:00:00Z,synthetic,navigation.position.longitude,-72.0000,deg
+2026-01-01T12:00:00Z,synthetic,navigation.speedOverGround,0.42,m/s
+2026-01-01T12:00:00Z,synthetic,environment.water.temperature,28.0,C
+2026-01-01T12:00:00Z,synthetic,environment.depth.belowTransducer,4.8,m
+2026-01-01T12:00:00Z,synthetic,propulsion.engine.0.revolutions,650,rpm
 2026-01-01T12:00:00Z,synthetic,electrical.batteries.house.voltage,12.74,V
-2026-01-01T12:00:01Z,synthetic,environment.depth.belowTransducer,4.8,m
+2026-01-01T12:00:00Z,synthetic,tanks.fuel.currentLevel,0.62,ratio
 ```
 
 Full sample: [sample-telemetry.csv](demos/synthetic-nmea/sample-telemetry.csv).
