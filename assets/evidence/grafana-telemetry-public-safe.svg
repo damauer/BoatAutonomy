@@ -81,15 +81,15 @@
   <g>
     <rect x="930" y="262" width="182" height="126" rx="12" fill="#171f12" stroke="#3f6212" stroke-width="1.5"/>
     <text x="950" y="292" class="label">Heading</text>
-    <text x="950" y="342" class="value">182</text>
+    <text x="950" y="342" class="value">90</text>
     <text x="1034" y="342" class="small">deg</text>
     <text x="950" y="370" class="tiny">sensor path normalized</text>
   </g>
   <g>
     <rect x="1132" y="262" width="182" height="126" rx="12" fill="#2a1b0b" stroke="#92400e" stroke-width="1.5"/>
     <text x="1152" y="292" class="label">Depth</text>
-    <text x="1152" y="342" class="value">10.8</text>
-    <text x="1245" y="342" class="small">ft</text>
+    <text x="1152" y="342" class="value">4.8</text>
+    <text x="1245" y="342" class="small">m</text>
     <text x="1152" y="370" class="tiny">public sample value</text>
   </g>
   <g>
