@@ -72,14 +72,46 @@ This repository does not claim unattended autonomous docking. It does not
 publish live vessel-control code, actuator wiring, raw capture files, endpoint
 details, secrets, or enough operational detail to reproduce the private system.
 
-Read [safety boundary](docs/scope-and-safety.md) for the public/private
-boundary and [evidence.md](docs/evidence.md) for the evidence posture.
+The public/private boundary and evidence posture are linked visually below,
+right after the platform shape.
 
 ## How It Works
 
 ![BoatAutonomy platform pattern](assets/diagrams/boat-autonomy-platform.png)
 
 Editable source: [boat-autonomy-platform.svg](assets/diagrams/boat-autonomy-platform.svg).
+
+<table>
+  <tr>
+    <td width="33%">
+      <a href="docs/scope-and-safety.md">
+        <img src="assets/diagrams/safety-boundary.png" alt="Safety boundary thumbnail" width="240">
+      </a>
+      <br>
+      <a href="docs/scope-and-safety.md"><strong>Safety boundary</strong></a>
+      <br>
+      What is safe, private, and not claimed.
+    </td>
+    <td width="33%">
+      <a href="docs/evidence.md">
+        <img src="assets/evidence/signalk-survey-intake.png" alt="Evidence thumbnail" width="240">
+      </a>
+      <br>
+      <a href="docs/evidence.md"><strong>Evidence</strong></a>
+      <br>
+      Survey intake, replay evidence, and public-safe dashboard artifacts.
+    </td>
+    <td width="33%">
+      <a href="docs/system-platform.md">
+        <img src="assets/diagrams/development-field-pipeline.png" alt="Technical platform thumbnail" width="240">
+      </a>
+      <br>
+      <a href="docs/system-platform.md"><strong>System platform</strong></a>
+      <br>
+      Edge operations, replay, GitOps, telemetry, and field workflow.
+    </td>
+  </tr>
+</table>
 
 BoatAutonomy is organized as a replay-first, evidence-gated platform around a
 real recreational vessel. Marine signals enter as captured observations. Edge
@@ -116,38 +148,6 @@ The public story follows this order:
 
 Read [system-platform.md](docs/system-platform.md) for the system shape,
 staged architecture, delivery pipeline, and technical breadcrumbs.
-
-<table>
-  <tr>
-    <td width="33%">
-      <a href="docs/scope-and-safety.md">
-        <img src="assets/diagrams/safety-boundary.png" alt="Safety boundary thumbnail" width="240">
-      </a>
-      <br>
-      <a href="docs/scope-and-safety.md"><strong>Safety boundary</strong></a>
-      <br>
-      What is safe, private, and not claimed.
-    </td>
-    <td width="33%">
-      <a href="docs/system-platform.md">
-        <img src="assets/diagrams/development-field-pipeline.png" alt="Technical platform thumbnail" width="240">
-      </a>
-      <br>
-      <a href="docs/system-platform.md"><strong>System platform</strong></a>
-      <br>
-      Edge operations, replay, GitOps, telemetry, and field workflow.
-    </td>
-    <td width="33%">
-      <a href="docs/evidence.md">
-        <img src="assets/evidence/signalk-survey-intake.png" alt="Evidence thumbnail" width="240">
-      </a>
-      <br>
-      <a href="docs/evidence.md"><strong>Evidence</strong></a>
-      <br>
-      Survey intake, replay evidence, and public-safe dashboard artifacts.
-    </td>
-  </tr>
-</table>
 
 ## Sample Telemetry
 
