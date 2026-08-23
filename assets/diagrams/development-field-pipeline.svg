@@ -40,5 +40,5 @@
 
   <path d="M1370 392 C1380 505 1350 590 1285 630 C1235 674 1148 674 1060 665" class="dash"/>
   <rect x="80" y="800" width="270" height="110" rx="20" fill="#073b37" stroke="#34d399" stroke-width="1.6"/><text x="115" y="842" class="label">Future Apps</text><text x="115" y="872" class="s">Go / Rust collectors</text><text x="115" y="896" class="s">WASM only if measured</text>
-  <rect x="420" y="875" width="1100" height="70" rx="22" fill="#0f172a" stroke="#334155" stroke-width="1.6"/><text x="455" y="917" class="h">Takeaway: the pipeline turns field evidence into repeatable twin inputs before promotion.</text>
+  <rect x="420" y="875" width="1100" height="70" rx="22" fill="#0f172a" stroke="#334155" stroke-width="1.6"/><text x="455" y="917" class="h">The pipeline turns field evidence into repeatable twin inputs before promotion.</text>
 </svg>

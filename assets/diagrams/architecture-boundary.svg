@@ -12,5 +12,5 @@
   <rect x="210" y="530" width="1180" height="190" rx="28" fill="#0f172a" stroke="#334155" stroke-width="1.6" filter="url(#shadow)"/>
   <text x="250" y="584" class="h">Hard Boundary</text><text x="250" y="626" class="s">Kubernetes, dashboards, agents, and models can observe, replay, estimate, and recommend.</text><text x="250" y="656" class="s">They do not become the hard real-time safety controller.</text>
   <rect x="1045" y="575" width="265" height="76" rx="18" fill="#45132e" stroke="#f472b6" stroke-width="1.6"/><text x="1086" y="620" class="h">Owner + Override</text>
-  <rect x="90" y="800" width="1420" height="70" rx="22" fill="#111827" stroke="#263244" stroke-width="1.6"/><text x="130" y="842" class="h">Takeaway: the public architecture is about staged evidence, not a claim of live autonomous control.</text>
+  <rect x="90" y="800" width="1420" height="70" rx="22" fill="#111827" stroke="#263244" stroke-width="1.6"/><text x="130" y="842" class="h">The public architecture is about staged evidence, not a claim of live autonomous control.</text>
 </svg>

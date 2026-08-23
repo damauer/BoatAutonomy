@@ -38,7 +38,7 @@
   <path d="M995 465 C950 420 820 410 770 465" class="dash"/><path d="M620 465 C560 420 360 420 250 465" class="dash"/>
 
   <rect x="110" y="760" width="1390" height="120" rx="26" fill="#0f172a" stroke="#334155" stroke-width="1.6" filter="url(#shadow)"/>
-  <text x="145" y="808" class="h">Evidence Persistence And Publication Path</text>
+  <text x="145" y="808" class="h">Agent speed is useful because work stays observable, reviewed, reconciled, and gated.</text>
   <text x="145" y="842" class="s">Local/edge GitLab holds operational truth. Hosted backup preserves durable records. GitHub mirrors only approved public artifacts.</text>
-  <text x="145" y="872" class="tiny">Takeaway: agent speed is useful because the work remains observable, reviewed, reconciled, and gated.</text>
+  <text x="145" y="872" class="tiny">Evidence persistence and publication boundaries are part of the engineering system.</text>
 </svg>

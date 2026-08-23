@@ -9,5 +9,5 @@
   <rect x="1150" y="210" width="360" height="155" rx="24" class="panel"/><text x="1188" y="258" class="h">Cloud + DevOps</text><text x="1188" y="300" class="s">AWS, Kubernetes, IaC, CI/CD, recovery, operations</text>
   <rect x="90" y="530" width="360" height="155" rx="24" class="panel"/><text x="128" y="578" class="h">Digital-Twin Method</text><text x="128" y="620" class="s">telemetry, baseline, what-if,</text><text x="128" y="646" class="s">live-vs-expected</text>
   <rect x="1150" y="530" width="360" height="155" rx="24" class="panel"/><text x="1188" y="578" class="h">Governed AI Delivery</text><text x="1188" y="620" class="s">roles, reviews, evidence,</text><text x="1188" y="646" class="s">approval gates, restraint</text>
-  <rect x="210" y="800" width="1180" height="70" rx="22" fill="#0f172a" stroke="#334155" stroke-width="1.6"/><text x="250" y="842" class="h">Takeaway: the project turns hard-systems judgment into a public-safe, inspectable example.</text>
+  <rect x="210" y="800" width="1180" height="70" rx="22" fill="#0f172a" stroke="#334155" stroke-width="1.6"/><text x="250" y="842" class="h">The project turns hard-systems judgment into a public-safe, inspectable example.</text>
 </svg>

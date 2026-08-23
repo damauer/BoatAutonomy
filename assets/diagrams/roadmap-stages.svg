@@ -14,5 +14,5 @@
   <g><rect x="935" y="300" width="180" height="190" rx="22" fill="#45220a" stroke="#f97316" class="card"/><text x="980" y="350" class="h">4 Shadow</text><text x="965" y="388" class="s">predict requests,</text><text x="965" y="414" class="s">do not influence</text></g>
   <g><rect x="1145" y="300" width="180" height="190" rx="22" fill="#45132e" stroke="#f472b6" class="card"/><text x="1175" y="350" class="h">5 Assist</text><text x="1175" y="388" class="s">bounded, enabled,</text><text x="1175" y="414" class="s">override-ready</text></g>
   <g><rect x="1355" y="300" width="150" height="190" rx="22" fill="#111827" stroke="#94a3b8" class="card"/><text x="1392" y="350" class="h">6 R&amp;D</text><text x="1380" y="388" class="s">higher autonomy</text><text x="1380" y="414" class="s">remains research</text></g>
-  <rect x="130" y="690" width="1340" height="82" rx="24" fill="#0f172a" stroke="#334155" stroke-width="1.6" filter="url(#shadow)"/><text x="170" y="742" class="h">Takeaway: the roadmap is a sequence of evidence gates, not a promise that autonomy is already finished.</text>
+  <rect x="130" y="690" width="1340" height="82" rx="24" fill="#0f172a" stroke="#334155" stroke-width="1.6" filter="url(#shadow)"/><text x="170" y="742" class="h">The roadmap is a sequence of evidence gates, not a promise that autonomy is already finished.</text>
 </svg>
