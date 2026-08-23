@@ -50,22 +50,29 @@ receive direct actuator authority.
 
 ## Instrumented Survey And Digital Twin
 
-The next useful asset is not a claim of autonomy. It is the instrumented survey:
-measured behavior from the boat, its electronics, and its operating context,
-captured in a form that can be replayed, inspected, and gradually turned into
-simulation inputs.
+The next useful asset is not a claim of autonomy. It is the instrumented
+survey: measured behavior from the boat, its electronics, and its operating
+context, captured in a form that can be replayed, inspected, and gradually
+turned into simulation inputs.
 
-That survey feeds a developing digital twin. Publicly, that means replayable
-telemetry, calibration context, synthetic scenarios, and evidence artifacts
-that let engineers and agents develop against observed vessel behavior without
-waiting for every test to happen on the boat. It does not mean a completed
-high-fidelity physics model, a certified simulator, or a substitute safety
-case.
+The digital-twin idea is intentionally split in two. The current twin is an
+electronics/network twin: marine-network observations, PoE/Ethernet behavior,
+edge services, and cluster state captured well enough to replay, compare, and
+validate before promotion. The later vessel-motion twin belongs to future
+state-estimation and shadow-mode work. It is not claimed here as complete.
 
-This approach has already shown the practical benefit expected from digital
-twin work: less schedule dependence on weather, dock time, and fragile field
-setups; earlier discovery of interface defects; and cheaper review cycles
-because more questions can be answered against recorded or synthetic evidence.
+A useful twin is an evolving representation, not a static diagram. It changes
+as the target system changes, as understanding improves, and as specific uses
+justify more fidelity. Parts of the boat that are not needed for the current
+validation question can remain coarse until they matter.
+
+This is network digital-twin method applied carefully, not a product claim.
+The method is to model observed behavior, test change against replay or
+simulation inputs before live promotion, then compare live behavior against the
+expected baseline. The intended benefit is practical: fewer field-only
+debugging cycles, less dependence on weather and dock time, earlier discovery
+of interface defects, and cheaper review because more questions can be
+answered against recorded or synthetic evidence.
 
 ## Development And Field Pipeline
 
@@ -94,10 +101,10 @@ platform, not an afterthought. Future sensor applications may include Go or
 Rust collectors and narrowly justified WASM validators, but only where they
 show measured benefit.
 
-## Maturity Signals
+## Platform Signals
 
 The public repository does not expose the private implementation, but it can
-show the shape of a mature platform:
+show the shape of a serious platform:
 
 - It is replay-first. New behavior should be tested against recorded or
   synthetic sessions before it is trusted near live vessel behavior.

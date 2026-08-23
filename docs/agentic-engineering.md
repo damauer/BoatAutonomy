@@ -164,9 +164,10 @@ review, and summarize. They do not approve risk for each other, and they do not
 turn model output into physical authority.
 
 One known harness failure mode is evidence latency: an implementer may finish
-code before the review packet, runtime proof, or decision record catches up.
-The countermeasure is to treat missing evidence as a blocker, not as implicit
-approval.
+code while the review packet, runtime proof, or decision record is still open.
+That can look like progress while the actual promotion gate is unresolved. The
+countermeasure is to treat missing evidence or an open review as a blocker,
+not as implicit approval.
 
 ## Sample Review Markdown
 

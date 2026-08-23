@@ -22,6 +22,12 @@ commercial consulting and founder-side business support, including CFO / CIO
 support for a 35-person closely held business co-founded with my wife and run
 for roughly 20 years alongside my technical career.
 
+A recurring method is pre-change validation against observed system behavior:
+capture telemetry and configuration, model the expected baseline, simulate or
+replay before promotion, then compare live behavior against what was expected.
+BoatAutonomy applies that method to marine electronics and survey evidence
+without claiming closed-loop vessel control.
+
 ## Relevant Opportunities
 
 I am most useful where the work needs senior technical judgment across several
@@ -33,6 +39,8 @@ layers at once:
   systems that need to survive real operations.
 - Telemetry, protocol capture, replay, observability, and evidence-driven
   promotion.
+- Network digital-twin-style validation: observed behavior, simulation or
+  replay before live change, and live-vs-expected comparison.
 - AI-assisted engineering practices where agents need roles, constraints,
   review loops, and explicit approval gates.
 - Advisory, fractional, or principal-level work where a compact builder can

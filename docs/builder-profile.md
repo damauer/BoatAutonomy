@@ -11,7 +11,7 @@ Editable source:
 
 ## The Through-Line
 
-The project ties together five long-running threads:
+The project ties together six long-running threads:
 
 1. Embedded and communications systems. Earlier work included Unix / VxWorks,
    network stacks, protocol-heavy monitoring, telecom systems, and early
@@ -19,14 +19,19 @@ The project ties together five long-running threads:
 2. Mission cloud and operations. Later work moved into isolated AWS
    environments, multi-account operations, data resiliency, automation,
    auditing, and mission-system transition into operations.
-3. Edge and Kubernetes. Current work uses Kubernetes where it fits: repeatable
+3. Network digital-twin method. A recurring career pattern is telemetry plus
+   configuration, an observed behavioral model, simulation or validation before
+   live change, and comparison of live behavior against the expected baseline.
+   BoatAutonomy applies that method to marine electronics and survey evidence
+   now, with vessel-motion modeling left for later stages.
+4. Edge and Kubernetes. Current work uses Kubernetes where it fits: repeatable
    lab, staging, field-prep, and edge services for capture, replay,
    observability, and deployment discipline.
-4. Commercial and founder-side judgment. Commercial consulting and CFO / CIO
+5. Commercial and founder-side judgment. Commercial consulting and CFO / CIO
    support for a long-running 35-person business add the business-development,
    customer, systems, finance, and cash-flow context that matters for startup
    opportunities.
-5. Governed AI-assisted engineering. BoatAutonomy uses multiple agents in
+6. Governed AI-assisted engineering. BoatAutonomy uses multiple agents in
    bounded roles, with explicit policy, review, evidence, and owner approval
    before promotion.
 
@@ -54,6 +59,7 @@ markets. That possibility is worth exploring carefully.
   high-assurance environments.
 - Edge telemetry, observability, replay, incident evidence, and data
   resiliency.
+- Network digital-twin-style pre-change validation against observed behavior.
 - AI-assisted software delivery where agent roles, audit trails, and promotion
   gates matter.
 - Safety-bounded autonomy, robotics-adjacent infrastructure, and
@@ -90,6 +96,9 @@ markets. That possibility is worth exploring carefully.
   systems and neural-network protocol recognition prototypes.
 - Cloud and DevOps architecture for mission-critical systems in isolated and
   security-constrained environments.
+- Pre-change validation against behavioral models of observed systems:
+  telemetry, baseline comparison, what-if analysis, replay, and live-vs-
+  expected isolation.
 - Data resiliency, migration, and operational recovery for large sensitive data
   holdings.
 - Kubernetes, AWS, infrastructure as code, CI/CD, and account-governance work

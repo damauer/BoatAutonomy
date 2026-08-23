@@ -2,15 +2,25 @@
 
 Teaching a boat to dock itself, with evidence before authority.
 
+Docking is one of the most stressful moments in recreational boating: low
+speed, close quarters, wind, current, crew coordination, spectators, and
+expensive hardware all at once.
+
 BoatAutonomy is a public-safe view into a private, owner-built autonomy lab
-around a recreational boat. The working shorthand is "teaching my boat how to
-dock itself." The more precise public claim is narrower and more important:
-build the telemetry, replay, edge compute, safety policy, and multi-agent
-review harness needed before a real vessel can responsibly move from passive
-observation toward supervised docking-assist experiments. The near-term method
-is an instrumented survey of the boat and its electronics, feeding the
-developing digital twin needed to simulate and develop against observed vessel
-behavior before consuming live vessel time.
+around that problem. The public claim is intentionally bounded: build the
+telemetry, replay, edge compute, safety policy, and multi-agent review harness
+needed before a real vessel can responsibly move from passive observation
+toward supervised docking-assist experiments.
+
+The method borrows from network digital-twin practice as a method, not a
+product claim: instrument the observed system, build a behavioral baseline,
+simulate or replay before live change, and compare expected behavior against
+what actually happens. In BoatAutonomy, the current twin is the boat's
+electronics/network substrate; the later vessel-motion twin is future work,
+not a closed-loop control claim. The twin is an evolving representation, not a
+frozen diagram: it changes as the target system changes, as understanding
+improves, and as specific development or validation uses justify more
+fidelity.
 
 This repository is intentionally curated. It is a discussion surface, not a
 contribution project: read, comment, and ask questions, but there is no implied
@@ -19,10 +29,6 @@ does not publish the private implementation, live topology, raw vessel data,
 credentials, repair procedures, or operational runbooks.
 
 ## Why Read This
-
-Docking is one of the most stressful and least forgiving moments in
-recreational boating. Wind, current, visibility, crew coordination, close
-quarters, spectators, and expensive hardware all converge at low speed.
 
 That human problem is simple to understand, but technically hard to address
 responsibly. A useful system has to observe before it estimates, replay before
@@ -40,18 +46,17 @@ problem statement and opportunity framing.
 
 BoatAutonomy is a public-facing project surface for a private applied-autonomy
 lab. For now, it is a portfolio and credibility surface for relevant technical
-work. If the project matures, this same surface may eventually support
+work. If the project earns it, this same surface may eventually support
 conversations with marine partners, advisors, technical collaborators, or
 funding sources.
 
 The lab is young, started in May 2026. Its evidence and governance plane is
 ahead of any assistive behavior.
 
-That is not the current posture. This repo is not a product certification,
-pitch deck, securities offering, live-system runbook, or claim that autonomous
-docking is complete. It is a controlled way to show the technical thesis,
-builder context, safety posture, and evidence discipline behind the private
-project.
+For that reason, this repo is not a product certification, pitch deck,
+securities offering, live-system runbook, or claim that autonomous docking is
+complete. It is a controlled way to show the technical thesis, builder
+context, safety posture, and evidence discipline behind the private project.
 
 Current public scope:
 
@@ -88,6 +93,14 @@ context become replayable sessions and simulation inputs for a developing
 digital twin. This is not a completed high-fidelity physics model or an
 assistive-control claim; it is the practical substrate for finding interface,
 timing, and behavior issues before field time is spent on them.
+
+There are two twins in view. The current one is the electronics/network twin:
+marine-network observations, PoE/Ethernet behavior, edge services, and cluster
+state captured well enough to replay, compare, and validate before promotion.
+The later vessel-motion twin belongs to state-estimation and shadow-mode
+stages that have not started. Nothing here claims closed-loop automation onto
+vessel controls. Each representation should stay only as detailed as its
+current use requires.
 
 Kubernetes and agentic tooling are useful around the system: recording,
 monitoring, replay, perception experiments, observability, and deployment
@@ -146,12 +159,15 @@ handling, better situational awareness, better training feedback, and more
 useful evidence from existing marine electronics.
 
 For technologists, the deeper signal is that this is not a single demo script.
-It is an emerging platform pattern with several mature pieces being exercised:
+It is an emerging platform pattern with several concrete pieces being
+exercised:
 
 - Data and replay: raw marine signals become normalized, replayable sessions
   that can be inspected before new behavior is trusted.
 - Instrumented survey and digital twin: measured vessel and electronics
   behavior becomes a replay and simulation substrate for offline development.
+- Network digital-twin method: pre-change validation against observed behavior
+  reduces avoidable live-system debugging.
 - Edge operations: lab, staging, field-prep, and field-style environments
   support repeatable deployment and evidence collection.
 - AI-assisted engineering: multiple agents work in bounded roles for research,
@@ -162,9 +178,9 @@ It is an emerging platform pattern with several mature pieces being exercised:
   systems need telemetry, replay, edge intelligence, and human-centered
   control boundaries.
 
-The cost and schedule benefit is direct: more defects can be found in replay,
-simulation, and review, and fewer debugging cycles have to wait for scarce
-boat time, weather windows, marina conditions, or one-off field setups.
+The cost and schedule benefit is practical: more defects can be found in
+replay, simulation, and review, and fewer debugging cycles have to wait for
+scarce boat time, weather windows, marina conditions, or one-off field setups.
 
 The AI story has two layers. One layer is how the project is built: Claude
 Code, Codex, Grok, tmux, GitLab records, review findings, and owner decisions
@@ -177,6 +193,9 @@ collaboration harness, GitLab-centered workflow, YAML policy example, and
 review Markdown example.
 
 ## Where It Is Going
+
+You are here: stages 0-2 are in motion and evidenced; stages 3 and higher
+have not started.
 
 The capability order still comes first:
 [roadmap-and-business.md](docs/roadmap-and-business.md) describes progression
@@ -198,7 +217,7 @@ That same page also captures the product intuition and cautious future business
 framing. It is explicitly not a current fundraising solicitation or
 product-readiness claim.
 
-## How We Can Help
+## How Dan Can Help
 
 The project started as curiosity and skill-building. It now defines a useful
 intersection of the builder's career: embedded and real-time systems,
@@ -231,7 +250,7 @@ conversation you want to have.
 | How it works | What is the system shape and technical approach? | [system-platform.md](docs/system-platform.md) |
 | Why it matters | Why is the evidence/control plane ahead of assistive behavior? | [agentic-engineering.md](docs/agentic-engineering.md), [evidence.md](docs/evidence.md) |
 | Where it is going | What is the capability path and future business hypothesis? | [roadmap-and-business.md](docs/roadmap-and-business.md) |
-| How we can help | What skills, experience, and judgment does this make visible? | [builder-profile.md](docs/builder-profile.md), [RESUME.md](RESUME.md) |
+| How Dan can help | What skills, experience, and judgment does this make visible? | [builder-profile.md](docs/builder-profile.md), [RESUME.md](RESUME.md) |
 
 ## Public Review Status
 
