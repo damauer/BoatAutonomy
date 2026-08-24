@@ -56,11 +56,13 @@ Editable source:
 [docking-system-evolution.svg](../assets/diagrams/docking-system-evolution.svg).
 
 This view makes the physical target concrete without changing the public
-claim. GPS, speed, depth, wind, engine RPM, dock range, video/range sensors,
-and CAN/NMEA 2000-style data flow into the platform as observations. The
-captain remains in the loop for enable, monitoring, override, and approval.
-Any throttle or steering-angle path is shown as a future gated request, not as
-current live authority.
+claim. Public-evidenced telemetry classes such as GPS, speed, depth, engine
+RPM, temperature, electrical, and fuel flow into the platform as observations.
+Wind, dock-range, radar, and video are shown as planned or example perception
+classes, not as public-evidenced installed inputs. The captain remains in the
+loop for enable, monitoring, override, and approval. Any throttle or
+steering-angle path is shown as a future gated request, not as current live
+authority.
 
 ## Instrumented Survey And Digital Twin
 

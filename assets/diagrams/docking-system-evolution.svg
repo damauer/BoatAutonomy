@@ -52,9 +52,11 @@
       .mono{font:700 13px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#dbeafe;letter-spacing:0}
       .panel{fill:#111827;stroke:#263244;stroke-width:1.6;filter:url(#shadow)}
       .chip{fill:#172338;stroke:#334155;stroke-width:1.4}
+      .plannedChip{fill:#1f2937;stroke:#64748b;stroke-width:1.4;stroke-dasharray:5 5;opacity:0.82}
       .data{stroke:#38bdf8;stroke-width:4;fill:none;marker-end:url(#arrowData);stroke-linecap:round}
       .sense{stroke:#34d399;stroke-width:3;fill:none;marker-end:url(#arrowSense);stroke-linecap:round}
-      .control{stroke:#fb923c;stroke-width:4;fill:none;marker-end:url(#arrowControl);stroke-dasharray:9 8;stroke-linecap:round}
+      .planned{stroke:#94a3b8;stroke-width:3;fill:none;marker-end:url(#arrowSense);stroke-dasharray:6 7;stroke-linecap:round;opacity:0.78}
+      .control{stroke:#fb923c;stroke-width:3;fill:none;marker-end:url(#arrowControl);stroke-dasharray:9 8;stroke-linecap:round;opacity:0.68}
       .human{stroke:#f472b6;stroke-width:4;fill:none;marker-end:url(#arrowHuman);stroke-linecap:round}
       .motion{stroke:#e2e8f0;stroke-width:3.6;fill:none;marker-end:url(#arrowData);stroke-linecap:round;stroke-dasharray:10 8}
     </style>
@@ -68,7 +70,7 @@
 
   <rect x="58" y="160" width="990" height="560" rx="28" class="panel"/>
   <text x="92" y="204" class="h">Coming Alongside The Dock</text>
-  <text x="92" y="232" class="s">A Conquest-style test vessel, sensor classes, pilot authority, and future control paths.</text>
+  <text x="92" y="232" class="s">A Conquest-style test vessel, current telemetry, planned perception, and future control paths.</text>
 
   <rect x="92" y="262" width="914" height="394" rx="22" fill="url(#water)" opacity="0.88" stroke="#1e3a4a" stroke-width="1.5"/>
   <path d="M110 603 C238 540 360 524 518 548 C684 573 810 540 990 478 L990 656 L110 656 Z" fill="#083344" opacity="0.5"/>
@@ -100,14 +102,14 @@
   </g>
 
   <g id="distance">
-    <path d="M302 386 L302 450" class="sense"/>
-    <path d="M478 386 L478 443" class="sense"/>
-    <path d="M656 386 L656 443" class="sense"/>
-    <path d="M798 386 L798 468" class="sense"/>
-    <text x="662" y="410" class="tiny">distance to dock</text>
+    <path d="M302 386 L302 468" class="planned"/>
+    <path d="M478 386 L478 460" class="planned"/>
+    <path d="M656 386 L656 460" class="planned"/>
+    <path d="M798 386 L798 482" class="planned"/>
+    <text x="662" y="410" class="tiny">planned dock range</text>
   </g>
 
-  <g id="boat" opacity="0.7" transform="translate(0 38)">
+  <g id="boat" opacity="0.7" transform="translate(125 180) scale(0.74)">
     <path d="M190 515 C212 462 260 428 334 414 L644 404 C738 407 806 430 846 471 C818 519 762 547 674 554 L284 552 C232 548 202 535 190 515 Z" fill="url(#darkHull)" stroke="#66758a" stroke-width="3" filter="url(#shadow)"/>
     <path d="M216 506 C258 474 330 456 438 451 L660 444 C728 445 776 456 806 474 C773 494 725 506 658 511 L320 516 C270 516 236 512 216 506 Z" fill="#0a1a2a" stroke="#38bdf8" stroke-width="2"/>
     <path d="M264 539 C380 548 565 548 690 535" stroke="#9ca3af" stroke-width="6" opacity="0.7" fill="none"/>
@@ -127,7 +129,7 @@
     <ellipse cx="560" cy="306" rx="46" ry="14" fill="#dbeafe" opacity="0.7" stroke="#f8fafc" stroke-width="2"/>
     <path d="M612 318 L670 286" stroke="#cbd5e1" stroke-width="3" stroke-linecap="round"/>
     <path d="M504 318 L486 282" stroke="#cbd5e1" stroke-width="3" stroke-linecap="round"/>
-    <text x="520" y="289" class="tiny">radar</text>
+    <text x="502" y="289" class="tiny">radar / camera class</text>
 
     <g id="pilot">
       <path d="M612 454 C616 428 626 416 640 416 C655 416 667 429 672 454 Z" fill="#203047" stroke="#cbd5e1" stroke-width="1.8"/>
@@ -152,41 +154,41 @@
   </g>
 
   <g id="side-motion">
-    <path d="M338 482 L338 390" class="motion"/>
-    <path d="M514 478 L514 390" class="motion"/>
-    <path d="M742 486 L742 390" class="motion"/>
-    <text x="392" y="401" class="tiny" fill="#e2e8f0">side approach to the dock</text>
+    <path d="M360 542 L360 402" class="motion"/>
+    <path d="M522 536 L522 402" class="motion"/>
+    <path d="M706 544 L706 402" class="motion"/>
+    <text x="392" y="420" class="tiny" fill="#e2e8f0">side approach to the dock</text>
   </g>
 
   <g id="video-range">
-    <path d="M760 470 C794 428 822 402 854 382" stroke="#fbbf24" stroke-width="3" stroke-dasharray="8 8" fill="none"/>
-    <path d="M756 528 C800 480 842 435 870 382" stroke="#fbbf24" stroke-width="3" stroke-dasharray="8 8" fill="none"/>
-    <path d="M284 490 C250 444 226 412 198 382" stroke="#fbbf24" stroke-width="3" stroke-dasharray="8 8" fill="none"/>
-    <text x="756" y="564" class="tiny">video / range cones</text>
+    <path d="M714 500 C780 454 828 414 854 382" stroke="#fbbf24" stroke-width="2.5" stroke-dasharray="8 8" fill="none" opacity="0.46"/>
+    <path d="M710 548 C800 492 844 432 870 382" stroke="#fbbf24" stroke-width="2.5" stroke-dasharray="8 8" fill="none" opacity="0.46"/>
+    <path d="M334 518 C268 458 226 412 198 382" stroke="#fbbf24" stroke-width="2.5" stroke-dasharray="8 8" fill="none" opacity="0.46"/>
+    <text x="744" y="578" class="tiny">planned video / range</text>
   </g>
 
   <g id="sensor-chips">
     <rect x="118" y="270" width="118" height="32" rx="11" class="chip"/><text x="137" y="291" class="mono">GPS</text>
     <rect x="252" y="270" width="126" height="32" rx="11" class="chip"/><text x="272" y="291" class="mono">speed</text>
     <rect x="394" y="270" width="126" height="32" rx="11" class="chip"/><text x="414" y="291" class="mono">depth</text>
-    <rect x="536" y="270" width="118" height="32" rx="11" class="chip"/><text x="557" y="291" class="mono">wind</text>
+    <rect x="536" y="270" width="118" height="32" rx="11" class="plannedChip"/><text x="551" y="291" class="mono">wind class</text>
     <rect x="118" y="614" width="174" height="32" rx="11" class="chip"/><text x="137" y="635" class="mono">engine RPM</text>
-    <rect x="308" y="614" width="184" height="32" rx="11" class="chip"/><text x="327" y="635" class="mono">dock range</text>
-    <rect x="508" y="614" width="170" height="32" rx="11" class="chip"/><text x="527" y="635" class="mono">video feeds</text>
+    <rect x="308" y="614" width="184" height="32" rx="11" class="plannedChip"/><text x="327" y="635" class="mono">dock range</text>
+    <rect x="508" y="614" width="170" height="32" rx="11" class="plannedChip"/><text x="527" y="635" class="mono">video feeds</text>
   </g>
 
-  <path d="M176 302 C208 352 236 397 276 440" class="sense"/>
-  <path d="M314 302 C365 349 422 384 516 402" class="sense"/>
-  <path d="M458 302 C470 332 482 357 498 380" class="sense"/>
-  <path d="M594 302 C594 330 590 354 584 376" class="sense"/>
-  <path d="M206 614 C196 588 184 560 164 540" class="sense"/>
-  <path d="M400 614 C514 582 642 542 798 430" class="sense"/>
-  <path d="M594 614 C658 572 712 528 756 490" class="sense"/>
+  <path d="M176 302 C206 372 242 455 300 520" class="sense"/>
+  <path d="M314 302 C360 380 444 458 520 486" class="sense"/>
+  <path d="M458 302 C472 365 490 425 512 480" class="sense"/>
+  <path d="M594 302 C594 350 590 398 572 444" class="planned"/>
+  <path d="M206 614 C202 586 196 570 186 548" class="sense"/>
+  <path d="M400 614 C514 582 642 542 798 430" class="planned"/>
+  <path d="M594 614 C658 572 712 528 756 490" class="planned"/>
 
-  <path d="M696 414 C836 354 1000 330 1110 340" class="data"/>
-  <path d="M682 516 C852 588 1004 594 1110 548" class="data"/>
+  <path d="M690 436 C836 362 1000 330 1110 340" class="data"/>
+  <path d="M656 550 C850 596 1004 594 1110 548" class="data"/>
   <text x="865" y="326" class="tiny">sensor data in</text>
-  <text x="850" y="594" class="tiny">replay and estimates</text>
+  <text x="850" y="594" class="tiny">replay and inspection</text>
 
   <rect x="1090" y="160" width="450" height="560" rx="28" class="panel"/>
   <text x="1126" y="204" class="h">Cluster, Gate, And Pilot</text>
@@ -194,13 +196,13 @@
 
   <rect x="1126" y="268" width="378" height="116" rx="22" fill="url(#cluster)" filter="url(#shadow)"/>
   <text x="1156" y="310" class="h2">Edge Cluster</text>
-  <text x="1156" y="340" class="s" style="fill:#eef2ff">CAN/NMEA 2000, video/range,</text>
-  <text x="1156" y="366" class="s" style="fill:#eef2ff">replay, estimates, advisory state</text>
+  <text x="1156" y="340" class="s" style="fill:#eef2ff">CAN/NMEA 2000 ingest,</text>
+  <text x="1156" y="366" class="s" style="fill:#eef2ff">replay and inspection</text>
 
   <rect x="1126" y="408" width="172" height="94" rx="18" fill="#0b1f31" stroke="#38bdf8" stroke-width="1.6"/>
   <text x="1152" y="440" class="h2">Data In</text>
   <text x="1152" y="468" class="tiny">GPS, speed, depth</text>
-  <text x="1152" y="490" class="tiny">wind, RPM, dock range</text>
+  <text x="1152" y="490" class="tiny">RPM, temp, battery/fuel</text>
 
   <rect x="1332" y="408" width="172" height="94" rx="18" fill="#28162a" stroke="#f472b6" stroke-width="1.6"/>
   <text x="1354" y="440" class="h2">Pilot Gate</text>
@@ -209,8 +211,8 @@
 
   <rect x="1126" y="532" width="378" height="120" rx="22" fill="#1f1308" stroke="#fb923c" stroke-width="1.6"/>
   <text x="1156" y="572" class="h2">Future Gated Outputs</text>
-  <text x="1156" y="604" class="s">throttle request</text>
-  <text x="1156" y="632" class="s">steering angle request</text>
+  <text x="1156" y="604" class="s">estimates + advisory</text>
+  <text x="1156" y="632" class="s">throttle / angle requests</text>
   <text x="1354" y="604" class="s">emergency hold</text>
   <text x="1354" y="632" class="s">safe-state limits</text>
 
@@ -218,7 +220,7 @@
   <path d="M1315 384 C1315 394 1315 398 1315 408" class="data"/>
   <path d="M1418 502 C1418 518 1400 522 1400 532" class="human"/>
   <path d="M1126 592 C962 654 706 682 538 610" class="control"/>
-  <path d="M1126 624 C904 712 356 714 174 546" class="control"/>
+  <path d="M1126 624 C904 710 396 708 210 586" class="control"/>
   <text x="790" y="692" class="tiny">future control path, not current public claim</text>
   <text x="386" y="694" class="tiny">throttle</text>
   <text x="222" y="568" class="tiny">steering angle</text>
@@ -250,5 +252,5 @@
   </g>
 
   <rect x="92" y="938" width="1412" height="34" rx="13" fill="#0f172a" stroke="#334155" stroke-width="1.4"/>
-  <text x="116" y="960" class="tiny">Solid arrows: observations into the platform. Dashed arrows: future owner-gated control requests after a separate safety case.</text>
+  <text x="116" y="960" class="tiny">Solid blue/green: current observations. Dashed gray/yellow: planned perception classes. Dashed orange: future owner-gated control requests.</text>
 </svg>

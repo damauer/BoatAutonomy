@@ -73,13 +73,9 @@ publish live vessel-control code, actuator wiring, raw capture files, endpoint
 details, secrets, or enough operational detail to reproduce the private system.
 
 The public/private boundary and evidence posture are linked visually below,
-right after the platform shape.
+right after the tangible docking view.
 
 ## How It Works
-
-![BoatAutonomy platform pattern](assets/diagrams/boat-autonomy-platform.png)
-
-Editable source: [boat-autonomy-platform.svg](assets/diagrams/boat-autonomy-platform.svg).
 
 ![Docking system evolution](assets/diagrams/docking-system-evolution.png)
 
@@ -87,10 +83,11 @@ Editable source:
 [docking-system-evolution.svg](assets/diagrams/docking-system-evolution.svg).
 
 The docking view makes the target system tangible: a boat approaching a dock,
-marine electronics and video/range observations flowing into an edge cluster,
-and a captain/pilot remaining in the loop. Solid arrows represent observed
-data. Dashed control arrows represent future, owner-gated requests that would
-require a separate safety case before any live use.
+marine-electronics observations flowing into an edge cluster, planned
+perception classes shown separately, and a captain/pilot remaining in the
+loop. Solid arrows represent observed data. Dashed control arrows represent
+future, owner-gated requests that would require a separate safety case before
+any live use.
 
 <table>
   <tr>
@@ -286,5 +283,6 @@ conversation you want to have.
 
 ## Public Review Status
 
-Draft only. The private project owner must approve content before any GitHub
-repository, profile, release, screenshot, or demo is made public.
+Public v1 surface. The repository is curated, read-only in posture, and still
+bounded by the public/private line described above. Future updates should keep
+evidence, safety boundaries, and owner approval visible before claims expand.
