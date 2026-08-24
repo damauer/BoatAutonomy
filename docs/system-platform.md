@@ -48,22 +48,6 @@ monitoring, replay, perception experiments, observability, and deployment
 repeatability. They are not the hard real-time safety controller and do not
 receive direct actuator authority.
 
-## Docking Scenario View
-
-![Docking system evolution](../assets/diagrams/docking-system-evolution.png)
-
-Editable source:
-[docking-system-evolution.svg](../assets/diagrams/docking-system-evolution.svg).
-
-This view makes the physical target concrete without changing the public
-claim. Public-evidenced telemetry classes such as GPS, speed, depth, engine
-RPM, temperature, electrical, and fuel flow into the platform as observations.
-Wind, dock-range, radar, and video are shown as planned or example perception
-classes, not as public-evidenced installed inputs. The captain remains in the
-loop for enable, monitoring, override, and approval. Any throttle or
-steering-angle path is shown as a future gated request, not as current live
-authority.
-
 ## Instrumented Survey And Digital Twin
 
 The next useful asset is not a claim of autonomy. It is the instrumented

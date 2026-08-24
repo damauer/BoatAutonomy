@@ -73,21 +73,13 @@ publish live vessel-control code, actuator wiring, raw capture files, endpoint
 details, secrets, or enough operational detail to reproduce the private system.
 
 The public/private boundary and evidence posture are linked visually below,
-right after the tangible docking view.
+right after the platform shape.
 
 ## How It Works
 
-![Docking system evolution](assets/diagrams/docking-system-evolution.png)
+![BoatAutonomy platform pattern](assets/diagrams/boat-autonomy-platform.png)
 
-Editable source:
-[docking-system-evolution.svg](assets/diagrams/docking-system-evolution.svg).
-
-The docking view makes the target system tangible: a boat approaching a dock,
-marine-electronics observations flowing into an edge cluster, planned
-perception classes shown separately, and a captain/pilot remaining in the
-loop. Solid arrows represent observed data. Dashed control arrows represent
-future, owner-gated requests that would require a separate safety case before
-any live use.
+Editable source: [boat-autonomy-platform.svg](assets/diagrams/boat-autonomy-platform.svg).
 
 <table>
   <tr>
