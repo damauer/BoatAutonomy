@@ -109,48 +109,59 @@
     <text x="662" y="410" class="tiny">planned dock range</text>
   </g>
 
-  <g id="boat" opacity="0.7" transform="translate(125 180) scale(0.74)">
-    <path d="M190 515 C212 462 260 428 334 414 L644 404 C738 407 806 430 846 471 C818 519 762 547 674 554 L284 552 C232 548 202 535 190 515 Z" fill="url(#darkHull)" stroke="#66758a" stroke-width="3" filter="url(#shadow)"/>
-    <path d="M216 506 C258 474 330 456 438 451 L660 444 C728 445 776 456 806 474 C773 494 725 506 658 511 L320 516 C270 516 236 512 216 506 Z" fill="#0a1a2a" stroke="#38bdf8" stroke-width="2"/>
-    <path d="M264 539 C380 548 565 548 690 535" stroke="#9ca3af" stroke-width="6" opacity="0.7" fill="none"/>
-    <path d="M278 430 C330 405 386 394 454 391 L650 387 C718 388 776 404 820 436" stroke="#cbd5e1" stroke-width="5" opacity="0.78" fill="none"/>
-    <path d="M333 410 L384 388 L744 388 L806 422" stroke="#d1d5db" stroke-width="4" opacity="0.75" fill="none"/>
+  <g id="boat" opacity="0.75" transform="translate(125 188) scale(0.74)">
+    <g transform="rotate(-3 500 500)">
+      <path d="M162 512 C222 482 334 466 502 464 L686 468 C770 470 828 494 862 532 C804 562 710 582 590 588 L260 586 C206 580 174 552 162 512 Z" fill="url(#darkHull)" stroke="#66758a" stroke-width="3" filter="url(#shadow)"/>
+      <path d="M206 526 C304 506 470 496 684 502 C752 504 804 515 836 532 C782 548 710 558 614 562 L270 560 C238 554 216 542 206 526 Z" fill="#0a1a2a" stroke="#38bdf8" stroke-width="2"/>
+      <path d="M236 574 C344 590 520 596 690 578" stroke="#9ca3af" stroke-width="7" opacity="0.66" fill="none"/>
+      <path d="M212 506 C310 480 448 468 664 472 C748 474 816 494 862 532" stroke="#cbd5e1" stroke-width="5" opacity="0.78" fill="none"/>
+      <path d="M286 494 L672 492 C754 496 814 510 852 532" stroke="#d1d5db" stroke-width="4" opacity="0.62" fill="none"/>
+      <path d="M282 552 C410 536 600 532 780 540" stroke="#38bdf8" stroke-width="2.5" opacity="0.5" fill="none"/>
+      <ellipse cx="742" cy="520" rx="18" ry="8" fill="#0f172a" stroke="#94a3b8" stroke-width="2"/>
+      <ellipse cx="786" cy="526" rx="16" ry="7" fill="#0f172a" stroke="#94a3b8" stroke-width="1.8"/>
 
-    <path d="M432 356 L610 350 L696 392 L676 438 L424 438 Z" fill="#e5edf5" opacity="0.46" stroke="#93c5fd" stroke-width="2.4"/>
-    <path d="M456 374 L540 366 L612 392 L592 420 L450 420 Z" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
-    <path d="M616 390 L672 410 L654 430 L604 420 Z" fill="#102235" stroke="#38bdf8" stroke-width="1.6"/>
-    <rect x="526" y="392" width="82" height="40" rx="8" fill="#071827" stroke="#34d399" stroke-width="2"/>
-    <rect x="538" y="402" width="24" height="16" rx="3" fill="#38bdf8"/>
-    <rect x="570" y="402" width="28" height="16" rx="3" fill="#fbbf24"/>
-    <text x="523" y="459" class="tiny">helm + plotters</text>
+      <path d="M420 414 L622 404 L714 470 L388 476 Z" fill="#e5edf5" opacity="0.5" stroke="#93c5fd" stroke-width="2.4"/>
+      <path d="M450 432 L538 424 L530 464 L420 466 Z" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
+      <path d="M548 424 L624 420 L676 462 L540 464 Z" fill="#102235" stroke="#38bdf8" stroke-width="1.6"/>
+      <path d="M674 462 L720 478 L690 486 L640 466 Z" fill="#1f2937" stroke="#94a3b8" stroke-width="1.5"/>
+      <rect x="522" y="458" width="88" height="34" rx="8" fill="#071827" stroke="#34d399" stroke-width="2"/>
+      <rect x="536" y="468" width="25" height="14" rx="3" fill="#38bdf8"/>
+      <rect x="570" y="468" width="28" height="14" rx="3" fill="#fbbf24"/>
+      <text x="505" y="515" class="tiny">helm + plotters</text>
 
-    <path d="M450 346 C482 314 562 308 612 344" stroke="#e2e8f0" stroke-width="6" opacity="0.78" fill="none" stroke-linecap="round"/>
-    <rect x="458" y="326" width="190" height="18" rx="7" fill="#dbeafe" opacity="0.64" stroke="#f8fafc" stroke-width="2"/>
-    <ellipse cx="560" cy="306" rx="46" ry="14" fill="#dbeafe" opacity="0.7" stroke="#f8fafc" stroke-width="2"/>
-    <path d="M612 318 L670 286" stroke="#cbd5e1" stroke-width="3" stroke-linecap="round"/>
-    <path d="M504 318 L486 282" stroke="#cbd5e1" stroke-width="3" stroke-linecap="round"/>
-    <text x="502" y="289" class="tiny">radar / camera class</text>
+      <rect x="418" y="384" width="304" height="20" rx="7" fill="#dbeafe" opacity="0.64" stroke="#f8fafc" stroke-width="2"/>
+      <path d="M438 404 L414 476" stroke="#d1d5db" stroke-width="4" opacity="0.72"/>
+      <path d="M700 404 L720 478" stroke="#d1d5db" stroke-width="4" opacity="0.72"/>
+      <ellipse cx="570" cy="362" rx="44" ry="13" fill="#dbeafe" opacity="0.72" stroke="#f8fafc" stroke-width="2"/>
+      <path d="M618 382 L672 352" stroke="#cbd5e1" stroke-width="3" stroke-linecap="round"/>
+      <path d="M514 382 L498 348" stroke="#cbd5e1" stroke-width="3" stroke-linecap="round"/>
+      <text x="492" y="346" class="tiny">radar / camera class</text>
 
-    <g id="pilot">
-      <path d="M612 454 C616 428 626 416 640 416 C655 416 667 429 672 454 Z" fill="#203047" stroke="#cbd5e1" stroke-width="1.8"/>
-      <path d="M622 445 C630 436 642 434 653 441 L666 454 L610 454 Z" fill="#d9e5f2" opacity="0.78"/>
-      <circle cx="640" cy="401" r="14" fill="#e3b17c" stroke="#fff7ed" stroke-width="2.2"/>
-      <path d="M628 394 C634 382 650 382 658 394 L656 398 C647 394 637 394 629 399 Z" fill="#dbeafe" stroke="#94a3b8" stroke-width="1.5"/>
-      <path d="M654 393 L674 397" stroke="#dbeafe" stroke-width="4" stroke-linecap="round"/>
-      <path d="M650 424 C661 420 668 416 675 409" stroke="#e3b17c" stroke-width="5" fill="none" stroke-linecap="round"/>
-      <circle cx="676" cy="408" r="8" fill="none" stroke="#cbd5e1" stroke-width="2"/>
-      <rect x="606" y="439" width="19" height="26" rx="5" fill="#0f172a" stroke="#64748b" stroke-width="1.5"/>
-      <text x="606" y="482" class="tiny">pilot</text>
+      <path d="M674 470 C712 460 768 465 836 520" stroke="#dbeafe" stroke-width="4" opacity="0.65" fill="none" stroke-linecap="round"/>
+      <path d="M700 454 C754 456 812 488 852 528" stroke="#dbeafe" stroke-width="2.4" opacity="0.6" fill="none"/>
+      <path d="M262 502 C300 478 354 466 422 464" stroke="#dbeafe" stroke-width="3.5" opacity="0.6" fill="none" stroke-linecap="round"/>
+
+      <g id="pilot">
+        <path d="M616 504 C620 482 630 470 644 470 C660 470 672 482 678 504 Z" fill="#203047" stroke="#cbd5e1" stroke-width="1.8"/>
+        <path d="M626 496 C635 488 648 486 660 493 L674 504 L614 504 Z" fill="#d9e5f2" opacity="0.78"/>
+        <circle cx="644" cy="456" r="14" fill="#e3b17c" stroke="#fff7ed" stroke-width="2.2"/>
+        <path d="M632 449 C639 437 654 438 662 449 L660 453 C650 449 640 449 633 454 Z" fill="#dbeafe" stroke="#94a3b8" stroke-width="1.5"/>
+        <path d="M658 450 L678 454" stroke="#dbeafe" stroke-width="4" stroke-linecap="round"/>
+        <path d="M654 478 C665 474 672 470 680 463" stroke="#e3b17c" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <circle cx="682" cy="462" r="8" fill="none" stroke="#cbd5e1" stroke-width="2"/>
+        <rect x="610" y="492" width="19" height="26" rx="5" fill="#0f172a" stroke="#64748b" stroke-width="1.5"/>
+        <text x="608" y="538" class="tiny">pilot</text>
+      </g>
+
+      <rect x="104" y="510" width="42" height="74" rx="11" fill="#111827" stroke="#94a3b8" stroke-width="2"/>
+      <rect x="150" y="506" width="42" height="78" rx="11" fill="#111827" stroke="#94a3b8" stroke-width="2"/>
+      <path d="M104 585 C122 596 134 596 146 585" stroke="#fb923c" stroke-width="7" fill="none"/>
+      <path d="M150 585 C168 596 180 596 192 585" stroke="#fb923c" stroke-width="7" fill="none"/>
+      <text x="80" y="500" class="tiny">twin outboards</text>
+
+      <path d="M280 550 L708 536" stroke="#38bdf8" stroke-width="4" opacity="0.55" fill="none"/>
+      <text x="350" y="568" class="tiny">CAN / NMEA 2000 backbone</text>
     </g>
-
-    <rect x="130" y="468" width="42" height="72" rx="11" fill="#111827" stroke="#94a3b8" stroke-width="2"/>
-    <rect x="176" y="466" width="42" height="74" rx="11" fill="#111827" stroke="#94a3b8" stroke-width="2"/>
-    <path d="M130 541 C148 552 160 552 172 541" stroke="#fb923c" stroke-width="7" fill="none"/>
-    <path d="M176 541 C194 552 206 552 218 541" stroke="#fb923c" stroke-width="7" fill="none"/>
-    <text x="122" y="548" class="tiny">twin outboards</text>
-
-    <path d="M305 514 L690 504" stroke="#38bdf8" stroke-width="4" opacity="0.55" fill="none"/>
-    <text x="360" y="532" class="tiny">CAN / NMEA 2000 backbone</text>
   </g>
 
   <g id="side-motion">
