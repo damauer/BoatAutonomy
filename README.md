@@ -81,6 +81,17 @@ right after the platform shape.
 
 Editable source: [boat-autonomy-platform.svg](assets/diagrams/boat-autonomy-platform.svg).
 
+![Docking system evolution](assets/diagrams/docking-system-evolution.png)
+
+Editable source:
+[docking-system-evolution.svg](assets/diagrams/docking-system-evolution.svg).
+
+The docking view makes the target system tangible: a boat approaching a dock,
+marine electronics and video/range observations flowing into an edge cluster,
+and a captain/pilot remaining in the loop. Solid arrows represent observed
+data. Dashed control arrows represent future, owner-gated requests that would
+require a separate safety case before any live use.
+
 <table>
   <tr>
     <td width="33%">
