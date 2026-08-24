@@ -1,0 +1,523 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">BoatAutonomy stern-first slip approach</title>
+  <desc id="desc">Diagram in two scenes: numerous environmental factors (left) -- wind, current, and a degraded single-engine boat approaching a two-sided slip -- and automated sensing, guidance, and eventually control (right) -- distance and obstacle sensing, a recommended safe boarding point, and tie-up points, alongside current telemetry, pilot gate, and future gated control requests with no line drawn to the vessel.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="0.58" stop-color="#111827"/>
+      <stop offset="1" stop-color="#0d241f"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b3a53"/>
+      <stop offset="0.55" stop-color="#0f5f61"/>
+      <stop offset="1" stop-color="#123f53"/>
+    </linearGradient>
+    <linearGradient id="dock" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5b6673"/>
+      <stop offset="0.5" stop-color="#454f5c"/>
+      <stop offset="1" stop-color="#2e353f"/>
+    </linearGradient>
+    <linearGradient id="hull" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#54606d"/>
+      <stop offset="0.42" stop-color="#8b96a2"/>
+      <stop offset="0.78" stop-color="#b7c0cb"/>
+      <stop offset="1" stop-color="#c7cfd8"/>
+    </linearGradient>
+    <linearGradient id="hullShade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#000000" stop-opacity="0.28"/>
+      <stop offset="0.5" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.22"/>
+    </linearGradient>
+    <linearGradient id="deck" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#232c36"/>
+      <stop offset="1" stop-color="#161d24"/>
+    </linearGradient>
+    <linearGradient id="darkGlass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#164e63"/>
+    </linearGradient>
+    <linearGradient id="cowl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a2f37"/>
+      <stop offset="0.55" stop-color="#15181d"/>
+      <stop offset="1" stop-color="#0b0d10"/>
+    </linearGradient>
+    <linearGradient id="cluster" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2563eb"/>
+      <stop offset="0.55" stop-color="#0f766e"/>
+      <stop offset="1" stop-color="#f97316"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#000000" flood-opacity="0.36"/>
+    </filter>
+    <filter id="hullshadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+    <marker id="arrowData" markerWidth="10" markerHeight="10" refX="7" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3.5 L0,7 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrowSmall" markerWidth="6" markerHeight="6" refX="4.5" refY="2.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L5,2.5 L0,5 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrowSense" markerWidth="10" markerHeight="10" refX="7" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3.5 L0,7 z" fill="#34d399"/>
+    </marker>
+    <marker id="arrowPlanned" markerWidth="10" markerHeight="10" refX="7" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3.5 L0,7 z" fill="#a3aebf"/>
+    </marker>
+    <marker id="arrowControl" markerWidth="10" markerHeight="10" refX="7" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3.5 L0,7 z" fill="#fb923c"/>
+    </marker>
+    <marker id="arrowHuman" markerWidth="10" markerHeight="10" refX="7" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3.5 L0,7 z" fill="#f472b6"/>
+    </marker>
+    <marker id="arrowHazard" markerWidth="10" markerHeight="10" refX="7" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3.5 L0,7 z" fill="#fbbf24"/>
+    </marker>
+    <marker id="arrowTie" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <circle cx="3" cy="3" r="2.6" fill="#5eead4"/>
+    </marker>
+    <style>
+      .title{font:800 50px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f8fafc;letter-spacing:0}
+      .sub{font:500 22px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#cbd5e1;letter-spacing:0}
+      .h{font:800 24px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f8fafc;letter-spacing:0}
+      .h2{font:800 20px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f8fafc;letter-spacing:0}
+      .s{font:500 16px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#cbd5e1;letter-spacing:0}
+      .tiny{font:700 12px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#94a3b8;letter-spacing:0}
+      .crop-only{display:none}
+      .hide-in-crop{}
+      .lede{font:800 14px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:0}
+      .orient{font:800 13px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#e2e8f0;letter-spacing:1.5}
+      .mono{font:700 13px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#dbeafe;letter-spacing:0}
+      .panel{fill:#111827;stroke:#263244;stroke-width:1.6;filter:url(#shadow)}
+      .chip{fill:#172338;stroke:#334155;stroke-width:1.4}
+      .plannedChip{fill:#1f2937;stroke:#64748b;stroke-width:1.4;stroke-dasharray:5 5;opacity:0.86}
+      .dockEdge{stroke:#e2e8f0;stroke-width:1.6;opacity:0.28}
+      .data{stroke:#38bdf8;stroke-width:4;fill:none;marker-end:url(#arrowData);stroke-linecap:round}
+      .sense{stroke:#34d399;stroke-width:3;fill:none;marker-end:url(#arrowSense);stroke-linecap:round}
+      .planned{stroke:#a3aebf;stroke-width:3;fill:none;marker-end:url(#arrowPlanned);stroke-dasharray:6 7;stroke-linecap:round;opacity:0.82}
+      .control{stroke:#fb923c;stroke-width:3;fill:none;marker-end:url(#arrowControl);stroke-dasharray:9 8;stroke-linecap:round;opacity:0.66}
+      .human{stroke:#f472b6;stroke-width:4;fill:none;marker-end:url(#arrowHuman);stroke-linecap:round}
+      .hazard{stroke:#fbbf24;stroke-width:2.5;fill:none;marker-end:url(#arrowHazard);stroke-dasharray:1 5;stroke-linecap:round;opacity:0.9}
+      .tie{stroke:#5eead4;stroke-width:2;fill:none;marker-end:url(#arrowTie);stroke-dasharray:4 3;opacity:0.85}
+      .reverse{stroke:#e2e8f0;stroke-width:4;fill:none;marker-end:url(#arrowData);stroke-linecap:round;stroke-dasharray:11 8}
+    </style>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <circle cx="1352" cy="96" r="150" fill="#1d4ed8" opacity="0.14"/>
+  <circle cx="246" cy="844" r="190" fill="#0f766e" opacity="0.18"/>
+  <text x="78" y="82" class="title">Backing Into A Slip</text>
+  <text x="82" y="122" class="sub">Stern-first docking target: observe, replay, advise, and gate any future control</text>
+
+  <rect x="58" y="160" width="990" height="560" rx="28" class="panel"/>
+  <text x="92" y="204" class="h">Slip Approach Scene</text>
+  <text x="92" y="232" class="s">What the boater is up against (left); how the system helps reduce that risk (right).</text>
+
+  <text x="782" y="352" class="orient" fill="#e2e8f0" text-anchor="middle">2  HOW IT HELPS</text>
+  <g id="scene-docked" transform="translate(559 363) scale(0.489) translate(-92 -262)">
+  <rect x="92" y="262" width="914" height="394" rx="22" fill="url(#water)" opacity="0.9" stroke="#1e3a4a" stroke-width="1.5"/>
+  <path d="M112 596 C250 535 390 522 548 550 C704 578 844 548 986 500 L986 656 L112 656 Z" fill="#083344" opacity="0.5"/>
+  <path d="M120 385 C270 342 460 344 626 374 C768 399 880 385 986 338" stroke="#67e8f9" stroke-width="4" opacity="0.32" fill="none"/>
+  <path d="M148 612 C292 552 450 540 604 566 C758 590 862 556 970 508" stroke="#99f6e4" stroke-width="4" opacity="0.3" fill="none"/>
+
+  <g id="docked-assembly" transform="translate(545 286) scale(0.75) translate(-545 -286)">
+  <g id="slip-dock">
+    <rect x="343" y="286" width="404" height="48" rx="5" fill="url(#dock)" stroke="#1f242b" stroke-width="1.4"/>
+    <rect x="383" y="334" width="82" height="314" rx="5" fill="url(#dock)" stroke="#1f242b" stroke-width="1.4"/>
+    <rect x="625" y="334" width="82" height="314" rx="5" fill="url(#dock)" stroke="#1f242b" stroke-width="1.4"/>
+    <line x1="343" y1="309" x2="747" y2="309" class="dockEdge"/>
+    <line x1="424" y1="334" x2="424" y2="648" class="dockEdge"/>
+    <line x1="666" y1="334" x2="666" y2="648" class="dockEdge"/>
+    <line x1="365" y1="286" x2="365" y2="334" stroke="#12151a" opacity="0.5"/>
+    <line x1="465" y1="286" x2="465" y2="334" stroke="#12151a" opacity="0.4"/>
+    <line x1="545" y1="286" x2="545" y2="334" stroke="#12151a" opacity="0.45"/>
+    <line x1="625" y1="286" x2="625" y2="334" stroke="#12151a" opacity="0.4"/>
+    <line x1="705" y1="286" x2="705" y2="334" stroke="#12151a" opacity="0.45"/>
+    <line x1="383" y1="390" x2="465" y2="390" stroke="#12151a" opacity="0.4"/>
+    <line x1="383" y1="486" x2="465" y2="486" stroke="#12151a" opacity="0.4"/>
+    <line x1="383" y1="582" x2="465" y2="582" stroke="#12151a" opacity="0.4"/>
+    <line x1="625" y1="390" x2="707" y2="390" stroke="#12151a" opacity="0.4"/>
+    <line x1="625" y1="486" x2="707" y2="486" stroke="#12151a" opacity="0.4"/>
+    <line x1="625" y1="582" x2="707" y2="582" stroke="#12151a" opacity="0.4"/>
+    <circle cx="383" cy="346" r="9" fill="#0f172a" stroke="#7c8794" stroke-width="2"/>
+    <circle cx="383" cy="636" r="9" fill="#0f172a" stroke="#7c8794" stroke-width="2"/>
+    <circle cx="707" cy="346" r="9" fill="#0f172a" stroke="#7c8794" stroke-width="2"/>
+    <circle cx="707" cy="636" r="9" fill="#0f172a" stroke="#7c8794" stroke-width="2"/>
+    <rect x="393" y="438" width="52" height="9" rx="4" fill="#0f172a" stroke="#7c8794" stroke-width="1.2" opacity="0.78"/>
+    <rect x="635" y="438" width="52" height="9" rx="4" fill="#0f172a" stroke="#7c8794" stroke-width="1.2" opacity="0.78"/>
+    <text x="792" y="282" class="h2">Slip</text>
+  </g>
+
+  <g id="slip-guides">
+    <path d="M545 340 L545 640" stroke="#dbeafe" stroke-width="3" stroke-dasharray="10 10" opacity="0.7"/>
+    <path d="M458 628 C485 585 505 545 515 500 C525 452 528 415 531 385" class="reverse"/>
+  </g>
+
+  <g id="boat" transform="rotate(-3 533 466)">
+    <!-- hull: fine bow entry + pulpit nub at bottom (y~608), flat transom leading at top (y~332) -->
+    <path id="hullpath" d="M481 332 C472 352 468 382 468 412 C468 442 474 478 486 505 C496 528 508 548 518 568 C524 580 528 590 531 600 L533 608 L535 600 C538 590 542 580 548 568 C558 548 570 528 580 505 C592 478 598 442 598 412 C598 382 594 352 585 332 C566 322 500 322 481 332 Z" fill="url(#hull)" stroke="#3d4551" stroke-width="3" filter="url(#hullshadow)"/>
+    <path d="M481 332 C472 352 468 382 468 412 C468 442 474 478 486 505 C496 528 508 548 518 568 C524 580 528 590 531 600 L533 608 L535 600 C538 590 542 580 548 568 C558 548 570 528 580 505 C592 478 598 442 598 412 C598 382 594 352 585 332 C566 322 500 322 481 332 Z" fill="url(#hullShade)"/>
+    <!-- rubrail: same hull outline, scaled slightly inward, stroke only -->
+    <path d="M481 332 C472 352 468 382 468 412 C468 442 474 478 486 505 C496 528 508 548 518 568 C524 580 528 590 531 600 L533 608 L535 600 C538 590 542 580 548 568 C558 548 570 528 580 505 C592 478 598 442 598 412 C598 382 594 352 585 332 C566 322 500 322 481 332 Z" fill="none" stroke="#1e3a5f" stroke-width="2.2" opacity="0.55" transform="translate(533 466) scale(0.965) translate(-533 -466)"/>
+    <!-- cockpit / deck sole: same hull outline, scaled inward for a walkaround gunwale -->
+    <path d="M481 332 C472 352 468 382 468 412 C468 442 474 478 486 505 C496 528 508 548 518 568 C524 580 528 590 531 600 L533 608 L535 600 C538 590 542 580 548 568 C558 548 570 528 580 505 C592 478 598 442 598 412 C598 382 594 352 585 332 C566 322 500 322 481 332 Z" fill="url(#deck)" stroke="#0d1116" stroke-width="1.6" transform="translate(533 466) scale(0.87) translate(-533 -466)"/>
+    <!-- spray rails forward, tighter chine aft -->
+    <path d="M478 400 C468 440 470 480 484 512" stroke="#e7ecf1" stroke-width="1.6" opacity="0.35" fill="none"/>
+    <path d="M588 400 C598 440 596 480 582 512" stroke="#e7ecf1" stroke-width="1.6" opacity="0.35" fill="none"/>
+
+    <!-- swim platform (wider than the transom) + twin outboards mounted aft of it -->
+    <g id="stern-gear">
+      <path d="M455 330 L611 330 L601 344 L465 344 Z" fill="#5c6673" stroke="#22262c" stroke-width="1.2"/>
+      <line x1="470" y1="337" x2="470" y2="349" stroke="#22262c" stroke-width="1.6" opacity="0.7"/>
+      <line x1="478" y1="337" x2="478" y2="352" stroke="#22262c" stroke-width="1.6" opacity="0.7"/>
+      <circle cx="490" cy="337" r="3.2" fill="#22262c"/>
+      <circle cx="576" cy="337" r="3.2" fill="#22262c"/>
+      <g id="outboards">
+        <path d="M491 288 h27 a9 9 0 0 1 9 9 v30 a8 8 0 0 1 -8 8 h-29 a8 8 0 0 1 -8 -8 v-30 a9 9 0 0 1 9 -9 Z" fill="url(#cowl)" stroke="#05070a" stroke-width="1.8"/>
+        <path d="M495 295 C501 292 512 292 518 295" stroke="#38bdf8" stroke-width="2" opacity="0.6" fill="none"/>
+        <rect x="496" y="323" width="23" height="12" rx="3" fill="#0a0c0f" stroke="#05070a" stroke-width="1.2"/>
+        <path d="M547 288 h27 a9 9 0 0 1 9 9 v30 a8 8 0 0 1 -8 8 h-29 a8 8 0 0 1 -8 -8 v-30 a9 9 0 0 1 9 -9 Z" fill="url(#cowl)" stroke="#05070a" stroke-width="1.8"/>
+        <path d="M551 295 C557 292 568 292 574 295" stroke="#38bdf8" stroke-width="2" opacity="0.6" fill="none"/>
+        <rect x="552" y="323" width="23" height="12" rx="3" fill="#0a0c0f" stroke="#05070a" stroke-width="1.2"/>
+      </g>
+    </g>
+
+    <!-- aft cockpit fishing/functional detail -->
+    <g id="cockpit-detail" opacity="0.85">
+      <rect x="494" y="352" width="26" height="17" rx="4" fill="#0d1319" stroke="#3d4551" stroke-width="1.2"/>
+      <rect x="524" y="352" width="26" height="17" rx="4" fill="#0d1319" stroke="#3d4551" stroke-width="1.2"/>
+      <rect x="508" y="374" width="38" height="20" rx="5" fill="#0c1c22" stroke="#34d399" stroke-width="1.2" opacity="0.7"/>
+      <circle cx="478" cy="352" r="2.6" fill="#7c8794"/>
+      <circle cx="474" cy="372" r="2.6" fill="#7c8794"/>
+      <circle cx="472" cy="392" r="2.6" fill="#7c8794"/>
+      <circle cx="588" cy="352" r="2.6" fill="#7c8794"/>
+      <circle cx="592" cy="372" r="2.6" fill="#7c8794"/>
+      <circle cx="594" cy="392" r="2.6" fill="#7c8794"/>
+      <ellipse cx="483" cy="345" rx="4.4" ry="2.6" fill="none" stroke="#7c8794" stroke-width="1.4"/>
+      <ellipse cx="583" cy="345" rx="4.4" ry="2.6" fill="none" stroke="#7c8794" stroke-width="1.4"/>
+    </g>
+
+    <!-- hardtop / helm structure, forward of the open cockpit -->
+    <g id="helm-structure">
+      <line x1="500" y1="400" x2="497" y2="418" stroke="#3d4551" stroke-width="2"/>
+      <line x1="566" y1="400" x2="569" y2="418" stroke="#3d4551" stroke-width="2"/>
+      <circle cx="571" cy="404" r="5.6" fill="#0b1220" stroke="#38bdf8" stroke-width="1.3" opacity="0.85"/>
+      <line x1="571" y1="398" x2="571" y2="388" stroke="#94a3b8" stroke-width="1.4"/>
+      <path d="M486 422 C495 402 571 402 580 422 L572 440 C548 433 518 433 494 440 Z" fill="url(#darkGlass)" stroke="#38bdf8" stroke-width="1.5"/>
+      <path d="M482 424 L584 424" stroke="#0d1116" stroke-width="5" opacity="0.5"/>
+      <rect x="500" y="440" width="66" height="28" rx="6" fill="#0c141f" stroke="#38bdf8" stroke-width="1.5"/>
+      <rect x="508" y="447" width="18" height="12" rx="2" fill="#38bdf8"/>
+      <rect x="534" y="447" width="20" height="12" rx="2" fill="#fbbf24"/>
+      <circle cx="533" cy="472" r="8.6" fill="none" stroke="#94a3b8" stroke-width="2.2"/>
+    </g>
+
+    <!-- pilot at the wheel, aft side of console -->
+    <g id="operator" opacity="0.92">
+      <ellipse cx="535" cy="430" rx="7.6" ry="8.6" fill="#1c2733" stroke="#7c8794" stroke-width="1.3"/>
+      <path d="M523 454 C523 441 528 434 535 434 C542 434 547 441 547 454 Z" fill="#232f3d" stroke="#7c8794" stroke-width="1.3"/>
+      <path d="M541 440 L555 446" stroke="#7c8794" stroke-width="2.6" stroke-linecap="round"/>
+    </g>
+
+    <!-- walkaround side decks: stanchions running from cockpit past the cabin to the bow -->
+    <g id="rails" opacity="0.6" stroke="#94a3b8" stroke-width="1.2">
+      <circle cx="480" cy="470" r="1.8" fill="#94a3b8"/>
+      <circle cx="478" cy="500" r="1.8" fill="#94a3b8"/>
+      <circle cx="482" cy="530" r="1.8" fill="#94a3b8"/>
+      <circle cx="492" cy="558" r="1.8" fill="#94a3b8"/>
+      <circle cx="586" cy="470" r="1.8" fill="#94a3b8"/>
+      <circle cx="588" cy="500" r="1.8" fill="#94a3b8"/>
+      <circle cx="584" cy="530" r="1.8" fill="#94a3b8"/>
+      <circle cx="574" cy="558" r="1.8" fill="#94a3b8"/>
+    </g>
+
+    <!-- cuddy cabin trunk (narrower than the beam, walkaround visible both sides) -->
+    <g id="cabin">
+      <rect x="508" y="480" width="50" height="50" rx="11" fill="#1a222b" stroke="#3d4551" stroke-width="1.4" opacity="0.9"/>
+      <ellipse cx="533" cy="498" rx="13" ry="7" fill="#0b1220" stroke="#38bdf8" stroke-width="1.2" opacity="0.85"/>
+      <line x1="516" y1="518" x2="550" y2="518" stroke="#0d1116" stroke-width="2" opacity="0.6"/>
+    </g>
+
+    <!-- foredeck: windlass / anchor locker, and pulpit rails to the bow tip -->
+    <g id="foredeck">
+      <rect x="521" y="552" width="24" height="16" rx="4" fill="#12181f" stroke="#3d4551" stroke-width="1.2"/>
+      <path d="M518 568 L533 604" stroke="#7c8794" stroke-width="1.3" opacity="0.7" fill="none"/>
+      <path d="M548 568 L533 604" stroke="#7c8794" stroke-width="1.3" opacity="0.7" fill="none"/>
+      <rect x="528" y="600" width="10" height="8" rx="2" fill="#12181f" stroke="#7c8794" stroke-width="1.1"/>
+    </g>
+
+    <path d="M497 415 C515 419 551 419 569 415" stroke="#38bdf8" stroke-width="2.6" opacity="0.45" fill="none"/>
+  </g>
+
+  <g id="boat-callouts">
+    <path d="M656 320 C630 322 600 320 578 314" stroke="#94a3b8" stroke-width="1.4" fill="none"/>
+    <text x="660" y="324" class="lede" fill="#e2e8f0">twin outboards</text>
+    <path d="M330 420 C380 418 440 416 490 424" stroke="#94a3b8" stroke-width="1.4" fill="none"/>
+    <text x="196" y="424" class="tiny" opacity="0.55">pilot at helm, gated authority</text>
+  </g>
+
+  <g id="perception">
+    <path d="M472 594 L393 636" class="tie"/>
+    <path d="M618 594 L699 636" class="tie"/>
+    <text x="380" y="654" class="lede" fill="#5eead4">tie-up point</text>
+    <text x="637" y="654" class="lede" fill="#5eead4">tie-up point</text>
+    <circle cx="472" cy="500" r="10" fill="none" stroke="#5eead4" stroke-width="2" opacity="0.8"/>
+    <text x="392" y="482" class="lede" fill="#5eead4">safe boarding point</text>
+  </g>
+  </g>
+
+  <g id="data-table-live">
+    <rect x="110" y="270" width="280" height="174" rx="12" fill="#0f1b24" opacity="0.85" stroke="#5eead4" stroke-width="1.4"/>
+    <text x="126" y="296" class="lede" fill="#5eead4">NMEA 2000 / SeaTalk NG</text>
+    <line x1="110" y1="306" x2="390" y2="306" stroke="#1e3a4a" stroke-width="1"/>
+    <text x="126" y="332" class="mono">&#8226; Position (GPS)</text>
+    <text x="126" y="358" class="mono">&#8226; Speed</text>
+    <text x="126" y="384" class="mono">&#8226; Depth</text>
+    <text x="126" y="410" class="mono">&#8226; Rudder angle</text>
+    <text x="126" y="436" class="mono">&#8226; Engine RPM</text>
+  </g>
+
+  <g id="data-table-planned">
+    <rect x="110" y="460" width="280" height="188" rx="12" fill="#1f2937" opacity="0.85" stroke="#64748b" stroke-width="1.4" stroke-dasharray="5 5"/>
+    <text x="126" y="486" class="lede" fill="#94a3b8">Additional sensors - building</text>
+    <line x1="110" y1="496" x2="390" y2="496" stroke="#1e3a4a" stroke-width="1"/>
+    <text x="126" y="522" class="mono" opacity="0.85">&#8226; Visual distance</text>
+    <text x="126" y="548" class="mono" opacity="0.85">&#8226; Obstacle ID</text>
+    <text x="126" y="574" class="mono" opacity="0.85">&#8226; Wind</text>
+    <text x="126" y="600" class="mono" opacity="0.85">&#8226; Dock range</text>
+    <text x="126" y="626" class="mono" opacity="0.85">&#8226; Video feed</text>
+  </g>
+
+  <g id="system-diagram">
+    <text x="689" y="396" class="tiny">On-boat data in (read-only)</text>
+    <rect x="689" y="406" width="130" height="56" rx="8" fill="#0c141f" stroke="#38bdf8" stroke-width="1.4"/>
+    <text x="754" y="439" text-anchor="middle" class="mono">Sensors</text>
+    <rect x="834" y="406" width="150" height="56" rx="8" fill="#0c141f" stroke="#38bdf8" stroke-width="1.4"/>
+    <text x="909" y="428" text-anchor="middle" class="mono">SeaTalk NG</text>
+    <text x="909" y="449" text-anchor="middle" class="mono">NMEA 2000</text>
+    <path d="M754 462 L775 484" class="data"/>
+    <path d="M909 462 L900 484" class="data"/>
+    <rect x="743" y="484" width="195" height="48" rx="8" fill="#0c141f" stroke="#38bdf8" stroke-width="1.4"/>
+    <text x="840" y="513" text-anchor="middle" class="mono">K8s cluster</text>
+
+    <path d="M840 532 L840 540" stroke="#38bdf8" stroke-width="1.6" fill="none" marker-end="url(#arrowSmall)" stroke-linecap="round"/>
+    <rect x="743" y="540" width="195" height="28" rx="8" fill="#1f2937" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="4 3"/>
+    <text x="840" y="558" text-anchor="middle" class="mono" opacity="0.85">Advisory model (TBD)</text>
+
+    <path d="M840 568 L829 576" stroke="#38bdf8" stroke-width="1.6" fill="none" marker-end="url(#arrowSmall)" stroke-linecap="round"/>
+    <text x="689" y="588" class="tiny">Dashboard concept - beyond the OEM gauges</text>
+    <g id="dashboard-mock">
+      <rect x="689" y="596" width="86" height="58" rx="6" fill="#0c141f" stroke="#38bdf8" stroke-width="1.2"/>
+      <path d="M715 608 L729 618" stroke="#38bdf8" stroke-width="1.6" opacity="0.6"/>
+      <path d="M715 632 L729 622" stroke="#38bdf8" stroke-width="1.6" opacity="0.6"/>
+      <path d="M729 620 L750 620" stroke="#38bdf8" stroke-width="2.6"/>
+      <path d="M744 614 L750 620 L744 626" stroke="#38bdf8" stroke-width="2.2" fill="none"/>
+      <text x="732" y="644" text-anchor="middle" class="tiny" opacity="0.8">Wind+current</text>
+
+      <rect x="783" y="596" width="86" height="58" rx="6" fill="#0c141f" stroke="#38bdf8" stroke-width="1.2"/>
+      <circle cx="808" cy="620" r="7" fill="#ef4444" opacity="0.8"/>
+      <circle cx="826" cy="620" r="7" fill="#fbbf24" opacity="0.8"/>
+      <circle cx="844" cy="620" r="7" fill="#34d399" opacity="0.8"/>
+      <text x="826" y="644" text-anchor="middle" class="tiny" opacity="0.8">Warnings</text>
+
+      <rect x="877" y="596" width="86" height="58" rx="6" fill="#0c141f" stroke="#38bdf8" stroke-width="1.2"/>
+      <path d="M897 630 L910 626 L922 630 L934 616 L946 620" stroke="#38bdf8" stroke-width="2" fill="none"/>
+      <text x="920" y="644" text-anchor="middle" class="tiny" opacity="0.8">Confidence</text>
+    </g>
+  </g>
+  </g>
+
+  <text x="315" y="352" class="orient" fill="#e2e8f0" text-anchor="middle">1  WHAT THE BOATER FACES</text>
+  <g id="scene-approach" transform="translate(92 363) scale(0.489) translate(-92 -262)">
+    <rect x="92" y="262" width="914" height="394" rx="22" fill="url(#water)" opacity="0.9" stroke="#1e3a4a" stroke-width="1.5"/>
+
+    <g id="slip-dock-approach">
+      <rect x="343" y="286" width="404" height="48" rx="5" fill="url(#dock)" stroke="#1f242b" stroke-width="1.4"/>
+      <rect x="383" y="334" width="82" height="270" rx="5" fill="url(#dock)" stroke="#1f242b" stroke-width="1.4"/>
+      <rect x="625" y="334" width="82" height="270" rx="5" fill="url(#dock)" stroke="#1f242b" stroke-width="1.4"/>
+    </g>
+
+    <path d="M655 595 C600 550 570 520 555 490" class="reverse"/>
+
+    <g id="wind-force">
+      <path d="M95 372 L212 372" class="hazard"/>
+      <path d="M95 412 L212 412" class="hazard"/>
+      <path d="M95 452 L212 452" class="hazard"/>
+      <path d="M95 492 L212 492" class="hazard"/>
+      <path d="M95 532 L212 532" class="hazard"/>
+      <text x="95" y="352" class="lede" fill="#fbbf24">wind - broad force on hull</text>
+    </g>
+    <g id="current-force">
+      <path d="M480 342 L475 378" class="hazard"/>
+      <path d="M515 340 L512 380" class="hazard"/>
+      <path d="M550 342 L547 378" class="hazard"/>
+      <text x="573" y="330" class="lede" fill="#fbbf24">current - out from under dock, pushes stern out of slip</text>
+    </g>
+    <path d="M148 560 C220 590 300 596 372 580" stroke="#5eead4" stroke-width="2" opacity="0.4" fill="none" stroke-dasharray="2 5"/>
+
+    <g id="traffic-boat-2">
+      <g transform="translate(230 572) rotate(20) scale(0.8) translate(-230 -572)">
+        <path d="M200 572 Q222 560 255 572 Q222 584 200 572 Z" fill="#3d3320" stroke="#fbbf24" stroke-width="1.8" opacity="0.85"/>
+        <path d="M178 572 L196 572" stroke="#fbbf24" stroke-width="1.5" opacity="0.45" stroke-dasharray="2 4"/>
+        <path d="M168 580 L188 578" stroke="#fbbf24" stroke-width="1.1" opacity="0.3" stroke-dasharray="2 4"/>
+      </g>
+    </g>
+
+    <g id="waves-graphic" stroke="#7dd3fc" fill="none" stroke-linecap="round">
+      <path d="M92 600 Q112 588 132 600 Q152 612 172 600 Q192 588 212 600 Q232 612 252 600 Q272 588 292 600 Q312 612 332 600 Q352 588 372 600 Q392 612 412 600" stroke-width="2" opacity="0.3"/>
+      <path d="M92 620 Q114 606 136 620 Q158 634 180 620 Q202 606 224 620 Q246 634 268 620 Q290 606 312 620 Q334 634 356 620 Q378 606 400 620" stroke-width="2.2" opacity="0.4"/>
+      <path d="M92 642 Q116 626 140 642 Q164 658 188 642 Q212 626 236 642 Q260 658 284 642 Q308 626 332 642 Q356 658 380 642" stroke-width="2.4" opacity="0.5"/>
+    </g>
+
+    <g id="variability-list">
+      <rect x="720" y="380" width="280" height="150" rx="12" fill="#1f1608" opacity="0.85" stroke="#fbbf24" stroke-width="1.4"/>
+      <text x="736" y="406" class="lede" fill="#fbbf24" style="font-size:13px">Additional non-trivial factors</text>
+      <line x1="720" y1="416" x2="1000" y2="416" stroke="#3a2a12" stroke-width="1"/>
+      <text x="736" y="442" class="mono" opacity="0.85">&#8226; Tides</text>
+      <text x="736" y="466" class="mono" opacity="0.85">&#8226; Weather / micro climates</text>
+      <text x="736" y="490" class="mono" opacity="0.85">&#8226; Geography - no two slips alike</text>
+      <text x="736" y="514" class="mono" opacity="0.85">&#8226; Churn from marina traffic</text>
+    </g>
+
+    <g id="traffic-boat">
+      <g transform="rotate(-25 800 590)">
+        <path d="M770 590 Q795 575 832 590 Q795 605 770 590 Z" fill="#3d3320" stroke="#fbbf24" stroke-width="1.8" opacity="0.9"/>
+        <path d="M745 590 L765 590" stroke="#fbbf24" stroke-width="1.5" opacity="0.5" stroke-dasharray="2 4"/>
+        <path d="M735 598 L755 596" stroke="#fbbf24" stroke-width="1.2" opacity="0.35" stroke-dasharray="2 4"/>
+      </g>
+      <text x="735" y="565" class="tiny" style="fill:#fbbf24" opacity="0.75">marina traffic</text>
+    </g>
+
+    <g id="boat-approach" transform="translate(30 73) rotate(-26 533 466) translate(533 466) scale(0.75) translate(-533 -466)">
+      <path d="M481 332 C472 352 468 382 468 412 C468 442 474 478 486 505 C496 528 508 548 518 568 C524 580 528 590 531 600 L533 608 L535 600 C538 590 542 580 548 568 C558 548 570 528 580 505 C592 478 598 442 598 412 C598 382 594 352 585 332 C566 322 500 322 481 332 Z" fill="url(#hull)" stroke="#3d4551" stroke-width="3" filter="url(#hullshadow)"/>
+      <path d="M481 332 C472 352 468 382 468 412 C468 442 474 478 486 505 C496 528 508 548 518 568 C524 580 528 590 531 600 L533 608 L535 600 C538 590 542 580 548 568 C558 548 570 528 580 505 C592 478 598 442 598 412 C598 382 594 352 585 332 C566 322 500 322 481 332 Z" fill="url(#hullShade)"/>
+      <path d="M481 332 C472 352 468 382 468 412 C468 442 474 478 486 505 C496 528 508 548 518 568 C524 580 528 590 531 600 L533 608 L535 600 C538 590 542 580 548 568 C558 548 570 528 580 505 C592 478 598 442 598 412 C598 382 594 352 585 332 C566 322 500 322 481 332 Z" fill="none" stroke="#1e3a5f" stroke-width="2.2" opacity="0.55" transform="translate(533 466) scale(0.965) translate(-533 -466)"/>
+      <path d="M481 332 C472 352 468 382 468 412 C468 442 474 478 486 505 C496 528 508 548 518 568 C524 580 528 590 531 600 L533 608 L535 600 C538 590 542 580 548 568 C558 548 570 528 580 505 C592 478 598 442 598 412 C598 382 594 352 585 332 C566 322 500 322 481 332 Z" fill="url(#deck)" stroke="#0d1116" stroke-width="1.6" transform="translate(533 466) scale(0.87) translate(-533 -466)"/>
+      <rect x="455" y="330" width="156" height="14" rx="5" fill="#5c6673" stroke="#22262c" stroke-width="1.2"/>
+      <path d="M491 288 h27 a9 9 0 0 1 9 9 v30 a8 8 0 0 1 -8 8 h-29 a8 8 0 0 1 -8 -8 v-30 a9 9 0 0 1 9 -9 Z" fill="#3d3320" stroke="#fbbf24" stroke-width="1.8" opacity="0.75"/>
+      <path d="M547 288 h27 a9 9 0 0 1 9 9 v30 a8 8 0 0 1 -8 8 h-29 a8 8 0 0 1 -8 -8 v-30 a9 9 0 0 1 9 -9 Z" fill="url(#cowl)" stroke="#05070a" stroke-width="1.8"/>
+      <text x="480" y="272" class="lede" fill="#fbbf24">engine out</text>
+      <ellipse cx="535" cy="450" rx="8" ry="9" fill="#1c2733" stroke="#7c8794" stroke-width="1.3"/>
+      <g id="passenger-pressure">
+        <rect x="495" y="410" width="34" height="24" rx="6" fill="#3d3320" stroke="#fbbf24" stroke-width="1.4"/>
+        <path d="M508 434 L500 447 L516 434 Z" fill="#3d3320" stroke="#fbbf24" stroke-width="1.4"/>
+        <text x="512" y="428" text-anchor="middle" style="font:800 14px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#fbbf24">!</text>
+      </g>
+    </g>
+  </g>
+
+  <path d="M815 365 C865 360 930 360 998 367" class="data" style="stroke-width:2.4"/>
+  <path d="M830 557 C880 560 940 562 998 565" class="data" style="stroke-width:2.4"/>
+  <text x="900" y="326" class="tiny" opacity="0.6">telemetry in</text>
+
+  <rect x="1090" y="160" width="450" height="560" rx="28" class="panel"/>
+  <text x="1126" y="204" class="h">Cluster, Gate, And Pilot</text>
+  <text x="1126" y="232" class="s">The cluster sees; the captain authorizes; control remains gated.</text>
+
+  <rect x="1126" y="268" width="378" height="116" rx="22" fill="url(#cluster)" filter="url(#shadow)"/>
+  <text x="1156" y="310" class="h2">Edge Cluster</text>
+  <text x="1156" y="340" class="s" style="fill:#eef2ff">CAN/NMEA 2000 ingest,</text>
+  <text x="1156" y="366" class="s" style="fill:#eef2ff">replay and inspection</text>
+
+  <rect x="1126" y="408" width="172" height="94" rx="18" fill="#0b1f31" stroke="#38bdf8" stroke-width="1.6"/>
+  <text x="1152" y="440" class="h2">Data In</text>
+  <text x="1152" y="468" class="tiny">GPS, speed, depth</text>
+  <text x="1152" y="490" class="tiny">RPM, temp, battery/fuel</text>
+
+  <rect x="1332" y="408" width="172" height="94" rx="18" fill="#28162a" stroke="#f472b6" stroke-width="1.6"/>
+  <text x="1354" y="440" class="h2">Pilot Gate</text>
+  <text x="1354" y="468" class="tiny">enable, monitor</text>
+  <text x="1354" y="490" class="tiny">override, approve</text>
+
+  <rect x="1126" y="532" width="378" height="120" rx="22" fill="#1f1308" stroke="#fb923c" stroke-width="1.6"/>
+  <text x="1156" y="572" class="h2">Future Gated Outputs</text>
+  <text x="1156" y="604" class="s">estimates + advisory</text>
+  <text x="1156" y="632" class="s">throttle / angle requests</text>
+  <text x="1354" y="604" class="s">emergency hold</text>
+  <text x="1354" y="632" class="s">safe-state limits</text>
+
+  <path d="M1298 456 C1314 456 1318 456 1332 456" class="human"/>
+  <path d="M1315 384 C1315 394 1315 398 1315 408" class="data"/>
+  <path d="M1418 502 C1418 518 1400 522 1400 532" class="human"/>
+  <g id="left-summary">
+    <text x="92" y="576" class="lede" fill="#fbbf24">Numerous environmental factors</text>
+    <text x="92" y="598" class="tiny">&#8226; Wind</text>
+    <text x="290" y="598" class="tiny">&#8226; Current</text>
+    <text x="92" y="618" class="tiny">&#8226; Tide</text>
+    <text x="290" y="618" class="tiny">&#8226; Hard obstacles</text>
+    <text x="92" y="638" class="tiny">&#8226; Passenger distraction</text>
+    <text x="290" y="638" class="tiny">&#8226; Engine out</text>
+  </g>
+
+  <g id="takeaway-left">
+    <line x1="92" y1="656" x2="520" y2="656" stroke="#3a2a12" stroke-width="1"/>
+    <text x="92" y="680" style="font:italic 700 15px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#fbbf24">Nature can make docking a risk-filled adventure.</text>
+  </g>
+
+  <g id="legend-left" class="crop-only">
+    <rect x="92" y="703" width="11" height="11" fill="#fbbf24"/>
+    <text x="108" y="712" class="tiny" opacity="0.85">Amber = hazard, faced now</text>
+    <path d="M320 707 L336 707" stroke="#dbeafe" stroke-width="3" stroke-dasharray="4 3"/>
+    <text x="342" y="712" class="tiny" opacity="0.85">Dashed white = intended path</text>
+  </g>
+
+  <g id="right-summary">
+    <text x="559" y="576" class="lede" fill="#5eead4">Automated sensing, guidance, <tspan fill="#fb923c">and eventually control</tspan></text>
+    <text x="559" y="598" class="tiny">&#8226; Distance / obstacle sensing</text>
+    <text x="779" y="598" class="tiny">&#8226; Approach plan</text>
+    <text x="559" y="618" class="tiny">&#8226; Recommended boarding point</text>
+    <text x="779" y="618" class="tiny">&#8226; Recommended tie-up points</text>
+    <text x="559" y="638" class="tiny" style="fill:#fb923c">&#8226; Emergency assist</text>
+    <text x="779" y="638" class="tiny" style="fill:#fb923c" opacity="0.7">&#8226; Future: supervised self-docking</text>
+  </g>
+
+  <g id="takeaway-right">
+    <line x1="559" y1="656" x2="987" y2="656" stroke="#12352f" stroke-width="1"/>
+    <text x="559" y="680" style="font:italic 700 15px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#5eead4">BoatAutonomy helps bring order to the chaos.</text>
+  </g>
+
+  <g id="legend-right" class="crop-only">
+    <rect x="559" y="703" width="11" height="11" fill="#5eead4"/>
+    <text x="575" y="712" class="tiny" opacity="0.85">Teal = pilot help</text>
+    <rect x="710" y="703" width="11" height="11" fill="#64748b" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 2"/>
+    <text x="726" y="712" class="tiny" opacity="0.85">Gray = building</text>
+    <rect x="840" y="703" width="11" height="11" fill="#fb923c" opacity="0.85"/>
+    <text x="856" y="712" class="tiny" opacity="0.85">Orange = future, gated</text>
+
+    <rect x="559" y="718" width="90" height="34" rx="6" fill="#0c141f" stroke="#38bdf8" stroke-width="1.2"/>
+    <path d="M567 742 Q585 730 600 736 Q612 741 622 732" stroke="#38bdf8" stroke-width="1.8" fill="none" stroke-dasharray="3 2"/>
+    <rect x="624" y="726" width="4" height="16" fill="#38bdf8" opacity="0.6"/>
+    <rect x="632" y="726" width="4" height="16" fill="#38bdf8" opacity="0.6"/>
+    <text x="659" y="739" class="tiny" opacity="0.85">Position - a track into the dock, not just a dot</text>
+  </g>
+
+  <text x="788" y="692" class="tiny hide-in-crop">future control path, not current public claim -- no line drawn to the vessel</text>
+
+  <rect x="58" y="760" width="1482" height="170" rx="28" class="panel"/>
+  <text x="92" y="806" class="h">Capability Evolution</text>
+  <text x="92" y="834" class="s">Authority grows only after evidence, replay, safety review, and owner approval.</text>
+
+  <g id="evolution">
+    <rect x="92" y="862" width="250" height="52" rx="15" fill="#0b2a55" stroke="#38bdf8" stroke-width="1.6"/>
+    <text x="116" y="884" class="h2">Status + Replay</text>
+    <text x="116" y="904" class="tiny">current public surface</text>
+    <path d="M342 888 L388 888" class="data"/>
+    <rect x="408" y="862" width="250" height="52" rx="15" fill="#073b37" stroke="#34d399" stroke-width="1.6"/>
+    <text x="432" y="884" class="h2">Advisory Cues</text>
+    <text x="432" y="904" class="tiny">next: pilot information</text>
+    <path d="M658 888 L704 888" class="data"/>
+    <rect x="724" y="862" width="250" height="52" rx="15" fill="#2b174c" stroke="#a78bfa" stroke-width="1.6"/>
+    <text x="748" y="884" class="h2">Shadow Requests</text>
+    <text x="748" y="904" class="tiny">future: predict, no influence</text>
+    <path d="M974 888 L1020 888" class="control"/>
+    <rect x="1040" y="862" width="210" height="52" rx="15" fill="#45220a" stroke="#fb923c" stroke-width="1.6"/>
+    <text x="1064" y="884" class="h2">Emergency Assist</text>
+    <text x="1064" y="904" class="tiny">future gated control</text>
+    <path d="M1250 888 L1296 888" class="control"/>
+    <rect x="1316" y="862" width="220" height="52" rx="15" fill="#45132e" stroke="#f472b6" stroke-width="1.6"/>
+    <text x="1340" y="884" class="h2" style="font-size:16px">Supervised self-docking</text>
+    <text x="1340" y="904" class="tiny">not a current claim</text>
+  </g>
+
+  <rect x="92" y="938" width="1412" height="34" rx="13" fill="#0f172a" stroke="#334155" stroke-width="1.4"/>
+  <text x="116" y="960" class="tiny">Solid blue/green: current observations. Dashed gray: planned perception classes. Dashed orange: future owner-gated control requests.</text>
+</svg>

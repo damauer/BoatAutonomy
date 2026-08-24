@@ -77,6 +77,20 @@ right after the platform shape.
 
 ## How It Works
 
+Docking a boat into a slip it has never seen, in wind and current it cannot
+control, is the target maneuver this project is built around. The scene
+below shows that problem and the system's response to it - observation,
+sensing, and guidance today, with any future control request still gated
+behind the pilot.
+
+![Numerous environmental factors (left) and automated sensing, guidance, and eventually control (right)](assets/diagrams/docking-system-evolution-v2.png)
+
+Full discussion: [docking-problem-and-solution.md](docs/docking-problem-and-solution.md).
+Editable source: [docking-system-evolution-v2.svg](assets/diagrams/docking-system-evolution-v2.svg).
+
+That slip approach is one instance of a repeatable pattern, not a one-off
+docking app:
+
 ![BoatAutonomy platform pattern](assets/diagrams/boat-autonomy-platform.png)
 
 Editable source: [boat-autonomy-platform.svg](assets/diagrams/boat-autonomy-platform.svg).
@@ -268,7 +282,7 @@ conversation you want to have.
 | --- | --- | --- |
 | Why read this | What problem makes this worth attention? | [problem-and-opportunity.md](docs/problem-and-opportunity.md) |
 | What this is | What is public, what is private, and what is not being claimed? | [safety boundary](docs/scope-and-safety.md), [evidence.md](docs/evidence.md), [sample telemetry](#sample-telemetry) |
-| How it works | What is the system shape and technical approach? | [system-platform.md](docs/system-platform.md) |
+| How it works | What is the system shape and technical approach? | [docking-problem-and-solution.md](docs/docking-problem-and-solution.md), [system-platform.md](docs/system-platform.md) |
 | Why it matters | Why is the evidence/control plane ahead of assistive behavior? | [agentic-engineering.md](docs/agentic-engineering.md), [evidence.md](docs/evidence.md) |
 | Where it is going | What is the capability path and future business hypothesis? | [roadmap-and-business.md](docs/roadmap-and-business.md) |
 | How Dan can help | What skills, experience, and judgment does this make visible? | [builder-profile.md](docs/builder-profile.md), [RESUME.md](RESUME.md) |

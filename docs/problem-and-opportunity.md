@@ -51,6 +51,10 @@ Marine assistance is not only an autonomy problem. It is a systems problem:
 That is why BoatAutonomy emphasizes observation, replay, evidence, staged
 promotion, and explicit owner authority.
 
+The concrete docking scenario - the specific slip, conditions, and gated
+response - is spelled out in
+[docking-problem-and-solution.md](docking-problem-and-solution.md).
+
 ## Opportunity
 
 The long-term product intuition is that boaters do not need a magic black box.

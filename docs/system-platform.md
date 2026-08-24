@@ -48,6 +48,10 @@ monitoring, replay, perception experiments, observability, and deployment
 repeatability. They are not the hard real-time safety controller and do not
 receive direct actuator authority.
 
+Docking is the instance; this page is the pattern. See
+[docking-problem-and-solution.md](docking-problem-and-solution.md) for this
+pattern applied to a real slip approach.
+
 ## Instrumented Survey And Digital Twin
 
 The next useful asset is not a claim of autonomy. It is the instrumented
