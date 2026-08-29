@@ -275,10 +275,10 @@
   <text x="312" y="662" class="boxs">12 V · OneNet · may have YDEN-03</text>
   <path d="M406 650 H422" class="onedrop"/>
 
-  <!-- SignalK LLM after storage, not on ingest -->
+  <!-- SignalK MCP after storage, not on ingest -->
   <path d="M684 452 L684 458" class="data"/>
   <rect x="560" y="458" width="248" height="96" rx="14" class="tbd"/>
-  <text x="684" y="482" text-anchor="middle" class="h2">SignalK LLM</text>
+  <text x="684" y="482" text-anchor="middle" class="h2">SignalK MCP</text>
   <text x="684" y="500" text-anchor="middle" class="boxs" style="fill:#e2e8f0">health · trends</text>
   <text x="684" y="516" text-anchor="middle" class="boxs" style="fill:#e2e8f0">learn · score</text>
   <text x="684" y="542" text-anchor="middle" class="tiny" style="fill:#e2e8f0">after storage · not on ingest</text>
@@ -306,7 +306,7 @@
   <text x="64" y="856" class="tiny">Cyan = SeaTalk NG. Teal = OneNet PoE++. Parallel equal backbones. Amber = 0183 into the converter.</text>
   <text x="64" y="880" class="s">If scoped: fused T, YDEN-03 (ordered), Ethernet, 12 V main computer. Dual 30 A stay.</text>
   <text x="64" y="900" class="s">Later: OneNet PoE++ cameras, ranging, bow IR, radar, edge computer. Solar is 12 V top-off.</text>
-  <text x="64" y="920" class="t">Extra display is not an Axiom+. LLM and the pilot gate are software in the cluster.</text>
+  <text x="64" y="920" class="t">Extra display is not an Axiom+. MCP and the pilot gate are software in the cluster.</text>
 
   <!-- RIGHT: docking approach -->
   <rect x="848" y="124" width="704" height="800" rx="28" fill="url(#water)" opacity="0.92" stroke="#1e3a4a" stroke-width="1.5"/>
@@ -351,7 +351,7 @@
   <text x="1421" y="688" text-anchor="middle" class="boxs">Confidence</text>
 
   <rect x="872" y="718" width="654" height="176" rx="14" class="tbd"/>
-  <text x="892" y="742" class="h2">SignalK LLM</text>
+  <text x="892" y="742" class="h2">SignalK MCP</text>
   <text x="892" y="760" class="tiny">Reads stored SignalK. Not on ingest. Not a helm.</text>
   <rect x="892" y="770" width="196" height="50" rx="10" fill="#2b174c" stroke="#a78bfa" stroke-width="1.2"/>
   <text x="990" y="790" text-anchor="middle" class="boxn">Health · trends</text>

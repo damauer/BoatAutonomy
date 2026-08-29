@@ -96,12 +96,13 @@ stern-first track into the slip, red / yellow / green clearance
 warnings, and a confidence trace that the plan still matches sensors.
 Dashed tiles are not implemented.
 
-A SignalK LLM, when it exists, sits **after storage**, not on ingest.
-It reads stored SignalK for health and trends, learning and scoring,
-emergency warnings, guided assist, emergency takeover, and eventually
-supervised self-docking. Assist and takeover are gated requests
-through the pilot gate. Self-docking, if it is ever built, is
-supervised and never unattended. The model does not write N2K.
+A SignalK MCP (Model Context Protocol) adapter, when it exists, sits
+**after storage**, not on ingest. It lets an agent read stored SignalK
+for health and trends, learning and scoring, and emergency warnings.
+It does not write N2K. Guided assist, emergency takeover, and
+supervised self-docking remain later gated requests through the pilot
+gate, not MCP features. Self-docking, if it is ever built, is
+supervised and never unattended.
 
 The pilot is in command at every rung. Override does not need this
 box.
@@ -167,10 +168,8 @@ SeaTalk NG / NMEA 2000
          |
          |  Kubernetes deploys and restarts those apps
          v
-  -> SignalK LLM          health, trends, learn, score [TBD]
-                          emergency warnings
-                          guided assist · takeover (gated)
-                          supervised self-docking (eventual)
+  -> SignalK MCP          health, trends, learn, score [TBD]
+                          emergency warnings (read-only)
   -> Grafana              plant health + docking view  [TBD]
 ```
 
@@ -188,11 +187,12 @@ Kubernetes sits **around** that pipeline. It deploys and restarts
 SignalK, InfluxDB, and plant Grafana. It is not the helm, not the AC
 selector, and not the hard real-time safety controller.
 
-The SignalK LLM is a different job from ingest. It reads stored
+The SignalK MCP is a different job from ingest. It reads stored
 SignalK. It does not sit on the cyan ingest path, does not write PGN
 traffic, and does not command engines. Product, model, and host are
-unset — that is what TBD means. Do not read this page as an AI helm
-or a write path.
+unset — that is what TBD means. Assist, takeover, and supervised
+docking stay behind the pilot gate. Do not read this page as an AI
+helm or a write path.
 
 Raw frames stay with decoded values so a decoder change does not burn
 another boat day.

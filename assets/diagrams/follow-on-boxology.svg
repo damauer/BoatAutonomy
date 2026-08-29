@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
   <title id="title">Live seagoing test bench: Boston Whaler Conquest plant, bus, and isolation</title>
-  <desc id="desc">Installer-facing boxology on the same stern-first Boston Whaler Conquest hull as the slip graphic. Left: AC, DC, SeaTalk NG, and isolation rules a marine electrician checks. Right: two independent 120 V 30 A dock feeds; SeaTalk NG with T-pieces including dual Raymarine Axiom+ 9 chartplotters and VesselView. Helm interface is that SeaTalk NG / NMEA 2000 bus. The cluster meets the helm only through a listen-only YDEN-03. A parallel later NMEA OneNet PoE++ Ethernet backbone runs stern to bow beside SeaTalk NG, with taps so sensors can land anywhere an STNG device might. Fused house 12 V to each computer. Advisory / LLM / agentic processor after storage to an additional display that is not the Axiom+ and not throttle.</desc>
+  <desc id="desc">Installer-facing boxology on the same stern-first Boston Whaler Conquest hull as the slip graphic. Left: AC, DC, SeaTalk NG, and isolation rules a marine electrician checks. Right: two independent 120 V 30 A dock feeds; SeaTalk NG with T-pieces including dual Raymarine Axiom+ 9 chartplotters and VesselView. Helm interface is that SeaTalk NG / NMEA 2000 bus. The cluster meets the helm only through a listen-only YDEN-03. A parallel later NMEA OneNet PoE++ Ethernet backbone runs stern to bow beside SeaTalk NG, with taps so sensors can land anywhere an STNG device might. Fused house 12 V to each computer. SignalK MCP / agentic processor after storage to an additional display that is not the Axiom+ and not throttle.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#08111f"/>
@@ -392,13 +392,13 @@
   <text x="1376" y="340" text-anchor="middle" class="boxn">Main computer · 12 V</text>
   <text x="1376" y="356" text-anchor="middle" class="boxs" style="fill:#cbd5e1">own fused 12 V · not NET-S</text>
   <text x="1376" y="372" text-anchor="middle" class="boxs" style="fill:#cbd5e1">may have YDEN-03 · SignalK · Influx · Grafana</text>
-  <text x="1376" y="388" text-anchor="middle" class="boxs" style="fill:#cbd5e1">K8s apps · not the AC selector · not LLM ingest</text>
+  <text x="1376" y="388" text-anchor="middle" class="boxs" style="fill:#cbd5e1">K8s apps · not the AC selector · not MCP ingest</text>
 
   <path d="M1376 396 V404" class="ethd"/>
   <rect x="1238" y="404" width="276" height="80" rx="8" class="tbd"/>
-  <text x="1376" y="424" text-anchor="middle" class="boxn">Advisory / LLM / agentic</text>
+  <text x="1376" y="424" text-anchor="middle" class="boxn">SignalK MCP</text>
   <text x="1376" y="440" text-anchor="middle" class="boxs" style="fill:#e2e8f0">processor · after storage · not ingest</text>
-  <text x="1376" y="456" text-anchor="middle" class="boxs" style="fill:#e2e8f0">health · trends · learn · score · gated assist</text>
+  <text x="1376" y="456" text-anchor="middle" class="boxs" style="fill:#e2e8f0">health · trends · learn · score · read-only</text>
   <text x="1376" y="472" text-anchor="middle" class="boxs" style="fill:#e2e8f0">not throttle · does not write SeaTalk NG</text>
 
   <path d="M1376 484 V492" class="ethd"/>
