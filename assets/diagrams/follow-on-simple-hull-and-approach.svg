@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
   <title id="title">Simple Boston Whaler Conquest hull: buses, plant, gated actuators, and docking approach</title>
-  <desc id="desc">Simpler follow-on for the live seagoing test bench. Left: same stern-first Boston Whaler Conquest outline with dual Raymarine Axiom+ 9 and VesselView on SeaTalk NG (Yacht Devices listen, working; YDEN-03 ordered as the boat adapter), a parallel later NMEA OneNet PoE++ Ethernet (48 V from a 12→48 V step-up in the cluster) to cameras, ranging, bow IR, and radar; solar is 12 V house top-off, not PoE++, gated actuator requests to the twin 300 hp Mercurys (later), and 12 V from alternators plus Kohler or later LiFePO4. Helm interface is SeaTalk NG only. Right: planned stern-first approach, confidence, and red/yellow/green warnings. Dashboard only. Not a helm. Not a write path.</desc>
+  <desc id="desc">Simpler follow-on for the live seagoing test bench. Left: same stern-first Boston Whaler Conquest outline with dual Raymarine Axiom+ 9 and VesselView on SeaTalk NG (Yacht Devices listen, working; YDEN-03 ordered as the boat adapter), a parallel later NMEA OneNet PoE++ Ethernet (48 V from a 12→48 V step-up in the cluster) to cameras, ranging, bow IR, and radar; solar is 12 V house top-off, not PoE++, gated actuator requests to the twin 300 hp Mercurys (later), and 12 V from alternators plus Kohler or later LiFePO4. Helm interface is SeaTalk NG only. Right: smaller slip with the boat still outside, stern-first on a diagonal planned track under wind and current. Dashboard only. Not a helm. Not a write path.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#08111f"/>
@@ -58,6 +58,9 @@
     <marker id="arrowO" markerWidth="10" markerHeight="10" refX="8" refY="3.5" orient="auto">
       <path d="M0,0 L8,3.5 L0,7 z" fill="#fb923c"/>
     </marker>
+    <marker id="arrowH" markerWidth="10" markerHeight="10" refX="8" refY="3.5" orient="auto">
+      <path d="M0,0 L8,3.5 L0,7 z" fill="#fbbf24"/>
+    </marker>
     <style>
       .title{font:800 40px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f8fafc}
       .sub{font:500 18px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#cbd5e1}
@@ -89,6 +92,7 @@
       .n0183{stroke:#fbbf24;stroke-width:2.2;fill:none;stroke-linecap:round}
       .act{stroke:#fb923c;stroke-width:2.4;fill:none;stroke-dasharray:8 6;marker-end:url(#arrowO);stroke-linecap:round;opacity:0.85}
       .plan{stroke:#e2e8f0;stroke-width:3.5;fill:none;stroke-dasharray:10 8;stroke-linecap:round;opacity:0.85}
+      .hazard{stroke:#fbbf24;stroke-width:2.2;fill:none;marker-end:url(#arrowH);stroke-dasharray:1 5;stroke-linecap:round;opacity:0.9}
       .v48{stroke:#f472b6;stroke-width:2.2;fill:none;stroke-dasharray:7 4;stroke-linecap:round;stroke-linejoin:round}
       .take{font:800 30px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f8fafc;letter-spacing:-0.3px}
     </style>
@@ -312,15 +316,43 @@
   <rect x="848" y="124" width="704" height="800" rx="28" fill="url(#water)" opacity="0.92" stroke="#1e3a4a" stroke-width="1.5"/>
   <text x="1200" y="152" text-anchor="middle" class="orient">ON APPROACH</text>
 
-  <rect x="980" y="176" width="440" height="40" rx="6" fill="url(#dock)" stroke="#1f242b" stroke-width="1.3"/>
-  <rect x="1010" y="216" width="72" height="268" rx="6" fill="url(#dock)" stroke="#1f242b" stroke-width="1.3"/>
-  <rect x="1318" y="216" width="72" height="268" rx="6" fill="url(#dock)" stroke="#1f242b" stroke-width="1.3"/>
-  <text x="1440" y="200" class="h2">Slip</text>
-  <path d="M1200 216 L1200 470" stroke="#dbeafe" stroke-width="2.5" stroke-dasharray="8 8" opacity="0.65"/>
-  <path d="M1268 455 C1240 420 1220 370 1210 320 C1204 286 1202 250 1200 216" class="plan"/>
-  <text x="1288" y="360" class="tiny" style="fill:#e2e8f0">planned track</text>
+  <g id="approach-slip">
+    <rect x="1118" y="170" width="212" height="26" rx="4" fill="url(#dock)" stroke="#1f242b" stroke-width="1.2"/>
+    <rect x="1136" y="196" width="42" height="128" rx="4" fill="url(#dock)" stroke="#1f242b" stroke-width="1.2"/>
+    <rect x="1270" y="196" width="42" height="128" rx="4" fill="url(#dock)" stroke="#1f242b" stroke-width="1.2"/>
+    <line x1="1136" y1="228" x2="1178" y2="228" stroke="#12151a" opacity="0.4"/>
+    <line x1="1136" y1="260" x2="1178" y2="260" stroke="#12151a" opacity="0.4"/>
+    <line x1="1136" y1="292" x2="1178" y2="292" stroke="#12151a" opacity="0.4"/>
+    <line x1="1270" y1="228" x2="1312" y2="228" stroke="#12151a" opacity="0.4"/>
+    <line x1="1270" y1="260" x2="1312" y2="260" stroke="#12151a" opacity="0.4"/>
+    <line x1="1270" y1="292" x2="1312" y2="292" stroke="#12151a" opacity="0.4"/>
+    <circle cx="1136" cy="202" r="5" fill="#0f172a" stroke="#7c8794" stroke-width="1.2"/>
+    <circle cx="1312" cy="202" r="5" fill="#0f172a" stroke="#7c8794" stroke-width="1.2"/>
+    <circle cx="1136" cy="318" r="5" fill="#0f172a" stroke="#7c8794" stroke-width="1.2"/>
+    <circle cx="1312" cy="318" r="5" fill="#0f172a" stroke="#7c8794" stroke-width="1.2"/>
+    <text x="1350" y="188" class="h2">Slip</text>
+    <path d="M1224 202 L1224 324" stroke="#dbeafe" stroke-width="1.8" stroke-dasharray="6 6" opacity="0.4"/>
+  </g>
 
-  <g transform="translate(1200 300) scale(0.92) translate(-533 -332)" filter="url(#shadow)">
+  <g id="approach-wind">
+    <path d="M868 358 L1200 358" class="hazard"/>
+    <path d="M868 388 L1220 388" class="hazard"/>
+    <path d="M868 418 L1240 418" class="hazard"/>
+    <path d="M868 448 L1255 448" class="hazard"/>
+    <text x="868" y="344" class="tiny" style="fill:#fbbf24">wind</text>
+  </g>
+
+  <g id="approach-current">
+    <path d="M1188 208 L1172 252" class="hazard"/>
+    <path d="M1224 206 L1224 254" class="hazard"/>
+    <path d="M1260 208 L1276 252" class="hazard"/>
+    <text x="1338" y="236" class="tiny" style="fill:#fbbf24">current</text>
+  </g>
+
+  <path d="M1318 468 C1288 410 1252 350 1224 210" class="plan"/>
+  <text x="1344" y="392" class="tiny" style="fill:#e2e8f0">planned track</text>
+
+  <g transform="translate(1298 412) rotate(-24) scale(0.48) translate(-533 -466)" filter="url(#shadow)">
     <path d="M481 332 C472 352 468 382 468 412 C468 442 474 478 486 505 C496 528 508 548 518 568 C524 580 528 590 531 600 L533 608 L535 600 C538 590 542 580 548 568 C558 548 570 528 580 505 C592 478 598 442 598 412 C598 382 594 352 585 332 C566 322 500 322 481 332 Z" fill="url(#hull)" stroke="#3d4551" stroke-width="3"/>
     <path d="M481 332 C472 352 468 382 468 412 C468 442 474 478 486 505 C496 528 508 548 518 568 C524 580 528 590 531 600 L533 608 L535 600 C538 590 542 580 548 568 C558 548 570 528 580 505 C592 478 598 442 598 412 C598 382 594 352 585 332 C566 322 500 322 481 332 Z" fill="url(#hullShade)"/>
     <path d="M481 332 C472 352 468 382 468 412 C468 442 474 478 486 505 C496 528 508 548 518 568 C524 580 528 590 531 600 L533 608 L535 600 C538 590 542 580 548 568 C558 548 570 528 580 505 C592 478 598 442 598 412 C598 382 594 352 585 332 C566 322 500 322 481 332 Z" fill="url(#deck)" stroke="#0d1116" stroke-width="1.6" transform="translate(533 466) scale(0.87) translate(-533 -466)"/>
@@ -329,7 +361,8 @@
     <path d="M547 288 h27 a9 9 0 0 1 9 9 v30 a8 8 0 0 1 -8 8 h-29 a8 8 0 0 1 -8 -8 v-30 a9 9 0 0 1 9 -9 Z" fill="url(#cowl)" stroke="#05070a" stroke-width="1.6"/>
   </g>
 
-  <text x="1010" y="508" class="tiny" style="fill:#5eead4">stern-first · same orientation</text>
+  <path d="M872 498 Q900 486 928 498 Q956 510 984 498 Q1012 486 1040 498" stroke="#7dd3fc" stroke-width="1.6" fill="none" opacity="0.28"/>
+  <text x="1264" y="512" class="tiny" style="fill:#5eead4">stern-first</text>
 
   <text x="872" y="548" class="h">Docking dashboard</text>
   <text x="872" y="570" class="s">Dashed tiles are not implemented. Not a helm.</text>

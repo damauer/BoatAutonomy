@@ -91,10 +91,11 @@ drawing is a throttle wire.
 
 **On approach**
 
-The right pane is what a skipper would actually watch: a planned
-stern-first track into the slip, red / yellow / green clearance
-warnings, and a confidence trace that the plan still matches sensors.
-Dashed tiles are not implemented.
+The right pane is what a skipper would actually watch: a smaller slip,
+the boat still outside it, a diagonal stern-first track under wind and
+current, red / yellow / green clearance warnings, and a confidence
+trace that the plan still matches sensors. Dashed tiles are not
+implemented.
 
 A SignalK MCP (Model Context Protocol) adapter, when it exists, sits
 **after storage**, not on ingest. It lets an agent read stored SignalK
