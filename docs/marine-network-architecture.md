@@ -28,10 +28,10 @@ at — dashboard only, not a helm, not a write path. Solid chips are on
 the boat today or already evidenced. Dashed chips are architecture
 that is not installed yet.
 
-![On the boat and on approach](../assets/diagrams/follow-on-simple-hull-and-approach-v5.png)
+![On the boat and on approach](../assets/diagrams/follow-on-simple-hull-and-approach-v6.png)
 
 Editable source:
-[follow-on-simple-hull-and-approach-v5.svg](../assets/diagrams/follow-on-simple-hull-and-approach-v5.svg).
+[follow-on-simple-hull-and-approach-v6.svg](../assets/diagrams/follow-on-simple-hull-and-approach-v6.svg).
 
 **Two equal backbones. Helm and control on SeaTalk NG. Data-rich
 sensors on OneNet.**
