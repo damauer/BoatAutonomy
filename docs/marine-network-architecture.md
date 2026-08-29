@@ -94,7 +94,7 @@ drawing is a throttle wire.
 The right pane is what a skipper would actually watch: a smaller slip,
 the boat still outside it, a diagonal stern-first track under wind and
 current, red / yellow / green clearance warnings, and a confidence
-trace that the plan still matches sensors. Dashed lines are not
+trace that the plan still matches sensors. Assisted approach not
 yet implemented.
 
 A SignalK MCP (Model Context Protocol) adapter, when it exists, sits
