@@ -402,7 +402,7 @@
   </g>
 
   <text x="872" y="548" class="h">Docking dashboard</text>
-  <text x="872" y="570" class="s">Dashed tiles are not implemented. Not a helm.</text>
+  <text x="872" y="570" class="s">Dashed lines are not yet implemented.</text>
 
   <rect x="872" y="588" width="210" height="118" rx="14" class="laterView"/>
   <path d="M892 648 C920 620 948 636 976 612 C996 600 1020 618 1054 608" stroke="#38bdf8" stroke-width="2.4" fill="none" stroke-dasharray="5 4"/>
