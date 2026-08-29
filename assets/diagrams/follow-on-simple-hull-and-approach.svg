@@ -330,7 +330,7 @@
       <rect x="625" y="334" width="82" height="270" rx="5" fill="url(#dock)" stroke="#1f242b" stroke-width="1.4"/>
     </g>
 
-    <path d="M655 595 C600 550 570 520 555 490" class="reverse"/>
+    <path d="M710 670 C640 600 580 530 555 490" class="reverse"/>
 
     <g id="wind-force">
       <path d="M95 372 L212 372" class="hazard"/>
@@ -381,7 +381,7 @@
       <text x="735" y="565" class="tiny" style="fill:#fbbf24" opacity="0.75">marina traffic</text>
     </g>
 
-    <g id="boat-approach" transform="translate(30 73) rotate(-26 533 466) translate(533 466) scale(0.75) translate(-533 -466)">
+    <g id="boat-approach" transform="translate(95 165) rotate(-26 533 466) translate(533 466) scale(0.75) translate(-533 -466)">
       <path d="M481 332 C472 352 468 382 468 412 C468 442 474 478 486 505 C496 528 508 548 518 568 C524 580 528 590 531 600 L533 608 L535 600 C538 590 542 580 548 568 C558 548 570 528 580 505 C592 478 598 442 598 412 C598 382 594 352 585 332 C566 322 500 322 481 332 Z" fill="url(#hull)" stroke="#3d4551" stroke-width="3" filter="url(#hullshadow)"/>
       <path d="M481 332 C472 352 468 382 468 412 C468 442 474 478 486 505 C496 528 508 548 518 568 C524 580 528 590 531 600 L533 608 L535 600 C538 590 542 580 548 568 C558 548 570 528 580 505 C592 478 598 442 598 412 C598 382 594 352 585 332 C566 322 500 322 481 332 Z" fill="url(#hullShade)"/>
       <path d="M481 332 C472 352 468 382 468 412 C468 442 474 478 486 505 C496 528 508 548 518 568 C524 580 528 590 531 600 L533 608 L535 600 C538 590 542 580 548 568 C558 548 570 528 580 505 C592 478 598 442 598 412 C598 382 594 352 585 332 C566 322 500 322 481 332 Z" fill="none" stroke="#1e3a5f" stroke-width="2.2" opacity="0.55" transform="translate(533 466) scale(0.965) translate(-533 -466)"/>
