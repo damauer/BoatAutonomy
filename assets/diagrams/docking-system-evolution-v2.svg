@@ -106,7 +106,7 @@
   <rect width="1600" height="1000" fill="url(#bg)"/>
   <circle cx="1352" cy="96" r="150" fill="#1d4ed8" opacity="0.14"/>
   <circle cx="246" cy="844" r="190" fill="#0f766e" opacity="0.18"/>
-  <text x="78" y="82" class="title">Backing Into A Slip</text>
+  <text x="78" y="82" class="title">Backing into a Slip</text>
   <text x="82" y="122" class="sub">Stern-first docking target: observe, replay, advise, and gate any future control</text>
 
   <rect x="58" y="160" width="990" height="560" rx="28" class="panel"/>
