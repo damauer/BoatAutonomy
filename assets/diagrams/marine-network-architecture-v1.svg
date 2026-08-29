@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Live seagoing test bench: Boston Whaler Conquest plant and cluster-hosted SoR</title>
+  <desc id="desc">BoatAutonomy-style diagram titled Live Seagoing Test Bench: existing Boston Whaler Conquest electrical plant on the left with dual Axiom+ 9 and VesselView on SeaTalk NG, a cluster-hosted system of record in the center with Kubernetes around SignalK, InfluxDB, and Grafana and a TBD advisor feeding a docking dashboard, human authority on the right, a production line of leveraged tools below, and an agentic Grok-Claude-Codex-owner loop. Later OneNet PoE++ 48 V is a parallel Ethernet, not a CAN replacement. Kubernetes and models do not command the boat. Listen-only gateway. Not a helm.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#08111f"/>
+      <stop offset="0.55" stop-color="#111827"/>
+      <stop offset="1" stop-color="#06251f"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2563eb"/>
+      <stop offset="0.48" stop-color="#0f766e"/>
+      <stop offset="1" stop-color="#f97316"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="10" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrowT" markerWidth="14" markerHeight="14" refX="10" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#34d399"/>
+    </marker>
+    <style>
+      .title{font:800 50px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f8fafc}
+      .sub{font:500 22px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#cbd5e1}
+      .h{font:800 25px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f8fafc}
+      .h2{font:800 22px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f8fafc}
+      .s{font:500 17px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#cbd5e1}
+      .t{font:700 12px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#94a3b8}
+      .chip{font:600 15px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#e2e8f0}
+      .take{font:800 30px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f8fafc;letter-spacing:-0.3px}
+      .enah{font:800 16px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f8fafc}
+      .enar{font:700 15px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#e2e8f0}
+      .panel{fill:#111827;stroke:#263244;stroke-width:1.6;filter:url(#shadow)}
+      .line{stroke:#38bdf8;stroke-width:4;fill:none;marker-end:url(#arrow)}
+      .linet{stroke:#34d399;stroke-width:3.5;fill:none;marker-end:url(#arrowT)}
+    </style>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <circle cx="1320" cy="120" r="170" fill="#1d4ed8" opacity="0.18"/>
+  <circle cx="200" cy="860" r="190" fill="#0f766e" opacity="0.20"/>
+
+  <text x="80" y="72" class="title">Live Seagoing Test Bench</text>
+  <text x="82" y="108" class="sub">A real Boston Whaler Conquest plant. A fused listen-only add-on. Authority earned, not assumed.</text>
+
+  <rect x="80" y="128" width="118" height="32" rx="12" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="98" y="149" class="chip">Existing</text>
+  <rect x="210" y="128" width="118" height="32" rx="12" fill="#0b2a55" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="228" y="149" class="chip">Working</text>
+  <rect x="340" y="128" width="118" height="32" rx="12" fill="#1f2937" stroke="#64748b" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="368" y="149" class="chip">Later</text>
+  <rect x="470" y="128" width="118" height="32" rx="12" fill="#2b174c" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="492" y="149" class="chip">TBD</text>
+  <text x="608" y="149" class="t">Existing = on the boat. Working = surveyed. Later / TBD = not installed yet.</text>
+
+  <!-- Boat plant -->
+  <rect x="80" y="180" width="430" height="300" rx="28" class="panel"/>
+  <text x="110" y="222" class="h">On The Boat Today</text>
+  <text x="110" y="256" class="s">Boston Whaler Conquest plant.</text>
+  <text x="110" y="284" class="s">Confirm it. Do not redesign it.</text>
+  <text x="110" y="320" class="s">Dual 30 A shore · Kohler · Verados</text>
+  <text x="110" y="348" class="s">Axiom+ 9s · VesselView · STNG tap</text>
+  <rect x="110" y="368" width="70" height="28" rx="8" fill="#1e293b" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="118" y="386" class="t">Shore 1</text>
+  <rect x="186" y="368" width="70" height="28" rx="8" fill="#1e293b" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="194" y="386" class="t">Shore 2</text>
+  <rect x="262" y="368" width="70" height="28" rx="8" fill="#1e293b" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="274" y="386" class="t">Kohler</text>
+  <rect x="338" y="368" width="78" height="28" rx="8" fill="#0b2a55" stroke="#38bdf8" stroke-width="1.2"/>
+  <text x="348" y="386" class="t">Listen tap</text>
+  <rect x="110" y="408" width="250" height="36" rx="12" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="128" y="432" class="s">confirm, do not recable</text>
+  <text x="110" y="462" class="t">Plant close-up →</text>
+
+  <!-- Evidence island core -->
+  <rect x="540" y="170" width="520" height="320" rx="32" fill="url(#core)" filter="url(#shadow)"/>
+  <text x="572" y="214" class="h">System Of Record (SoR)</text>
+  <text x="572" y="246" class="s" style="fill:#eef2ff">One fused SeaTalk NG spur. Gateway does not write.</text>
+  <text x="572" y="274" class="s" style="fill:#eef2ff">Kubernetes deploys apps. It is not the helm.</text>
+  <rect x="572" y="300" width="140" height="44" rx="14" fill="#0f172a" opacity="0.92"/>
+  <text x="598" y="328" class="s">SignalK</text>
+  <rect x="726" y="300" width="140" height="44" rx="14" fill="#0f172a" opacity="0.92"/>
+  <text x="748" y="328" class="s">InfluxDB</text>
+  <rect x="880" y="300" width="150" height="44" rx="14" fill="#0f172a" opacity="0.92"/>
+  <text x="898" y="328" class="s">Grafana plant</text>
+  <rect x="572" y="356" width="220" height="52" rx="14" fill="#2b174c" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="590" y="378" class="s">SignalK LLM</text>
+  <text x="590" y="396" class="t">health · score · assist</text>
+  <rect x="808" y="356" width="222" height="52" rx="14" fill="#2b174c" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="824" y="378" class="s">Docking Grafana</text>
+  <text x="824" y="396" class="t">plan · warnings · confidence</text>
+  <text x="572" y="430" class="t" style="fill:#e2e8f0">LLM reads stored SignalK. Dashboard only. Assist is gated. Not ingest.</text>
+  <text x="572" y="454" class="t" style="fill:#e2e8f0">Working evidence: listen-only boat capture → plant Grafana.</text>
+
+  <!-- Authority -->
+  <rect x="1090" y="180" width="430" height="300" rx="28" class="panel"/>
+  <text x="1124" y="222" class="h">Human Authority</text>
+  <text x="1124" y="258" class="s">Pilot in command at every stage.</text>
+  <text x="1124" y="288" class="s">Survey is working. Assist is gated.</text>
+  <text x="1124" y="318" class="s">Override is physical, not a dashboard.</text>
+  <rect x="1124" y="336" width="58" height="24" rx="8" fill="#073b37" stroke="#34d399" stroke-width="1.2"/>
+  <text x="1132" y="352" class="t">1 Survey</text>
+  <rect x="1188" y="336" width="72" height="24" rx="8" fill="#1f2937" stroke="#64748b" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="1196" y="352" class="t">2 Approach</text>
+  <rect x="1266" y="336" width="58" height="24" rx="8" fill="#1f2937" stroke="#64748b" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="1274" y="352" class="t">3 Alarms</text>
+  <rect x="1330" y="336" width="160" height="24" rx="8" fill="#2b174c" stroke="#a78bfa" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="1338" y="352" class="t">LLM health · score</text>
+  <rect x="1124" y="366" width="88" height="24" rx="8" fill="#45220a" stroke="#fb923c" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="1132" y="382" class="t">4 Assist</text>
+  <rect x="1220" y="366" width="100" height="24" rx="8" fill="#45220a" stroke="#fb923c" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="1228" y="382" class="t">5 Takeover</text>
+  <rect x="1328" y="366" width="162" height="24" rx="8" fill="#45220a" stroke="#fb923c" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="1336" y="382" class="t">6 Supervised dock</text>
+  <rect x="1124" y="400" width="200" height="36" rx="14" fill="#45132e" stroke="#f472b6" stroke-width="1.6"/>
+  <text x="1148" y="424" class="s">not autonomous</text>
+  <text x="1124" y="458" class="t">Never unattended. Ladder → markdown</text>
+
+  <path d="M510 330 C522 330 528 330 540 330" class="line"/>
+  <path d="M1060 330 C1072 330 1078 330 1090 330" class="line"/>
+
+  <!-- Production line -->
+  <rect x="80" y="508" width="720" height="250" rx="28" class="panel"/>
+  <text x="110" y="550" class="h2">Production Line</text>
+  <text x="110" y="580" class="s">GitOps-driven IaC rebuilds and deploys the cluster and apps. Not a second boat bus.</text>
+  <rect x="110" y="604" width="120" height="42" rx="14" fill="#0b2a55" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="134" y="631" class="s">GitLab</text>
+  <rect x="244" y="604" width="120" height="42" rx="14" fill="#0b2a55" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="264" y="631" class="s">GitHub</text>
+  <rect x="378" y="604" width="130" height="42" rx="14" fill="#0b2a55" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="392" y="631" class="s">Terraform</text>
+  <rect x="522" y="604" width="120" height="42" rx="14" fill="#0b2a55" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="540" y="631" class="s">Ansible</text>
+  <rect x="656" y="604" width="110" height="42" rx="14" fill="#073b37" stroke="#34d399" stroke-width="1.5"/>
+  <text x="682" y="631" class="s">Flux</text>
+  <rect x="110" y="662" width="130" height="42" rx="14" fill="#0b2a55" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="130" y="689" class="s">Packer</text>
+  <rect x="254" y="662" width="140" height="42" rx="14" fill="#0b2a55" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="270" y="689" class="s">cloud-init</text>
+  <rect x="408" y="662" width="200" height="42" rx="14" fill="#073b37" stroke="#34d399" stroke-width="1.5"/>
+  <text x="430" y="689" class="s">K8s cluster apps</text>
+  <text x="110" y="728" class="t">Devbox is build-time only. A yard installs a spur and a 12 V main computer.</text>
+
+  <!-- Agentic loop -->
+  <rect x="820" y="508" width="700" height="250" rx="28" class="panel"/>
+  <text x="850" y="550" class="h2">Agentic Loop</text>
+  <text x="850" y="580" class="s">Best practice for changing the SoR, not the boat.</text>
+  <rect x="850" y="604" width="130" height="56" rx="14" fill="#073b37" stroke="#34d399" stroke-width="1.6"/>
+  <text x="882" y="628" class="s">Grok</text>
+  <text x="868" y="648" class="t">research</text>
+  <path d="M980 632 L1000 632" class="linet"/>
+  <rect x="1000" y="604" width="140" height="56" rx="14" fill="#0b2a55" stroke="#38bdf8" stroke-width="1.6"/>
+  <text x="1030" y="628" class="s">Claude</text>
+  <text x="1036" y="648" class="t">build</text>
+  <path d="M1140 632 L1160 632" class="linet"/>
+  <rect x="1160" y="604" width="140" height="56" rx="14" fill="#2b174c" stroke="#a78bfa" stroke-width="1.6"/>
+  <text x="1190" y="628" class="s">Codex</text>
+  <text x="1190" y="648" class="t">review</text>
+  <path d="M1300 632 L1320 632" class="linet"/>
+  <rect x="1320" y="604" width="168" height="56" rx="14" fill="#45132e" stroke="#f472b6" stroke-width="1.6"/>
+  <text x="1362" y="628" class="s">Owner</text>
+  <text x="1344" y="648" class="t">not silence</text>
+  <text x="850" y="692" class="s">Builder is not reviewer. This loop does not steer.</text>
+  <text x="850" y="724" class="t">Rebut · second review · reconcile → follow-on</text>
+
+  <rect x="80" y="768" width="340" height="140" rx="22" class="panel"/>
+  <text x="104" y="800" class="s">Later, not this job</text>
+  <text x="104" y="828" class="t">Solar 12 V top-off · LFP · OneNet PoE++</text>
+  <text x="104" y="850" class="t">bow IR / radar · assist</text>
+  <text x="104" y="880" class="t">If scoped: spur · YDEN-03 ordered</text>
+  <text x="104" y="898" class="t">Ethernet to a 12 V main computer</text>
+  <rect x="440" y="768" width="360" height="140" rx="22" class="panel"/>
+  <text x="464" y="800" class="s">Quiet plant replaces Kohler role</text>
+  <text x="464" y="828" class="t">Not more duration.</text>
+  <text x="464" y="850" class="t">Start batteries stay AGM.</text>
+  <text x="464" y="880" class="t">Alts + solar top-off + LiFePO4.</text>
+
+  <!-- Lower right: tech enablers table -->
+  <rect x="820" y="768" width="700" height="140" rx="22" class="panel"/>
+  <text x="844" y="798" class="enah">Tech enablers</text>
+  <line x1="844" y1="810" x2="1488" y2="810" stroke="#334155" stroke-width="1.4"/>
+  <rect x="844" y="820" width="210" height="70" rx="10" fill="#0b2a55" stroke="#38bdf8" stroke-width="1.4"/>
+  <text x="949" y="862" text-anchor="middle" class="enar">OneNet PoE++</text>
+  <rect x="1068" y="820" width="210" height="70" rx="10" fill="#073b37" stroke="#34d399" stroke-width="1.4"/>
+  <text x="1173" y="862" text-anchor="middle" class="enar">k8s to the edge</text>
+  <rect x="1292" y="820" width="204" height="70" rx="10" fill="#2b174c" stroke="#a78bfa" stroke-width="1.4"/>
+  <text x="1394" y="862" text-anchor="middle" class="enar">Agentic harness</text>
+
+  <text x="800" y="982" text-anchor="middle" class="take">Confirm reality. Listen-first apps. Authority earned, not assumed.</text>
+</svg>

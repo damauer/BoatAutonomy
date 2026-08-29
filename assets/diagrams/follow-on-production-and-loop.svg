@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Cloud and DevOps practice for the cluster-hosted SoR</title>
+  <desc id="desc">Follow-on for marine technical program managers and solutions architects. The boat bus stays ordinary OT: SeaTalk NG, engines, dual Axiom+ 9, VesselView, joystick, AC / DC plant. The cluster-hosted system of record is produced with cloud/DevOps practice the marine industry under-uses: source of truth in git, CI as a gate, immutable host, GitOps desired state, build-time only images, split of duties. A yard does not install this line. A yard installs a fused spur and a 12 V main computer.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#08111f"/>
+      <stop offset="0.55" stop-color="#111827"/>
+      <stop offset="1" stop-color="#06251f"/>
+    </linearGradient>
+    <linearGradient id="island" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2563eb"/>
+      <stop offset="0.55" stop-color="#0f766e"/>
+      <stop offset="1" stop-color="#f97316"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity="0.32"/>
+    </filter>
+    <marker id="arrowT" markerWidth="12" markerHeight="12" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L9,4 L0,8 z" fill="#34d399"/>
+    </marker>
+    <style>
+      .title{font:800 40px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f8fafc}
+      .sub{font:500 18px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#cbd5e1}
+      .h{font:800 20px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f8fafc}
+      .h2{font:800 16px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f8fafc}
+      .s{font:500 16px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#cbd5e1}
+      .t{font:700 13px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#94a3b8}
+      .chip{font:700 15px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#e2e8f0}
+      .chips{font:600 12px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#94a3b8}
+      .panel{fill:#111827;stroke:#263244;stroke-width:1.6;filter:url(#shadow)}
+      .exist{fill:#1e293b;stroke:#94a3b8;stroke-width:1.5}
+      .work{fill:#0b2a55;stroke:#38bdf8;stroke-width:1.5}
+      .workg{fill:#073b37;stroke:#34d399;stroke-width:1.5}
+      .future{fill:#1f2937;stroke:#64748b;stroke-width:1.4;stroke-dasharray:5 4}
+      .linet{stroke:#34d399;stroke-width:3.2;fill:none;marker-end:url(#arrowT)}
+      .take{font:800 30px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f8fafc}
+    </style>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <circle cx="240" cy="80" r="140" fill="#1d4ed8" opacity="0.12"/>
+  <circle cx="1380" cy="900" r="160" fill="#0f766e" opacity="0.14"/>
+
+  <text x="64" y="50" class="title">Cloud Practice For The SoR</text>
+  <text x="66" y="78" class="sub">Under-used on the water. Applied to the cluster-hosted system of record. A yard still installs one spur and a 12 V main computer.</text>
+
+  <!-- OT / IT split -->
+  <rect x="48" y="104" width="740" height="156" rx="24" class="exist"/>
+  <text x="72" y="136" class="h">Boat bus · operations</text>
+  <text x="72" y="164" class="s">SeaTalk NG, engines, Axiom+ 9s, VesselView, joystick, AC / DC plant.</text>
+  <text x="72" y="188" class="s">Confirm it. Do not recable it.</text>
+  <text x="72" y="216" class="t">OT stays OT. Do not put a computer on NET-S.</text>
+  <text x="72" y="238" class="t">ABYC E-11 · NMEA 0400 stay the install references.</text>
+
+  <rect x="812" y="104" width="740" height="156" rx="24" fill="url(#island)" filter="url(#shadow)"/>
+  <text x="836" y="136" class="h">Cluster-hosted SoR · information</text>
+  <text x="836" y="164" class="s" style="fill:#eef2ff">Isolated Ethernet. Git is the source of truth.</text>
+  <text x="836" y="188" class="s" style="fill:#eef2ff">Rebuild the box. Do not SSH-fix a snowflake.</text>
+  <text x="836" y="216" class="t" style="fill:#e2e8f0">IT stays off the CANbus. K8s orchestrates apps, not the helm.</text>
+  <text x="836" y="238" class="t" style="fill:#e2e8f0">Boat-side production cluster is not claimed.</text>
+
+  <!-- Four practices -->
+  <rect x="48" y="280" width="1504" height="318" rx="28" class="panel"/>
+  <text x="72" y="314" class="h">Four practices a program manager should recognize</text>
+  <text x="72" y="338" class="s">Off-the-shelf tools. Custom code is glue. This line does not land on SeaTalk NG.</text>
+
+  <rect x="72" y="356" width="348" height="168" rx="16" class="work"/>
+  <text x="90" y="384" class="h2">1 · Source of truth</text>
+  <rect x="90" y="398" width="150" height="52" rx="10" fill="#0f172a"/>
+  <text x="165" y="420" text-anchor="middle" class="chip">GitLab</text>
+  <text x="165" y="438" text-anchor="middle" class="chips">issues / MR / CI</text>
+  <rect x="252" y="398" width="150" height="52" rx="10" fill="#0f172a"/>
+  <text x="327" y="420" text-anchor="middle" class="chip">GitHub</text>
+  <text x="327" y="438" text-anchor="middle" class="chips">public / offsite</text>
+  <text x="90" y="470" class="t">CI is the gate. An offsite copy exists.</text>
+  <text x="90" y="490" class="t">Not one shop PC with the only tree.</text>
+  <text x="90" y="510" class="t">No silent push onto the boat.</text>
+
+  <rect x="436" y="356" width="348" height="168" rx="16" class="work"/>
+  <text x="454" y="384" class="h2">2 · Immutable host</text>
+  <rect x="454" y="398" width="150" height="40" rx="8" fill="#0f172a"/>
+  <text x="529" y="424" text-anchor="middle" class="chip">Terraform</text>
+  <rect x="616" y="398" width="150" height="40" rx="8" fill="#0f172a"/>
+  <text x="691" y="424" text-anchor="middle" class="chip">Packer</text>
+  <rect x="454" y="446" width="150" height="40" rx="8" fill="#0f172a"/>
+  <text x="529" y="472" text-anchor="middle" class="chip">cloud-init</text>
+  <rect x="616" y="446" width="150" height="40" rx="8" fill="#0f172a"/>
+  <text x="691" y="472" text-anchor="middle" class="chip">Ansible</text>
+  <text x="454" y="508" class="t">Declared nodes. Image. First boot. Repeat.</text>
+
+  <rect x="800" y="356" width="348" height="168" rx="16" class="workg"/>
+  <text x="818" y="384" class="h2">3 · Desired state</text>
+  <rect x="818" y="398" width="150" height="52" rx="10" fill="#0f172a"/>
+  <text x="893" y="420" text-anchor="middle" class="chip">Flux</text>
+  <text x="893" y="438" text-anchor="middle" class="chips">GitOps</text>
+  <rect x="980" y="398" width="150" height="52" rx="10" fill="#0f172a"/>
+  <text x="1055" y="420" text-anchor="middle" class="chip">K8s cluster</text>
+  <text x="1055" y="438" text-anchor="middle" class="chips">hosts the SoR</text>
+  <text x="818" y="470" class="t">Cluster converges to git.</text>
+  <text x="818" y="490" class="t">Not kubectl-by-hand as the model.</text>
+  <text x="818" y="510" class="t">Apps, not the AC selector or helm.</text>
+
+  <rect x="1164" y="356" width="360" height="168" rx="16" class="work"/>
+  <text x="1182" y="384" class="h2">4 · Build-time only</text>
+  <rect x="1182" y="398" width="324" height="52" rx="10" fill="#0f172a"/>
+  <text x="1344" y="420" text-anchor="middle" class="chip">Devbox</text>
+  <text x="1344" y="438" text-anchor="middle" class="chips">compilers · images · publish</text>
+  <text x="1182" y="470" class="t">Build the artifact. Do not run the</text>
+  <text x="1182" y="490" class="t">toolchain on the helm or the plant.</text>
+  <text x="1182" y="510" class="t">Not an AC source. Not a runtime.</text>
+
+  <text x="72" y="552" class="s">What this avoids: snowflake host · SSH as change control · only copy on a laptop · computer on the backbone</text>
+  <text x="72" y="578" class="t">Integration over invention. A yard does not install Terraform. After a failure, GitOps-driven IaC rebuilds and deploys the cluster and apps.</text>
+
+  <!-- Agentic loop as change control -->
+  <rect x="48" y="618" width="1504" height="270" rx="28" class="panel"/>
+  <text x="72" y="654" class="h">Change control · split of duties</text>
+  <text x="72" y="678" class="s">Same idea as not signing off your own insulation test. This loop changes SoR recipes, not the boat.</text>
+
+  <rect x="72" y="700" width="168" height="72" rx="14" fill="#073b37" stroke="#34d399" stroke-width="1.6"/>
+  <text x="156" y="730" text-anchor="middle" class="chip">Grok</text>
+  <text x="156" y="750" text-anchor="middle" class="chips">research</text>
+  <path d="M240 736 L258 736" class="linet"/>
+  <rect x="258" y="700" width="176" height="72" rx="14" fill="#0b2a55" stroke="#38bdf8" stroke-width="1.6"/>
+  <text x="346" y="730" text-anchor="middle" class="chip">Claude</text>
+  <text x="346" y="750" text-anchor="middle" class="chips">propose / build</text>
+  <path d="M434 736 L452 736" class="linet"/>
+  <rect x="452" y="700" width="168" height="72" rx="14" fill="#2b174c" stroke="#a78bfa" stroke-width="1.6"/>
+  <text x="536" y="730" text-anchor="middle" class="chip">Codex</text>
+  <text x="536" y="750" text-anchor="middle" class="chips">review</text>
+  <path d="M620 736 L638 736" class="linet"/>
+  <rect x="638" y="700" width="176" height="72" rx="14" fill="#3f1220" stroke="#fb7185" stroke-width="1.6"/>
+  <text x="726" y="730" text-anchor="middle" class="chip">Claude</text>
+  <text x="726" y="750" text-anchor="middle" class="chips">rebut with evidence</text>
+  <path d="M814 736 L832 736" class="linet"/>
+  <rect x="832" y="700" width="168" height="72" rx="14" fill="#2b174c" stroke="#a78bfa" stroke-width="1.6"/>
+  <text x="916" y="730" text-anchor="middle" class="chip">Codex</text>
+  <text x="916" y="750" text-anchor="middle" class="chips">review again</text>
+  <path d="M1000 736 L1018 736" class="linet"/>
+  <rect x="1018" y="700" width="196" height="72" rx="14" fill="#45220a" stroke="#f97316" stroke-width="1.6"/>
+  <text x="1116" y="730" text-anchor="middle" class="chip">Reconcile</text>
+  <text x="1116" y="750" text-anchor="middle" class="chips">Grok · Claude · Codex</text>
+  <path d="M1214 736 L1232 736" class="linet"/>
+  <rect x="1232" y="700" width="292" height="72" rx="14" fill="#45132e" stroke="#f472b6" stroke-width="1.6"/>
+  <text x="1378" y="730" text-anchor="middle" class="chip">Owner</text>
+  <text x="1378" y="750" text-anchor="middle" class="chips">approve · silence is not approval</text>
+
+  <text x="72" y="802" class="s">Builder is not reviewer. Agents do not approve each other. Seats matter more than product names.</text>
+  <text x="72" y="828" class="s">This loop does not select shore power, mix banks, or command an engine.</text>
+  <text x="72" y="860" class="t">Named seats exist so a program manager can see the split. Researcher · implementer · independent reviewer · owner.</text>
+
+  <text x="64" y="930" class="s">Ask the yard for a spur and a 12 V main computer. Ask the program for recipes, CI, and GitOps.</text>
+  <text x="800" y="982" text-anchor="middle" class="take">GitOps-driven IaC rebuilds and deploys the cluster and apps.</text>
+</svg>

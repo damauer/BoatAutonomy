@@ -27,6 +27,9 @@ locations, or operational procedures.
 | Soak evidence exists | A 72-hour-class telemetry soak was documented with restarts, caveats, and excluded incident windows rather than treated as a perfect run. |
 | Independent review works | At least one pre-promotion agent review caught a real runtime-interface mismatch before it reached live use. |
 
+Where that listen path sits on the boat is
+[marine-network-architecture.md](marine-network-architecture.md).
+
 ## Sanitized Examples
 
 | Area | Public-Safe Summary |

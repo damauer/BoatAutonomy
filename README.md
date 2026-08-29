@@ -88,8 +88,19 @@ behind the pilot.
 Full discussion: [docking-problem-and-solution.md](docs/docking-problem-and-solution.md).
 Editable source: [docking-system-evolution-v2.svg](assets/diagrams/docking-system-evolution-v2.svg).
 
-That slip approach is one instance of a repeatable pattern, not a one-off
-docking app:
+The same Boston Whaler Conquest hull is the live seagoing test bench.
+Factory SeaTalk NG stays the helm. One fused listen-only drop feeds a
+cluster-hosted system of record (SoR). Later, OneNet PoE++ runs stern
+to bow beside that bus for cameras and ranging — a second backbone,
+not a recable of the plant.
+
+![On the boat and on approach](assets/diagrams/follow-on-simple-hull-and-approach.png)
+
+Technical architecture: [marine-network-architecture.md](docs/marine-network-architecture.md).
+Editable source: [follow-on-simple-hull-and-approach.svg](assets/diagrams/follow-on-simple-hull-and-approach.svg).
+
+That hull and slip approach are one instance of a repeatable pattern, not
+a one-off docking app:
 
 ![BoatAutonomy platform pattern](assets/diagrams/boat-autonomy-platform.png)
 
@@ -127,31 +138,17 @@ Editable source: [boat-autonomy-platform.svg](assets/diagrams/boat-autonomy-plat
   </tr>
 </table>
 
-BoatAutonomy is organized as a replay-first, evidence-gated platform around a
-real recreational vessel. Marine signals enter as captured observations. Edge
-and cluster services normalize, replay, inspect, and test those observations.
-AI, dashboards, and agents may help interpret evidence or propose work, but
-human authority, physical override, and safe-state behavior remain explicit.
+The problem, the boat, and the pattern are three layers of the same story:
 
-The instrumented survey is the bridge between the real vessel and the
-development environment. Surveyed electronics, telemetry, and operating
-context become replayable sessions and simulation inputs for a developing
-digital twin. This is not a completed high-fidelity physics model or an
-assistive-control claim; it is the practical substrate for finding interface,
-timing, and behavior issues before field time is spent on them.
+- [docking-problem-and-solution.md](docs/docking-problem-and-solution.md) —
+  the maneuver
+- [marine-network-architecture.md](docs/marine-network-architecture.md) —
+  plant, buses, and the cluster-hosted system of record
+- [system-platform.md](docs/system-platform.md) — replay-first platform,
+  pipeline, and technical breadcrumbs
 
-There are two twins in view. The current one is the electronics/network twin:
-marine-network observations, PoE/Ethernet behavior, edge services, and cluster
-state captured well enough to replay, compare, and validate before promotion.
-The later vessel-motion twin belongs to state-estimation and shadow-mode
-stages that have not started. Nothing here claims closed-loop automation onto
-vessel controls. Each representation should stay only as detailed as its
-current use requires.
-
-Kubernetes and agentic tooling are useful around the system: recording,
-monitoring, replay, perception experiments, observability, and deployment
-repeatability. They are not the hard real-time safety controller and do not
-receive direct actuator authority.
+Kubernetes and agents help record, replay, and rebuild. They are not the
+helm and not the hard real-time safety controller.
 
 The public story follows this order:
 
@@ -159,9 +156,6 @@ The public story follows this order:
 - State the safety boundary before implying capability.
 - Show evidence discipline before asking for trust.
 - Add technical and agentic breadcrumbs only after the boundary is clear.
-
-Read [system-platform.md](docs/system-platform.md) for the system shape,
-staged architecture, delivery pipeline, and technical breadcrumbs.
 
 ## Sample Telemetry
 
@@ -282,7 +276,7 @@ conversation you want to have.
 | --- | --- | --- |
 | Why read this | What problem makes this worth attention? | [problem-and-opportunity.md](docs/problem-and-opportunity.md) |
 | What this is | What is public, what is private, and what is not being claimed? | [safety boundary](docs/scope-and-safety.md), [evidence.md](docs/evidence.md), [sample telemetry](#sample-telemetry) |
-| How it works | What is the system shape and technical approach? | [docking-problem-and-solution.md](docs/docking-problem-and-solution.md), [system-platform.md](docs/system-platform.md) |
+| How it works | What is the system shape and technical approach? | [docking-problem-and-solution.md](docs/docking-problem-and-solution.md) (problem), [marine-network-architecture.md](docs/marine-network-architecture.md) (plant / SoR), [system-platform.md](docs/system-platform.md) (pattern) |
 | Why it matters | Why is the evidence/control plane ahead of assistive behavior? | [agentic-engineering.md](docs/agentic-engineering.md), [evidence.md](docs/evidence.md) |
 | Where it is going | What is the capability path and future business hypothesis? | [roadmap-and-business.md](docs/roadmap-and-business.md) |
 | How Dan can help | What skills, experience, and judgment does this make visible? | [builder-profile.md](docs/builder-profile.md), [RESUME.md](RESUME.md) |

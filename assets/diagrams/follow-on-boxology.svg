@@ -1,0 +1,444 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Live seagoing test bench: Boston Whaler Conquest plant, bus, and isolation</title>
+  <desc id="desc">Installer-facing boxology on the same stern-first Boston Whaler Conquest hull as the slip graphic. Left: AC, DC, SeaTalk NG, and isolation rules a marine electrician checks. Right: two independent 120 V 30 A dock feeds; SeaTalk NG with T-pieces including dual Raymarine Axiom+ 9 chartplotters and VesselView. Helm interface is that SeaTalk NG / NMEA 2000 bus. The cluster meets the helm only through a listen-only YDEN-03. A parallel later NMEA OneNet PoE++ Ethernet backbone runs stern to bow beside SeaTalk NG, with taps so sensors can land anywhere an STNG device might. Fused house 12 V to each computer. Advisory / LLM / agentic processor after storage to an additional display that is not the Axiom+ and not throttle.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#08111f"/>
+      <stop offset="0.55" stop-color="#111827"/>
+      <stop offset="1" stop-color="#06251f"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b3a53"/>
+      <stop offset="0.55" stop-color="#0f5f61"/>
+      <stop offset="1" stop-color="#123f53"/>
+    </linearGradient>
+    <linearGradient id="hull" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#54606d"/>
+      <stop offset="0.42" stop-color="#8b96a2"/>
+      <stop offset="0.78" stop-color="#b7c0cb"/>
+      <stop offset="1" stop-color="#c7cfd8"/>
+    </linearGradient>
+    <linearGradient id="hullShade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#000000" stop-opacity="0.28"/>
+      <stop offset="0.5" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.22"/>
+    </linearGradient>
+    <linearGradient id="deck" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#232c36"/>
+      <stop offset="1" stop-color="#161d24"/>
+    </linearGradient>
+    <linearGradient id="darkGlass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#164e63"/>
+    </linearGradient>
+    <linearGradient id="cowl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a2f37"/>
+      <stop offset="0.55" stop-color="#15181d"/>
+      <stop offset="1" stop-color="#0b0d10"/>
+    </linearGradient>
+    <linearGradient id="cluster" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2563eb"/>
+      <stop offset="0.55" stop-color="#0f766e"/>
+      <stop offset="1" stop-color="#f97316"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity="0.32"/>
+    </filter>
+    <filter id="hullshadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+    <marker id="arrowC" markerWidth="10" markerHeight="10" refX="8" refY="3.5" orient="auto">
+      <path d="M0,0 L8,3.5 L0,7 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrowG" markerWidth="10" markerHeight="10" refX="8" refY="3.5" orient="auto">
+      <path d="M0,0 L8,3.5 L0,7 z" fill="#34d399"/>
+    </marker>
+    <!-- SeaTalk NG T-piece: backbone through, spur to one side -->
+    <g id="tpR">
+      <rect x="-9" y="-9" width="18" height="18" rx="3" fill="#f8fafc" stroke="#38bdf8" stroke-width="1.6"/>
+      <rect x="7" y="-6" width="14" height="12" rx="2" fill="#e2e8f0" stroke="#0ea5e9" stroke-width="1.3"/>
+      <circle cx="19" cy="0" r="2.4" fill="#0ea5e9"/>
+    </g>
+    <g id="tpL">
+      <rect x="-9" y="-9" width="18" height="18" rx="3" fill="#f8fafc" stroke="#38bdf8" stroke-width="1.6"/>
+      <rect x="-21" y="-6" width="14" height="12" rx="2" fill="#e2e8f0" stroke="#0ea5e9" stroke-width="1.3"/>
+      <circle cx="-19" cy="0" r="2.4" fill="#0ea5e9"/>
+    </g>
+    <g id="term">
+      <rect x="-8" y="-9" width="16" height="18" rx="3" fill="#0369a1" stroke="#7dd3fc" stroke-width="1.4"/>
+      <rect x="-4" y="-3" width="8" height="6" rx="1" fill="#e0f2fe"/>
+    </g>
+    <g id="oneTap">
+      <rect x="-6" y="-6" width="12" height="12" rx="2" fill="#ecfdf5" stroke="#34d399" stroke-width="1.3"/>
+    </g>
+    <style>
+      .title{font:800 40px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f8fafc}
+      .sub{font:500 18px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#cbd5e1}
+      .h{font:800 20px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f8fafc}
+      .h2{font:800 15px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f8fafc}
+      .take{font:800 30px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f8fafc;letter-spacing:-0.3px}
+      .enah{font:800 14px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f8fafc}
+      .enar{font:700 13px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#e2e8f0}
+      .s{font:500 15px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#cbd5e1}
+      .t{font:700 13px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#94a3b8}
+      .key{font:700 12px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#94a3b8;text-anchor:start}
+      .orient{font:800 12px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#e2e8f0;letter-spacing:1.4}
+      .boxn{font:700 14px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#e2e8f0;text-anchor:middle}
+      .boxs{font:600 12px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#94a3b8;text-anchor:middle}
+      .tiny{font:700 11px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#94a3b8}
+      .rule{font:600 13px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#cbd5e1}
+      .gated{font:600 13px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#fb923c}
+      .panel{fill:#111827;stroke:#263244;stroke-width:1.6;filter:url(#shadow)}
+      .exist{fill:#1e293b;stroke:#94a3b8;stroke-width:1.5}
+      .work{fill:#0b2a55;stroke:#38bdf8;stroke-width:1.7}
+      .workg{fill:#073b37;stroke:#34d399;stroke-width:1.6}
+      .future{fill:#1f2937;stroke:#64748b;stroke-width:1.5;stroke-dasharray:5 4}
+      .tbd{fill:#2b174c;stroke:#a78bfa;stroke-width:1.5;stroke-dasharray:4 3}
+      .data{stroke:#38bdf8;stroke-width:2.2;fill:none;marker-end:url(#arrowC);stroke-linecap:round}
+      .eth{stroke:#34d399;stroke-width:2.4;fill:none;marker-end:url(#arrowG);stroke-linecap:round}
+      .ethd{stroke:#34d399;stroke-width:2;fill:none;stroke-dasharray:6 5;opacity:0.85;stroke-linecap:round}
+      .onebus{stroke:#34d399;stroke-width:5;fill:none;stroke-dasharray:10 6;stroke-linecap:round;opacity:0.9}
+      .onedrop{stroke:#34d399;stroke-width:2.4;fill:none;stroke-dasharray:6 4;stroke-linecap:round}
+      .drop{stroke:#7dd3fc;stroke-width:2.2;fill:none;stroke-linecap:round}
+      .dropw{stroke:#38bdf8;stroke-width:2.6;fill:none;stroke-linecap:round}
+      .bus{stroke:#38bdf8;stroke-width:6;fill:none;stroke-linecap:round;opacity:0.78}
+      .n0183{stroke:#fbbf24;stroke-width:2.2;fill:none;stroke-linecap:round}
+      .dc{stroke:#fb923c;stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .dcd{stroke:#fb923c;stroke-width:2.2;fill:none;stroke-dasharray:6 4;stroke-linecap:round;stroke-linejoin:round;opacity:0.9}
+      .v48{stroke:#f472b6;stroke-width:2.4;fill:none;stroke-dasharray:7 4;stroke-linecap:round;stroke-linejoin:round}
+      .ac{stroke:#818cf8;stroke-width:3.2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .acp{stroke:#818cf8;stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <circle cx="240" cy="120" r="140" fill="#1d4ed8" opacity="0.12"/>
+  <circle cx="1380" cy="880" r="160" fill="#0f766e" opacity="0.14"/>
+
+  <text x="64" y="50" class="title">Live Seagoing Test Bench</text>
+  <text x="66" y="78" class="sub">Same Boston Whaler Conquest hull. Plant, bus, and isolation a marine electrician checks. 0183 stays compatible.</text>
+
+  <rect x="64" y="92" width="78" height="22" rx="8" class="exist"/>
+  <text x="76" y="107" class="key">Existing</text>
+  <rect x="150" y="92" width="78" height="22" rx="8" class="work"/>
+  <text x="162" y="107" class="key">Working</text>
+  <rect x="236" y="92" width="64" height="22" rx="8" class="future"/>
+  <text x="248" y="107" class="key">Later</text>
+  <rect x="308" y="92" width="58" height="22" rx="8" class="tbd"/>
+  <text x="320" y="107" class="key">TBD</text>
+  <text x="380" y="107" class="key">Confirm the plant. Add one fused drop. Do not recable AC or mix banks.</text>
+
+  <!-- LEFT: installer rules -->
+  <rect x="48" y="128" width="408" height="792" rx="28" class="panel"/>
+  <text x="72" y="160" class="h">What the yard actually does</text>
+  <text x="72" y="182" class="t">ABYC E-11 and NMEA 0400 stay the install references.</text>
+
+  <rect x="68" y="196" width="368" height="148" rx="14" class="exist"/>
+  <text x="84" y="220" class="h2">AC — do not recable</text>
+  <text x="84" y="244" class="rule">Dual 120 V 30 A inlets stay as installed.</text>
+  <text x="84" y="264" class="rule">Shore / gen selector stays.</text>
+  <text x="84" y="284" class="rule">ELCI and galvanic isolator stay.</text>
+  <text x="84" y="304" class="rule">Port / stbd 120 V legs stay.</text>
+  <text x="84" y="328" class="t">Kohler is a plant quote, not a network quote.</text>
+
+  <rect x="68" y="354" width="368" height="148" rx="14" class="exist"/>
+  <text x="84" y="378" class="h2">12 V DC — not on NMEA</text>
+  <text x="84" y="402" class="rule">Start AGM dedicated — do not parallel house.</text>
+  <text x="84" y="422" class="rule">House is 12 V — do not series to 24 V.</text>
+  <text x="84" y="442" class="rule">Verado alternators charge this plant.</text>
+  <text x="84" y="462" class="rule">Later: solar top-off + LiFePO4 house.</text>
+  <text x="84" y="486" class="t">Replaces the Kohler role, not more hours.</text>
+
+  <rect x="68" y="512" width="368" height="168" rx="14" class="work"/>
+  <text x="84" y="536" class="h2">SeaTalk NG — one extra drop</text>
+  <text x="84" y="560" class="rule">Backbone with T-pieces. Terminators stay.</text>
+  <text x="84" y="580" class="rule">LEN-aware: do not load or write the bus.</text>
+  <text x="84" y="600" class="rule">Add one fused spare spur — not a second bus.</text>
+  <text x="84" y="620" class="rule">Pair / bridge OFF. YDEN-03 is RX only.</text>
+  <text x="84" y="640" class="rule">0183 sensors join N2K via a converter T-piece.</text>
+  <text x="84" y="664" class="t">Do not land raw 0183 on the listen spur.</text>
+
+  <rect x="68" y="690" width="368" height="148" rx="14" class="workg"/>
+  <text x="84" y="714" class="h2">Isolation — two power feeds</text>
+  <text x="84" y="738" class="rule">Boat STNG and bench DeviceNet meet</text>
+  <text x="84" y="758" class="rule">only on Ethernet. Do not adapter-cable.</text>
+  <text x="84" y="778" class="rule">STNG NET-S: fused house 12 V. YDEN-03 RX only.</text>
+  <text x="84" y="798" class="rule">PoE++: 48 V via 12→48 V step-up. Not NET-S.</text>
+  <text x="84" y="822" class="t">PoE++: cameras, ranging, IR, radar. Solar is 12 V.</text>
+
+  <rect x="68" y="844" width="368" height="80" rx="14" fill="#45220a" stroke="#fb923c" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="84" y="864" class="h2">Leave the helm alone</text>
+  <text x="84" y="882" class="gated">Evidence-proven trust builds</text>
+  <text x="84" y="898" class="gated">possible gated control.</text>
+  <text x="84" y="914" class="rule">Dual Axiom+ 9 stay OEM.</text>
+
+  <!-- RIGHT: water + subdued hull + installer devices -->
+  <rect x="472" y="128" width="1080" height="800" rx="28" fill="url(#water)" opacity="0.92" stroke="#1e3a4a" stroke-width="1.5"/>
+  <text x="900" y="158" text-anchor="middle" class="orient">ON THIS HULL · STERN UP</text>
+
+  <g id="hull-bg" opacity="0.46" transform="translate(900 200) scale(2.12) translate(-533 -288)" filter="url(#hullshadow)">
+    <path d="M481 332 C472 352 468 382 468 412 C468 442 474 478 486 505 C496 528 508 548 518 568 C524 580 528 590 531 600 L533 608 L535 600 C538 590 542 580 548 568 C558 548 570 528 580 505 C592 478 598 442 598 412 C598 382 594 352 585 332 C566 322 500 322 481 332 Z" fill="url(#hull)" stroke="#3d4551" stroke-width="3"/>
+    <path d="M481 332 C472 352 468 382 468 412 C468 442 474 478 486 505 C496 528 508 548 518 568 C524 580 528 590 531 600 L533 608 L535 600 C538 590 542 580 548 568 C558 548 570 528 580 505 C592 478 598 442 598 412 C598 382 594 352 585 332 C566 322 500 322 481 332 Z" fill="url(#hullShade)"/>
+    <path d="M481 332 C472 352 468 382 468 412 C468 442 474 478 486 505 C496 528 508 548 518 568 C524 580 528 590 531 600 L533 608 L535 600 C538 590 542 580 548 568 C558 548 570 528 580 505 C592 478 598 442 598 412 C598 382 594 352 585 332 C566 322 500 322 481 332 Z" fill="none" stroke="#1e3a5f" stroke-width="2.2" opacity="0.55" transform="translate(533 466) scale(0.965) translate(-533 -466)"/>
+    <path d="M481 332 C472 352 468 382 468 412 C468 442 474 478 486 505 C496 528 508 548 518 568 C524 580 528 590 531 600 L533 608 L535 600 C538 590 542 580 548 568 C558 548 570 528 580 505 C592 478 598 442 598 412 C598 382 594 352 585 332 C566 322 500 322 481 332 Z" fill="url(#deck)" stroke="#0d1116" stroke-width="1.6" transform="translate(533 466) scale(0.87) translate(-533 -466)"/>
+    <path d="M455 330 L611 330 L601 344 L465 344 Z" fill="#5c6673" stroke="#22262c" stroke-width="1.2"/>
+    <path d="M491 288 h27 a9 9 0 0 1 9 9 v30 a8 8 0 0 1 -8 8 h-29 a8 8 0 0 1 -8 -8 v-30 a9 9 0 0 1 9 -9 Z" fill="url(#cowl)" stroke="#05070a" stroke-width="1.8"/>
+    <path d="M547 288 h27 a9 9 0 0 1 9 9 v30 a8 8 0 0 1 -8 8 h-29 a8 8 0 0 1 -8 -8 v-30 a9 9 0 0 1 9 -9 Z" fill="url(#cowl)" stroke="#05070a" stroke-width="1.8"/>
+    <path d="M486 422 C495 402 571 402 580 422 L572 440 C548 433 518 433 494 440 Z" fill="url(#darkGlass)" stroke="#38bdf8" stroke-width="1.5"/>
+    <path d="M518 568 L533 604" stroke="#7c8794" stroke-width="1.3" opacity="0.7" fill="none"/>
+    <path d="M548 568 L533 604" stroke="#7c8794" stroke-width="1.3" opacity="0.7" fill="none"/>
+  </g>
+
+  <!-- SeaTalk NG backbone: terminators, T-pieces, spurs. Plant stays off it. -->
+  <path d="M900 250 L900 728" class="bus"/>
+  <use href="#term" x="900" y="250"/>
+  <use href="#term" x="900" y="728"/>
+  <text x="760" y="254" class="tiny">terminator</text>
+  <text x="918" y="736" class="tiny">terminator</text>
+  <text x="630" y="638" class="tiny">SeaTalk NG backbone</text>
+  <text x="630" y="652" class="tiny">T-piece + spur to each device</text>
+  <text x="630" y="666" class="tiny">LEN-aware · not a second CAN bus</text>
+
+  <!-- Engines on transom = OEM N2K devices on T-pieces -->
+  <text x="900" y="176" text-anchor="middle" class="tiny">transom</text>
+  <rect x="762" y="184" width="124" height="52" rx="10" class="exist"/>
+  <text x="824" y="204" class="boxn">Port 300 hp</text>
+  <text x="824" y="222" class="boxs">Verado · alt · OEM</text>
+  <rect x="914" y="184" width="124" height="52" rx="10" class="exist"/>
+  <text x="976" y="204" class="boxn">Stbd 300 hp</text>
+  <text x="976" y="222" class="boxs">Verado · alt · OEM</text>
+  <path d="M824 236 L824 272 L881 272" class="drop"/>
+  <use href="#tpL" x="900" y="272"/>
+  <path d="M976 236 L976 304 L919 304" class="drop"/>
+  <use href="#tpR" x="900" y="304"/>
+
+  <!-- Port plant column: two 120 V 30 A dock feeds, then AC and DC, off the backbone -->
+  <rect x="488" y="132" width="128" height="30" rx="8" fill="#1e1b4b" stroke="#818cf8" stroke-width="1.6"/>
+  <text x="552" y="150" class="boxn">2 × 120 V 30 A</text>
+  <text x="552" y="164" class="boxs">from the dock · stay</text>
+  <rect x="488" y="186" width="128" height="46" rx="9" class="exist"/>
+  <text x="552" y="204" class="boxn">Shore 1</text>
+  <text x="552" y="220" class="boxs">120 V 30 A inlet</text>
+  <rect x="488" y="238" width="128" height="46" rx="9" class="exist"/>
+  <text x="552" y="256" class="boxn">Shore 2</text>
+  <text x="552" y="272" class="boxs">120 V 30 A inlet</text>
+  <path d="M520 162 V186" class="ac"/>
+  <path d="M488 148 H476 V261 H488" class="ac"/>
+  <circle cx="520" cy="186" r="3.5" fill="#818cf8"/>
+  <circle cx="488" cy="261" r="3.5" fill="#818cf8"/>
+  <path d="M616 209 H618 V365 H616" class="acp"/>
+  <path d="M616 261 H618" class="acp"/>
+  <path d="M616 313 H618" class="acp"/>
+  <path d="M616 365 V417" class="acp"/>
+  <circle cx="616" cy="365" r="3" fill="#818cf8"/>
+  <circle cx="616" cy="417" r="3" fill="#818cf8"/>
+  <rect x="488" y="290" width="128" height="46" rx="9" class="exist"/>
+  <text x="552" y="308" class="boxn">Kohler</text>
+  <text x="552" y="324" class="boxs">120 V gen · assessing</text>
+  <rect x="488" y="342" width="128" height="46" rx="9" class="exist"/>
+  <text x="552" y="360" class="boxn">AC select</text>
+  <text x="552" y="376" class="boxs">shore / gen</text>
+  <rect x="488" y="394" width="128" height="46" rx="9" class="exist"/>
+  <text x="552" y="412" class="boxn">ELCI · isolator</text>
+  <text x="552" y="428" class="boxs">as installed · stay</text>
+  <text x="490" y="460" class="tiny">12 V DC · not an N2K drop</text>
+  <rect x="488" y="468" width="128" height="46" rx="9" class="exist"/>
+  <text x="552" y="486" class="boxn">Start AGM</text>
+  <text x="552" y="502" class="boxs">dedicated · stay separate</text>
+  <rect x="488" y="520" width="128" height="46" rx="9" class="exist"/>
+  <text x="552" y="538" class="boxn">House 12 V</text>
+  <text x="552" y="554" class="boxs">do not series to 24 V</text>
+  <rect x="488" y="572" width="128" height="46" rx="9" class="future"/>
+  <text x="552" y="590" class="boxn">LiFePO4 house</text>
+  <text x="552" y="606" class="boxs">later · Kohler role</text>
+  <rect x="488" y="624" width="128" height="46" rx="9" class="future"/>
+  <text x="552" y="642" class="boxn">Solar charger</text>
+  <text x="552" y="658" class="boxs">top-off · 12 V · not PoE++</text>
+  <text x="490" y="688" class="tiny">12 V → NET-S and computers.</text>
+  <text x="490" y="704" class="tiny">48 V PoE++ from step-up.</text>
+
+  <!-- Later: parallel NMEA OneNet PoE++ Ethernet from sensors to the cluster -->
+  <rect x="628" y="148" width="118" height="40" rx="9" class="future"/>
+  <text x="687" y="165" class="boxn">Camera</text>
+  <text x="687" y="180" class="boxs">PoE++ high-pwr</text>
+  <rect x="628" y="192" width="118" height="40" rx="9" class="future"/>
+  <text x="687" y="209" class="boxn">Ranging</text>
+  <text x="687" y="224" class="boxs">PoE++ high-pwr</text>
+  <rect x="628" y="244" width="118" height="52" rx="9" class="future"/>
+  <text x="687" y="262" class="boxn">Edge computer</text>
+  <text x="687" y="276" class="boxs">12 V · OneNet</text>
+  <text x="687" y="290" class="boxs">may have YDEN-03</text>
+  <rect x="1052" y="148" width="118" height="40" rx="9" class="future"/>
+  <text x="1111" y="165" class="boxn">Camera</text>
+  <text x="1111" y="180" class="boxs">PoE++ high-pwr</text>
+  <rect x="1052" y="192" width="118" height="40" rx="9" class="future"/>
+  <text x="1111" y="209" class="boxn">Ranging</text>
+  <text x="1111" y="224" class="boxs">PoE++ high-pwr</text>
+  <rect x="1052" y="244" width="118" height="52" rx="9" class="future"/>
+  <text x="1111" y="262" class="boxn">Edge computer</text>
+  <text x="1111" y="276" class="boxs">12 V · OneNet</text>
+  <text x="1111" y="290" class="boxs">may have YDEN-03</text>
+  <path d="M687 188 V240" class="onedrop"/>
+  <path d="M687 232 V240" class="onedrop"/>
+  <path d="M687 244 V240" class="onedrop"/>
+  <rect x="772" y="270" width="118" height="44" rx="9" class="future"/>
+  <text x="831" y="288" class="boxn">Solar panels</text>
+  <text x="831" y="304" class="boxs">12 V · not PoE++</text>
+  <path d="M831 314 V360" class="dcd"/>
+  <path d="M1111 188 V240" class="onedrop"/>
+  <path d="M1111 232 V240" class="onedrop"/>
+  <path d="M1111 244 V240" class="onedrop"/>
+  <path d="M687 240 H1111" class="onebus"/>
+  <!-- OneNet PoE++ backbone: parallel to SeaTalk NG, stern to bow -->
+  <path d="M928 240 L928 728" class="onebus"/>
+  <use href="#oneTap" x="928" y="240"/>
+  <use href="#oneTap" x="928" y="304"/>
+  <use href="#oneTap" x="928" y="382"/>
+  <use href="#oneTap" x="928" y="448"/>
+  <use href="#oneTap" x="928" y="528"/>
+  <use href="#oneTap" x="928" y="598"/>
+  <use href="#oneTap" x="928" y="680"/>
+  <use href="#oneTap" x="928" y="728"/>
+  <path d="M928 248 H1210 V287 H1238" class="onebus"/>
+  <!-- 48 V PoE++ from cluster step-up onto the parallel OneNet backbone -->
+  <path d="M1238 232 H1210 V240 H928" class="v48"/>
+  <circle cx="928" cy="240" r="3.5" fill="#f472b6"/>
+  <text x="900" y="136" text-anchor="middle" class="tiny" style="fill:#5eead4">NMEA OneNet PoE++ · cameras · ranging · IR · radar · not solar · not CAN</text>
+  <text x="980" y="632" class="tiny" style="fill:#5eead4">OneNet PoE++ · 48 V · stern to bow</text>
+  <text x="980" y="648" class="tiny" style="fill:#5eead4">taps anywhere STNG runs</text>
+
+  <!-- Bow-facing IR + radar on OneNet PoE++ (later): bow-in docking, safety, nav -->
+  <rect x="748" y="676" width="118" height="40" rx="9" class="future"/>
+  <text x="807" y="693" class="boxn">IR camera</text>
+  <text x="807" y="708" class="boxs">bow · PoE++</text>
+  <path d="M866 696 H922" class="onedrop"/>
+  <rect x="980" y="676" width="118" height="40" rx="9" class="future"/>
+  <text x="1039" y="693" class="boxn">Radar</text>
+  <text x="1039" y="708" class="boxs">bow · PoE++</text>
+  <path d="M980 696 H934" class="onedrop"/>
+  <text x="748" y="730" class="tiny" style="fill:#5eead4">bow-in docking · safety / nav</text>
+
+  <!-- Legacy 0183 sensors → converter → N2K T-piece -->
+  <rect x="648" y="318" width="120" height="40" rx="9" class="exist"/>
+  <text x="708" y="335" class="boxn">VHF</text>
+  <text x="708" y="350" class="boxs">0183 from Axiom+</text>
+  <rect x="638" y="366" width="156" height="88" rx="10" class="exist"/>
+  <text x="716" y="386" class="boxn">Typical 0183</text>
+  <text x="716" y="402" class="boxs">GPS · depth · wind</text>
+  <text x="716" y="418" class="boxs">speed · heading · AIS</text>
+  <text x="716" y="434" class="boxs">GGA DBT MWV VHW</text>
+  <text x="716" y="450" class="boxs">HDT VDM · if fitted</text>
+  <rect x="748" y="508" width="128" height="44" rx="9" class="exist"/>
+  <text x="812" y="526" class="boxn">0183 → N2K</text>
+  <text x="812" y="542" class="boxs">converter · T-piece</text>
+  <path d="M716 454 L788 508" class="n0183"/>
+  <path d="M876 530 L881 528" class="drop"/>
+  <use href="#tpL" x="900" y="528"/>
+  <text x="638" y="572" class="tiny" style="fill:#fbbf24">0183 examples connect through N2K CAN</text>
+
+  <!-- Helm: dual Axiom+ 9 + VesselView on OEM T-pieces, clear of the OneNet backbone -->
+  <text x="1016" y="422" text-anchor="middle" class="tiny">helm</text>
+  <rect x="944" y="428" width="128" height="46" rx="9" class="exist"/>
+  <text x="1008" y="446" class="boxn">Axiom+ 9</text>
+  <text x="1008" y="462" class="boxs">port · Raymarine</text>
+  <path d="M944 451 L919 448" class="drop"/>
+  <use href="#tpR" x="900" y="448"/>
+  <rect x="1080" y="428" width="128" height="46" rx="9" class="exist"/>
+  <text x="1144" y="446" class="boxn">Axiom+ 9</text>
+  <text x="1144" y="462" class="boxs">stbd · Raymarine</text>
+  <path d="M1080 451 L919 470" class="drop"/>
+  <use href="#tpR" x="900" y="470"/>
+  <rect x="944" y="482" width="160" height="46" rx="9" class="exist"/>
+  <text x="1024" y="500" class="boxn">VesselView</text>
+  <text x="1024" y="516" class="boxs">Raymarine · engine · OEM</text>
+  <path d="M944 505 L919 504" class="drop"/>
+  <use href="#tpR" x="900" y="504"/>
+  <path d="M944 440 H800 V338 H768" class="n0183"/>
+  <text x="944" y="546" class="tiny" style="fill:#7dd3fc">helm on SeaTalk NG / N2K</text>
+  <text x="944" y="560" class="tiny" style="fill:#94a3b8">YDEN-03 ordered · RX only</text>
+
+  <rect x="944" y="574" width="144" height="50" rx="10" class="exist"/>
+  <text x="1016" y="594" class="boxn">GNSS / depth</text>
+  <text x="1016" y="610" class="boxs">nav / env · OEM</text>
+  <path d="M944 599 L919 598" class="drop"/>
+  <use href="#tpR" x="900" y="598"/>
+
+  <!-- Working add-on: YDEN-03 on the fused spare T-piece (main computer adapter) -->
+  <rect x="1018" y="344" width="148" height="76" rx="10" class="future"/>
+  <text x="1092" y="364" class="boxn">YDEN-03</text>
+  <text x="1092" y="380" class="boxs">ordered · boat adapter</text>
+  <text x="1092" y="396" class="boxs">fused spur · RX · NET-S</text>
+  <text x="1092" y="412" class="boxs">pair / bridge OFF</text>
+  <path d="M919 382 L1018 382" class="dropw"/>
+  <use href="#tpR" x="900" y="382"/>
+
+  <!-- Main computer enclosure: YDEN listen (working) + OneNet PoE++ (later) -->
+  <path d="M1166 382 L1220 268" class="eth"/>
+  <rect x="1220" y="164" width="312" height="530" rx="18" fill="url(#cluster)" filter="url(#shadow)"/>
+  <text x="1376" y="186" text-anchor="middle" class="h2">Main computer enclosure</text>
+  <text x="1376" y="202" text-anchor="middle" class="tiny" style="fill:#e2e8f0">not a helm · production cluster not claimed</text>
+
+  <rect x="1238" y="210" width="276" height="44" rx="8" class="future"/>
+  <text x="1376" y="228" class="boxn">12→48 V step-up</text>
+  <text x="1376" y="244" class="boxs">feeds OneNet PoE++ · 48 V · not NET-S</text>
+
+  <path d="M1376 254 V262" class="v48"/>
+  <rect x="1238" y="262" width="276" height="50" rx="8" fill="#0f172a" stroke="#34d399" stroke-width="1.5"/>
+  <text x="1376" y="282" class="boxn">PoE++ / Ethernet switch</text>
+  <text x="1376" y="298" class="boxs" style="fill:#cbd5e1">working: YDEN listen · later: 48 V PoE++</text>
+
+  <path d="M1376 312 V320" class="ethd"/>
+  <rect x="1238" y="320" width="276" height="76" rx="8" class="workg"/>
+  <text x="1376" y="340" text-anchor="middle" class="boxn">Main computer · 12 V</text>
+  <text x="1376" y="356" text-anchor="middle" class="boxs" style="fill:#cbd5e1">own fused 12 V · not NET-S</text>
+  <text x="1376" y="372" text-anchor="middle" class="boxs" style="fill:#cbd5e1">may have YDEN-03 · SignalK · Influx · Grafana</text>
+  <text x="1376" y="388" text-anchor="middle" class="boxs" style="fill:#cbd5e1">K8s apps · not the AC selector · not LLM ingest</text>
+
+  <path d="M1376 396 V404" class="ethd"/>
+  <rect x="1238" y="404" width="276" height="80" rx="8" class="tbd"/>
+  <text x="1376" y="424" text-anchor="middle" class="boxn">Advisory / LLM / agentic</text>
+  <text x="1376" y="440" text-anchor="middle" class="boxs" style="fill:#e2e8f0">processor · after storage · not ingest</text>
+  <text x="1376" y="456" text-anchor="middle" class="boxs" style="fill:#e2e8f0">health · trends · learn · score · gated assist</text>
+  <text x="1376" y="472" text-anchor="middle" class="boxs" style="fill:#e2e8f0">not throttle · does not write SeaTalk NG</text>
+
+  <path d="M1376 484 V492" class="ethd"/>
+  <rect x="1238" y="492" width="276" height="54" rx="8" class="future"/>
+  <text x="1376" y="512" text-anchor="middle" class="boxn">Additional display</text>
+  <text x="1376" y="528" text-anchor="middle" class="boxs" style="fill:#cbd5e1">advisor view · not the Axiom+ · not throttle</text>
+
+  <text x="1376" y="562" text-anchor="middle" class="tiny" style="fill:#e2e8f0">12 V in. Step-up puts 48 V on the OneNet PoE++ backbone.</text>
+  <text x="1376" y="578" text-anchor="middle" class="tiny" style="fill:#e2e8f0">YDEN-03: NET-S, RX, pair/bridge OFF.</text>
+  <text x="1376" y="594" text-anchor="middle" class="tiny" style="fill:#e2e8f0">OneNet PoE++ later: parallel stern-to-bow. Not CAN.</text>
+  <text x="1376" y="610" text-anchor="middle" class="tiny" style="fill:#e2e8f0">Helm via STNG listen. Extra display is not the Axiom+.</text>
+
+  <!-- 12 V house: computers, STNG NET-S. Step-up to 48 V PoE++ lives in the cluster enclosure. -->
+  <path d="M616 543 H624 V780 H1204 V350 H1238" class="dc"/>
+  <path d="M624 543 V360 H891" class="dc"/>
+  <path d="M624 543 V270 H628" class="dcd"/>
+  <path d="M1188 780 V270 H1170" class="dcd"/>
+  <path d="M1238 350 V232" class="dcd"/>
+  <circle cx="616" cy="543" r="3.5" fill="#fb923c"/>
+  <circle cx="628" cy="270" r="3.5" fill="#fb923c"/>
+  <circle cx="1170" cy="270" r="3.5" fill="#fb923c"/>
+  <circle cx="1238" cy="350" r="3.5" fill="#fb923c"/>
+  <circle cx="1238" cy="232" r="3.5" fill="#fb923c"/>
+  <circle cx="891" cy="360" r="3.5" fill="#fb923c"/>
+  <text x="820" y="348" class="tiny" style="fill:#fb923c">12 V → NET-S</text>
+  <text x="640" y="772" class="tiny" style="fill:#fb923c">12 V fused · house · NET-S and cluster enclosure</text>
+
+  <text x="480" y="868" class="s">Ask, if scoped: fused spur, YDEN-03 on NET-S, Ethernet and 12 V to the main computer.</text>
+  <text x="480" y="890" class="h2">One spur. One YDEN-03. One Ethernet run. Pair/bridge off. Leave Axiom+ 9s OEM.</text>
+
+  <!-- Lower right: tech enablers table -->
+  <rect x="1220" y="704" width="312" height="150" rx="16" class="panel"/>
+  <text x="1376" y="728" text-anchor="middle" class="enah">Tech enablers</text>
+  <line x1="1238" y1="738" x2="1514" y2="738" stroke="#334155" stroke-width="1.3"/>
+  <rect x="1238" y="748" width="276" height="28" rx="8" fill="#0b2a55" stroke="#38bdf8" stroke-width="1.2"/>
+  <text x="1376" y="767" text-anchor="middle" class="enar">OneNet PoE++</text>
+  <rect x="1238" y="780" width="276" height="28" rx="8" fill="#073b37" stroke="#34d399" stroke-width="1.2"/>
+  <text x="1376" y="799" text-anchor="middle" class="enar">k8s to the edge</text>
+  <rect x="1238" y="812" width="276" height="28" rx="8" fill="#2b174c" stroke="#a78bfa" stroke-width="1.2"/>
+  <text x="1376" y="831" text-anchor="middle" class="enar">Agentic harness</text>
+
+  <text x="800" y="982" text-anchor="middle" class="take">NMEA SeaTalk NG and OneNet PoE++. Commodity hardware. Cutting-edge AI / apps.</text>
+</svg>

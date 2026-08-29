@@ -84,8 +84,12 @@ correlated in one place. Additional sensing - visual distance, obstacle
 identification, wind, dock range, a video feed - is being built alongside
 that, not yet live. Both sources feed into a small on-boat cluster whose
 job is to read them in - the arrows only ever point inward; nothing
-flows back out to the boat's own systems. As advisory cues arrive on top
-of both:
+flows back out to the boat's own systems. Where those instruments live
+on the boat, how a listen-only drop feeds a cluster-hosted system of
+record, and how OneNet sits beside SeaTalk NG, is in
+[marine-network-architecture.md](marine-network-architecture.md). This
+page stays the maneuver view. That page is the plant and SoR view. As
+advisory cues arrive on top of both:
 distance sensing would account for what wind and current are doing right
 now, not just where the dock is. A boarding point would be chosen for
 calm water and dock condition, not guesswork. Tie-up points would be

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="700" viewBox="0 0 1600 700" role="img" aria-labelledby="title desc">
+  <title id="title">Follow-on: Boston Whaler Conquest plant</title>
+  <desc id="desc">Readable follow-on to the primary architecture graphic. Dual 120 V 30 A shore, Kohler, AC selector, twin 300 hp and alternators, SeaTalk NG backbone with dual Raymarine Axiom+ 9 chartplotters, VesselView, GNSS, and a listen-only YDEN-03 spur. Start AGM separate from 12 V house. House 12 V powers NET-S. Later OneNet PoE++ 48 V is not this panel.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#08111f"/><stop offset="0.55" stop-color="#111827"/><stop offset="1" stop-color="#06251f"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#000" flood-opacity="0.35"/></filter>
+    <marker id="arrowE" markerWidth="12" markerHeight="12" refX="9" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8 z" fill="#94a3b8"/></marker>
+    <style>
+      .title{font:800 40px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f8fafc}
+      .sub{font:500 20px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#cbd5e1}
+      .h{font:800 22px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f8fafc}
+      .s{font:500 18px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#cbd5e1}
+      .t{font:700 15px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#94a3b8}
+      .panel{fill:#111827;stroke:#263244;stroke-width:1.6;filter:url(#shadow)}
+      .exist{fill:#1e293b;stroke:#94a3b8;stroke-width:1.5}
+      .work{fill:#0b2a55;stroke:#38bdf8;stroke-width:1.6}
+      .future{fill:#1f2937;stroke:#64748b;stroke-width:1.5;stroke-dasharray:5 4}
+      .bus{stroke:#38bdf8;stroke-width:8;fill:none;stroke-linecap:round}
+      .drop{stroke:#94a3b8;stroke-width:2.2}
+      .dropw{stroke:#38bdf8;stroke-width:2.6}
+      .dropf{stroke:#64748b;stroke-width:2.2;stroke-dasharray:5 4}
+      .eline{stroke:#94a3b8;stroke-width:3;fill:none;marker-end:url(#arrowE)}
+      .take{font:800 24px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f8fafc}
+    </style>
+  </defs>
+  <rect width="1600" height="700" fill="url(#bg)"/>
+  <circle cx="1380" cy="80" r="140" fill="#1d4ed8" opacity="0.16"/>
+  <text x="80" y="72" class="title">On The Boat Today</text>
+  <text x="82" y="108" class="sub">Factory Boston Whaler Conquest plant. Confirm it. Do not redesign it for a computer.</text>
+
+  <rect x="80" y="150" width="900" height="220" rx="28" class="panel"/>
+  <text x="110" y="190" class="h">AC plant — do not recable</text>
+  <rect x="110" y="210" width="148" height="56" rx="14" class="exist"/><text x="132" y="234" class="s">Shore 1</text><text x="122" y="254" class="t">120 V 30 A inlet</text>
+  <rect x="270" y="210" width="148" height="56" rx="14" class="exist"/><text x="292" y="234" class="s">Shore 2</text><text x="282" y="254" class="t">120 V 30 A inlet</text>
+  <rect x="430" y="210" width="148" height="56" rx="14" class="exist"/><text x="458" y="234" class="s">Kohler</text><text x="440" y="254" class="t">120 V · assessing</text>
+  <path d="M578 238 L596 238" class="eline"/>
+  <rect x="596" y="210" width="160" height="56" rx="14" class="exist"/><text x="612" y="234" class="s">AC selector</text><text x="624" y="254" class="t">shore / gen</text>
+  <rect x="770" y="210" width="188" height="56" rx="14" class="exist"/><text x="786" y="234" class="s">ELCI · isolator</text><text x="790" y="254" class="t">as installed · stay</text>
+  <text x="110" y="298" class="s">Port / starboard 120 V legs stay. This drawing does not recable AC.</text>
+  <text x="110" y="328" class="t">Kohler service is a plant quote, not a network quote.</text>
+
+  <rect x="1008" y="150" width="512" height="220" rx="28" class="panel"/>
+  <text x="1038" y="190" class="h">12 V plant — not on NMEA</text>
+  <rect x="1038" y="210" width="220" height="56" rx="14" class="exist"/><text x="1056" y="234" class="s">Start AGM</text><text x="1056" y="254" class="t">dedicated · do not parallel</text>
+  <rect x="1274" y="210" width="220" height="56" rx="14" class="exist"/><text x="1292" y="234" class="s">House 12 V</text><text x="1292" y="254" class="t">do not series to 24 V</text>
+  <text x="1038" y="292" class="s">Verado alternators charge this plant.</text>
+  <text x="1038" y="322" class="t">Later: solar top-off + LiFePO4 house.</text>
+  <text x="1038" y="346" class="t">Kohler role, not more hours. Not N2K drops.</text>
+
+  <rect x="80" y="394" width="1440" height="260" rx="28" class="panel"/>
+  <text x="110" y="434" class="h">SeaTalk NG / NMEA 2000 backbone</text>
+  <rect x="110" y="458" width="140" height="56" rx="14" class="exist"/><text x="124" y="482" class="s">Port 300 hp</text><text x="128" y="502" class="t">OEM drop · alt</text>
+  <rect x="268" y="458" width="140" height="56" rx="14" class="exist"/><text x="282" y="482" class="s">Stbd 300 hp</text><text x="286" y="502" class="t">OEM drop · alt</text>
+  <rect x="426" y="458" width="150" height="56" rx="14" class="exist"/><text x="448" y="482" class="s">Axiom+ 9s</text><text x="438" y="502" class="t">dual Raymarine</text>
+  <rect x="594" y="458" width="150" height="56" rx="14" class="exist"/><text x="618" y="482" class="s">VesselView</text><text x="610" y="502" class="t">joystick stays OEM</text>
+  <rect x="762" y="458" width="140" height="56" rx="14" class="exist"/><text x="780" y="482" class="s">GNSS / depth</text><text x="792" y="502" class="t">OEM drop</text>
+  <rect x="920" y="458" width="170" height="56" rx="14" class="future"/><text x="948" y="482" class="s">YDEN-03</text><text x="932" y="502" class="t">ordered · RX</text>
+  <line x1="180" y1="514" x2="180" y2="548" class="drop"/>
+  <line x1="338" y1="514" x2="338" y2="548" class="drop"/>
+  <line x1="501" y1="514" x2="501" y2="548" class="drop"/>
+  <line x1="669" y1="514" x2="669" y2="548" class="drop"/>
+  <line x1="832" y1="514" x2="832" y2="548" class="drop"/>
+  <line x1="1005" y1="514" x2="1005" y2="548" class="dropf"/>
+  <rect x="102" y="546" width="16" height="16" rx="2" fill="#38bdf8"/>
+  <line x1="118" y1="554" x2="1120" y2="554" class="bus"/>
+  <rect x="1120" y="546" width="16" height="16" rx="2" fill="#38bdf8"/>
+  <text x="110" y="590" class="t">TERMINATORS BOTH ENDS · T-drops · LEN-aware · do not load or write · pair/bridge OFF · 12 V powers NET-S</text>
+  <text x="110" y="624" class="s">If scoped: spare fused spur, YDEN-03 (ordered) on boat-fused NET-S, Ethernet to a 12 V main computer. Leave engines, Axiom+ 9s, VesselView, and joystick on the OEM bus.</text>
+  <text x="800" y="678" text-anchor="middle" class="take">Leverage OEM gear and NMEA networking. Do not recable for a computer.</text>
+</svg>

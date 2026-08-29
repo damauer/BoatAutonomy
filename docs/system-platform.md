@@ -48,7 +48,9 @@ monitoring, replay, perception experiments, observability, and deployment
 repeatability. They are not the hard real-time safety controller and do not
 receive direct actuator authority.
 
-Docking is the instance; this page is the pattern. See
+Docking is the maneuver; this page is the pattern. On the boat, the
+instance is [marine-network-architecture.md](marine-network-architecture.md):
+factory plant, listen-only drop, and cluster-hosted system of record. See
 [docking-problem-and-solution.md](docking-problem-and-solution.md) for this
 pattern applied to a real slip approach.
 

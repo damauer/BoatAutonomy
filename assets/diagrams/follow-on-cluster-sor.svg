@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="700" viewBox="0 0 1600 700" role="img" aria-labelledby="title desc">
+  <title id="title">Follow-on: cluster-hosted system of record</title>
+  <desc id="desc">Readable follow-on. Listen-only gateway into SignalK, InfluxDB, and plant Grafana on a Kubernetes cluster that hosts the system of record. TBD advisor / LLM / agentic support sits after storage and a docking Grafana dashboard. Not a helm. Not a write path. YDEN-03 is the named boat adapter, ordered.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#08111f"/><stop offset="0.55" stop-color="#111827"/><stop offset="1" stop-color="#06251f"/></linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2563eb"/><stop offset="0.5" stop-color="#0f766e"/><stop offset="1" stop-color="#f97316"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#000" flood-opacity="0.35"/></filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8 z" fill="#38bdf8"/></marker>
+    <marker id="arrowT" markerWidth="12" markerHeight="12" refX="9" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8 z" fill="#34d399"/></marker>
+    <marker id="arrowP" markerWidth="12" markerHeight="12" refX="9" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8 z" fill="#a78bfa"/></marker>
+    <style>
+      .title{font:800 40px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f8fafc}
+      .sub{font:500 20px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#cbd5e1}
+      .h{font:800 22px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f8fafc}
+      .s{font:500 18px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#cbd5e1}
+      .t{font:700 15px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#94a3b8}
+      .panel{fill:#111827;stroke:#263244;stroke-width:1.6;filter:url(#shadow)}
+      .work{fill:#0b2a55;stroke:#38bdf8;stroke-width:1.6}
+      .workg{fill:#073b37;stroke:#34d399;stroke-width:1.6}
+      .tbd{fill:#2b174c;stroke:#a78bfa;stroke-width:1.6;stroke-dasharray:6 5}
+      .future{fill:#1f2937;stroke:#64748b;stroke-width:1.5;stroke-dasharray:5 4}
+      .line{stroke:#38bdf8;stroke-width:3.5;fill:none;marker-end:url(#arrow)}
+      .linet{stroke:#34d399;stroke-width:3.5;fill:none;marker-end:url(#arrowT)}
+      .linep{stroke:#a78bfa;stroke-width:3;fill:none;stroke-dasharray:7 6;marker-end:url(#arrowP)}
+      .take{font:800 24px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#f8fafc}
+    </style>
+  </defs>
+  <rect width="1600" height="700" fill="url(#bg)"/>
+  <circle cx="200" cy="620" r="150" fill="#0f766e" opacity="0.18"/>
+  <text x="80" y="72" class="title">Cluster-Hosted System Of Record (SoR)</text>
+  <text x="82" y="108" class="sub">One fused spur. Yacht Devices listen, RX only. YDEN-03 is the boat adapter, ordered. Kubernetes hosts the SoR. It is not the helm.</text>
+
+  <rect x="80" y="150" width="220" height="120" rx="24" class="future"/>
+  <text x="110" y="192" class="h">YDEN-03</text>
+  <text x="110" y="222" class="s">ordered · boat adapter</text>
+  <text x="110" y="248" class="t">fused STNG T-drop</text>
+  <path d="M300 210 L330 210" class="line"/>
+  <rect x="330" y="150" width="280" height="120" rx="24" class="work"/>
+  <text x="360" y="192" class="h">N2K → Ethernet</text>
+  <text x="360" y="222" class="s">RX only · pair/bridge OFF</text>
+  <text x="360" y="248" class="t">boat-fused NET-S · dry</text>
+  <path d="M610 210 L650 210" class="line"/>
+
+  <rect x="650" y="140" width="870" height="400" rx="32" fill="url(#core)" filter="url(#shadow)"/>
+  <text x="684" y="184" class="h">Kubernetes cluster</text>
+  <text x="684" y="214" class="s" style="fill:#eef2ff">Hosts the SoR apps. Deploys and restarts them. Not a safety loop. Not the AC selector.</text>
+  <rect x="684" y="240" width="230" height="80" rx="16" fill="#0f172a"/>
+  <text x="748" y="276" class="s">SignalK</text>
+  <text x="718" y="300" class="t">decode PGNs · working</text>
+  <path d="M914 280 L940 280" class="linet"/>
+  <rect x="940" y="240" width="230" height="80" rx="16" fill="#0f172a"/>
+  <text x="990" y="276" class="s">InfluxDB 2.x</text>
+  <text x="978" y="300" class="t">store · replay · working</text>
+  <path d="M1170 280 L1196 280" class="linet"/>
+  <rect x="1196" y="240" width="280" height="80" rx="16" fill="#0f172a"/>
+  <text x="1240" y="276" class="s">Grafana · plant</text>
+  <text x="1224" y="300" class="t">engines, bus, AC/DC · working</text>
+  <path d="M1055 320 L1055 352" class="linep"/>
+  <rect x="684" y="352" width="360" height="100" rx="16" class="tbd"/>
+  <text x="708" y="384" class="s">SignalK LLM</text>
+  <text x="708" y="408" class="t">health · trends · learn · score</text>
+  <text x="708" y="430" class="t">after storage · not on ingest</text>
+  <path d="M1044 402 L1070 402" class="linep"/>
+  <rect x="1070" y="352" width="406" height="100" rx="16" class="tbd"/>
+  <text x="1094" y="384" class="s">Grafana · docking + plant</text>
+  <text x="1094" y="408" class="t">plan, warnings, confidence, health</text>
+  <text x="1094" y="430" class="t">advisor view · not the Axiom+ · gated</text>
+  <text x="684" y="494" class="t" style="fill:#e2e8f0">Working: listen-only boat capture → plant Grafana. LLM is a different job from ingest.</text>
+
+  <rect x="80" y="300" width="530" height="240" rx="28" class="panel"/>
+  <text x="110" y="344" class="h">What is evidenced</text>
+  <text x="110" y="380" class="s">Bench NMEA 2000 decode into SignalK.</text>
+  <text x="110" y="408" class="s">Boat listen-only capture on SeaTalk NG.</text>
+  <text x="110" y="436" class="s">InfluxDB 2.x and plant Grafana on survey values.</text>
+  <text x="110" y="464" class="s">Two feeds: NET-S gateway, own 12 V computer. YDEN-03 ordered.</text>
+  <text x="110" y="492" class="t">Raw frames kept. Vessel TX stays off.</text>
+  <text x="110" y="516" class="t">Boat-side production cluster is not claimed.</text>
+  <text x="800" y="678" text-anchor="middle" class="take">One fused spur. Apps on the k8s cluster. Sensors at the edge.</text>
+</svg>
