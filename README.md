@@ -272,14 +272,47 @@ The supporting files are grouped by the same questions the README answers.
 Read straight down for the narrative, or jump to the part that matches the
 conversation you want to have.
 
-| Story Beat | Reader Question | Supporting Pages |
-| --- | --- | --- |
-| Why read this | What problem makes this worth attention? | [problem-and-opportunity.md](docs/problem-and-opportunity.md) |
-| What this is | What is public, what is private, and what is not being claimed? | [safety boundary](docs/scope-and-safety.md), [evidence.md](docs/evidence.md), [sample telemetry](#sample-telemetry) |
-| How it works | What is the system shape and technical approach? | [docking-problem-and-solution.md](docs/docking-problem-and-solution.md) (problem), [marine-network-architecture.md](docs/marine-network-architecture.md) (plant / SoR), [system-platform.md](docs/system-platform.md) (pattern) |
-| Why it matters | Why is the evidence/control plane ahead of assistive behavior? | [agentic-engineering.md](docs/agentic-engineering.md), [evidence.md](docs/evidence.md) |
-| Where it is going | What is the capability path and future business hypothesis? | [roadmap-and-business.md](docs/roadmap-and-business.md) |
-| How Dan can help | What skills, experience, and judgment does this make visible? | [builder-profile.md](docs/builder-profile.md), [RESUME.md](RESUME.md) |
+<table>
+  <thead>
+    <tr>
+      <th width="22%" align="left">Story Beat</th>
+      <th width="34%" align="left">Reader Question</th>
+      <th align="left">Supporting Pages</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Why read this</td>
+      <td>What problem makes this worth attention?</td>
+      <td><a href="docs/problem-and-opportunity.md">problem-and-opportunity.md</a></td>
+    </tr>
+    <tr>
+      <td>What this is</td>
+      <td>What is public, what is private, and what is not being claimed?</td>
+      <td><a href="docs/scope-and-safety.md">safety boundary</a>, <a href="docs/evidence.md">evidence.md</a>, <a href="#sample-telemetry">sample telemetry</a></td>
+    </tr>
+    <tr>
+      <td>How it works</td>
+      <td>What is the system shape and technical approach?</td>
+      <td><a href="docs/docking-problem-and-solution.md">docking-problem-and-solution.md</a> (problem), <a href="docs/marine-network-architecture.md">marine-network-architecture.md</a> (plant / SoR), <a href="docs/system-platform.md">system-platform.md</a> (pattern)</td>
+    </tr>
+    <tr>
+      <td>Why it matters</td>
+      <td>Why is the evidence/control plane ahead of assistive behavior?</td>
+      <td><a href="docs/agentic-engineering.md">agentic-engineering.md</a>, <a href="docs/evidence.md">evidence.md</a></td>
+    </tr>
+    <tr>
+      <td>Where it is going</td>
+      <td>What is the capability path and future business hypothesis?</td>
+      <td><a href="docs/roadmap-and-business.md">roadmap-and-business.md</a></td>
+    </tr>
+    <tr>
+      <td>How Dan can help</td>
+      <td>What skills, experience, and judgment does this make visible?</td>
+      <td><a href="docs/builder-profile.md">builder-profile.md</a>, <a href="RESUME.md">RESUME.md</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ## Public Review Status
 
