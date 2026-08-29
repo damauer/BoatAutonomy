@@ -94,10 +94,10 @@ cluster-hosted system of record (SoR). Later, OneNet PoE++ runs stern
 to bow beside that bus for cameras and ranging — a second backbone,
 not a recable of the plant.
 
-![On the boat and on approach](assets/diagrams/follow-on-simple-hull-and-approach-v3.png)
+![On the boat and on approach](assets/diagrams/follow-on-simple-hull-and-approach-v4.png)
 
 Technical architecture: [marine-network-architecture.md](docs/marine-network-architecture.md).
-Editable source: [follow-on-simple-hull-and-approach-v3.svg](assets/diagrams/follow-on-simple-hull-and-approach-v3.svg).
+Editable source: [follow-on-simple-hull-and-approach-v4.svg](assets/diagrams/follow-on-simple-hull-and-approach-v4.svg).
 
 That hull and slip approach are one instance of a repeatable pattern, not
 a one-off docking app:

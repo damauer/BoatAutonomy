@@ -373,6 +373,8 @@
       <text x="736" y="466" class="mono" opacity="0.85">&#8226; Weather / micro climates</text>
       <text x="736" y="490" class="mono" opacity="0.85">&#8226; Geography - no two slips alike</text>
       <text x="736" y="514" class="mono" opacity="0.85">&#8226; Churn from marina traffic</text>
+      <text x="720" y="548" style="font:italic 700 14px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#fbbf24">Nature can make docking</text>
+      <text x="720" y="566" style="font:italic 700 14px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#fbbf24">a risk-filled adventure.</text>
     </g>
 
     <g id="traffic-boat">
