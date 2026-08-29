@@ -127,7 +127,7 @@
 
   <!-- LEFT: simple hull systems -->
   <rect x="48" y="124" width="784" height="800" rx="28" fill="url(#water)" opacity="0.92" stroke="#1e3a4a" stroke-width="1.5"/>
-  <text x="440" y="152" text-anchor="middle" class="orient">WHERE BOXES MOUNT</text>
+  <text x="440" y="152" text-anchor="middle" class="orient">ON THE BOAT</text>
 
   <g id="hull" opacity="0.5" transform="translate(390 250) scale(2.02) translate(-533 -332)" filter="url(#shadow)">
     <path d="M481 332 C472 352 468 382 468 412 C468 442 474 478 486 505 C496 528 508 548 518 568 C524 580 528 590 531 600 L533 608 L535 600 C538 590 542 580 548 568 C558 548 570 528 580 505 C592 478 598 442 598 412 C598 382 594 352 585 332 C566 322 500 322 481 332 Z" fill="url(#hull)" stroke="#3d4551" stroke-width="3"/>
