@@ -346,17 +346,17 @@
       <path d="M552 338 L575 525" class="hazard"/>
       <text x="573" y="330" class="lede" fill="#fbbf24">current - out from under dock, pushes stern out of slip</text>
     </g>
-    <path d="M148 560 C220 590 300 596 372 580" stroke="#5eead4" stroke-width="2" opacity="0.4" fill="none" stroke-dasharray="2 5"/>
+    <path d="M200 650 C280 680 360 686 440 665" stroke="#5eead4" stroke-width="2" opacity="0.4" fill="none" stroke-dasharray="2 5"/>
 
     <g id="traffic-boat-2">
-      <g transform="translate(230 572) rotate(20) scale(0.8) translate(-230 -572)">
+      <g transform="translate(310 690) rotate(25) scale(0.8) translate(-230 -572)">
         <path d="M200 572 Q222 560 255 572 Q222 584 200 572 Z" fill="#3d3320" stroke="#fbbf24" stroke-width="1.8" opacity="0.85"/>
         <path d="M178 572 L196 572" stroke="#fbbf24" stroke-width="1.5" opacity="0.45" stroke-dasharray="2 4"/>
         <path d="M168 580 L188 578" stroke="#fbbf24" stroke-width="1.1" opacity="0.3" stroke-dasharray="2 4"/>
       </g>
     </g>
 
-    <g id="waves-graphic" stroke="#7dd3fc" fill="none" stroke-linecap="round">
+    <g id="waves-graphic" stroke="#7dd3fc" fill="none" stroke-linecap="round" transform="translate(90 95)">
       <path d="M92 600 Q112 588 132 600 Q152 612 172 600 Q192 588 212 600 Q232 612 252 600 Q272 588 292 600 Q312 612 332 600 Q352 588 372 600 Q392 612 412 600" stroke-width="2" opacity="0.3"/>
       <path d="M92 620 Q114 606 136 620 Q158 634 180 620 Q202 606 224 620 Q246 634 268 620 Q290 606 312 620 Q334 634 356 620 Q378 606 400 620" stroke-width="2.2" opacity="0.4"/>
       <path d="M92 642 Q116 626 140 642 Q164 658 188 642 Q212 626 236 642 Q260 658 284 642 Q308 626 332 642 Q356 658 380 642" stroke-width="2.4" opacity="0.5"/>
@@ -373,12 +373,12 @@
     </g>
 
     <g id="traffic-boat">
-      <g transform="rotate(-25 800 590)">
+      <g transform="translate(-95 125) rotate(-30 800 590)">
         <path d="M770 590 Q795 575 832 590 Q795 605 770 590 Z" fill="#3d3320" stroke="#fbbf24" stroke-width="1.8" opacity="0.9"/>
         <path d="M745 590 L765 590" stroke="#fbbf24" stroke-width="1.5" opacity="0.5" stroke-dasharray="2 4"/>
         <path d="M735 598 L755 596" stroke="#fbbf24" stroke-width="1.2" opacity="0.35" stroke-dasharray="2 4"/>
       </g>
-      <text x="735" y="565" class="tiny" style="fill:#fbbf24" opacity="0.75">marina traffic</text>
+      <text x="640" y="690" class="tiny" style="fill:#fbbf24" opacity="0.75">marina traffic</text>
     </g>
 
     <g id="boat-approach" transform="translate(48 248) rotate(-26 533 466) translate(533 466) scale(0.75) translate(-533 -466)">
