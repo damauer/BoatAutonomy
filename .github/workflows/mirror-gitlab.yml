@@ -16,6 +16,7 @@ jobs:
 
       - name: Push mirror to gitlab.com/bbonz2020/BoatAutonomy
         run: |
-          git push --mirror "https://oauth2:${GITLAB_MIRROR_TOKEN}@gitlab.com/bbonz2020/BoatAutonomy.git"
+          git push --prune "https://oauth2:${GITLAB_MIRROR_TOKEN}@gitlab.com/bbonz2020/BoatAutonomy.git" \
+            "+refs/heads/*:refs/heads/*" "+refs/tags/*:refs/tags/*"
         env:
           GITLAB_MIRROR_TOKEN: ${{ secrets.GITLAB_MIRROR_TOKEN }}
