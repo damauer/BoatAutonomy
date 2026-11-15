@@ -10,7 +10,9 @@ discipline, not to publish live operational details.
 - Review records that lead with findings, blockers, and residual risk.
 - Soak-test summaries with scope, duration, restarts, caveats, and excluded
   incident windows.
-- Replay artifacts tied to schema versions, timestamps, and checksums.
+- Replay evidence should eventually bind session identity, schema versions,
+  timestamps, manifests, and checksums; that complete acceptance artifact is
+  not yet claimed.
 - Screenshots or dashboards generated from synthetic or redacted data.
 - Decision records that distinguish accepted design from advisory research.
 
@@ -23,7 +25,7 @@ locations, or operational procedures.
 | Fact | Public-Safe Detail |
 | --- | --- |
 | Passive capture exists | The private project has captured real-vessel NMEA 2000 / NMEA 0183 class telemetry through a Wi-Fi gateway path, with no bus writes. |
-| Replay and digital-twin inputs exist | Telemetry can flow through a SignalK -> InfluxDB -> Grafana style replay/inspection path, and instrumented survey observations are being shaped into simulation inputs. This is not a completed high-fidelity twin or a live-control claim. |
+| Replay and inspection paths exist | Selected telemetry has flowed through a Signal K -> InfluxDB -> Grafana inspection path. Schema-valid deterministic replay, failure-injected equivalence testing, and validated simulation inputs remain future evidence gates. |
 | Soak evidence exists | A 72-hour-class telemetry soak was documented with restarts, caveats, and excluded incident windows rather than treated as a perfect run. |
 | Independent review works | At least one pre-promotion agent review caught a real runtime-interface mismatch before it reached live use. |
 

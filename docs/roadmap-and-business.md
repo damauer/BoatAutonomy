@@ -20,7 +20,7 @@ Editable source:
 | --- | --- | --- |
 | 0 Governance and safety | In motion and evidenced | Agent roles, review gates, evidence records, and public/private boundaries exist. |
 | 1 Passive telemetry | In motion and evidenced | The private project has passive marine telemetry capture and no bus writes. |
-| 2 Replay, observability, and digital-twin inputs | In motion and evidenced | Replay/inspection paths exist, and instrumented survey evidence is being shaped into simulation inputs. |
+| 2 Replay, observability, and digital-twin inputs | In motion and evidenced | Replay and inspection paths exist. Schema-valid, checksum-backed deterministic replay and validated simulation inputs remain development milestones. |
 | 3 State estimation | Not started | No public claim of vessel-state estimation for live use. |
 | 4 Shadow mode | Not started | No assistive logic running beside live control. |
 | 5 Supervised assist | Not started | No assistive control in the loop. No unattended docking. |
@@ -42,10 +42,11 @@ controlling anything physical.
 
 ### Stage 2 - Replay And Observability
 
-Replay captured or synthetic telemetry into repeatable dashboards, queries,
-and tests. Use replay to debug before touching the real vessel. Build the
-digital-twin substrate from instrumented survey evidence, while keeping clear
-that a complete simulator and assistive behavior are later-stage work.
+Replay selected captured or synthetic telemetry through dashboards and queries
+to support inspection and debugging. End-to-end deterministic replay into
+repeatable tests -- with session identity, manifests, checksums, ordered
+equivalence, and failure injection -- remains in development. Converting
+instrumented surveys into validated simulation inputs is later work.
 
 ### Stage 3 - State Estimation
 

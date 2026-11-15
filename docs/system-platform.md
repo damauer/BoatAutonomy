@@ -58,8 +58,8 @@ pattern applied to a real slip approach.
 
 The next useful asset is not a claim of autonomy. It is the instrumented
 survey: measured behavior from the boat, its electronics, and its operating
-context, captured in a form that can be replayed, inspected, and gradually
-turned into simulation inputs.
+context, captured in a form that can be replayed and inspected. Instrumented
+survey evidence is intended to support future validated simulation inputs.
 
 The digital-twin idea is intentionally split in two. The current twin is an
 electronics/network twin: marine-network observations, PoE/Ethernet behavior,

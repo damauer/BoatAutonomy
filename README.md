@@ -59,6 +59,12 @@ funding sources.
 The lab is young, started in May 2026. Its evidence and governance plane is
 ahead of any assistive behavior.
 
+Since that public narrative was established, the project has continued
+exercising its edge platform, recovery procedures, and independent review
+process through real infrastructure changes and incidents. This strengthens
+the operational and evidence foundation; it does not advance the claimed
+vessel-autonomy stage.
+
 For that reason, this repo is not a product certification, pitch deck,
 securities offering, live-system runbook, or claim that autonomous docking is
 complete. It is a controlled way to show the technical thesis, builder
@@ -66,7 +72,8 @@ context, safety posture, and evidence discipline behind the private project.
 
 Current public scope:
 
-- Marine telemetry capture and replay using SeaTalk NG / NMEA 2000 concepts.
+- Bounded passive marine-telemetry survey captures and inspection-oriented
+  replay using SeaTalk NG / NMEA 2000 concepts.
 - SignalK-style normalized data paths and dashboard-driven inspection.
 - Edge and cluster operations for repeatable lab, staging, and field workflows.
 - Evidence records that separate observed facts, assumptions, risks, and

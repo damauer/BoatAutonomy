@@ -32,7 +32,10 @@ for pull requests until a later license and contribution policy say so.
 
 ## Current Claims
 
-- The project can capture, decode, replay, and inspect marine telemetry.
+- The project has completed bounded passive marine-telemetry survey captures
+  and can decode and replay selected recordings through inspection-oriented
+  Signal K, InfluxDB, and Grafana paths. It does not yet claim continuous
+  onboard capture or acceptance-grade deterministic replay.
 - The project can use edge services and clusters for observability and
   repeatability.
 - The project can use AI agents to help implement, review, and research

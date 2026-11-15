@@ -20,9 +20,9 @@ The visible ambition is easy to remember. The responsible public claim is
 narrower: build the telemetry, replay, edge compute, evidence, safety policy,
 and AI-assisted engineering harness needed before any real vessel can move
 from passive observation toward supervised docking-assist experiments. The
-instrumented-survey path turns observed vessel and electronics behavior into
-replay and simulation inputs for the developing digital twin the project needs
-before assistive behavior is credible.
+instrumented-survey path is intended to turn observed vessel and electronics
+behavior into validated replay and simulation inputs for the developing
+digital twin the project needs before assistive behavior is credible.
 
 That makes the project useful to several audiences:
 
