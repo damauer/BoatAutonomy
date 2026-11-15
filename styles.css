@@ -5,8 +5,9 @@
   --panel: #0c2631;
   --panel-light: #123541;
   --line: rgba(178, 222, 218, 0.2);
-  --aqua: #67ded0;
-  --aqua-dark: #0b5b59;
+  --aqua: #62b9f4;
+  --aqua-bright: #8bd3ff;
+  --aqua-dark: #0b568a;
   --amber: #f2b84b;
   --white: #ffffff;
   --max: 1180px;
@@ -22,7 +23,9 @@ body {
   margin: 0;
   color: var(--ink);
   background:
-    radial-gradient(circle at 90% 5%, rgba(42, 137, 139, 0.24), transparent 32rem),
+    radial-gradient(circle at 90% 5%, rgba(43, 125, 205, 0.32), transparent 34rem),
+    radial-gradient(circle at 8% 48%, rgba(24, 84, 145, 0.16), transparent 28rem),
+    repeating-linear-gradient(135deg, rgba(105, 179, 235, 0.035) 0 1px, transparent 1px 18px),
     linear-gradient(180deg, #061720 0%, var(--deep) 60%, #041219 100%);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.6;
@@ -77,7 +80,7 @@ img { display: block; max-width: 100%; }
   width: 2.25rem;
   height: 2.25rem;
   color: var(--deep);
-  background: var(--aqua);
+  background: linear-gradient(145deg, var(--aqua-bright), #4d9fdf);
   border-radius: 50%;
   font-size: 0.72rem;
   letter-spacing: 0.05em;
@@ -91,12 +94,13 @@ main, footer { max-width: var(--max); margin: 0 auto; }
 
 .property-contact {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.35rem 1.25rem;
+  gap: 0.08rem;
   max-width: var(--max);
   margin: 0 auto;
-  padding: 0.85rem 1.5rem;
+  padding: 0.62rem 1.5rem 0.72rem;
   color: var(--deep);
   background: var(--amber);
   border-right: 1px solid #8a5b08;
@@ -104,26 +108,42 @@ main, footer { max-width: var(--max); margin: 0 auto; }
   border-left: 1px solid #8a5b08;
   border-radius: 0 0 14px 14px;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
 .property-contact-label {
+  margin-bottom: 0.08rem;
   font-size: 0.72rem;
   font-weight: 850;
   letter-spacing: 0.13em;
   text-transform: uppercase;
 }
 
-.property-contact strong { font-size: 1.08rem; }
+.property-contact strong { font-size: 1.08rem; line-height: 1.35; }
 .property-contact a { font-weight: 720; text-underline-offset: 0.18rem; }
 
 .hero {
+  position: relative;
+  isolation: isolate;
   display: grid;
   grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
   align-items: center;
   gap: clamp(2rem, 5vw, 5rem);
   min-height: 78vh;
   padding: clamp(4rem, 8vw, 7.5rem) 1.5rem;
+}
+
+.hero::before {
+  position: absolute;
+  inset: 8% 2% auto 38%;
+  z-index: -1;
+  height: 58%;
+  content: "";
+  background:
+    repeating-radial-gradient(circle at center, rgba(86, 164, 226, 0.09) 0 1px, transparent 1px 24px),
+    radial-gradient(circle, rgba(46, 117, 188, 0.18), transparent 68%);
+  border-radius: 50%;
+  filter: blur(0.2px);
 }
 
 .eyebrow {
@@ -138,7 +158,13 @@ main, footer { max-width: var(--max); margin: 0 auto; }
 h1, h2, h3 { margin-top: 0; line-height: 1.08; letter-spacing: -0.035em; }
 
 h1 { margin-bottom: 1.35rem; font-size: clamp(2.3rem, 4.2vw, 4.3rem); }
-h1 span { color: var(--aqua); }
+h1 span {
+  color: var(--aqua);
+  background: linear-gradient(120deg, var(--aqua-bright), #4f9fdf 72%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 h2 { margin-bottom: 1.2rem; font-size: clamp(2rem, 4vw, 3.55rem); }
 h3 { margin-bottom: 0.8rem; font-size: 1.25rem; }
 
@@ -167,7 +193,12 @@ h3 { margin-bottom: 0.8rem; font-size: 1.25rem; }
   text-decoration: none;
 }
 
-.button.primary { color: var(--deep); background: var(--aqua); border-color: var(--aqua); }
+.button.primary {
+  color: var(--deep);
+  background: linear-gradient(135deg, var(--aqua-bright), #4f9fdf);
+  border-color: #76c5fa;
+  box-shadow: 0 0.85rem 2.2rem rgba(49, 133, 205, 0.2);
+}
 .button.secondary { background: rgba(255, 255, 255, 0.03); }
 .button:hover, .button:focus-visible { transform: translateY(-2px); }
 
@@ -218,9 +249,12 @@ h3 { margin-bottom: 0.8rem; font-size: 1.25rem; }
 .evidence-card {
   min-height: 14rem;
   padding: 1.5rem;
-  background: linear-gradient(145deg, rgba(18, 53, 65, 0.96), rgba(9, 32, 42, 0.96));
+  background:
+    repeating-linear-gradient(135deg, rgba(111, 190, 244, 0.045) 0 1px, transparent 1px 14px),
+    linear-gradient(145deg, rgba(17, 57, 80, 0.96), rgba(8, 29, 43, 0.98));
   border: 1px solid var(--line);
   border-radius: 18px;
+  box-shadow: inset 0 1px 0 rgba(139, 211, 255, 0.07);
 }
 
 .evidence-card.pending { border-color: rgba(242, 184, 75, 0.36); }
@@ -282,7 +316,6 @@ footer {
 
 @media (max-width: 860px) {
   nav { display: none; }
-  .property-contact { flex-wrap: wrap; }
   .hero, .intro, .visual-section, .safety, .contact-section { grid-template-columns: 1fr; }
   .hero { padding-top: 4rem; }
   .hero-visual { order: -1; }
@@ -296,7 +329,7 @@ footer {
   .property-contact {
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 0.18rem;
+    gap: 0.08rem;
     margin-inline: 0.55rem;
     padding: 0.8rem 1rem;
     border-top: 1px solid #8a5b08;
