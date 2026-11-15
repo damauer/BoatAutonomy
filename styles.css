@@ -171,6 +171,10 @@ main, footer { max-width: var(--max); margin: 0 auto; }
 }
 
 .property-contact::before { top: 32%; }
+.property-contact::after {
+  height: 37%;
+  border-top: 1px solid rgba(210, 239, 249, 0.18);
+}
 
 .property-contact-vessel {
   position: relative;
