@@ -103,9 +103,9 @@ main, footer { max-width: var(--max); margin: 0 auto; }
   color: var(--deep);
   text-align: left;
   background:
-    radial-gradient(circle at 84% 18%, rgba(255, 255, 255, 0.2), transparent 20rem),
-    repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.055) 0 1px, transparent 1px 15px),
-    linear-gradient(120deg, #63b9e6 0%, #55addd 58%, #4ca3d5 100%);
+    radial-gradient(circle at 88% 8%, rgba(255, 237, 178, 0.17) 0 1.4rem, rgba(255, 246, 214, 0.055) 1.5rem 3.2rem, transparent 3.3rem),
+    repeating-radial-gradient(ellipse at 82% 124%, transparent 0 22px, rgba(235, 250, 255, 0.075) 23px 24px, transparent 25px 46px),
+    linear-gradient(120deg, #58abd4 0%, #4899c4 58%, #3d89b6 100%);
   border-right: 1px solid var(--aqua-dark);
   border-bottom: 1px solid var(--aqua-dark);
   border-left: 1px solid var(--aqua-dark);
@@ -349,9 +349,13 @@ h3 { margin-bottom: 0.8rem; font-size: 1.25rem; }
   gap: clamp(2rem, 8vw, 7rem);
   margin: 2rem 1.5rem 5rem;
   padding: clamp(2rem, 5vw, 4rem);
-  background: var(--aqua);
+  background:
+    radial-gradient(circle at 88% 10%, rgba(255, 237, 178, 0.17) 0 1.8rem, rgba(255, 246, 214, 0.055) 1.9rem 4rem, transparent 4.1rem),
+    repeating-radial-gradient(ellipse at 78% 118%, transparent 0 28px, rgba(235, 250, 255, 0.075) 29px 30px, transparent 31px 58px),
+    linear-gradient(120deg, #58abd4 0%, #4899c4 58%, #3d89b6 100%);
   color: var(--deep);
   border-radius: var(--radius);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1.5rem 4rem rgba(0, 0, 0, 0.18);
 }
 
 .contact-section .eyebrow { color: var(--aqua-dark); }
