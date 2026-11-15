@@ -156,38 +156,20 @@ November 2016 to March 2026
   development activity and live demonstrations.
 - Designed and built auditing services for private cloud accounts.
 
-### QVine Corp. | Enterprise Cloud SETA
+### Federal Cloud SETA Engagements | QVine, Xcelerate, Convergenz, and Celerity
 
-March 2015 to November 2016
+January 2012 to November 2016
 
-- Developed cloud-based solutions for enterprise audit, continuous monitoring,
-  and host-based security requirements for national-security customers.
-- Supported architecture and engineering decisions for enterprise cloud
-  modernization.
-
-### Xcelerate | Enterprise Cloud SETA
-
-January 2014 to March 2015
-
-- Developed end-state architectures, migration alternatives, modernization
-  plans, and remediation plans for a joint federal organization moving toward
+- Advised federal and national-security organizations on enterprise and
+  community-cloud architecture, modernization, migration, continuous
+  monitoring, host security, and investment decisions.
+- Developed end-state architectures, migration alternatives, remediation
+  plans, technical requirements, and program recommendations for secure
   cloud-enabled mission operations.
-
-### Convergenz | Cloud SETA
-
-August 2013 to January 2014
-
-- Supported federal cloud and IT modernization programs.
-- Wrote technical requirements for a cloud-compute procurement of roughly
-  $30 million.
-
-### Celerity | Community Cloud SETA
-
-January 2012 to August 2013
-
-- Assessed community-cloud programmatic and technical artifacts.
-- Developed recommendations for broader cloud capability investment and
-  modernization.
+- Supported a cloud-compute procurement of roughly $30 million.
+- Engagement chronology: QVine (March 2015 to November 2016), Xcelerate
+  (January 2014 to March 2015), Convergenz (August 2013 to January 2014), and
+  Celerity (January 2012 to August 2013).
 
 ### Lockheed Martin | Chief Engineer, Enterprise Cloud Modernization
 
