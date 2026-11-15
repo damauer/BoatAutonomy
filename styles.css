@@ -180,7 +180,9 @@ main, footer { max-width: var(--max); margin: 0 auto; }
 }
 
 .property-contact-vessel::before,
-.property-contact-vessel::after {
+.property-contact-vessel::after,
+.contact-section-vessel::before,
+.contact-section-vessel::after {
   position: absolute;
   z-index: -1;
   content: "";
@@ -188,14 +190,16 @@ main, footer { max-width: var(--max); margin: 0 auto; }
   border-radius: 50%;
 }
 
-.property-contact-vessel::before {
+.property-contact-vessel::before,
+.contact-section-vessel::before {
   right: 4%;
   bottom: 5%;
   width: 88%;
   height: 0.42rem;
 }
 
-.property-contact-vessel::after {
+.property-contact-vessel::after,
+.contact-section-vessel::after {
   right: 61%;
   bottom: 7%;
   width: 58%;
@@ -414,7 +418,7 @@ h3 { margin-bottom: 0.8rem; font-size: 1.25rem; }
   grid-template-columns: 1.2fr 0.8fr;
   gap: clamp(2rem, 8vw, 7rem);
   margin: 2rem 1.5rem 5rem;
-  padding: clamp(2rem, 5vw, 4rem);
+  padding: clamp(2rem, 5vw, 4rem) clamp(2rem, 5vw, 4rem) clamp(5.5rem, 8vw, 6.5rem);
   overflow: hidden;
   background:
     radial-gradient(circle at 88% 5%, rgba(255, 226, 148, 0.34) 0 1.6rem, rgba(255, 235, 178, 0.13) 1.7rem 4.8rem, transparent 4.9rem),
@@ -430,6 +434,14 @@ h3 { margin-bottom: 0.8rem; font-size: 1.25rem; }
 .contact-section a { color: var(--white); }
 .contact-section address { display: grid; align-content: center; gap: 0.4rem; font-style: normal; }
 .contact-section address strong { font-size: 1.25rem; }
+
+.contact-section-vessel {
+  position: absolute;
+  right: clamp(2rem, 5vw, 4rem);
+  bottom: 1.15rem;
+  z-index: 2;
+  width: clamp(8rem, 14vw, 11rem);
+}
 
 footer {
   display: flex;
@@ -465,6 +477,11 @@ footer {
   .evidence-grid { grid-template-columns: 1fr; }
   .evidence-card { min-height: auto; }
   .contact-section { margin-inline: 1rem; }
+  .contact-section-vessel {
+    right: 1.25rem;
+    bottom: 0.9rem;
+    width: clamp(6.5rem, 34vw, 8.5rem);
+  }
   footer { flex-direction: column; }
 }
 
