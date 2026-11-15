@@ -2,6 +2,12 @@
 
 Teaching a boat to dock itself, with evidence before authority.
 
+## Contact Info
+
+- **Dan Mauer**
+- **Email:** [DAMauer@gmail.com](mailto:DAMauer@gmail.com)
+- **Phone:** [(301) 807-5900](tel:+13018075900)
+
 Docking is one of the most stressful moments in recreational boating: low
 speed, close quarters, wind, current, crew coordination, spectators, and
 expensive hardware all at once.
