@@ -429,6 +429,10 @@ h3 { margin-bottom: 0.8rem; font-size: 1.25rem; }
 }
 
 .contact-section::before { top: 37%; }
+.contact-section::after {
+  height: 32%;
+  border-top: 1px solid rgba(210, 239, 249, 0.18);
+}
 .contact-section > * { position: relative; z-index: 2; }
 .contact-section .eyebrow { color: #bce8ff; }
 .contact-section a { color: var(--white); }
