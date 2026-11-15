@@ -42,7 +42,7 @@ img { display: block; max-width: 100%; }
   z-index: 20;
   padding: 0.65rem 1rem;
   color: var(--deep);
-  background: var(--aqua);
+  background: #75c9f5;
   border-radius: 999px;
   transform: translateY(-180%);
 }
@@ -102,7 +102,7 @@ main, footer { max-width: var(--max); margin: 0 auto; }
   padding: 0.72rem 1.5rem 0.82rem;
   color: var(--deep);
   text-align: left;
-  background: var(--aqua);
+  background: #75c9f5;
   border-right: 1px solid var(--aqua-dark);
   border-bottom: 1px solid var(--aqua-dark);
   border-left: 1px solid var(--aqua-dark);
@@ -137,7 +137,7 @@ main, footer { max-width: var(--max); margin: 0 auto; }
 
 .property-contact-logo {
   display: block;
-  width: clamp(9.5rem, 18vw, 13.5rem);
+  width: clamp(6.5rem, 11vw, 8.5rem);
   height: auto;
   justify-self: end;
 }
@@ -400,7 +400,7 @@ footer {
     border-top: 1px solid var(--aqua-dark);
     border-radius: 12px;
   }
-  .property-contact-logo { width: clamp(6rem, 28vw, 8.25rem); }
+  .property-contact-logo { width: clamp(5rem, 21vw, 6.5rem); }
   .hero, .section { padding-inline: 1rem; }
   .evidence-grid { grid-template-columns: 1fr; }
   .evidence-card { min-height: auto; }
