@@ -102,11 +102,15 @@ main, footer { max-width: var(--max); margin: 0 auto; }
   padding: 0.72rem 1.5rem 0.82rem;
   color: var(--deep);
   text-align: left;
-  background: #75c9f5;
+  background:
+    radial-gradient(circle at 84% 18%, rgba(255, 255, 255, 0.2), transparent 20rem),
+    repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.055) 0 1px, transparent 1px 15px),
+    linear-gradient(120deg, #63b9e6 0%, #55addd 58%, #4ca3d5 100%);
   border-right: 1px solid var(--aqua-dark);
   border-bottom: 1px solid var(--aqua-dark);
   border-left: 1px solid var(--aqua-dark);
   border-radius: 0 0 14px 14px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.24), inset 0 -1px 0 rgba(7, 25, 35, 0.12);
   font-style: normal;
   font-size: 0.95rem;
 }
