@@ -93,6 +93,8 @@ nav a:hover, nav a:focus-visible { color: var(--white); }
 main, footer { max-width: var(--max); margin: 0 auto; }
 
 .property-contact {
+  position: relative;
+  isolation: isolate;
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
@@ -100,12 +102,12 @@ main, footer { max-width: var(--max); margin: 0 auto; }
   max-width: var(--max);
   margin: 0 auto;
   padding: 0.72rem 1.5rem 0.82rem;
-  color: var(--deep);
+  overflow: hidden;
+  color: var(--ink);
   text-align: left;
   background:
-    radial-gradient(circle at 88% 8%, rgba(255, 237, 178, 0.17) 0 1.4rem, rgba(255, 246, 214, 0.055) 1.5rem 3.2rem, transparent 3.3rem),
-    repeating-radial-gradient(ellipse at 82% 124%, transparent 0 22px, rgba(235, 250, 255, 0.075) 23px 24px, transparent 25px 46px),
-    linear-gradient(120deg, #58abd4 0%, #4899c4 58%, #3d89b6 100%);
+    radial-gradient(circle at 88% 4%, rgba(255, 226, 148, 0.34) 0 1.2rem, rgba(255, 235, 178, 0.13) 1.3rem 3.7rem, transparent 3.8rem),
+    linear-gradient(180deg, #3d83aa 0%, #337899 55%, #1c6484 56%, #104d6d 100%);
   border-right: 1px solid var(--aqua-dark);
   border-bottom: 1px solid var(--aqua-dark);
   border-left: 1px solid var(--aqua-dark);
@@ -116,6 +118,8 @@ main, footer { max-width: var(--max); margin: 0 auto; }
 }
 
 .property-contact-details {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -125,7 +129,7 @@ main, footer { max-width: var(--max); margin: 0 auto; }
 
 .property-contact-label {
   margin-bottom: 0.08rem;
-  color: var(--aqua-dark);
+  color: #bce8ff;
   font-size: 0.72rem;
   font-weight: 850;
   letter-spacing: 0.13em;
@@ -134,16 +138,76 @@ main, footer { max-width: var(--max); margin: 0 auto; }
 
 .property-contact strong { font-size: 1.08rem; line-height: 1.35; }
 .property-contact a {
-  color: var(--deep);
+  color: var(--white);
   font-weight: 720;
   text-underline-offset: 0.18rem;
 }
 
+.property-contact::before,
+.contact-section::before {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  height: 31%;
+  content: "";
+  background: linear-gradient(90deg, rgba(9, 50, 61, 0.72), rgba(18, 73, 79, 0.56) 58%, rgba(10, 48, 58, 0.68));
+  clip-path: polygon(0 76%, 8% 44%, 16% 70%, 27% 28%, 38% 63%, 49% 38%, 59% 72%, 70% 42%, 82% 69%, 91% 35%, 100% 64%, 100% 100%, 0 100%);
+}
+
+.property-contact::after,
+.contact-section::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  height: 45%;
+  content: "";
+  background:
+    radial-gradient(ellipse at 78% 18%, rgba(255, 244, 203, 0.11), transparent 28%),
+    repeating-linear-gradient(176deg, rgba(218, 244, 255, 0.11) 0 1px, transparent 1px 10px),
+    linear-gradient(180deg, rgba(11, 77, 106, 0.12), rgba(4, 47, 72, 0.38));
+}
+
+.property-contact::before { top: 32%; }
+
+.property-contact-vessel {
+  position: relative;
+  z-index: 2;
+  width: clamp(6.5rem, 11vw, 8.5rem);
+  justify-self: end;
+}
+
+.property-contact-vessel::before,
+.property-contact-vessel::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  border-top: 2px solid rgba(226, 248, 255, 0.68);
+  border-radius: 50%;
+}
+
+.property-contact-vessel::before {
+  right: 4%;
+  bottom: 5%;
+  width: 88%;
+  height: 0.42rem;
+}
+
+.property-contact-vessel::after {
+  right: 61%;
+  bottom: 7%;
+  width: 58%;
+  height: 0.65rem;
+  border-color: rgba(226, 248, 255, 0.52);
+  transform: rotate(-3deg);
+}
+
 .property-contact-logo {
   display: block;
-  width: clamp(6.5rem, 11vw, 8.5rem);
+  width: 100%;
   height: auto;
-  justify-self: end;
 }
 
 .hero {
@@ -344,21 +408,26 @@ h3 { margin-bottom: 0.8rem; font-size: 1.25rem; }
 .safety { grid-template-columns: 1.1fr 0.9fr; }
 
 .contact-section {
+  position: relative;
+  isolation: isolate;
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   gap: clamp(2rem, 8vw, 7rem);
   margin: 2rem 1.5rem 5rem;
   padding: clamp(2rem, 5vw, 4rem);
+  overflow: hidden;
   background:
-    radial-gradient(circle at 88% 10%, rgba(255, 237, 178, 0.17) 0 1.8rem, rgba(255, 246, 214, 0.055) 1.9rem 4rem, transparent 4.1rem),
-    repeating-radial-gradient(ellipse at 78% 118%, transparent 0 28px, rgba(235, 250, 255, 0.075) 29px 30px, transparent 31px 58px),
-    linear-gradient(120deg, #58abd4 0%, #4899c4 58%, #3d89b6 100%);
-  color: var(--deep);
+    radial-gradient(circle at 88% 5%, rgba(255, 226, 148, 0.34) 0 1.6rem, rgba(255, 235, 178, 0.13) 1.7rem 4.8rem, transparent 4.9rem),
+    linear-gradient(180deg, #3d83aa 0%, #337899 55%, #1c6484 56%, #104d6d 100%);
+  color: var(--ink);
   border-radius: var(--radius);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1.5rem 4rem rgba(0, 0, 0, 0.18);
 }
 
-.contact-section .eyebrow { color: var(--aqua-dark); }
+.contact-section::before { top: 37%; }
+.contact-section > * { position: relative; z-index: 2; }
+.contact-section .eyebrow { color: #bce8ff; }
+.contact-section a { color: var(--white); }
 .contact-section address { display: grid; align-content: center; gap: 0.4rem; font-style: normal; }
 .contact-section address strong { font-size: 1.25rem; }
 
@@ -391,7 +460,7 @@ footer {
     border-top: 1px solid var(--aqua-dark);
     border-radius: 12px;
   }
-  .property-contact-logo { width: clamp(5rem, 21vw, 6.5rem); }
+  .property-contact-vessel { width: clamp(5rem, 21vw, 6.5rem); }
   .hero, .section { padding-inline: 1rem; }
   .evidence-grid { grid-template-columns: 1fr; }
   .evidence-card { min-height: auto; }
